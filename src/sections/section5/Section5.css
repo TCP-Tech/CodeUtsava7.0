@@ -1,0 +1,186 @@
+.codeutsava__section5 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: "Poppins";
+}
+
+.codeutsava__section5-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.codeutsava__section5-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 82px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.codeutsava__section5-content {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.codeutsava__section5-format-container {
+  grid-template-rows: repeat(6, minmax(0px, 1fr));
+  grid-template-columns: repeat(14, minmax(0px, 1fr));
+  gap: 4px;
+  background-image: url("../../assets/images/hackathonBg.svg");
+  background-repeat: no-repeat;
+  background-position: 24% 35%;
+  background-size: 90%;
+  display: grid;
+  padding: 2.5rem 2rem;
+  width: 100%;
+}
+
+.codeutsava__section5-format-card {
+  padding: 32px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 12px;
+  background-color: rgb(32, 32, 32);
+  box-shadow: var(--secondary-c) 0px 0px 12px;
+  height: max-content;
+}
+
+.codeutsava__section5-format-card-date {
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+
+.codeutsava__section5-format-card-title-container {
+  background-color: rgba(255, 244, 150, 0.2);
+  width: 100%;
+  border-radius: 44px 14px 14px 44px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 9px 0px;
+}
+
+.codeutsava__section5-format-card-title-number {
+  background-color: var(--secondary-c);
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  height: 40px;
+  width: 40px;
+  margin-right: 4px;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.codeutsava__section5-format-card-title {
+  font-weight: 400;
+  margin-left: 1.5rem;
+}
+
+.codeutsava__section5-format-card-description {
+  font-weight: 400;
+  padding-bottom: 4px;
+}
+
+.format-card1 {
+  grid-area: 2 / 1 / 4 / 5;
+}
+
+.format-card2 {
+  grid-area: 1 / 6 / 3 / 11;
+}
+
+.format-card3 {
+  grid-area: 3 / 11 / 5 / 15;
+}
+
+.format-card4 {
+  grid-area: 5 / 9 / 7 / 13;
+}
+
+.format-card5 {
+  grid-area: 5 / 3 / 7 / 7;
+}
+
+@media screen and (max-width: 900px) {
+  .codeutsava__section5-content{
+    margin-bottom: 2rem;
+  }
+  .codeutsava__section5-format-container {
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+    grid-template-rows: repeat(5, minmax(0px, 1fr));
+    gap: 2rem;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: 500px 600px;
+  }
+  .codeutsava__section5-format-card{
+    height: 100%;
+  }
+  .format-card1 {
+    grid-area: span 1/1/auto/4 !important;
+  }
+  .format-card2 {
+    grid-area: span 1/2/auto/5 !important;
+  }
+  .format-card3 {
+    grid-area: span 1/1/auto/4 !important;
+  }
+  .format-card4 {
+    grid-area: span 1/2/auto/5 !important;
+  }
+  .format-card5 {
+    grid-area: span 1/1/auto/4 !important;
+  }
+  .codeutsava__section5-title {
+    font-size: 36px;
+  }
+  .codeutsava__section5-content {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .codeutsava__section5-format-card{
+    gap: 8px;
+    padding: 12px;
+  }
+  .codeutsava__section5-format-card-date{
+    font-size: 0.8rem;
+    margin: 8px 0;
+  }
+  .codeutsava__section5-format-card-title-container{
+    padding: 6px 0px 6px 26px;
+  }
+  .codeutsava__section5-format-card-title{
+    font-size: 12px;
+    margin-left: 0.5rem;
+  }
+  .codeutsava__section5-format-card-description{
+    font-size: 12px;
+    text-align: center;
+    margin: 4px;
+  }
+  .codeutsava__section5-format-card-title-number{
+    height: 30px;
+    width: 30px;
+    font-size: 12px;
+  }
+}

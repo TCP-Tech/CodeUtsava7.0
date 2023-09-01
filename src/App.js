@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Codeutsava 7.0
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/home/HomePage";
+import TeamTCP from "./pages/teamTcp/TeamTcp";
+import "./App.css";
+import ScrollToTop from './ScrollToTop';
+export default class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <ScrollToTop/>
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/team" element={<TeamTCP />} />
+        </Routes>
+      </BrowserRouter>
+    );
+  }
 }
-
-export default App;
