@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+.codeutsava__section4-speaker-card{
+    background: #FFF9F9;
+    box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    padding-bottom: 0.5rem;
+    max-width: 370px;
+}
+
+.codeutsava__section4-speaker-img-container{
+    width: 240px;
+    height: 240px;
+}
+
+.codeutsava__section4-speaker-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.codeutsava__section4-speaker-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.codeutsava__section4-speaker-menu h1{
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    padding-top: 1rem;
+}
+
+.codeutsava__section4-speaker-menu h3{
+    font-size: 20px;
+    line-height: 20px;
+    color: #004AAD;
+    padding-top: 0.5rem;
+}
+
+.codeutsava__section4-speaker-menu p{
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.codeutsava__section4-speaker-divider{
+    border: 1px solid #D7D7D7;
+    width: 100%;
+}
+
+.codeutsava__section4-speaker-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0; 
+}
+
+.codeutsava__section4-speaker-contact h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+}
+
+.codeutsava__section4-speaker-contact-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    padding-top: 0.5rem; 
+}
+
+.codeutsava__section4-speaker-contact-links-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.codeutsava__section4-speaker-contact-links img{
+    cursor: pointer;
+    width: 28px;
+}
+
+@media screen and (max-width: 650px) {
+    .codeutsava__section4-speaker-card{
+        transform: scale(0.9);
+    }
+  }
