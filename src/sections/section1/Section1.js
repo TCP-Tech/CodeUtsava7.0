@@ -8,6 +8,8 @@ import { staggerChildren, fadeIn } from "../../motionUtils";
 import "../../../node_modules/font-awesome/css/font-awesome.min.css";
 import register from "../../assets/images/register.pdf"
 
+import Map from "../../components/MapIntegration/Map";
+
 const Section1 = () => {
   React.useEffect(() => {
     const script = document.createElement("script");
@@ -67,6 +69,9 @@ const Section1 = () => {
             </a>
           </div>
         </div>
+        <div>
+            <Map></Map>
+          </div>
       </motion.div>
       <motion.ul
         variants={fadeIn("up", "tween", 1, 1)}
