@@ -1,0 +1,139 @@
+.codeutsava__section14 {
+    padding-top: 8rem;
+    padding-bottom: 2rem;  
+    color: white;
+    font-family: 'Poppins'; 
+}
+
+.codeutsava__section14-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.codeutsava__section14-menu1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+}
+
+.codeutsava__section14-menu1 div{
+    padding: 0 5px;
+}
+
+.codeutsava__section14-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 82px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 60px 10px;
+}
+
+@media screen and (max-width:1150px){
+    .codeutsava__section14-body{
+        margin: 0 3rem;
+    }
+    .codeutsava__section14-menu1{
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .codeutsava__section14-title{
+        font-size: 36px;
+    }
+}
+
+
+@media screen and (max-width:650px){
+    .codeutsava__section14-body{
+        margin: 0 3rem;
+    }
+    .codeutsava__section14-menu11{
+        max-width: 480px;
+        height: 820px;
+    }
+    .codeutsava__section14-title{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .codeutsava__section14-menu1{
+        max-width: 310px;
+    }    
+}
+
+.codeutsava__section14-menu2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.codeutsava__section14-menu2>div{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding:0 100px;
+}
+
+.codeutsava__section5-format-card{
+    width: 25%;
+    margin: 0 20px;
+}
+  
+  .codeutsava__section5-format-card-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .codeutsava__section5-format-card-description span{
+    font-size: 40px;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-width: 415px) {
+    .codeutsava__section5-format-card{
+      gap: 8px;
+      padding: 12px;
+    }
+    .codeutsava__section5-format-card-description{
+      font-size: 12px;
+      text-align: center;
+      margin: 4px;
+    }
+  }
+  
+  @media(width<1000px) {
+    .codeutsava__section14-menu2>div{
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .codeutsava__section5-format-card{
+        width: 100%;
+        margin:25px;
+    }
+  }
+  .apexcharts-xaxis-label, .apexcharts-yaxis-label {
+    fill: #ffffffd0;
+    font-size: 12px;
+  }
+
+  .apexcharts-xaxis-title-text, .apexcharts-yaxis-title-text {
+    fill: #38b6ffd0;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .apexcharts-xaxis-title-text:hover, .apexcharts-yaxis-title-text:hover {
+    fill: #38b6ff;
+  }
