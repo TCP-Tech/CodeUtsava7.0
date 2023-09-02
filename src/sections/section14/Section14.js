@@ -77,18 +77,18 @@ const Section14 = () => {
             Last Year Paticipation
           </h1>
           <div>
-            <div className="codeutsava__section5-format-card">
-              <p className="codeutsava__section5-format-card-description">
+            <div className="codeutsava__section14-format-card">
+              <p className="codeutsava__section14-format-card-description">
               <span style={{ color: "#38b6ff" }}>1000+ </span> TEAMS
               </p>
             </div>
-            <div className="codeutsava__section5-format-card">
-              <p className="codeutsava__section5-format-card-description">
+            <div className="codeutsava__section14-format-card">
+              <p className="codeutsava__section14-format-card-description">
               <span style={{ color: "#38b6ff" }}>100+ </span> COLLEGES
               </p>
             </div>
-            <div className="codeutsava__section5-format-card">
-              <p className="codeutsava__section5-format-card-description">
+            <div className="codeutsava__section14-format-card">
+              <p className="codeutsava__section14-format-card-description">
               <span style={{ color: "#38b6ff" }}>2000+ </span> DEVELOPERS
               </p>
             </div>

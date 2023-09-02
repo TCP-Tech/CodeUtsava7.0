@@ -83,28 +83,32 @@
     padding:0 100px;
 }
 
-.codeutsava__section5-format-card{
+.codeutsava__section14-format-card{
     width: 25%;
     margin: 0 20px;
+    background-color: #48586180;
+    border: 2px solid #38b6ff;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
   
-  .codeutsava__section5-format-card-description {
+  .codeutsava__section14-format-card-description {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .codeutsava__section5-format-card-description span{
+  .codeutsava__section14-format-card-description span{
     font-size: 40px;
     font-weight: 600;
     margin-right: 10px;
   }
   
   @media screen and (max-width: 415px) {
-    .codeutsava__section5-format-card{
+    .codeutsava__section14-format-card{
       gap: 8px;
       padding: 12px;
     }
-    .codeutsava__section5-format-card-description{
+    .codeutsava__section14-format-card-description{
       font-size: 12px;
       text-align: center;
       margin: 4px;
@@ -118,7 +122,7 @@
         justify-content: center;
         align-items: center;
     }
-    .codeutsava__section5-format-card{
+    .codeutsava__section14-format-card{
         width: 100%;
         margin:25px;
     }
