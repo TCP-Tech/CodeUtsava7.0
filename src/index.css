@@ -2,8 +2,8 @@
 :root {
   --font-family: "Poppins", sans-serif;
   --color-bg: #000000;
-  --primary-c: #004AAD;
-  --secondary-c: #38b6ff;
+  --primary-c: #eedb00;
+  --secondary-c: #fbfb00;
 }
 
 * {
@@ -27,6 +27,6 @@
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: #004AAD;
+  background-color: var(--primary-c);
   border-radius: 10px;
 }

@@ -61,7 +61,7 @@
 .tagcloud--item{
     font-family: "Poppins";
     font-weight: 500;
-    color: #38b6ff;
+    color: var(--secondary-c);
 }
 
 .tagcloud--item:hover{

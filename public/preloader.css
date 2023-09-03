@@ -29,7 +29,7 @@
 }
 
 .intro-container1 img{
-    height: 36px;
+    height: 100px;
 }
 
 
@@ -69,7 +69,7 @@
     position: absolute;
     background: white;
     height: 32px;
-    width: 100px;
+    width: 300px;
     transition: 0.15s ease-out;
 }
 .button .border .left-plane {
