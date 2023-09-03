@@ -50,13 +50,13 @@
 .codeutsava__section1-image {
   width: 100%;
   z-index: 1;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
 }
 
 .codeutsava__section1-image img{
-  height: 150px;
+  height: 120px;
 }
 
 .codeutsava__section1-button-container {
@@ -65,6 +65,7 @@
   align-items: center;
   margin-top: 3rem;
   width: max-content;
+  margin-bottom: 4rem;
 }
 
 .codeutsava__section1-button {
@@ -128,7 +129,7 @@
 .codeutsava__section1-side-links {
   position: absolute;
   left: 48px;
-  bottom: 54px;
+  bottom: 4rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -155,7 +156,7 @@
 .codeutsava__section1-scrollDown{
   color: white;
   position: absolute;
-  bottom: 4rem;
+  bottom: 6rem;
   right: 2.5rem;
   transform-origin: right top 0;
   float: right;
@@ -202,11 +203,15 @@
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
+  .codeutsava__section1-image img{
+    height: 40px;
+  }
   .codeutsava__section1-body {
     max-width: 300px;
   }
   .codeutsava__section1-heading {
-    font-size: 40px;
+    font-size: 38px;
+    line-height: 64px;
     margin: 0;
   }
   .codeutsava__section1-subheading {
