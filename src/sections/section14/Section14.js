@@ -31,7 +31,7 @@ const Section14 = () => {
     },
     series: [
       {
-        name: "sales",
+        name: "Participation",
         data: [30, 49, 60, 70, 91, 125],
       },
     ],
