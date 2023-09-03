@@ -1,6 +1,6 @@
 .codeutsava__section14 {
-    padding-top: 8rem;
-    padding-bottom: 2rem;  
+    padding-top: 2rem;
+    padding-bottom: 4rem;  
     color: white;
     font-family: 'Poppins'; 
 }
@@ -32,7 +32,7 @@
     line-height: 82px;
     text-align: center;
     letter-spacing: 1px;
-    margin: 60px 10px;
+    margin: 60px 10px 60px 10px;
 }
 
 @media screen and (max-width:1150px){
@@ -81,6 +81,12 @@
     width: 100%;
     justify-content: space-evenly;
     padding:0 100px;
+}
+
+@media(width<1300px){
+    .codeutsava__section14-menu2>div{
+        padding: 0;
+    }
 }
 
 .codeutsava__section14-format-card{
