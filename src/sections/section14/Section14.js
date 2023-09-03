@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Chart from "react-apexcharts";
-
 import "./Section14.css";
-
 import { motion } from "framer-motion";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 
 const Section14 = () => {
   const [state, setState] = useState({
@@ -31,7 +31,7 @@ const Section14 = () => {
     },
     series: [
       {
-        name: "Participation",
+        name: "sales",
         data: [30, 49, 60, 70, 91, 125],
       },
     ],
@@ -43,6 +43,9 @@ const Section14 = () => {
       show: false,
     },
   };
+
+  const [counterOn, setCounterOn] = useState(false);
+
 
   return (
     <motion.div
@@ -72,6 +75,7 @@ const Section14 = () => {
             />
           </div>
         </div>
+      <ScrollTrigger style={{width:"100%"}} onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
         <div className="codeutsava__section14-menu2">
           <h1 className="codeutsava__section14-title">
             Last Year Paticipation
@@ -79,22 +83,33 @@ const Section14 = () => {
           <div>
             <div className="codeutsava__section14-format-card">
               <p className="codeutsava__section14-format-card-description">
-              <span style={{ color: "#38b6ff" }}>1000+ </span> TEAMS
+              <span style={{ color: "#38b6ff" }}>
+                {counterOn && <CountUp start={500} end={1000} duration={1.5} delay={0}/>}
+               +
+                </span> TEAMS
               </p>
             </div>
             <div className="codeutsava__section14-format-card">
               <p className="codeutsava__section14-format-card-description">
-              <span style={{ color: "#38b6ff" }}>100+ </span> COLLEGES
+              <span style={{ color: "#38b6ff" }}>
+              {counterOn && <CountUp start={50} end={100} duration={1.5} delay={0}/>}
+               +
+                </span> COLLEGES
               </p>
             </div>
             <div className="codeutsava__section14-format-card">
               <p className="codeutsava__section14-format-card-description">
-              <span style={{ color: "#38b6ff" }}>2000+ </span> DEVELOPERS
+              <span style={{ color: "#38b6ff" }}>
+              {counterOn && <CountUp start={1000} end={2000} duration={1.5} delay={0}/>}
+               +
+              </span> DEVELOPERS
               </p>
             </div>
           </div>
         </div>
+      </ScrollTrigger>
       </div>
+     
     </motion.div>
   );
 };
