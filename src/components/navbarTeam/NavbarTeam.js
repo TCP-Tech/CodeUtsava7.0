@@ -4,6 +4,7 @@ import "./NavbarTeam.css";
 import codeutsava from "../../assets/images/codeutsava.png";
 import tcp from "../../assets/images/tcp.png";
 import downArrow from "../../assets/images/downArrow.svg";
+import feedBack from "../../assets/images/feedback.svg";
 import brochure from "../../assets/images/Codeutsava_Brochure_6.0.pdf";
 import { motion } from "framer-motion";
 import { headerVariants } from "../../motionUtils";
@@ -45,6 +46,16 @@ const NavbarTeam = () => {
               <img src={downArrow} />
               <a href={brochure} download="Brochure">
                 BROCHURE
+              </a>
+            </button>
+            <button className="codeutsava__navbarTeam-brochure-button feedback-button">
+              <img src={feedBack} alt="Feedback" />
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfHv8OJ7jkp9thPyPx1HrWJNPoGZ2z7FaFtIqpz7lO3dIqqgg/viewform?usp=sf_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                FEEDBACK
               </a>
             </button>
           </div>
@@ -96,12 +107,24 @@ const NavbarTeam = () => {
               </h3>
             </Link>
           </li>
+          <div className="codeutsava__navbarTeam-hamburger-brochure_feedback-button">
           <button className="codeutsava__navbarTeam-hamburger-brochure-button codeutsava__navbarTeam-brochure-button">
             <img src={downArrow} />
             <a href={brochure} download="Brochure">
-              Download Brochure
+              Brochure
             </a>
           </button>
+          <button className="codeutsava__navbarTeam-brochure-button feedback-button codeutsava__navbarTeam-hamburger-brochure-button">
+              <img src={feedBack} alt="Feedback" />
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfHv8OJ7jkp9thPyPx1HrWJNPoGZ2z7FaFtIqpz7lO3dIqqgg/viewform?usp=sf_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Feedback
+              </a>
+            </button>
+            </div>
         </ul>
       </header>
     </motion.div>
