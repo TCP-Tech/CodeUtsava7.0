@@ -17,6 +17,7 @@ import Footer from "../../components/footer/Footer";
 import Section11 from "../../sections/section11/Section11";
 import Section12 from "../../sections/section12/Section12";
 import Section13 from "../../sections/section13/Section13";
+import Section14 from "../../sections/section14/Section14";
 export default class HomePage extends Component {
   render() {
     return (
@@ -30,6 +31,7 @@ export default class HomePage extends Component {
         <InfiniteCarousel />
         <div className="container mx-auto">
           <Section2 />
+          <Section14/>
           <Section3 />
           <Section4 />
           <Section5 />
