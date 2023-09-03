@@ -147,7 +147,7 @@ const Section1 = () => {
       >
         <a href="#aboutus">Scroll Down</a>
         <svg
-          fill="#38b6ff"
+          fill="var(--secondary-c)"
           width="16"
           height="16"
           xmlns="http://www.w3.org/2000/svg"

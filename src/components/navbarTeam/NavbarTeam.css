@@ -66,15 +66,14 @@
     padding: 10px 20px;
     border-radius: 4px;
     border: none;
-    color: white;
+    color: black;
     cursor: pointer;
     min-width: 110px;
-    background-color: #004AAD;
+    background-color: var(--primary-c);
   }
 
   .codeutsava__navbarTeam-brochure-button img{
     width: 16px;
-    filter: invert(100%);
   }
   .codeutsava__navbarTeam-brochure-button a{
     font-size: 12px;
@@ -92,7 +91,7 @@
     color: white;
     cursor: pointer;
     width: 50%;
-    background-color: #004AAD;
+    background-color: var(--primary-c);
   }
 
   .codeutsava__navbarTeam-brochure-button:hover{
@@ -153,7 +152,7 @@
     margin-top: 4px;
     display: block;
     content: "";
-    border-bottom: 2px solid #38b6ff;
+    border-bottom: 2px solid var(--secondary-c);
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
   }

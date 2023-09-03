@@ -142,7 +142,7 @@ const Footer = () => {
           <a href="#home">
             Back to Top
             <svg
-              fill="#004AAD"
+              fill="#eedb00"
               height="20"
               width="20"
               xmlns="http://www.w3.org/2000/svg"

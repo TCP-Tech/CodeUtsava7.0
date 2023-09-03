@@ -22,7 +22,7 @@ const Section2 = () => {
             <WordGlobe />
           </div>
           <div className="codeutsava__section2-content">
-            <span style={{ color: "#38b6ff" }}>CodeUtsava 6.0</span> is an event
+            <span style={{ color: "var(--secondary-c)" }}>CodeUtsava 7.0</span> is an event
             being organized by Turing Club of Programmers, the Official Coding
             Club of NIT Raipur. It aims to foster and nurture invigorating
             coding culture among the students of the Institute through its

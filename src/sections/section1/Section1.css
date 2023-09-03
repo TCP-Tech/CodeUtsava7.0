@@ -34,7 +34,7 @@
   font-size: 36px;
   line-height: 82px;
   letter-spacing: 1px;
-  color: #38b6ff;
+  color: var(--secondary-c);
   text-transform: uppercase;
 }
 
@@ -148,7 +148,7 @@
 }
 
 .codeutsava__section1-side-links a svg:hover{
-  fill: #38b6ff;
+  fill: var(--secondary-c);
   transition: all 0.2s ease-in-out;
 }
 
@@ -181,7 +181,7 @@
 }
 
 .codeutsava__section1-scrollDown a:hover{
-  color: #38b6ff;
+  color: var(--secondary-c);
   transition: all 0.2s ease-in-out;
 }
 

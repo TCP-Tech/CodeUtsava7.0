@@ -49,9 +49,9 @@
 
 .codeutsava__section8-button:hover {
   transition: all 0.2s ease-in-out;
-  color: white;
-  background-color: #38b6ff;
-  border: 1px solid #38b6ff;
+  color: black;
+  background-color: var(--secondary-c);
+  border: 1px solid var(--secondary-c);
 }
 
 @media screen and (max-width: 650px) {
