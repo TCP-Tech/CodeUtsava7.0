@@ -17,12 +17,17 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    gap: 2rem;
+    gap: 0rem;
     width: 100%;
+    padding: 0 64px;
 }
 
 .codeutsava__section14-menu1 div{
-    padding: 0 5px;
+    /* margin: 0 30px; */
+    width: 100%;
+}
+.codeutsava__section14-left, .codeutsava__section14-right{
+    padding: 0 48px;
 }
 
 .codeutsava__section14-title{
@@ -37,11 +42,12 @@
 
 @media screen and (max-width:1150px){
     .codeutsava__section14-body{
-        margin: 0 3rem;
+        margin: 0 1rem;
     }
     .codeutsava__section14-menu1{
         gap: 1rem;
         flex-direction: column;
+        padding: 0;
     }
     .codeutsava__section14-title{
         font-size: 36px;
@@ -51,7 +57,7 @@
 
 @media screen and (max-width:650px){
     .codeutsava__section14-body{
-        margin: 0 3rem;
+        margin: 0 1rem;
     }
     .codeutsava__section14-menu11{
         max-width: 480px;
@@ -65,7 +71,7 @@
 @media screen and (max-width:450px){
     .codeutsava__section14-menu1{
         max-width: 310px;
-    }    
+    }   
 }
 
 .codeutsava__section14-menu2{
@@ -121,18 +127,6 @@
     }
   }
   
-  @media(width<1000px) {
-    .codeutsava__section14-menu2>div{
-        flex-direction: column;
-        padding: 0;
-        justify-content: center;
-        align-items: center;
-    }
-    .codeutsava__section14-format-card{
-        width: 100%;
-        margin:25px;
-    }
-  }
   .apexcharts-xaxis-label, .apexcharts-yaxis-label {
     fill: #ffffffd0;
     font-size: 12px;
@@ -147,3 +141,33 @@
   .apexcharts-xaxis-title-text:hover, .apexcharts-yaxis-title-text:hover {
     fill: #eedb00;
   }
+
+  @media(width<1000px) {
+    .codeutsava__section14-menu2>div{
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .codeutsava__section14-format-card{
+        width: 100%;
+        margin:25px;
+    }
+    .apexcharts-xaxis-label, .apexcharts-yaxis-label {
+        font-size: 9px;
+      }
+    
+      .apexcharts-xaxis-title-text, .apexcharts-yaxis-title-text {
+        font-size: 11px;
+        font-weight: 300;
+      }
+      .codeutsava__section14-left, .codeutsava__section14-right{
+        padding: 0;
+    }
+  }
+
+  .apexcharts-menu-icon, .apexcharts-reset-icon, .apexcharts-zoom-icon {
+    transform: scale(.85);
+    display: flex;
+    justify-content: end;
+}

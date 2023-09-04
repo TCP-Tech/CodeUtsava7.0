@@ -1,12 +1,12 @@
-import React, { Component, useEffect } from "react";
+import React, { useEffect, useRef, useIsInViewport } from "react";
 import "./Section1.css";
 import codeutsavaTitle from "../../assets/images/codeutsavaTitle.png";
 import discord from "../../assets/images/discord.svg";
 
-import { motion, transform } from "framer-motion";
+import { animate, motion, transform } from "framer-motion";
 import { staggerChildren, fadeIn } from "../../motionUtils";
 import "../../../node_modules/font-awesome/css/font-awesome.min.css";
-import register from "../../assets/images/register.pdf"
+import register from "../../assets/images/register.pdf";
 
 const Section1 = () => {
   React.useEffect(() => {
@@ -19,6 +19,133 @@ const Section1 = () => {
       document.body.removeChild(script);
     };
   }, []);
+  // const canvasRef = useRef(null);
+  // const f = useIsInViewport(canvasRef);
+
+  // useEffect(() => {
+  //   // Draw canvas here...
+  //   const canvas = canvasRef.current;
+  //   const c = canvas.getContext("2d");
+
+  //   canvas.width = window.innerWidth;
+  //   canvas.height = window.innerHeight;
+
+  //   var particleCount = 750;
+  //   var mouse = {
+  //     x: window.innerWidth / 2,
+  //     y: window.innerHeight / 2,
+  //   };
+
+  //   canvas.addEventListener("mousemove", function (event) {
+  //     mouse.x = event.clientX - canvas.width / 2;
+  //     mouse.y = event.clientY - canvas.height / 2;
+  //   });
+
+    
+
+  //   function LightParticle(x, y, radius, color) {
+  //     this.x = x;
+  //     this.y = y;
+  //     this.radius = radius;
+  //     this.color = color;
+
+  //     this.update = function () {
+  //       this.draw();
+  //     };
+
+  //     this.draw = function () {
+  //       c.save();
+  //       c.beginPath();
+  //       c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+  //       c.shadowColor = this.color;
+  //       c.shadowBlur = 15;
+  //       c.shadowOffsetX = 0;
+  //       c.shadowOffsetY = 0;
+  //       c.fillStyle = this.color;
+  //       c.fill();
+  //       c.closePath();
+  //       c.restore();
+  //     };
+  //   }
+
+  //   var lightParticles = [];
+
+  //   var timer = 0;
+  //   var opacity = 1;
+  //   var speed = 0.0005;
+  //   var colors = ["#eedb00", "#fbfb00", "#fbfbdd", "#333333", "#F2E8C9"];
+
+  //   var initializeParticles;
+
+  //   (initializeParticles = function () {
+  //     for (var i = 0; i < particleCount; i++) {
+  //       var randomColorIndex = Math.floor(Math.random() * 6);
+  //       var randomRadius = Math.random() * 2;
+
+  //       // Ensure particles are spawned past screen width and height so
+  //       // there will be no missing stars when rotating canvas
+  //       var x = Math.random() * (canvas.width + 200) - (canvas.width + 200) / 2;
+  //       var y = Math.random() * (canvas.width + 200) - (canvas.width + 200) / 2;
+  //       lightParticles.push(
+  //         new LightParticle(x, y, randomRadius, colors[randomColorIndex])
+  //       );
+  //     }
+  //   })();
+
+  //   function animate() {
+  //     window.requestAnimationFrame(animate);
+
+  //     c.save();
+  //     if (isMouseDown === true) {
+  //       // Ease into the new opacity
+  //       var desiredOpacity = 0.01;
+  //       opacity += (desiredOpacity - opacity) * 0.03;
+  //       c.fillStyle = "rgba(0, 0, 0," + opacity + ")";
+
+  //       // Ease into the new speed
+  //       var desiredSpeed = 0.012;
+  //       speed += (desiredSpeed - speed) * 0.01;
+  //       timer += speed;
+  //     } else {
+  //       // Ease back to the original opacity
+  //       var originalOpacity = 1;
+  //       opacity += (originalOpacity - opacity) * 0.01;
+  //       c.fillStyle = "rgba(0, 0, 0, " + opacity + ")";
+
+  //       // Ease back to the original speed
+  //       var originalSpeed = 0.001;
+  //       speed += (originalSpeed - speed) * 0.01;
+  //       timer += speed;
+  //     }
+
+  //     c.fillRect(0, 0, canvas.width, canvas.height);
+  //     c.translate(canvas.width / 2, canvas.height / 2);
+  //     c.rotate(timer);
+
+  //     for (var i = 0; i < lightParticles.length; i++) {
+  //       lightParticles[i].update();
+  //     }
+
+  //     c.restore();
+  //   }
+
+  //   var isMouseDown = false;
+
+  //   window.addEventListener("mousedown", function () {
+  //     isMouseDown = true;
+  //   });
+
+  //   window.addEventListener("mouseup", function () {
+  //     isMouseDown = false;
+  //   });
+
+    
+  //   return () => {
+  //     window.cancelAnimationFrame(animate)
+  //   }
+  // }, []);
+  // console.log(f);
+
   return (
     <motion.div
       initial="hidden"
@@ -32,6 +159,11 @@ const Section1 = () => {
         variants={fadeIn("down", "tween", 0.5, 1)}
         className="codeutsava__section1-body"
       >
+        {/* <canvas
+          className="codeutsava__section1-bg-canvas"
+          ref={canvasRef}
+        /> */}
+
         <div className="codeutsava__section1-menu">
           <div className="codeutsava__section1-heading">Welcome To</div>
           <div className="codeutsava__section1-image">
@@ -57,12 +189,20 @@ const Section1 = () => {
             style={{ height: "44px", width: "312px" }}
           ></div>
           <div className="codeutsava__section1-discord">
-            <a className="codeutsava__section1-discord-link" href="https://discord.gg/cDR4jkb7wZ" target="_blank">
+            <a
+              className="codeutsava__section1-discord-link"
+              href="https://discord.gg/cDR4jkb7wZ"
+              target="_blank"
+            >
               <img src={discord} />
             </a>
           </div>
           <div className="codeutsava__section1-register">
-            <a className="codeutsava__section1-register-link" href={register} download="Resgistration Instructions">
+            <a
+              className="codeutsava__section1-register-link"
+              href={register}
+              download="Resgistration Instructions"
+            >
               Steps To Register On Devfolio
             </a>
           </div>
