@@ -63,7 +63,7 @@ const Section14 = () => {
             <Chart
               options={state.options}
               series={state.series}
-              width="500"
+              // width="400"
               type="bar"
             />
           </div>
@@ -71,7 +71,7 @@ const Section14 = () => {
             <Chart
               options={optionsWithoutToolbar}
               series={state.series}
-              width="500"
+              // width="400"
               type="area"
             />
           </div>
