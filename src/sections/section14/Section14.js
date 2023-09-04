@@ -32,8 +32,14 @@ const Section14 = () => {
     },
     series: [
       {
-        name: "sales",
-        data: [30, 49, 60, 70, 91, 125],
+        name: "Total Number of Teams",
+        data: [100, 500, 700, 1000, 1000, 1100],
+      },
+    ],
+    series: [
+      {
+        name: "Total Paticipations",
+        data: [500, 1000, 1000, 2500, 3000, 5000],
       },
     ],
   });
@@ -61,18 +67,46 @@ const Section14 = () => {
         <div className="codeutsava__section14-menu1">
           <div className="codeutsava__section14-left">
             <Chart
-              options={state.options}
+               options={{
+                ...optionsWithoutToolbar,
+                xaxis: {
+                  ...optionsWithoutToolbar.xaxis,
+                  categories: ["2016", "2018", "2019", "2020", "2022", "2023"],
+                  title: {
+                    text: "Year",
+                  },
+                },
+                yaxis: {
+                  ...optionsWithoutToolbar.yaxis,
+                  title: {
+                    text: "Total Number of Teams",
+                  },
+                },
+              }}
               series={state.series}
-              // width="400"
-              type="bar"
+              type="area"
             />
           </div>
           <div className="codeutsava__section14-right">
             <Chart
-              options={optionsWithoutToolbar}
+              options={{
+                ...state.options,
+                xaxis: {
+                  ...state.options.xaxis,
+                  categories: ["2016", "2018", "2019", "2020", "2022", "2023"],
+                  title: {
+                    text: "Year",
+                  },
+                },
+                yaxis: {
+                  ...state.options.yaxis,
+                  title: {
+                    text: "Total Paticipations",
+                  },
+                },
+              }}
               series={state.series}
-              // width="400"
-              type="area"
+              type="bar"
             />
           </div>
         </div>
