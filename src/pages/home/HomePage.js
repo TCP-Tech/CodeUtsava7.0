@@ -18,10 +18,13 @@ import Section11 from "../../sections/section11/Section11";
 import Section12 from "../../sections/section12/Section12";
 import Section13 from "../../sections/section13/Section13";
 import Section14 from "../../sections/section14/Section14";
+import Chatbot from "../../components/Chatbot/Chatbot";
+
 export default class HomePage extends Component {
   render() {
     return (
       <>
+        <Chatbot/>
         <div className="codeutsava__navbar-container">
           <Navbar />
         </div>
@@ -47,6 +50,7 @@ export default class HomePage extends Component {
         <div className="codeutsava__footer-container">
           <Footer />
         </div>
+
       </>
     );
   }
