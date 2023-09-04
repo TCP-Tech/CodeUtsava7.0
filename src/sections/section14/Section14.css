@@ -93,7 +93,7 @@
     width: 25%;
     margin: 0 20px;
     background-color: #48586180;
-    border: 2px solid #38b6ff;
+    border: 2px solid #eedb00;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
@@ -139,11 +139,11 @@
   }
 
   .apexcharts-xaxis-title-text, .apexcharts-yaxis-title-text {
-    fill: #38b6ffd0;
+    fill: #eedb00;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 1px;
   }
   .apexcharts-xaxis-title-text:hover, .apexcharts-yaxis-title-text:hover {
-    fill: #38b6ff;
+    fill: #eedb00;
   }

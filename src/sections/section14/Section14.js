@@ -28,6 +28,7 @@ const Section14 = () => {
       tooltip: {
         enabled: false,
       },
+      colors: ["#eedb00"],
     },
     series: [
       {
@@ -83,7 +84,7 @@ const Section14 = () => {
           <div>
             <div className="codeutsava__section14-format-card">
               <p className="codeutsava__section14-format-card-description">
-              <span style={{ color: "#38b6ff" }}>
+              <span style={{ color: "#eedb00" }}>
                 {counterOn && <CountUp start={500} end={1000} duration={1.5} delay={0}/>}
                +
                 </span> TEAMS
@@ -91,7 +92,7 @@ const Section14 = () => {
             </div>
             <div className="codeutsava__section14-format-card">
               <p className="codeutsava__section14-format-card-description">
-              <span style={{ color: "#38b6ff" }}>
+              <span style={{ color: "#eedb00" }}>
               {counterOn && <CountUp start={50} end={100} duration={1.5} delay={0}/>}
                +
                 </span> COLLEGES
@@ -99,7 +100,7 @@ const Section14 = () => {
             </div>
             <div className="codeutsava__section14-format-card">
               <p className="codeutsava__section14-format-card-description">
-              <span style={{ color: "#38b6ff" }}>
+              <span style={{ color: "#eedb00" }}>
               {counterOn && <CountUp start={1000} end={2000} duration={1.5} delay={0}/>}
                +
               </span> DEVELOPERS
