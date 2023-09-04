@@ -185,6 +185,8 @@
   border-bottom: 2px solid var(--secondary-c);
   transform: scaleX(0);
   transition: transform 0.5s ease-in-out;
+  box-shadow: 0 0 5px var(--secondary-c), 0 0 12px var(--secondary-c),
+    0 0 15px var(--secondary-c), 0 0 25px var(--secondary-c);
 }
 .codeutsava__navbarTeam-menu-heading:hover::after {
   transform: scaleX(0.8);
