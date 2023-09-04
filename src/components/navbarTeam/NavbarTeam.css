@@ -48,16 +48,16 @@
   height: 50px;
 }
 
-.codeutsava__navbarTeam-brochure{
+.codeutsava__navbarTeam-brochure {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.codeutsava__navbarTeam-brochure-button{
+.codeutsava__navbarTeam-brochure-button {
   font-family: var(--font-family);
-  margin-left: 2rem;
+  margin-right: 2rem;
   font-size: 16px;
   display: flex;
   flex-direction: row;
@@ -72,21 +72,21 @@
   background-color: var(--primary-c);
 }
 
-.codeutsava__navbarTeam-brochure-button img{
+.codeutsava__navbarTeam-brochure-button img {
   width: 16px;
 }
-.codeutsava__navbarTeam-brochure-button a{
+.codeutsava__navbarTeam-brochure-button a {
   font-size: 12px;
   margin-left: 8px;
 }
-.codeutsava__navbarTeam-brochure-button:hover img{
+.codeutsava__navbarTeam-brochure-button:hover img {
   filter: invert(0%);
 }
-.codeutsava__navbarTeam-hamburger-brochure_feedback-button{
+.codeutsava__navbarTeam-hamburger-brochure_feedback-button {
   display: flex;
 }
 
-.codeutsava__navbarTeam-hamburger-brochure-button{
+.codeutsava__navbarTeam-hamburger-brochure-button {
   margin: 4rem auto;
   padding: 20px 24px;
   border-radius: 4px;
@@ -96,7 +96,7 @@
   width: 30%;
   background-color: var(--primary-c);
 }
-.codeutsava__navbarTeam-hamburger-feedback-button{
+.codeutsava__navbarTeam-hamburger-feedback-button {
   margin: 4rem auto;
   padding: 20px 24px;
   border-radius: 4px;
@@ -107,28 +107,28 @@
   background-color: var(--primary-c);
 }
 
-.codeutsava__navbarTeam-brochure-button:hover{
+.codeutsava__navbarTeam-brochure-button:hover {
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
 }
 
-.codeutsava__navbar-brochure-button.feedback-button {
-  margin-left: 1rem;
+.codeutsava__navbarTeam-brochure-button.feedback-button {
+  margin-left: 2rem;
+  margin-right: 0rem;
 }
 
 .codeutsava__navbar-brochure-button.feedback-button img {
-  width: 16px; 
+  width: 16px;
 }
 
 .codeutsava__navbar-brochure-button.feedback-button a {
-  font-size: 12px; 
-  margin-left: 8px; 
+  font-size: 12px;
+  margin-left: 8px;
 }
 
 .codeutsava__navbar-brochure-button.feedback-button:hover img {
   filter: invert(0%);
 }
-
 
 .codeutsava__navbarTeam-hamburger-logo {
   width: 50px;
@@ -206,13 +206,13 @@
     height: auto;
     display: flex;
   }
-  .codeutsava__navbarTeam-hamburger-nav{
+  .codeutsava__navbarTeam-hamburger-nav {
     padding: 10px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .codeutsava__navbarTeam-hamburger-logo{
+  .codeutsava__navbarTeam-hamburger-logo {
     width: 40px;
     height: 40px;
   }
@@ -227,10 +227,10 @@
     height: auto;
     display: flex;
   }
-  .codeutsava__navbarTeam-hamburger-nav{
+  .codeutsava__navbarTeam-hamburger-nav {
     padding: 4px;
   }
-  .codeutsava__navbarTeam-hamburger-brochure-button{
+  .codeutsava__navbarTeam-hamburger-brochure-button {
     width: 90%;
   }
 }
@@ -240,7 +240,7 @@
   height: 60px;
 }
 
-.hamburger-open{
+.hamburger-open {
   height: 100vh;
 }
 
@@ -290,7 +290,7 @@
   stroke-dashoffset: -64px;
 }
 
-.codeutsava__navbarTeam-hamburger-navlist{
+.codeutsava__navbarTeam-hamburger-navlist {
   display: none;
   padding: 12px 34px;
   flex-direction: column;
@@ -300,22 +300,22 @@
   flex: 1 1 0%;
 }
 
-.activeMenu{
+.activeMenu {
   transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
 }
 
-.codeutsava__navbarTeam-hamburger-navitem{
+.codeutsava__navbarTeam-hamburger-navitem {
   padding: 16px;
   border-bottom: 0.4px solid rgb(163, 163, 163);
 }
 
-.codeutsava__navbarTeam-hamburger-menu-heading{
+.codeutsava__navbarTeam-hamburger-menu-heading {
   font-family: var(--font-family);
   justify-content: space-evenly;
   font-style: normal;
   font-weight: 300;
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: 1rem;
   /* identical to box height, or 122% */
   letter-spacing: 1px;

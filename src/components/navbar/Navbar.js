@@ -27,8 +27,18 @@ const Navbar = () => {
     >
       <header className="codeutsava__navbar">
         <div className="codeutsava__navbar-body">
-          <div className="codeutsava__navbar-logo">
+          <div className="codeutsava__navbar-logo codeutsava__navbar-brochure">
             <img src={codeutsava} />
+            <button className="codeutsava__navbar-brochure-button feedback-button">
+              <img src={feedBack} alt="Feedback" />
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfHv8OJ7jkp9thPyPx1HrWJNPoGZ2z7FaFtIqpz7lO3dIqqgg/viewform?usp=sf_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                FEEDBACK
+              </a>
+            </button>
           </div>
           <nav className="codeutsava__navbar-menu">
             <ul className="codeutsava__navbar-navlist">
@@ -79,23 +89,13 @@ const Navbar = () => {
             </ul>
           </nav>
           <div className="codeutsava__navbar-logo codeutsava__navbar-brochure">
-            <img src={tcp} />
             <button className="codeutsava__navbar-brochure-button">
               <img src={downArrow} />
               <a href={brochure} download="Brochure">
                 BROCHURE
               </a>
             </button>
-            <button className="codeutsava__navbar-brochure-button feedback-button">
-              <img src={feedBack} alt="Feedback" />
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfHv8OJ7jkp9thPyPx1HrWJNPoGZ2z7FaFtIqpz7lO3dIqqgg/viewform?usp=sf_link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                FEEDBACK
-              </a>
-            </button>
+            <img src={tcp} />
           </div>
         </div>
       </header>
@@ -193,13 +193,13 @@ const Navbar = () => {
             </a>
           </li>
           <div className="codeutsava__navbar-hamburger-brochure_feedback-button">
-          <button className="codeutsava__navbar-hamburger-brochure-button codeutsava__navbar-brochure-button">
-            <img src={downArrow} />
-            <a href={brochure} download="Brochure">
-              Brochure
-            </a>
-          </button>
-          <button className="codeutsava__navbar-brochure-button feedback-button codeutsava__navbar-hamburger-brochure-button">
+            <button className="codeutsava__navbar-hamburger-brochure-button codeutsava__navbar-brochure-button">
+              <img src={downArrow} />
+              <a href={brochure} download="Brochure">
+                Brochure
+              </a>
+            </button>
+            <button className="codeutsava__navbar-brochure-button feedback-button codeutsava__navbar-hamburger-brochure-button">
               <img src={feedBack} alt="Feedback" />
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfHv8OJ7jkp9thPyPx1HrWJNPoGZ2z7FaFtIqpz7lO3dIqqgg/viewform?usp=sf_link"
@@ -209,7 +209,7 @@ const Navbar = () => {
                 Feedback
               </a>
             </button>
-            </div>
+          </div>
         </ul>
       </header>
     </motion.div>
