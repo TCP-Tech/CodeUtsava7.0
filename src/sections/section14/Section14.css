@@ -17,7 +17,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    gap: 7rem;
+    gap: 0rem;
     width: 100%;
     padding: 0 64px;
 }
@@ -25,6 +25,9 @@
 .codeutsava__section14-menu1 div{
     /* margin: 0 30px; */
     width: 100%;
+}
+.codeutsava__section14-left, .codeutsava__section14-right{
+    padding: 0 48px;
 }
 
 .codeutsava__section14-title{
@@ -158,4 +161,13 @@
         font-size: 11px;
         font-weight: 300;
       }
+      .codeutsava__section14-left, .codeutsava__section14-right{
+        padding: 0;
+    }
   }
+
+  .apexcharts-menu-icon, .apexcharts-reset-icon, .apexcharts-zoom-icon {
+    transform: scale(.85);
+    display: flex;
+    justify-content: end;
+}
