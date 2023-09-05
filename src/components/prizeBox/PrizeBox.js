@@ -1,6 +1,6 @@
 import React from "react";
 
-import '../../sections/section9/Section9.css';
+import '../../pages/home/sections/section9/Section9.css';
 
 const PrizeBox = ({title , cashPrize , prizeInfo }) =>{
     return (
