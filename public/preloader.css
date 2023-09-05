@@ -32,10 +32,10 @@
   height: 100px;
 }
 
-#root {
+/* #root {
   display: none;
   opacity: 0;
-}
+} */
 
 .button {
   font-family: "Poppins", sans-serif;
