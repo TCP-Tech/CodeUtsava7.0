@@ -4,7 +4,12 @@ import codeutsavaTitle from "../../assets/images/codeutsavaTitle.png";
 import discord from "../../assets/images/discord.svg";
 
 import { animate, motion, transform } from "framer-motion";
-import { staggerChildren, fadeIn } from "../../motionUtils";
+import {
+  staggerChildren,
+  fadeIn,
+  zoomIn,
+  textVariant,
+} from "../../motionUtils";
 import "../../../node_modules/font-awesome/css/font-awesome.min.css";
 import register from "../../assets/images/register.pdf";
 
@@ -124,7 +129,7 @@ const Section1 = () => {
 
       c.restore();
     }
-
+    animate();
     var isMouseDown = false;
 
     window.addEventListener("mousedown", function () {
@@ -145,6 +150,11 @@ const Section1 = () => {
       className="codeutsava__section1"
       id="home"
     >
+      <motion.canvas
+        className="codeutsava__section1-bg-canvas"
+        variants={textVariant(1.2)}
+        ref={canvasRef}
+      />
       <motion.div
         variants={fadeIn("down", "tween", 0.5, 1)}
         className="codeutsava__section1-body"
