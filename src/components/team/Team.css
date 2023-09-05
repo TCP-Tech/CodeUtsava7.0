@@ -1,0 +1,92 @@
+.codeutsava__team {
+  font-family: "Poppins";
+  margin: 2rem 0;
+  padding: 0rem 1rem;
+}
+
+.codeutsava__team-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.codeutsava__team-header-container{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.codeutsava__team-options-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.codeutsava__team-options-button img {
+  width: 20px;
+  margin-right: 1rem;
+  filter: invert(100%);
+  transform: rotate(90deg);
+}
+.codeutsava__team-options-button a {
+  font-size: 12px;
+  margin-left: 8px;
+}
+.codeutsava__team-options-button:hover img {
+  filter: invert(0%);
+}
+
+.codeutsava__team-header-container img{
+  width: 150px;
+  height: auto;
+}
+
+
+.codeutsava__team-main-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 2rem;
+  }
+
+.codeutsava__team-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 4rem 0;
+  color: white;
+}
+
+.codeutsava__team-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 650px) {
+  .codeutsava__team-header-container img{
+    width: 80px;
+    height: auto;
+  }
+  .codeutsava__team-main-title {
+    font-size: 24px;
+    margin-left: 1rem;
+  }
+  .codeutsava__team-speakers {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .codeutsava__team-title {
+    font-size: 36px;
+  }
+}
