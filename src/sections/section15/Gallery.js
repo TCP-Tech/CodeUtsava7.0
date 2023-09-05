@@ -1,6 +1,5 @@
 import React,{useState} from'react';
 import './Gallery.css';
-import CloseIcon from '@material-ui/icons/Close';
 import { motion } from "framer-motion";
 
 import Img1 from'./img/img1.jpg';
@@ -60,14 +59,14 @@ const Gallery = () => {
         
     ]
 
-    const [model, setModel] = useState(false);
-    const [tempimgSrc, setTempImgSrc] = useState('');
+    // const [model, setModel] = useState(false);
+    // const [tempimgSrc, setTempImgSrc] = useState('');
 
-    const getImg = (imgSrc) =>{
+    // const getImg = (imgSrc) =>{
 
-        setTempImgSrc(imgSrc);
-        setModel(true);
-    }
+    //     setTempImgSrc(imgSrc);
+    //     setModel(true);
+    // }
     return (
         <>
         <motion.div
@@ -79,17 +78,13 @@ const Gallery = () => {
         >
         <div className = "codeutsava__section15-body"> 
         <div className="codeutsava__section15-title">Glimpses</div>
-        <div className = {model? "model open" : "model"}>
-            <img src = {tempimgSrc} alt = "img"/>
-            <CloseIcon onClick = {() => setModel(false)}/>
-        </div>
         <div className = "gallery">
 
             {data.map((item,index) => {
 
                 return (
 
-                    <div className = "pics" key = {index} onClick={()=> getImg(item.imgSrc)}>
+                    <div className = "pics" key = {index} >
                         <img src = {item.imgSrc} style = {{width: '100%' }} alt = "img"/>
                     </div>
 
