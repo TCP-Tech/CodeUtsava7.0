@@ -212,6 +212,9 @@
 }
 
 @media screen and (max-width: 650px) {
+  .codeutsava__section1-discord, .codeutsava__section1-register{
+    margin-left: 0;
+  }
   .codeutsava__section1-bg-canvas{
     display: none !important;
   }

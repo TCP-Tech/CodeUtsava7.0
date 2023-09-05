@@ -33,7 +33,7 @@ const Team = ({year}) => {
             &lt;Team TCP {year}&gt;
           </div>
         </div>
-          <Link className="codeutsava__team-options-button" to="/team">
+          <Link className="codeutsava__team-options-button" to="/team" style={{marginTop: '2rem'}}>
             <img src={downArrow} />
             Previous Year Teams
           </Link>
