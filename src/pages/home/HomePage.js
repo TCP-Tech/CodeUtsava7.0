@@ -19,6 +19,7 @@ import Section12 from "../../sections/section12/Section12";
 import Section13 from "../../sections/section13/Section13";
 import Section14 from "../../sections/section14/Section14";
 import Gallery from "../../sections/section15/Gallery";
+import ContactSection from "../../components/ContactSection/ContactSection";
 export default class HomePage extends Component {
   render() {
     return (
@@ -44,6 +45,7 @@ export default class HomePage extends Component {
           <Section6 />
           <Section7 />
           <Section9 />
+          <ContactSection/>
           <Section10 />
         </div>
         <div className="codeutsava__footer-container">

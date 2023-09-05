@@ -182,6 +182,18 @@
 }
 
 @media screen and (max-width: 650px) {
+
+  .codeutsava__footer-social-links-container a svg {
+    margin: 0 10px;
+  }
+
+  .codeutsava__footer-container2-right-links {
+    padding: 0;
+  }
+  .codeutsava__footer-container2-right{
+    padding: 10px;
+  }
+
   .codeutsava__footer-container1 {
     flex-direction: column;
     align-items: center;
