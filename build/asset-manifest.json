@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4fe4319e.css",
-    "main.js": "/static/js/main.9448a8ae.js",
+    "main.css": "/static/css/main.fe6d7123.css",
+    "main.js": "/static/js/main.0c45b714.js",
     "static/js/787.a5abe7b0.chunk.js": "/static/js/787.a5abe7b0.chunk.js",
     "static/media/event8.png": "/static/media/event8.de3d55dd28aacdcbecd5.png",
     "static/media/Codeutsava_Brochure_6.0.pdf": "/static/media/Codeutsava_Brochure_6.0.2046326550010cee0f90.pdf",
@@ -51,16 +51,16 @@
     "static/media/sponser9.png": "/static/media/sponser9.229bb1c6f1f90f418645.png",
     "static/media/codeutsava.png": "/static/media/codeutsava.e557cc0711440ed6bf3e.png",
     "static/media/discord.svg": "/static/media/discord.c4900a9df1134fa22b7796e5733291da.svg",
-    "static/media/hackathonBg.svg": "/static/media/hackathonBg.cd1690b4db22f27cfa42.svg",
     "index.html": "/index.html",
+    "static/media/hackathonBg.svg": "/static/media/hackathonBg.cd1690b4db22f27cfa42.svg",
     "static/media/feedback.svg": "/static/media/feedback.f0f4b0b1b12d1ec19759f47b70ef2e9a.svg",
     "static/media/downArrow.svg": "/static/media/downArrow.c7c2c2882bde892b5c10a4ef2860a3c5.svg",
-    "main.4fe4319e.css.map": "/static/css/main.4fe4319e.css.map",
-    "main.9448a8ae.js.map": "/static/js/main.9448a8ae.js.map",
+    "main.fe6d7123.css.map": "/static/css/main.fe6d7123.css.map",
+    "main.0c45b714.js.map": "/static/js/main.0c45b714.js.map",
     "787.a5abe7b0.chunk.js.map": "/static/js/787.a5abe7b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fe4319e.css",
-    "static/js/main.9448a8ae.js"
+    "static/css/main.fe6d7123.css",
+    "static/js/main.0c45b714.js"
   ]
 }
