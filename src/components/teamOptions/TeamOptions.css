@@ -1,0 +1,108 @@
+.codeutsava__team-options {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: "Poppins";
+}
+
+.codeutsava__team-options-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.codeutsava__team-options-header-container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.codeutsava__team-options-header-container img {
+  width: 150px;
+  height: auto;
+}
+
+.codeutsava__team-options-main-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+  margin-left: 2rem;
+}
+
+.codeutsava__team-options-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 4rem 0;
+  color: white;
+}
+
+.codeutsava__team-options-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.codeutsava__team-options-content-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.codeutsava__team-options-button {
+  cursor: pointer;
+  border: 1px solid #d7d7d7;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+  color: #d7d7d7;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.codeutsava__team-options-button:hover {
+  transition: all 0.2s ease-in-out;
+  color: black;
+  background-color: var(--secondary-c);
+  border: 1px solid var(--secondary-c);
+}
+
+@media screen and (max-width: 650px) {
+  .codeutsava__team-options-content-container {
+    flex-direction: column;
+  }
+  .codeutsava__team-options-header-container img {
+    width: 80px;
+    height: auto;
+  }
+  .codeutsava__team-options-main-title {
+    font-size: 24px;
+    margin-left: 1rem;
+  }
+  .codeutsava__team-options-speakers {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .codeutsava__team-options-title {
+    font-size: 36px;
+  }
+}
