@@ -1,5 +1,5 @@
 import React,{useState} from'react';
-import './Gallery.css'
+import './Gallery.css';
 import CloseIcon from '@material-ui/icons/Close';
 import { motion } from "framer-motion";
 
@@ -104,3 +104,4 @@ const Gallery = () => {
 }
 
 export default Gallery;
+
