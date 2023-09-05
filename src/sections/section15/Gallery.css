@@ -122,7 +122,7 @@
   
   }
   
-  .gallery.pics:hover {
+  .gallery img:hover {
 
     filter: opacity(0.8);
   }
