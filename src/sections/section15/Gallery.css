@@ -1,0 +1,130 @@
+
+.codeutsava__section15 {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  color: white;
+  font-family: "Poppins";
+}
+.codeutsava__section15-body {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.codeutsava__section15-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 82px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 60px 10px 60px 10px;
+}
+
+.gallery {
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+  
+    -webkit-column-width: 20%;
+    -moz-column-width: 20%;
+    column-width: 20%;
+    padding: 0 12px;
+  }
+  
+  .gallery.pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    cursor: pointer;
+    margin-bottom: 12px;
+  }
+
+  .pics img{
+
+    border: 2px solid #eedb00;
+  }  
+
+  @media (max-width: 1150px) {
+
+    .codeutsava__section15-body{
+      margin: 0 1rem;
+    }
+    .codeutsava__section15-title{
+        font-size: 36px;
+    }
+
+    .gallery {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+  
+    }
+  }
+  @media (max-width: 450px) {
+    .gallery {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+
+    }
+  }
+  
+  .model {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: opacity .4s ease, visibility .4s ease,
+      transform .5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    overflow: hidden;
+    z-index: 999;
+  }
+  
+  .model.open {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .model img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: 20px 0 20px;
+    margin: 0 auto;
+  }
+  
+  .model.open svg{
+  
+      position:fixed;
+      top:70px;
+      right:10px;
+      width:2rem;
+      height:2rem;
+      padding:5px;
+      background-color: rgb( 0, 0, 0, 0.4);
+      color:#fff;
+      cursor:pointer;
+  
+  }
+  
+  .gallery.pics:hover {
+
+    filter: opacity(0.8);
+  }
+  
+  
