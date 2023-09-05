@@ -159,6 +159,7 @@ const Section1 = () => {
         variants={fadeIn("down", "tween", 0.5, 1)}
         className="codeutsava__section1-body"
       >
+        <canvas className="codeutsava__section1-bg-canvas" ref={canvasRef} />
         <div className="codeutsava__section1-menu">
           <div className="codeutsava__section1-heading">Welcome To</div>
           <div className="codeutsava__section1-image">
