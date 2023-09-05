@@ -43,8 +43,8 @@ export default class HomePage extends Component {
           <Section6 />
           <Section7 />
           <Section9 />
-          <Section10 />
           <ContactSection/>
+          <Section10 />
         </div>
         <div className="codeutsava__footer-container">
           <Footer />
