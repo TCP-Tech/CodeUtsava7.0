@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe6d7123.css",
-    "main.js": "/static/js/main.0c45b714.js",
+    "main.css": "/static/css/main.ba6c9816.css",
+    "main.js": "/static/js/main.8804a76d.js",
     "static/js/787.a5abe7b0.chunk.js": "/static/js/787.a5abe7b0.chunk.js",
     "static/media/event8.png": "/static/media/event8.de3d55dd28aacdcbecd5.png",
     "static/media/Codeutsava_Brochure_6.0.pdf": "/static/media/Codeutsava_Brochure_6.0.2046326550010cee0f90.pdf",
+    "static/media/img1.jpg": "/static/media/img1.c5a3a8e1d4c197ca9126.jpg",
+    "static/media/img3.jpg": "/static/media/img3.4848f604e91f846214f7.jpg",
+    "static/media/img5.jpg": "/static/media/img5.79a85e5d387c79b5e008.jpg",
+    "static/media/img10.jpg": "/static/media/img10.d4c783689af68accfe2e.jpg",
     "static/media/event3.png": "/static/media/event3.c174b92c3a08a808beab.png",
-    "static/media/samarth_batav.jpg": "/static/media/samarth_batav.c2e0716ac7b8bd84b3fd.jpg",
+    "static/media/img7.jpg": "/static/media/img7.b976b8d95945592437c9.jpg",
+    "static/media/img8.jpg": "/static/media/img8.7c17cdac5c8629f6800c.jpg",
+    "static/media/img9.jpg": "/static/media/img9.aca13b82cc00991703a7.jpg",
+    "static/media/img2.jpg": "/static/media/img2.8f0233a70b26f1008ba9.jpg",
+    "static/media/img4.jpg": "/static/media/img4.08a13d2205fcb8c86522.jpg",
     "static/media/register.pdf": "/static/media/register.e262e0d5af38c33c6bc5.pdf",
     "static/media/event6.png": "/static/media/event6.8f127c89117f27d69049.png",
-    "static/media/aditya.jpg": "/static/media/aditya.e6260b5bb3d2e09146e0.jpg",
     "static/media/sponser14.png": "/static/media/sponser14.b2687fac2a94235c095f.png",
-    "static/media/astitva.jpg": "/static/media/astitva.80fb2261fb997a463d06.jpg",
     "static/media/event4.png": "/static/media/event4.0348e14357544a3d6423.png",
     "static/media/event2.png": "/static/media/event2.03756f5d1d2e9d649bd8.png",
     "static/media/p3.png": "/static/media/p3.a75804d6c15ffca405e0.png",
@@ -19,12 +25,10 @@
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/event1.png": "/static/media/event1.0eb1db5348cf28b8dc0a.png",
     "static/media/event5.png": "/static/media/event5.d0085b06af3f0b310f04.png",
-    "static/media/sugandha.jpg": "/static/media/sugandha.ff0c2e7da28b79f341b5.jpg",
     "static/media/NIT.svg": "/static/media/NIT.592430019cff1e793b7cbc6283fb1085.svg",
     "static/media/codeutsavaTitle.png": "/static/media/codeutsavaTitle.9a86298a87d581695ddf.png",
     "static/media/sponser10.png": "/static/media/sponser10.c0a8585fcb83b7a6b2db.png",
     "static/media/speaker2.jpg": "/static/media/speaker2.fbd5b5dfee0698151923.jpg",
-    "static/media/sahil.jpg": "/static/media/sahil.1a805d2f899b5a5e3c3c.jpg",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/sponser6.png": "/static/media/sponser6.00ac2802f6d9a13779bb.png",
@@ -55,12 +59,12 @@
     "static/media/hackathonBg.svg": "/static/media/hackathonBg.cd1690b4db22f27cfa42.svg",
     "static/media/feedback.svg": "/static/media/feedback.f0f4b0b1b12d1ec19759f47b70ef2e9a.svg",
     "static/media/downArrow.svg": "/static/media/downArrow.c7c2c2882bde892b5c10a4ef2860a3c5.svg",
-    "main.fe6d7123.css.map": "/static/css/main.fe6d7123.css.map",
-    "main.0c45b714.js.map": "/static/js/main.0c45b714.js.map",
+    "main.ba6c9816.css.map": "/static/css/main.ba6c9816.css.map",
+    "main.8804a76d.js.map": "/static/js/main.8804a76d.js.map",
     "787.a5abe7b0.chunk.js.map": "/static/js/787.a5abe7b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe6d7123.css",
-    "static/js/main.0c45b714.js"
+    "static/css/main.ba6c9816.css",
+    "static/js/main.8804a76d.js"
   ]
 }
