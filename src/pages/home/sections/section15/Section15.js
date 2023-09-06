@@ -1,18 +1,18 @@
 import React,{useState} from'react';
-import './Gallery.css';
+import './Section15.css';
 import { motion } from "framer-motion";
 
-import Img1 from'./img/img1.jpg';
-import Img2 from'./img/img2.jpg';
-import Img3 from'./img/img3.jpg';
-import Img4 from'./img/img4.jpg';
-import Img5 from'./img/img5.jpg';
-import Img7 from'./img/img7.jpg';
-import Img8 from'./img/img8.jpg';
-import Img9 from'./img/img9.jpg';
-import Img10 from'./img/img10.jpg';
+import Img1 from'../../../../assets/images/glimpses/img1.jpg';
+import Img2 from'../../../../assets/images/glimpses/img2.jpg';
+import Img3 from'../../../../assets/images/glimpses/img3.jpg';
+import Img4 from'../../../../assets/images/glimpses/img4.jpg';
+import Img5 from'../../../../assets/images/glimpses/img5.jpg';
+import Img7 from'../../../../assets/images/glimpses/img7.jpg';
+import Img8 from'../../../../assets/images/glimpses/img8.jpg';
+import Img9 from'../../../../assets/images/glimpses/img9.jpg';
+import Img10 from'../../../../assets/images/glimpses/img10.jpg';
 
-const Gallery = () => {
+const Section15 = () => {
 
     let data = [
         {
@@ -98,5 +98,5 @@ const Gallery = () => {
     )
 }
 
-export default Gallery;
+export default Section15;
 
