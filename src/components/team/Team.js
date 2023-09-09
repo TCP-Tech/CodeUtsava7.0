@@ -12,12 +12,13 @@ import downArrow from "../../assets/images/downArrow.svg";
 
 import axios from "axios";
 
+import { baseUrl } from "../../constants";
+
 import tcp from "../../assets/images/tcp.png";
 
 const Team = ({year}) => {
 
-  var url = "http://13.49.223.25/server/team/"
-  url+=year
+  const url = baseUrl + "team/" + year;
 
   const [state, setState] = useState({
     data: [],

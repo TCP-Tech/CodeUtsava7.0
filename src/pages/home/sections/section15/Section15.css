@@ -43,7 +43,7 @@
 
   .pics img{
 
-    border: 2px solid #eedb00;
+    border: 2px solid var(--secondary-c);
   }  
 
   @media (max-width: 1150px) {

@@ -14,6 +14,8 @@ import "../../../../../node_modules/font-awesome/css/font-awesome.min.css";
 import register from "../../../../assets/images/register.pdf";
 
 const Section1 = () => {
+  const c1 = "#7f00a6";
+  const c2 = "#b200ee";
   React.useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
@@ -74,7 +76,7 @@ const Section1 = () => {
     var timer = 0;
     var opacity = 1;
     var speed = 0.0005;
-    var colors = ["#eedb00", "#fbfb00", "#fbfbdd", "#333333", "#F2E8C9"];
+    var colors = [c1, c2, "#fbfbdd", "#333333", "#F2E8C9"];
 
     var initializeParticles;
 
