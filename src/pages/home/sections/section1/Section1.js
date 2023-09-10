@@ -188,7 +188,7 @@ const Section1 = () => {
           <div className="codeutsava__section1-discord">
             <a
               className="codeutsava__section1-discord-link"
-              href="https://discord.gg/cDR4jkb7wZ"
+              href="https://discord.gg/mq8PprVHUv"
               target="_blank"
             >
               <img src={discord} />

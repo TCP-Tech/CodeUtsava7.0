@@ -38,7 +38,7 @@ const Section14 = () => {
     ],
     series: [
       {
-        name: "Total Paticipations",
+        name: "Total Participations",
         data: [500, 1000, 1000, 2500, 3000, 5000],
       },
     ],
@@ -101,7 +101,7 @@ const Section14 = () => {
                 yaxis: {
                   ...state.options.yaxis,
                   title: {
-                    text: "Total Paticipations",
+                    text: "Total Participations",
                   },
                 },
               }}
