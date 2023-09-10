@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useRef } from "react";
 import "./Section1.css";
-import codeutsavaTitle from "../../../../assets/images/codeutsavaTitle.png";
+import codeutsavaTitle from "../../../../assets/images/codeutsavaTitle2.svg";
 import discord from "../../../../assets/images/discord.svg";
 
 import { animate, motion, transform } from "framer-motion";
