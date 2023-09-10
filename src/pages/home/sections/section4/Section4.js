@@ -1,13 +1,35 @@
 import React from "react";
 
-import "./Section4.css";
+import { useState, useEffect } from "react";
 
-import speakers from "../../../../assets/data/speakersData.js";
+import "./Section4.css";
 
 import SpeakerCard from "../../../../components/speakerCard/SpeakerCard";
 import { motion } from "framer-motion";
 
+import { previousYear, baseUrl } from '../../../../constants'
+
+import axios from "axios";
+
 const Section4 = () => {
+  const url = baseUrl + "speakers/" + previousYear;
+  const [state, setState] = useState({
+    data: [],
+    loading: true,
+  });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await axios.get(url);
+      setState({
+        data: data.data.data,
+        loading: false,
+      });
+    };
+    fetchData();
+  }, []);
+
+  // console.log(state.data);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -19,7 +41,7 @@ const Section4 = () => {
       <div className="codeutsava__section4-body">
         <div className="codeutsava__section4-title">Speakers</div>
         <div className="codeutsava__section4-speakers">
-          {speakers.map((speaker, index) => (
+          {state.data.map((speaker, index) => (
             <SpeakerCard
               key={index}
               img={speaker.img}

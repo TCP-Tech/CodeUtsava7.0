@@ -7,9 +7,33 @@ import problems from "../../../../assets/data/problemsData.js";
 import ProblemCard from "../../../../components/problemCard/ProblemCard";
 import { motion } from "framer-motion";
 
+
+import { previousYear, baseUrl } from '../../../../constants'
+
+import axios from "axios";
+
 const initialProblem = 2;
 
 const Section8 = () => {
+  const url = baseUrl + "problemstatements/" + previousYear;
+  const [state, setState] = useState({
+    data: [],
+    loading: true,
+  });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await axios.get(url);
+      setState({
+        data: data.data.data,
+        loading: false,
+      });
+    };
+    fetchData();
+  }, []);
+
+  console.log(state.data);
+
   const useFade = (initial) => {
     const [show, setShow] = useState(initial);
     const [isVisible, setVisible] = useState(show);
@@ -45,7 +69,7 @@ const Section8 = () => {
         <div className="codeutsava__section8-title">Problem Statements</div>
         <div className="codeutsava__section8-problems">
           <div className="codeutsava__section8-problems-container1">
-            {problems.slice(0, initialProblem).map((problem, index) => (
+            {state.data.slice(0, initialProblem).map((problem, index) => (
               <ProblemCard
                 key={index}
                 img={problem.img}
@@ -60,7 +84,7 @@ const Section8 = () => {
               className="codeutsava__section8-problems-container2"
               {...fadeProps}
             >
-              {problems
+              {state.data
                 .slice(initialProblem, problems.length)
                 .map((problem, index) => (
                   <ProblemCard

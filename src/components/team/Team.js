@@ -1,11 +1,6 @@
 import React from "react";
-
+import { useState, useEffect } from "react";
 import "./Team.css";
-
-import overAllCoordinaters from "../../assets/data/overAllCoordinatorsData";
-import headCoordinaters from "../../assets/data/headCoordinatorsData";
-import managers from "../../assets/data/managersData";
-import executives from "../../assets/data/executivesData";
 
 import Footer from "../../components/footer/Footer"
 
@@ -15,9 +10,37 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import downArrow from "../../assets/images/downArrow.svg";
 
+import axios from "axios";
+
+import { baseUrl } from "../../constants";
+
 import tcp from "../../assets/images/tcp.png";
 
 const Team = ({year}) => {
+
+  const url = baseUrl + "team/" + year;
+
+  const [state, setState] = useState({
+    data: [],
+    loading: true,
+  });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await axios.get(url);
+      setState({
+        data: data.data[0].data,
+        loading: false,
+      });
+    };
+    fetchData();
+  }, []);
+  
+  const overAllCoordinaters = state.data.filter((member) => member.Designation == "Overall Coordinator")
+  const headCoordinaters = state.data.filter((member) => member.Designation == "Head Coordinator")
+  const managers = state.data.filter((member) => member.Designation == "Manager")
+  const executives = state.data.filter((member) => member.Designation == "Executive")
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -39,19 +62,7 @@ const Team = ({year}) => {
           </Link>
         <div className="codeutsava__team-title">Overall Coordinators</div>
         <div className="codeutsava__team-members">
-          {overAllCoordinaters.slice(0, 1).map((member, index) => (
-            <TeamCard3
-              key={index}
-              img={member.Photo}
-              name={member.Name}
-              position={member.Designation}
-              linkedin={member.linkedin}
-              domain={member.Domain}
-            />
-          ))}
-        </div>
-        <div className="codeutsava__team-members">
-          {overAllCoordinaters.slice(1).map((member, index) => (
+          {overAllCoordinaters.map((member, index) => (
             <TeamCard3
               key={index}
               img={member.Photo}
