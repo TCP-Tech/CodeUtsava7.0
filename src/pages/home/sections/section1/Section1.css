@@ -222,19 +222,22 @@
     padding-bottom: 8rem;
   }
   .codeutsava__section1-image img{
-    height: 40px;
+    margin-bottom: 1.5rem;
+    height: 110px;
   }
   .codeutsava__section1-body {
     max-width: 300px;
   }
   .codeutsava__section1-heading {
-    font-size: 38px;
+    font-size: 44px;
     line-height: 64px;
     margin: 0;
   }
   .codeutsava__section1-subheading {
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: 0;
+    line-height: 20px;
+    margin-bottom: 2rem;
   }
   .codeutsava__section1-para {
     font-size: 18px;
