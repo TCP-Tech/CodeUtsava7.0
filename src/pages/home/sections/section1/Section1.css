@@ -106,7 +106,7 @@
   justify-content: left;
   align-items: center;
   background-color: #f3f6fb;
-  padding: 9px 14px 8px;
+  padding: 7.7px 12px;
   border-radius: 4px;
   margin-left: 14px;
   cursor: pointer;
@@ -123,7 +123,7 @@
   align-items: center;
   font-family: var(--font-family);
   background-color: #f3f6fb;
-  padding: 9px 14px 8px;
+  padding: 13px 20px;
   border-radius: 4px;
   cursor: pointer;
   margin-left: 14px;
@@ -206,7 +206,6 @@
     display: none;
   }
   .codeutsava__section1-bg-canvas{
-    display: none !important;
   }
 }
 
@@ -215,7 +214,6 @@
     margin-left: 0;
   }
   .codeutsava__section1-bg-canvas{
-    display: none !important;
   }
   .codeutsava__section1 {
     padding-top: 8rem;
