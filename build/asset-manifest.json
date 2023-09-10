@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6eb11557.css",
-    "main.js": "/static/js/main.fe5e9563.js",
+    "main.js": "/static/js/main.f34d8c93.js",
     "static/js/787.a5abe7b0.chunk.js": "/static/js/787.a5abe7b0.chunk.js",
     "static/media/Codeutsava_Brochure_6.0.pdf": "/static/media/Codeutsava_Brochure_6.0.2046326550010cee0f90.pdf",
     "static/media/img1.jpg": "/static/media/img1.c5a3a8e1d4c197ca9126.jpg",
@@ -48,11 +48,11 @@
     "static/media/feedback.svg": "/static/media/feedback.f0f4b0b1b12d1ec19759f47b70ef2e9a.svg",
     "static/media/downArrow.svg": "/static/media/downArrow.c7c2c2882bde892b5c10a4ef2860a3c5.svg",
     "main.6eb11557.css.map": "/static/css/main.6eb11557.css.map",
-    "main.fe5e9563.js.map": "/static/js/main.fe5e9563.js.map",
+    "main.f34d8c93.js.map": "/static/js/main.f34d8c93.js.map",
     "787.a5abe7b0.chunk.js.map": "/static/js/787.a5abe7b0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6eb11557.css",
-    "static/js/main.fe5e9563.js"
+    "static/js/main.f34d8c93.js"
   ]
 }

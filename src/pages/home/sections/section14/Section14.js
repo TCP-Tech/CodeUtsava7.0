@@ -113,7 +113,7 @@ const Section14 = () => {
       <ScrollTrigger style={{width:"100%"}} onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
         <div className="codeutsava__section14-menu2">
           <h1 className="codeutsava__section14-title">
-            Last Year Paticipation
+            Last Year Participation
           </h1>
           <div>
             <div className="codeutsava__section14-format-card">
