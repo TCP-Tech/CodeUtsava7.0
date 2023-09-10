@@ -1,5 +1,5 @@
 .codeutsava__footer {
-  font-family: var(--font-family);
+  font-family: var(--font-family3);
   color: white;
   width: 91.6667%;
   max-width: 80rem;
@@ -29,7 +29,7 @@
 }
 
 .codeutsava__footer-logo-tcp {
-  width: 13rem;
+  width: 14rem;
   height: auto;
   margin-left: 1rem;
 }

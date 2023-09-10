@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8bbf338b.css",
-    "main.js": "/static/js/main.f34d8c93.js",
+    "main.css": "/static/css/main.a6d77f96.css",
+    "main.js": "/static/js/main.4ecc3577.js",
     "static/js/787.a5abe7b0.chunk.js": "/static/js/787.a5abe7b0.chunk.js",
     "static/media/Codeutsava_Brochure_6.0.pdf": "/static/media/Codeutsava_Brochure_6.0.2046326550010cee0f90.pdf",
     "static/media/img1.jpg": "/static/media/img1.c5a3a8e1d4c197ca9126.jpg",
@@ -26,6 +26,7 @@
     "static/media/file10.png": "/static/media/file10.c1d35bb0811e81b27912.png",
     "static/media/sponser11.png": "/static/media/sponser11.3686b2999cec59e7af70.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/tcp.png": "/static/media/tcp.d4fc96f881ea2ae9bbb5.png",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/sponser12.png": "/static/media/sponser12.bd09950e176ee1aa855b.png",
     "static/media/sponser2.png": "/static/media/sponser2.76be02ba06ca4bd6a444.png",
@@ -33,26 +34,26 @@
     "static/media/sponser5.png": "/static/media/sponser5.eee79ca0a4177db361f1.png",
     "static/media/sponser4.png": "/static/media/sponser4.91cd6b98953635af8ac2.png",
     "static/media/sponser7.png": "/static/media/sponser7.8531c72ce8326222bb2b.png",
+    "static/media/codeutsava.png": "/static/media/codeutsava.c6b0648309934ac7caa0.png",
     "static/media/sponser15.png": "/static/media/sponser15.2475aca9408610f89153.png",
     "static/media/sponser13.png": "/static/media/sponser13.427c2c6105b4dd958863.png",
-    "static/media/tcp.png": "/static/media/tcp.da4b0c306f5c3f4da687.png",
-    "static/media/tcpName.svg": "/static/media/tcpName.d221402de81b194dd8c8d54f77e00c14.svg",
+    "static/media/welcome.png": "/static/media/welcome.14bf14c7ea613d5aa160.png",
+    "static/media/tcpName.png": "/static/media/tcpName.7981e579bba58a87ed1d.png",
     "static/media/p5.png": "/static/media/p5.69829f027e93fbcda22a.png",
     "static/media/sponser1.png": "/static/media/sponser1.37ac242e7d2f15e7f838.png",
     "static/media/sponser3.png": "/static/media/sponser3.1c17d581d65212e01b06.png",
     "static/media/sponser9.png": "/static/media/sponser9.229bb1c6f1f90f418645.png",
-    "static/media/codeutsava.png": "/static/media/codeutsava.e557cc0711440ed6bf3e.png",
     "static/media/discord.svg": "/static/media/discord.c4900a9df1134fa22b7796e5733291da.svg",
     "index.html": "/index.html",
     "static/media/hackathonBg.svg": "/static/media/hackathonBg.2b8e21c955a9ef15d4c7.svg",
     "static/media/feedback.svg": "/static/media/feedback.f0f4b0b1b12d1ec19759f47b70ef2e9a.svg",
     "static/media/downArrow.svg": "/static/media/downArrow.c7c2c2882bde892b5c10a4ef2860a3c5.svg",
-    "main.8bbf338b.css.map": "/static/css/main.8bbf338b.css.map",
-    "main.f34d8c93.js.map": "/static/js/main.f34d8c93.js.map",
+    "main.a6d77f96.css.map": "/static/css/main.a6d77f96.css.map",
+    "main.4ecc3577.js.map": "/static/js/main.4ecc3577.js.map",
     "787.a5abe7b0.chunk.js.map": "/static/js/787.a5abe7b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bbf338b.css",
-    "static/js/main.f34d8c93.js"
+    "static/css/main.a6d77f96.css",
+    "static/js/main.4ecc3577.js"
   ]
 }
