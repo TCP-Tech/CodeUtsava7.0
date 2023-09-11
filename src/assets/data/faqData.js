@@ -1,4 +1,3 @@
-
 const faqs = [
   {
     question: "How do I register for the hackathon?",
