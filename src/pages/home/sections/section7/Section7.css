@@ -133,7 +133,7 @@
 
 .codeutsava__section7-right-upper p {
   font-size: 18px;
-  line-height: 18px;
+  line-height: 22px;
 }
 
 .codeutsava__section7-right-question-container ul {
@@ -145,8 +145,7 @@
 }
 
 .codeutsava__section7-right-question {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 2rem 0;
   line-height: 16px;
   cursor: pointer;
   border-style: solid;

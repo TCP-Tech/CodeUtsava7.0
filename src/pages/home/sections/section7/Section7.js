@@ -63,7 +63,7 @@ const Section7 = () => {
           <div className="codeutsava__section7-right-upper">
             <h2>HAVE A QUESTION?</h2>
             <p>
-              New to hackathon dont worry we got you covered with all the basic
+              New to hackathon? <br/> Don't worry we got you covered with all the basic
               information.
             </p>
           </div>
