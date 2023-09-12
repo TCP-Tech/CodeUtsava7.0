@@ -22,7 +22,7 @@
     The official repository for the website of CodeUtsava 7.0
     <br />
     <br />
-    <a href="codeutsava7.netlify.app">View Live</a>
+    <a href="https://codeutsava7.netlify.app/">View Live</a>
     ·
     <a href="https://github.com/TCP-Tech/CodeUtsava7.0/issues">Report Bugs</a>
     .
@@ -44,7 +44,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#local-repository-setup">Local Repository Setup</a></li>
+        <li><a href="#local-repository-setup-🎃">Local Repository Setup</a></li>
         <li><a href="#running-the-project">Running the project</a></li>
       </ul>
     </li>
