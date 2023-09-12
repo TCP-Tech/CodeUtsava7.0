@@ -13,7 +13,7 @@ const Accordion = () => {
     };
    
     return (
-     <ul className="section7-accordion">
+     <ul className="codeutsava__section7-body-mobile">
       {faqs.map((faq, index) => (
        <AccordionItem
         key={index}

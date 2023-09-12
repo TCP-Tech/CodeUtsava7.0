@@ -70,7 +70,7 @@
   align-items: center;
 }
 
-.answer-animation{
+.answer-animation {
   animation: 1s cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal both running hehe;
 }
 
@@ -87,15 +87,15 @@
 }
 
 @keyframes hehe {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
-.answer-hidden{
+.answer-hidden {
   transition: opacity 1s ease-in-out 0s;
   display: none;
 }
@@ -156,4 +156,92 @@
 
 .codeutsava__section7-right-question:hover {
   color: white;
+}
+
+.codeutsava__section7-body-mobile {
+  display: none;
+}
+
+
+.section7-accordion {
+  list-style: none;
+}
+
+.section7-accordion_item {
+  border-bottom: 0.5px solid #ffffff;
+}
+
+.section7-button {
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0px;
+  cursor: pointer;
+  border: none;
+}
+
+.section7-control {
+  font-size: 2rem;
+}
+
+.section7-answer {
+  background-color: black;
+  color: white;
+  padding: 18px 0px;
+  padding-top: 4px;
+  font-size: 20px;
+  line-height: normal;
+  text-align: left;
+  font-weight: 300;
+}
+
+.section7-question {
+  font-style: normal;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  font-family: "Poppins";
+  letter-spacing: -0.5px;
+}
+
+/* activate toggle */
+.section7-accordion_item.active .button {
+  background-color: #15131c;
+}
+.section7-answer_wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height ease 0.2s;
+}
+
+@media screen and (max-width: 1000px) {
+  .codeutsava__section7-body{
+    display: none;
+
+  }
+  .codeutsava__section7-body-mobile{
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .section7-button {
+    padding: 0;
+  }
+  .section7-question {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+  .section7-answer {
+    font-size: 14px;
+  }
+  .section7-control {
+    font-size: 1.2rem;
+  }
 }

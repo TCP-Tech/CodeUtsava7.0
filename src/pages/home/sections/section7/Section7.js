@@ -6,6 +6,7 @@ import faqs from "../../../../assets/data/faqData";
 import { motion } from "framer-motion";
 import downArrow from "../../../../assets/images/downArrow.svg";
 import frank from "../../../../assets/images/frakenstein.png";
+import AccordianQA from '../../../../components/faq/QuestionAccordian'
 
 import { useState } from "react";
 
@@ -78,6 +79,7 @@ const Section7 = () => {
           </div>
         </div>
       </div>
+        <AccordianQA className="codeutsava__section7-body-mobile"/>
     </motion.div>
   );
 };
