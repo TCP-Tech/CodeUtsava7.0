@@ -13,7 +13,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/TCP-Tech/CodeUtsava7.0">
-    <img src="/src/assets/images/codeutsavaTitle.png" alt="Logo" width="130">
+    <img src="/src/assets/images/codeutsavaTitle2.svg" alt="Logo" width="230">
   </a>
 
   <h3 align="center">CodeUtsava 7.0</h3>
@@ -166,7 +166,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Turing Club Of Programmers
 
-[![Turing Club Of Programmers][tcp]]
+![Turing Club Of Programmers][tcp]
 
 ## Starware
 
