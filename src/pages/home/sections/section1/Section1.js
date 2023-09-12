@@ -2,6 +2,7 @@ import React, { Component, useEffect, useRef } from "react";
 import "./Section1.css";
 import codeutsavaTitle from "../../../../assets/images/codeutsavaTitle2.svg";
 import discord from "../../../../assets/images/discord.svg";
+import wel from '../../../../assets/images/welcome.png';
 
 import { animate, motion, transform } from "framer-motion";
 import {
@@ -162,7 +163,7 @@ const Section1 = () => {
         className="codeutsava__section1-body"
       >
         <div className="codeutsava__section1-menu">
-          <div className="codeutsava__section1-heading">Welcome To</div>
+          <img className="codeutsava__section1-heading" src={wel}></img>
           <div className="codeutsava__section1-image">
             <img src={codeutsavaTitle}></img>
           </div>
@@ -172,7 +173,7 @@ const Section1 = () => {
           <div className="codeutsava__section1-para">
             Central India's{" "}
             <span style={{ fontWeight: "600" }}>Largest Coding Event.</span>{" "}
-            Join Us on 11th - 12th February.
+            Stay Tuned!
           </div>
         </div>
         <div
@@ -188,7 +189,7 @@ const Section1 = () => {
           <div className="codeutsava__section1-discord">
             <a
               className="codeutsava__section1-discord-link"
-              href="https://discord.gg/cDR4jkb7wZ"
+              href="https://discord.gg/mq8PprVHUv"
               target="_blank"
             >
               <img src={discord} />

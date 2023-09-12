@@ -66,7 +66,7 @@
   padding: 10px 20px;
   border-radius: 4px;
   border: none;
-  color: black;
+  color: white;
   cursor: pointer;
   min-width: 110px;
   background-color: var(--primary-c);
@@ -74,6 +74,7 @@
 
 .codeutsava__navbar-brochure-button img {
   width: 16px;
+  filter: invert(100%);
 }
 .codeutsava__navbar-brochure-button a {
   font-size: 12px;

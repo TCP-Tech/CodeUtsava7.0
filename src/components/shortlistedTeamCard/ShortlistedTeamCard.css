@@ -55,6 +55,7 @@
 .codeutsava__section11-card-name {
   transition: all 0.2s ease-in-out;
   width: 100%;
+  text-align: center;
   object-fit: cover;
   background-color: white;
   color: black;

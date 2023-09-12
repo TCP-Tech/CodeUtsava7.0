@@ -38,7 +38,7 @@ const Section14 = () => {
     ],
     series: [
       {
-        name: "Total Paticipations",
+        name: "Total Participations",
         data: [500, 1000, 1000, 2500, 3000, 5000],
       },
     ],
@@ -101,7 +101,7 @@ const Section14 = () => {
                 yaxis: {
                   ...state.options.yaxis,
                   title: {
-                    text: "Total Paticipations",
+                    text: "Total Participations",
                   },
                 },
               }}
@@ -113,7 +113,7 @@ const Section14 = () => {
       <ScrollTrigger style={{width:"100%"}} onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
         <div className="codeutsava__section14-menu2">
           <h1 className="codeutsava__section14-title">
-            Last Year Paticipation
+            Last Year Participation
           </h1>
           <div>
             <div className="codeutsava__section14-format-card">

@@ -3,7 +3,7 @@ import React from "react";
 import "./Footer.css";
 
 import NIT from "../../assets/images/NIT.svg";
-import tcpName from "../../assets/images/tcpName.svg";
+import tcpName from "../../assets/images/tcpName.png";
 import codeutsava from "../../assets/images/codeutsava.png";
 import { Link } from "react-router-dom";
 
