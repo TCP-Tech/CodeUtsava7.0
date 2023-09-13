@@ -156,6 +156,33 @@
   fill: var(--secondary-c);
   transition: all 0.2s ease-in-out;
 }
+/* Change the background color when hovering over the button */
+.codeutsava__section1-side-links::before {
+  display: block;
+  content: "";
+  background-color:"";
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+}
+.codeutsava__section1-intro-audio-div{
+  margin-top: 10px;
+}
+button.codeutsava__section1-intro-audio-btn {
+  background-color: rgb(244, 117, 21);
+  border-radius: 4px;
+  padding: 2px;
+  padding-top:4px ;
+  border: none;
+  outline: none;
+  cursor: pointer
+}
+.codeutsava__section1-side-links li button:hover {
+  list-style: none;
+  outline: none;
+   background-color: var(--secondary-c);
+  transition: all 0.1s ease-in-out;
+}
 
 .codeutsava__section1-scrollDown{
   color: white;
