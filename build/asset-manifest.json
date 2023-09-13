@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.357d91ba.css",
-    "main.js": "/static/js/main.3d111980.js",
+    "main.css": "/static/css/main.42fd6dd1.css",
+    "main.js": "/static/js/main.c22ecb4e.js",
     "static/js/787.a5abe7b0.chunk.js": "/static/js/787.a5abe7b0.chunk.js",
     "static/media/Codeutsava_Brochure_6.0.pdf": "/static/media/Codeutsava_Brochure_6.0.2046326550010cee0f90.pdf",
     "static/media/img1.jpg": "/static/media/img1.c5a3a8e1d4c197ca9126.jpg",
@@ -48,12 +48,12 @@
     "static/media/hackathonBg.svg": "/static/media/hackathonBg.2b8e21c955a9ef15d4c7.svg",
     "static/media/feedback.svg": "/static/media/feedback.f0f4b0b1b12d1ec19759f47b70ef2e9a.svg",
     "static/media/downArrow.svg": "/static/media/downArrow.c7c2c2882bde892b5c10a4ef2860a3c5.svg",
-    "main.357d91ba.css.map": "/static/css/main.357d91ba.css.map",
-    "main.3d111980.js.map": "/static/js/main.3d111980.js.map",
+    "main.42fd6dd1.css.map": "/static/css/main.42fd6dd1.css.map",
+    "main.c22ecb4e.js.map": "/static/js/main.c22ecb4e.js.map",
     "787.a5abe7b0.chunk.js.map": "/static/js/787.a5abe7b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.357d91ba.css",
-    "static/js/main.3d111980.js"
+    "static/css/main.42fd6dd1.css",
+    "static/js/main.c22ecb4e.js"
   ]
 }

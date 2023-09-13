@@ -92,7 +92,7 @@
   padding: 20px 24px;
   border-radius: 4px;
   border: none;
-  color: black;
+  color: white;
   cursor: pointer;
   width: 30%;
   background-color: var(--primary-c);
@@ -102,7 +102,7 @@
   padding: 20px 24px;
   border-radius: 4px;
   border: none;
-  color: black;
+  color: white;
   cursor: pointer;
   width: 30%;
   background-color: var(--primary-c);
@@ -201,9 +201,15 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .codeutsava__navbar {
     display: none;
+  }
+  .codeutsava__navbar-brochure-button.feedback-button{
+    margin: 4rem auto;
+  }
+  .codeutsava__navbar-brochure-button{
+    margin: 4rem auto;
   }
   .codeutsava__navbar-hamburger {
     height: auto;
@@ -234,7 +240,7 @@
     padding: 4px;
   }
   .codeutsava__navbar-hamburger-brochure-button {
-    width: 90%;
+    width: 45%;
   }
 }
 
