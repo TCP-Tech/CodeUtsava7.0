@@ -37,7 +37,7 @@ const Team = ({year}) => {
   }, []);
   
   const overAllCoordinaters = state.data.filter((member) => member.Designation == "Overall Coordinator")
-  const headCoordinaters = state.data.filter((member) => member.Designation == "Head Coordinator")
+  const headCoordinaters = state.data.filter((member) => member.Designation == "Head Coordinator" || member.Designation == "Domain Lead")
   const managers = state.data.filter((member) => member.Designation == "Manager")
   const executives = state.data.filter((member) => member.Designation == "Executive")
 
@@ -65,6 +65,7 @@ const Team = ({year}) => {
           {overAllCoordinaters.map((member, index) => (
             <TeamCard3
               key={index}
+              email={member.Email}
               img={member.Photo}
               name={member.Name}
               position={member.Designation}
