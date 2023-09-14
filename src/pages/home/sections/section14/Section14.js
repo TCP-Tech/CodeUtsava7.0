@@ -5,6 +5,9 @@ import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
+import pumpkin from "../../../../assets/images/pumpkin.png";
+import cauldron from "../../../../assets/images/cauldron.png";
+
 const Section14 = () => {
   const [state, setState] = useState({
     options: {
@@ -14,8 +17,8 @@ const Section14 = () => {
       xaxis: {
         categories: ["2018", "2019", "2020", "2021", "2022", "2023"],
         title: {
-            text: "Year",
-          },
+          text: "Year",
+        },
       },
       yaxis: {
         title: {
@@ -53,7 +56,6 @@ const Section14 = () => {
 
   const [counterOn, setCounterOn] = useState(false);
 
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -63,11 +65,14 @@ const Section14 = () => {
       id="analytics"
     >
       <div className="codeutsava__section14-body">
-        <div className="codeutsava__section14-title">Graph & Analytics</div>
+        <div className="codeutsava__section14-title">
+          Graph & Analytics
+          <img src={pumpkin}></img>
+        </div>
         <div className="codeutsava__section14-menu1">
           <div className="codeutsava__section14-left">
             <Chart
-               options={{
+              options={{
                 ...optionsWithoutToolbar,
                 xaxis: {
                   ...optionsWithoutToolbar.xaxis,
@@ -110,41 +115,63 @@ const Section14 = () => {
             />
           </div>
         </div>
-      <ScrollTrigger style={{width:"100%"}} onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-        <div className="codeutsava__section14-menu2">
-          <h1 className="codeutsava__section14-title">
-            Last Year Participation
-          </h1>
-          <div>
-            <div className="codeutsava__section14-format-card">
-              <p className="codeutsava__section14-format-card-description">
-              <span style={{ color: "var(--secondary-c)" }}>
-                {counterOn && <CountUp start={500} end={1000} duration={1.5} delay={0}/>}
-               +
-                </span> TEAMS
-              </p>
-            </div>
-            <div className="codeutsava__section14-format-card">
-              <p className="codeutsava__section14-format-card-description">
-              <span style={{ color: "var(--secondary-c)" }}>
-              {counterOn && <CountUp start={50} end={100} duration={1.5} delay={0}/>}
-               +
-                </span> COLLEGES
-              </p>
-            </div>
-            <div className="codeutsava__section14-format-card">
-              <p className="codeutsava__section14-format-card-description">
-              <span style={{ color: "var(--secondary-c)" }}>
-              {counterOn && <CountUp start={1000} end={2000} duration={1.5} delay={0}/>}
-               +
-              </span> DEVELOPERS
-              </p>
+        <ScrollTrigger
+          style={{ width: "100%" }}
+          onEnter={() => setCounterOn(true)}
+          onExit={() => setCounterOn(false)}
+        >
+          <div className="codeutsava__section14-menu2">
+            <h1 className="codeutsava__section14-title">
+              <img src={cauldron}></img>Last Year Participation
+            </h1>
+            <div>
+              <div className="codeutsava__section14-format-card">
+                <p className="codeutsava__section14-format-card-description">
+                  <span style={{ color: "var(--secondary-c)" }}>
+                    {counterOn && (
+                      <CountUp
+                        start={500}
+                        end={1000}
+                        duration={1.5}
+                        delay={0}
+                      />
+                    )}
+                    +
+                  </span>{" "}
+                  TEAMS
+                </p>
+              </div>
+              <div className="codeutsava__section14-format-card">
+                <p className="codeutsava__section14-format-card-description">
+                  <span style={{ color: "var(--secondary-c)" }}>
+                    {counterOn && (
+                      <CountUp start={50} end={100} duration={1.5} delay={0} />
+                    )}
+                    +
+                  </span>{" "}
+                  COLLEGES
+                </p>
+              </div>
+              <div className="codeutsava__section14-format-card">
+                <p className="codeutsava__section14-format-card-description">
+                  <span style={{ color: "var(--secondary-c)" }}>
+                    {counterOn && (
+                      <CountUp
+                        start={1000}
+                        end={2000}
+                        duration={1.5}
+                        delay={0}
+                      />
+                    )}
+                    +
+                  </span>{" "}
+                  DEVELOPERS
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </ScrollTrigger>
+        </ScrollTrigger>
       </div>
-     
     </motion.div>
   );
 };

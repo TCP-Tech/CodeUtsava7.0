@@ -17,20 +17,20 @@ const WordGlobe = () => {
             })}
           >
             {[
-              "HTML",
-              "CSS",
-              "JavaScript",
-              "ReactJs",
-              "NodeJs",
-              "Python",
-              "Django",
-              "SQL",
-              "ExpressJs",
-              "Figma",
-              "Codease",
-              "Code Riddles",
-              "Hackathon",
-              "Quiz",
+              "HTML🕸️",
+              "CSS🦇",
+              "JavaScript💀",
+              "ReactJs🎃",
+              "NodeJs⚰️",
+              "Python🕯️",
+              "Django😈",
+              "SQL🧙🏻",
+              "ExpressJs🔥",
+              "Figma🔮",
+              "Codease🍫",
+              "Code Riddles💀",
+              "Hackathon🦉",
+              "Quiz🌚",
             ]}
           </TagCloud>
         </span>

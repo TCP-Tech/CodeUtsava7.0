@@ -1,6 +1,7 @@
 .codeutsava__section14 {
     padding-top: 2rem;
-    padding-bottom: 4rem;  
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;  
     color: white;
     font-family: 'Poppins'; 
 }
@@ -34,10 +35,18 @@
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
-    line-height: 82px;
     text-align: center;
     letter-spacing: 1px;
     margin: 60px 10px 60px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.codeutsava__section14-title img{
+    width: auto;
+    position: relative;
+    height: 90px;
 }
 
 @media screen and (max-width:1150px){
@@ -64,7 +73,7 @@
         height: 820px;
     }
     .codeutsava__section14-title{
-        font-size: 36px;
+        font-size: 34px;
     }
 }
 

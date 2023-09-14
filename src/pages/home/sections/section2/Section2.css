@@ -25,9 +25,17 @@
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
-    line-height: 82px;
     text-align: center;
     letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.codeutsava__section2-title img{
+    width: auto;
+    position: relative;
+    height: 90px;
 }
 
 .codeutsava__section2-content{
@@ -107,7 +115,7 @@
         height: 820px;
     }
     .codeutsava__section2-title{
-        font-size: 36px;
+        font-size: 34px;
     }
     .codeutsava__section2-content{
         font-size: 16px;

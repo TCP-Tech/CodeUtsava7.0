@@ -24,7 +24,7 @@ import ContactSection from "../../components/ContactSection/ContactSection";
 export default class HomePage extends Component {
   render() {
     return (
-      <>
+      <div>
         <div className="codeutsava__navbar-container">
           <Navbar />
         </div>
@@ -32,17 +32,17 @@ export default class HomePage extends Component {
           <Section1 />
         </div>
         <InfiniteCarousel />
-        <div className="container mx-auto">
+        <div className="container mx-auto main-container">
           <Section2 />
           <Section14/>
           <Section15/>
           <Section3 />
           <Section4 />
           <Section5 />
-          <Section11 />
+          {/* <Section11 />
           <Section12 />
           <Section13 />
-          <Section8 />
+          <Section8 /> */}
           <Section6 />
           <Section7 />
           <Section9 />
@@ -52,7 +52,7 @@ export default class HomePage extends Component {
         <div className="codeutsava__footer-container">
           <Footer />
         </div>
-      </>
+      </div>
     );
   }
 }
