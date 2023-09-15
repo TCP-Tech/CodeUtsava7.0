@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.357d91ba.css",
-    "main.js": "/static/js/main.3d111980.js",
+    "main.css": "/static/css/main.9cfe8241.css",
+    "main.js": "/static/js/main.fe347213.js",
     "static/js/787.a5abe7b0.chunk.js": "/static/js/787.a5abe7b0.chunk.js",
     "static/media/Codeutsava_Brochure_6.0.pdf": "/static/media/Codeutsava_Brochure_6.0.2046326550010cee0f90.pdf",
     "static/media/img1.jpg": "/static/media/img1.c5a3a8e1d4c197ca9126.jpg",
@@ -14,12 +14,16 @@
     "static/media/img2.jpg": "/static/media/img2.8f0233a70b26f1008ba9.jpg",
     "static/media/img4.jpg": "/static/media/img4.08a13d2205fcb8c86522.jpg",
     "static/media/register.pdf": "/static/media/register.e262e0d5af38c33c6bc5.pdf",
+    "static/media/codeutsavaTitle3d.svg": "/static/media/codeutsavaTitle3d.7831c6e9e384640114777922abc43f1c.svg",
     "static/media/sponser14.png": "/static/media/sponser14.b2687fac2a94235c095f.png",
+    "static/media/cauldron.png": "/static/media/cauldron.b400582c9bcd204e5e76.png",
     "static/media/p3.png": "/static/media/p3.a75804d6c15ffca405e0.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/pumpkin.png": "/static/media/pumpkin.441ad5a4541903ed9142.png",
     "static/media/NIT.svg": "/static/media/NIT.592430019cff1e793b7cbc6283fb1085.svg",
+    "static/media/ghost.png": "/static/media/ghost.f58fe72dba9dc3c1a3ab.png",
     "static/media/sponser10.png": "/static/media/sponser10.c0a8585fcb83b7a6b2db.png",
-    "static/media/codeutsavaTitle2.svg": "/static/media/codeutsavaTitle2.7e3f065ffb17a1890abef7966e2313db.svg",
+    "static/media/intro-music.mp3": "/static/media/intro-music.ea9202feff3c8cc5bfe1.mp3",
     "static/media/frakenstein.png": "/static/media/frakenstein.a150fc08655ce6ab0673.png",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -43,17 +47,17 @@
     "static/media/sponser1.png": "/static/media/sponser1.37ac242e7d2f15e7f838.png",
     "static/media/sponser3.png": "/static/media/sponser3.1c17d581d65212e01b06.png",
     "static/media/sponser9.png": "/static/media/sponser9.229bb1c6f1f90f418645.png",
-    "static/media/discord.svg": "/static/media/discord.c4900a9df1134fa22b7796e5733291da.svg",
     "index.html": "/index.html",
+    "static/media/discord.svg": "/static/media/discord.c4900a9df1134fa22b7796e5733291da.svg",
     "static/media/hackathonBg.svg": "/static/media/hackathonBg.2b8e21c955a9ef15d4c7.svg",
     "static/media/feedback.svg": "/static/media/feedback.f0f4b0b1b12d1ec19759f47b70ef2e9a.svg",
     "static/media/downArrow.svg": "/static/media/downArrow.c7c2c2882bde892b5c10a4ef2860a3c5.svg",
-    "main.357d91ba.css.map": "/static/css/main.357d91ba.css.map",
-    "main.3d111980.js.map": "/static/js/main.3d111980.js.map",
+    "main.9cfe8241.css.map": "/static/css/main.9cfe8241.css.map",
+    "main.fe347213.js.map": "/static/js/main.fe347213.js.map",
     "787.a5abe7b0.chunk.js.map": "/static/js/787.a5abe7b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.357d91ba.css",
-    "static/js/main.3d111980.js"
+    "static/css/main.9cfe8241.css",
+    "static/js/main.fe347213.js"
   ]
 }

@@ -20,16 +20,16 @@ const Section3 = () => {
     loading: true,
   });
   // console.log(url);
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await axios.get(url);
-      setState({
-        data: data.data.data,
-        loading: false,
-      });
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const data = await axios.get(url);
+  //     setState({
+  //       data: data.data.data,
+  //       loading: false,
+  //     });
+  //   };
+  //   fetchData();
+  // }, []);
 
   // console.log(state.data);
 
@@ -44,9 +44,9 @@ const Section3 = () => {
       <div className="codeutsava__section3-title">Events</div>
       <div className="codeutsava__section3-events-container">
         <Slider {...sliderSettings} className="slider">
-          {state.data.map((event, key) => (
+          {state.data.map((event, index) => (
             <EventCard
-              index={key}
+              key={index}
               img={event.img}
               title={event.title}
               date={event.date}

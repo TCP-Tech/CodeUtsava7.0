@@ -18,16 +18,16 @@ const Section4 = () => {
     loading: true,
   });
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await axios.get(url);
-      setState({
-        data: data.data.data,
-        loading: false,
-      });
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const data = await axios.get(url);
+  //     setState({
+  //       data: data.data.data,
+  //       loading: false,
+  //     });
+  //   };
+  //   fetchData();
+  // }, []);
 
   // console.log(state.data);
   return (

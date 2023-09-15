@@ -21,38 +21,38 @@ import Section13 from "./sections/section13/Section13";
 import Section14 from "./sections/section14/Section14";
 
 import ContactSection from "../../components/ContactSection/ContactSection";
-export default class HomePage extends Component {
-  render() {
-    return (
-      <>
-        <div className="codeutsava__navbar-container">
-          <Navbar />
-        </div>
-        <div className="container mx-auto">
-          <Section1 />
-        </div>
-        <InfiniteCarousel />
-        <div className="container mx-auto">
-          <Section2 />
-          <Section14/>
-          <Section15/>
-          <Section3 />
-          <Section4 />
-          <Section5 />
-          <Section11 />
+const HomePage = () => {
+  return (
+    <div>
+      <div className="codeutsava__navbar-container">
+        <Navbar />
+      </div>
+      <div className="container mx-auto">
+        <Section1 />
+      </div>
+      <InfiniteCarousel />
+      <div className="container mx-auto main-container">
+        <Section2 />
+        <Section14 />
+        <Section15 />
+        <Section3 />
+        <Section4 />
+        <Section5 />
+        {/* <Section11 />
           <Section12 />
           <Section13 />
-          <Section8 />
-          <Section6 />
-          <Section7 />
-          <Section9 />
-          <ContactSection/>
-          <Section10 />
-        </div>
-        <div className="codeutsava__footer-container">
-          <Footer />
-        </div>
-      </>
-    );
-  }
-}
+          <Section8 /> */}
+        <Section6 />
+        <Section7 />
+        <Section9 />
+        <ContactSection />
+        <Section10 />
+      </div>
+      <div className="codeutsava__footer-container">
+        <Footer />
+      </div>
+    </div>
+  );
+};
+
+export default HomePage;
