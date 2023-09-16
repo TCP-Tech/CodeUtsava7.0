@@ -33,9 +33,12 @@ jobs:
       run: echo "$PEM" >> tcp.pem && chmod 400 tcp.pem
       env:
         PEM: ${{secrets.PEM}}
+        
+    - name: Copy build folder contents to server
+      run: scp -o StrictHostKeyChecking=no -i tcp.pem -r build/* ubuntu@ec2-16-171-64-245.eu-north-1.compute.amazonaws.com:~/home/CodeUtsava7.0/build
 
     - name: Doing the magic now
-      run: ssh -o StrictHostKeyChecking=no -i tcp.pem ubuntu@ec2-16-171-64-245.eu-north-1.compute.amazonaws.com "cd /home && sudo mkdir hui && ls &&"
+      run: ssh -i tcp.pem ubuntu@ec2-16-171-64-245.eu-north-1.compute.amazonaws.com "sudo systemctl restart ngnix"
 
     - name: LIVE!!!
       run: echo "Site is Live!🚀🚀🚀"
