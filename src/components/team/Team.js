@@ -16,6 +16,7 @@ import { baseUrl } from "../../constants";
 
 import tcp from "../../assets/images/tcp.png";
 
+
 const Team = ({year}) => {
 
   const url = baseUrl + "team/" + year;
