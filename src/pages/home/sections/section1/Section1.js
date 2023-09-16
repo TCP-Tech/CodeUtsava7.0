@@ -168,6 +168,8 @@ const Section1 = () => {
     animate();
     var isMouseDown = false;
 
+    setInterval(function () {isMouseDown =! isMouseDown;}, 5000);
+    
     window.addEventListener("mousedown", function () {
       isMouseDown = true;
     });
