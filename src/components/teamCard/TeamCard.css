@@ -1,132 +1,118 @@
 .codeutsava__team-card {
-    padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    border-radius: 20px;
-    min-width: 320px;
-    max-width: 320px;
-  }
-  
-  .codeutsava__team-card .codeutsava__team-card-img{
-    display: inline-block;
-    height: 170px;
-    width: 170px;
-    margin-bottom: 15px;
-    z-index: 1;
-    position: relative;
-  }
-  
-  .codeutsava__team-card .codeutsava__team-card-img::before {
-    content:"";
-    background-image: url(../../assets/images/web.png);
-  background-position: 0 50px;
-    background-size:cover;
-  
-    width: 100%;
-    height: 0;
-    border-bottom-left-radius: 85%;
-    border-bottom-right-radius: 20%;
-    background-color:purple;
-    position: absolute;
-    bottom: 135%;
-    right: 0;
-    left: 0;
-    opacity: 0.9;
-    transform: scale(3);
-    transition: all 0.4s linear 0s;
-  }
-  
-  .codeutsava__team-card:hover .codeutsava__team-card-img::before {
-    height: 100%;
-  }
-  
-  .codeutsava__team-card .codeutsava__team-card-img::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-   
-    background-color:purple;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  
-  .codeutsava__team-card .codeutsava__team-card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    transform: scale(1);
-    transition: all 0.6s ease 0s;
-  }
-  
-  .codeutsava__team-card:hover .codeutsava__team-card-img img {
-    box-shadow: 0 0 0 14px #fff;
-    transform: scale(0.75);
-  }
-  
-  .codeutsava__team-card .name {
-    display: block;
-    font-size: 22px;
-    color: #000000;
-    text-transform: capitalize;
-  }
-  
-  .codeutsava__team-card .title {
-    display: block;
-    font-size: 17px;
-    color:purple;
-    text-transform: capitalize;
-    margin-top: 4px;
-  }
-  
-  .domain3{
-    color: #000;
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-  }
-  
-  .codeutsava__team-card .social {
-    width: 100%;
-    height: 50px;
-    padding: 0;
-    margin: 0;
-    background-color:purple;
-    position: absolute;
-    bottom: -100px;
-    left: 0;
-    transition: all 0.5s ease 0s;
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  min-width: 320px;
+  max-width: 320px;
+}
 
-    border-top-left-radius: 85%;
-    border-top-right-radius: 85%;
-  
-  }
-  
-  .codeutsava__team-card:hover .social {
-    bottom: 0;
-  }
-  
-  .codeutsava__team-card .social li {
-    display: inline-block;
-    margin-top: 5px;
-  }
-  
-  .codeutsava__team-card .social li a {
-    display: block;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 17px;
-    color: white;
-    transition: all 0.5s ease 0s;
-    text-decoration: none;
-  }
-  
-  .codeutsava__team-card .social li a:hover {
-    color:purple;
-    background-color: #f7f5ec;
-  }
-  
+.codeutsava__team-card .codeutsava__team-card-img {
+  display: inline-block;
+  height: 170px;
+  width: 170px;
+  margin-bottom: 15px;
+  z-index: 1;
+  position: relative;
+}
+
+.codeutsava__team-card .codeutsava__team-card-img::before {
+  content: "";
+  background-image: url(../../assets/images/web.png);
+  background-position: 0 60px;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 85%;
+  border-bottom-right-radius: 20%;
+  background-color: var(--primary-c);
+  position: absolute;
+  bottom: 150%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.4s linear 0s;
+}
+
+.codeutsava__team-card .codeutsava__team-card-img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  background-color: var(--primary-c);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.codeutsava__team-card .codeutsava__team-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.6s ease 0s;
+}
+
+.codeutsava__team-card:hover .codeutsava__team-card-img img {
+  box-shadow: 0 0 0 14px #fff;
+  transform: scale(0.75);
+}
+
+.codeutsava__team-card .name {
+  display: block;
+  font-size: 22px;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.codeutsava__team-card .title {
+  display: block;
+  font-size: 17px;
+  color: var(--primary-c);
+  text-transform: capitalize;
+  margin-top: 4px;
+}
+
+.codeutsava__team-card .social {
+  width: 100%;
+  height: 45px;
+  padding: 0;
+  margin: 0;
+  background-color: var(--primary-c);
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+  border-top-left-radius: 85%;
+  border-top-right-radius: 85%;
+}
+
+.codeutsava__team-card:hover .social {
+  bottom: 0;
+}
+
+.codeutsava__team-card .social li {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.codeutsava__team-card .social li a {
+  display: block;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 17px;
+  color: white;
+  transition: all 0.5s ease 0s;
+  text-decoration: none;
+}
+
+.codeutsava__team-card .social li a:hover {
+  color: var(--primary-c);
+  background-color: #f7f5ec;
+}
