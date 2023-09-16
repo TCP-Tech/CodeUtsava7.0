@@ -19,19 +19,19 @@ const Section3 = () => {
     data: [],
     loading: true,
   });
-  // console.log(url);
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const data = await axios.get(url);
-  //     setState({
-  //       data: data.data.data,
-  //       loading: false,
-  //     });
-  //   };
-  //   fetchData();
-  // }, []);
+  console.log(url);
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await axios.get(url);
+      setState({
+        data: data.data.data,
+        loading: false,
+      });
+    };
+    fetchData();
+  }, []);
 
-  // console.log(state.data);
+  console.log(state.data);
 
   return (
     <motion.div
