@@ -20,7 +20,7 @@
   
   .codeutsava__team-card1_2023 .codeutsava__team-card1_2023-img::before {
     content:"";
-    background-image: url(../../assets/images/teamcard1_2023/teamcard_4_web.png);
+    background-image: url(../../assets/images/web.png);
   background-position: 0 50px;
     background-size:cover;
   
@@ -100,11 +100,10 @@
     bottom: -100px;
     left: 0;
     transition: all 0.5s ease 0s;
-    background-image: url(../../assets/images/teamcard1_2023/teamcard_4_pumpkin.png);
-    background-repeat:no-repeat;
-    border-top-left-radius: 10;
-    border-top-right-radius: 80%;
-    background-position: 10px -2px;
+
+    border-top-left-radius: 85%;
+    border-top-right-radius: 85%;
+  
   }
   
   .codeutsava__team-card1_2023:hover .social {
