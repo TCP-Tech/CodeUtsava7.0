@@ -40,6 +40,7 @@ const TeamCard = ({
           ></a>
         </li>
       </ul>
+
       
     </div>
   );
