@@ -9,6 +9,7 @@ const TeamCard3 = ({
   position,
   linkedin,
   domain,
+  email
 }) => {
   return (
     <div className="codeutsava__team-card3">
@@ -26,7 +27,7 @@ const TeamCard3 = ({
           <a href="" className="fa fa-facebook" aria-hidden="true"></a>
         </li> */}
         <li>
-          <a href="" className="fa fa-envelope fa-2x" aria-hidden="true"></a>
+          <a href={email} className="fa fa-envelope fa-2x" aria-hidden="true"></a>
         </li>
         <li>
           <a href={linkedin} target="_blank " className="fa fa-linkedin fa-2x" aria-hidden="true"></a>

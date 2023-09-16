@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useRef, useState } from "react";
 import "./Section1.css";
-import codeutsavaTitle from "../../../../assets/images/codeutsavaTitle2.svg";
+import codeutsavaTitle from "../../../../assets/images/codeutsavaTitle3d.svg";
 import discord from "../../../../assets/images/discord.svg";
 import wel from "../../../../assets/images/welcome.png";
 import intro_music from "../../../../assets/audio/intro-music.mp3";
@@ -188,7 +188,7 @@ const Section1 = () => {
     >
       <motion.canvas
         className="codeutsava__section1-bg-canvas"
-        variants={textVariant(1.2)}
+        variants={textVariant(1.2, 3)}
         ref={canvasRef}
       />
       <motion.div
@@ -420,3 +420,7 @@ const Section1 = () => {
 };
 
 export default Section1;
+
+
+
+
