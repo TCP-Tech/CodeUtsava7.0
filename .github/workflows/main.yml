@@ -35,7 +35,7 @@ jobs:
         PEM: ${{secrets.PEM}}
 
     - name: Doing the magic now
-      run: ssh StrictHostKeyChecking=no -i tcp.pem ubuntu@ec2-16-171-64-245.eu-north-1.compute.amazonaws.com "cd /home && sudo mkdir hui && ls &&"
+      run: ssh -o StrictHostKeyChecking=no -i tcp.pem ubuntu@ec2-16-171-64-245.eu-north-1.compute.amazonaws.com "cd /home && sudo mkdir hui && ls &&"
 
     - name: LIVE!!!
       run: echo "Site is Live!🚀🚀🚀"
