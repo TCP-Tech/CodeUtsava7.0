@@ -1,6 +1,6 @@
-import speaker1 from '../images/speaker1.jpeg'
-import speaker2 from '../images/speaker2.jpg'
-import speaker3 from '../images/speaker3.jpeg'
+import speaker1 from '../images/speakers/speaker1.jpeg'
+import speaker2 from '../images/speakers/speaker2.jpg'
+import speaker3 from '../images/speakers/speaker3.jpeg'
 
 const speakers = [
   {

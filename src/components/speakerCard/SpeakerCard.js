@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./SpeakerCard.css";
-import spiderweb from "../../assets/images/speakers/spiderweb.svg";
 import jackolantern from "../../assets/images/speakers/jack-o-lantern.svg";
 import bat from "../../assets/images/speakers/bat.svg";
 
@@ -18,7 +17,7 @@ const SpeakerCard = ({
 }) => {
   return (
     <div className="codeutsava__section4-speaker-card">
-    <div className="codeutsava__section4-decor-web"><img src={spiderweb} alt="spiderweb" /></div>
+    <div className="codeutsava__section4-decor-web"><img src={jackolantern} alt="spiderweb" /></div>
       <div className="codeutsava__section4-speaker-img-container">
         <img src={img} className="codeutsava__section4-speaker-img" />
         <div className="codeutsava__section4-decor-bat"><img src={bat} alt="bat" /><img id="bat2" src={bat} alt="bat" /></div>
@@ -124,7 +123,6 @@ const SpeakerCard = ({
           )}
         </div>
       </div>
-      <div className="codeutsava__section4-decor-lantern fadeIn"><img src={jackolantern} alt="jackolantern" /></div>
     </div>
   );
 };

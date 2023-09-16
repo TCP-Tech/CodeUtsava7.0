@@ -53,6 +53,14 @@
   transform: scale(1.1);
 }
 
+.overall{
+  transform: translateY(-50px);
+}
+
+.normal{
+  transform: translateY(10px);
+}
+
 .codeutsava__team-card3-avatar-holder-img {
   width: 100%;
   height: auto;
@@ -71,7 +79,7 @@
 .codeutsava__team-card3-pumpkin {
   position: absolute;
   bottom: 0;
-  right: 4px;
+  right: 8px;
 }
 .codeutsava__team-card3-pumpkin-img {
   height: 60px;
