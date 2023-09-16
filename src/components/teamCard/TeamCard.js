@@ -7,14 +7,12 @@ const TeamCard = ({
   img,
   name,
   position,
-  facebook,
-  twitter,
   linkedin,
-  github,
   domain,
 }) => {
   return (
     <div className="codeutsava__team-card">
+      <div id="dfg"></div>
       <div className="codeutsava__team-card-img">
         <img src={img} />
       </div>
@@ -34,7 +32,12 @@ const TeamCard = ({
           <a href="" className="fa fa-github" aria-hidden="true"></a>
         </li> */}
         <li>
-          <a href={linkedin} target="_blank" className="fa fa-linkedin" aria-hidden="true"></a>
+          <a
+            href={linkedin}
+            target="_blank"
+            className="fa fa-linkedin"
+            aria-hidden="true"
+          ></a>
         </li>
       </ul>
     </div>
