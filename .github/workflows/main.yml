@@ -35,10 +35,10 @@ jobs:
         PEM: ${{secrets.PEM}}
 
     - name: Copy build folder contents to AWS
-      run: scp -o StrictHostKeyChecking=no -i tcp.pem -r build/* ec2-user@ec2-16-171-64-245.eu-north-1.compute.amazonaws.com:~/home/CodeUtsava7.0/build
+      run: scp -o StrictHostKeyChecking=no -i tcp.pem -r build/* ubuntu@ec2-16-171-64-245.eu-north-1.compute.amazonaws.com:~/home/CodeUtsava7.0/build
 
     - name: Doing the magic now
-      run: ssh -i tcp.pem ec2-user@ec2-16-171-64-245.eu-north-1.compute.amazonaws.com "sudo systemctl restart nginx"
+      run: ssh -i tcp.pem ubuntu@ec2-16-171-64-245.eu-north-1.compute.amazonaws.com "sudo systemctl restart nginx"
 
     - name: LIVE!!!
       run: echo "Site is Live!🚀🚀🚀"
