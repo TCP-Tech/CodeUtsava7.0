@@ -15,6 +15,8 @@ import axios from "axios";
 import { baseUrl } from "../../constants";
 
 import tcp from "../../assets/images/tcp.png";
+import TeamCard3_2023 from "../TeamCard3_2023/TeamCard3_2023";
+
 
 const Team = ({year}) => {
 
@@ -89,16 +91,19 @@ const Team = ({year}) => {
         </div>
         <div className="codeutsava__team-title">Managers</div>
         <div className="codeutsava__team-members">
-          {managers.map((member, index) => (
-            <TeamCard
-              key={index}
-              img={member.Photo}
-              name={member.Name}
-              position={member.Designation}
-              linkedin={member.linkedin}
-              domain={member.Domain}
-            />
-          ))}
+          {/* {managers.map((member, index) => (
+            // <TeamCard
+            //   key={index}
+            //   img={member.Photo}
+            //   name={member.Name}
+            //   position={member.Designation}
+            //   linkedin={member.linkedin}
+            //   domain={member.Domain}
+            // />
+            <TeamCard_2023/>
+            
+          ))} */}
+          <TeamCard3_2023/>
         </div>
         <div className="codeutsava__team-title">Executives</div>
         <div className="codeutsava__team-members">
