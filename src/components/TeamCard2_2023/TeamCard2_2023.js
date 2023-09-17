@@ -4,6 +4,7 @@ import photo from './TeamCard2/pic3.jpg';
 import linkedin from './TeamCard2/linkedin.svg';
 import spider_web from './TeamCard2/spider_web.webp';
 import spider from './TeamCard2/spider.svg';
+import pumpkin from './TeamCard2/pumpkin.webp'
 
 const TeamCard2_2023 = (props) => {
     return (
