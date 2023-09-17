@@ -1,7 +1,5 @@
 .codeutsava__team {
   font-family: "Poppins";
-  margin: 2rem 0;
-  padding: 0rem 1rem;
 }
 
 .codeutsava__team-body {
@@ -59,7 +57,8 @@
   font-size: 48px;
   text-align: center;
   letter-spacing: 1px;
-  margin: 4rem 0;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
   color: white;
 }
 

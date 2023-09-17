@@ -9,7 +9,7 @@
   max-width: 320px;
 }
 
-.codeutsava__team-card .codeutsava__team-card-img{
+.codeutsava__team-card .codeutsava__team-card-img {
   display: inline-block;
   height: 170px;
   width: 170px;
@@ -20,21 +20,22 @@
 
 .codeutsava__team-card .codeutsava__team-card-img::before {
   content: "";
+  background-image: url(../../assets/images/web.png);
+  background-position: 0 60px;
+  background-size: cover;
   width: 100%;
-  height: 0;
-  border-radius: 50%;
+  height: 100%;
+  border-bottom-left-radius: 85%;
+  border-bottom-right-radius: 20%;
   background-color: var(--primary-c);
   position: absolute;
-  bottom: 135%;
+  bottom: 150%;
+  z-index: -1;
   right: 0;
   left: 0;
   opacity: 0.9;
   transform: scale(3);
-  transition: all 0.3s linear 0s;
-}
-
-.codeutsava__team-card:hover .codeutsava__team-card-img::before {
-  height: 100%;
+  transition: all 0.4s linear 0s;
 }
 
 .codeutsava__team-card .codeutsava__team-card-img::after {
@@ -55,12 +56,16 @@
   object-fit: cover;
   border-radius: 50%;
   transform: scale(1);
-  transition: all 0.9s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 
 .codeutsava__team-card:hover .codeutsava__team-card-img img {
   box-shadow: 0 0 0 14px #fff;
   transform: scale(0.75);
+}
+
+.codeutsava__team-card-content .domain{
+  color: grey;
 }
 
 .codeutsava__team-card .name {
@@ -78,14 +83,9 @@
   margin-top: 4px;
 }
 
-.domain3{
-  color: #000;
-  font-size: 0.8rem;
-  margin-bottom: 1rem;
-}
-
 .codeutsava__team-card .social {
   width: 100%;
+  height: 45px;
   padding: 0;
   margin: 0;
   background-color: var(--primary-c);
@@ -93,6 +93,8 @@
   bottom: -100px;
   left: 0;
   transition: all 0.5s ease 0s;
+  border-top-left-radius: 85%;
+  border-top-right-radius: 85%;
 }
 
 .codeutsava__team-card:hover .social {
@@ -101,18 +103,20 @@
 
 .codeutsava__team-card .social li {
   display: inline-block;
+  margin-top: 5px;
 }
 
 .codeutsava__team-card .social li a {
   display: block;
   padding: 10px;
+  border-radius: 50%;
   font-size: 17px;
   color: white;
-  transition: all 0.3s ease 0s;
+  transition: all 0.5s ease 0s;
   text-decoration: none;
 }
 
 .codeutsava__team-card .social li a:hover {
-  color: #1369ce;
+  color: var(--primary-c);
   background-color: #f7f5ec;
 }

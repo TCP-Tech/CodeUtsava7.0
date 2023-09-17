@@ -3,7 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 import "./Section4.css";
-
+import speakers from "../../../../assets/data/speakersData.js";
 import SpeakerCard from "../../../../components/speakerCard/SpeakerCard";
 import { motion } from "framer-motion";
 
@@ -18,18 +18,18 @@ const Section4 = () => {
     loading: true,
   });
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const data = await axios.get(url);
-  //     setState({
-  //       data: data.data.data,
-  //       loading: false,
-  //     });
-  //   };
-  //   fetchData();
-  // }, []);
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await axios.get(url);
+      setState({
+        data: data.data.data,
+        loading: false,
+      });
+    };
+    fetchData();
+  }, []);
 
-  // console.log(state.data);
+  console.log(state.data);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -41,7 +41,7 @@ const Section4 = () => {
       <div className="codeutsava__section4-body">
         <div className="codeutsava__section4-title">Speakers</div>
         <div className="codeutsava__section4-speakers">
-          {state.data.map((speaker, index) => (
+          {speakers.map((speaker, index) => (
             <SpeakerCard
               key={index}
               img={speaker.img}
