@@ -23,6 +23,10 @@
   border-radius: 0 0 50% 50%;
 }
 
+.codeutsava__team-card3-content .position{
+  color: var(--primary-c);
+}
+
 .codeutsava__team-card3-spider {
   position: relative;
   top: -30px;

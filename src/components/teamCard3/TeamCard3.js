@@ -18,7 +18,7 @@ const TeamCard3 = ({ img, name, position, linkedin, email, domain }) => {
       </div>
       <div className="codeutsava__team-card3-content">
         <h2>{name}</h2>
-        <h2>{position}</h2>
+        <h2 className="position">{position}</h2>
       </div>
       <div className="codeutsava__team-card3-pumpkin">
         <img
