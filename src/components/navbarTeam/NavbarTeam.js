@@ -5,7 +5,7 @@ import codeutsava from "../../assets/images/codeutsava.png";
 import tcp from "../../assets/images/tcp.png";
 import downArrow from "../../assets/images/downArrow.svg";
 import feedBack from "../../assets/images/feedback.svg";
-import brochure from "../../assets/images/Codeutsava_Brochure_6.0.pdf";
+import brochure from "../../assets/images/CodeUtsava_Brochure_7.0.pdf";
 import { motion } from "framer-motion";
 import { headerVariants } from "../../motionUtils";
 import { Link } from "react-router-dom";
