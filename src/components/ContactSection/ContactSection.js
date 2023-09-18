@@ -3,6 +3,8 @@ import "./ContactSection.css";
 import downArrow from "../../assets/images/downArrow.svg";
 import { motion } from "framer-motion";
 
+
+
 const ContactSection = () => {
   return (
     <motion.div
