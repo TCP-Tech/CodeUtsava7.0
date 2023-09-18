@@ -8,7 +8,7 @@ const Section15 = () => {
   const [activeId, setActiveId] = useState(1);
   const [selectedImage, setSelectedImage] = useState(null);
   const onClick = (id) => setActiveId(id);
-  //passing the clicked image to the modal 
+  //passing the clicked image to the modal
   const openModal = (imgSrc) => {
     setSelectedImage(imgSrc);
   };
@@ -27,7 +27,6 @@ const Section15 = () => {
       </div>
       <div className="codeutsava__section15-glimpses-container">
         {glimpses.map((card) => (
-          
           <div
             key={card.id}
             className={`codeutsava__section15-glimpses-panel ${
@@ -36,7 +35,14 @@ const Section15 = () => {
             onClick={() => onClick(card.id)}
             style={{ backgroundImage: `url(${card.imgSrc})` }}
           >
-            <div className={card.id%2==0?'codeutsava__section15-glimpses-panel-evenoverlay':'codeutsava__section15-glimpses-panel-oddoverlay'} onClick={() => openModal(card.imgSrc)} >
+            <div
+              className={
+                card.id % 2 == 0
+                  ? "codeutsava__section15-glimpses-panel-evenoverlay"
+                  : "codeutsava__section15-glimpses-panel-oddoverlay"
+              }
+              onClick={() => openModal(card.imgSrc)}
+            >
               Click
             </div>
           </div>
@@ -44,7 +50,10 @@ const Section15 = () => {
       </div>
 
       {/* Rendering the modal,it is for that bigger image appearence with all that popping and closing functionality through a close button */}
-      <Modal isOpen={selectedImage !== null} onClose={() => setSelectedImage(null)}>
+      <Modal
+        isOpen={selectedImage !== null}
+        onClose={() => setSelectedImage(null)}
+      >
         {selectedImage && <img src={selectedImage} alt="Larger Glimpse" />}
       </Modal>
     </motion.div>
@@ -52,9 +61,3 @@ const Section15 = () => {
 };
 
 export default Section15;
-
-
-
-
-
-

@@ -34,7 +34,7 @@
   background-color: rgb(230, 118, 20);
   overflow: hidden;
   opacity: 0;
-  transition: opacity 0.5s ease; 
+  transition: opacity 0.5s ease;
 }
 .codeutsava__section15-glimpses-panel-oddoverlay {
   display: flex;
@@ -46,12 +46,11 @@
   right: 0;
   bottom: 0;
   margin: 9px;
-  background-color:var(--primary-c);
+  background-color: var(--primary-c);
   overflow: hidden;
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 0.5s ease;
 }
-
 
 .codeutsava__section15-glimpses-container {
   display: flex;
@@ -84,17 +83,19 @@
   background-image: inherit;
   background-size: cover;
   background-position: center;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 .codeutsava__section15-glimpses-panel:hover::before {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
-.codeutsava__section15-glimpses-panel:hover .codeutsava__section15-glimpses-panel-oddoverlay {
- opacity: 0.5;
+.codeutsava__section15-glimpses-panel:hover
+  .codeutsava__section15-glimpses-panel-oddoverlay {
+  opacity: 0.5;
 }
-.codeutsava__section15-glimpses-panel:hover .codeutsava__section15-glimpses-panel-evenoverlay {
- opacity: 0.5;
+.codeutsava__section15-glimpses-panel:hover
+  .codeutsava__section15-glimpses-panel-evenoverlay {
+  opacity: 0.5;
 }
 
 .codeutsava__section15-glimpses-panel {
@@ -111,5 +112,5 @@
   position: relative;
   /* transition: flex 0.7s ease-in, transform 0.3s ease;  */
   overflow: hidden;
-  transform-origin: center; 
+  transform-origin: center;
 }
