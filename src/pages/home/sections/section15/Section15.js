@@ -3,7 +3,7 @@ import "./Section15.css";
 import { motion } from "framer-motion";
 import glimpses from "../../../../assets/data/glimpsesData";
 import ghost from "../../../../assets/images/ghost.png";
-import Modal from "./modal";
+import GalleryCard from "../../../../components/galleryCard/GalleryCard";
 const Section15 = () => {
   const [activeId, setActiveId] = useState(1);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -50,12 +50,12 @@ const Section15 = () => {
       </div>
 
       {/* Rendering the modal,it is for that bigger image appearence with all that popping and closing functionality through a close button */}
-      <Modal
+      <GalleryCard
         isOpen={selectedImage !== null}
         onClose={() => setSelectedImage(null)}
       >
         {selectedImage && <img src={selectedImage} alt="Larger Glimpse" />}
-      </Modal>
+      </GalleryCard>
     </motion.div>
   );
 };

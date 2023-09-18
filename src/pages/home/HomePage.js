@@ -20,7 +20,8 @@ import Section12 from "./sections/section12/Section12";
 import Section13 from "./sections/section13/Section13";
 import Section14 from "./sections/section14/Section14";
 
-import ContactSection from "../../components/ContactSection/ContactSection";
+import ContactSection from "../../components/contactSection/ContactSection";
+
 const HomePage = () => {
   return (
     <div>

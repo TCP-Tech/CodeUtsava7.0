@@ -1,4 +1,4 @@
-.modal-overlay {
+.codeutsava__gallery-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,11 +12,11 @@
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
-.modal-overlay.open {
+.codeutsava__gallery-modal-overlay.open {
   opacity: 1;
 }
 
-.modal-content {
+.codeutsava__gallery-modal-content {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -24,7 +24,7 @@
   max-width: 80%;
   text-align: center;
 }
-.modal-content img {
+.codeutsava__gallery-modal-content img {
   max-width: 100%;
   max-height: 80vh;
   width: auto;
@@ -35,7 +35,7 @@
   top: 50%;
   transform: translateY(5%);
 }
-.close-button {
+.codeutsava__gallery-close-button {
   position: absolute;
   top: 90px;
   right: 60px;
@@ -46,6 +46,6 @@
   outline: none;
   color: white;
 }
-.close-button::before {
+.codeutsava__gallery-close-button::before {
   content: "×";
 }
