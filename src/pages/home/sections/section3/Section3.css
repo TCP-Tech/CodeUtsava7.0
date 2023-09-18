@@ -3,6 +3,8 @@
   padding-bottom: 4rem;
   color: white;
   font-family: "Poppins";
+  position: relative;
+  z-index: -1;
 }
 
 .codeutsava__section3-body {
