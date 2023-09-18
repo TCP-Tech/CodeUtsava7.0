@@ -30,22 +30,17 @@ const glimpses = [
     imgSrc: Img5,
   },
   {
-    id: 7,
+    id: 6,
     imgSrc: Img7,
   },
   {
-    id: 8,
+    id: 7,
     imgSrc: Img8,
   },
   {
-    id: 9,
-    imgSrc: Img9,
-  },
-  {
-    id: 10,
+    id: 8,
     imgSrc: Img10,
   },
 ];
 
 export default glimpses;
-
