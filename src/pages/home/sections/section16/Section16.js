@@ -1,11 +1,9 @@
 import React from "react";
-import "./ContactSection.css";
-import downArrow from "../../assets/images/downArrow.svg";
+import "./Section16.css";
+import downArrow from "../../../../assets/images/downArrow.svg";
 import { motion } from "framer-motion";
 
-
-
-const ContactSection = () => {
+const Section16 = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -64,4 +62,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default Section16;

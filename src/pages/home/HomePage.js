@@ -20,7 +20,8 @@ import Section12 from "./sections/section12/Section12";
 import Section13 from "./sections/section13/Section13";
 import Section14 from "./sections/section14/Section14";
 
-import ContactSection from '../../components/contactSection/ContactSection'
+import Section16 from "./sections/section16/Section16";
+
 
 
 const HomePage = () => {
@@ -47,7 +48,7 @@ const HomePage = () => {
         <Section6 />
         <Section7 />
         <Section9 />
-        <ContactSection />
+        <Section16 />
         <Section10 />
       </div>
       <div className="codeutsava__footer-container">
