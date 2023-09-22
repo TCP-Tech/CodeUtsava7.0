@@ -27,6 +27,8 @@ jobs:
 
     - name: Build
       run: npm run build --force
+      env:
+        CI: false
       
     - name: Generate PEM
       run: echo "$PEM" >> tcp.pem && chmod 400 tcp.pem
