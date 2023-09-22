@@ -20,7 +20,10 @@ import Section12 from "./sections/section12/Section12";
 import Section13 from "./sections/section13/Section13";
 import Section14 from "./sections/section14/Section14";
 
-import ContactSection from "../../components/ContactSection/ContactSection";
+import Section16 from "./sections/section16/Section16";
+
+
+
 const HomePage = () => {
   return (
     <div>
@@ -37,15 +40,15 @@ const HomePage = () => {
         <Section15 />
         <Section3 />
         <Section4 />
-        <Section5 />
-        {/* <Section11 />
+        {/* <Section5 />
+        <Section11 />
           <Section12 />
           <Section13 />
           <Section8 /> */}
         <Section6 />
         <Section7 />
         <Section9 />
-        <ContactSection />
+        <Section16 />
         <Section10 />
       </div>
       <div className="codeutsava__footer-container">

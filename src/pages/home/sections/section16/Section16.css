@@ -1,0 +1,177 @@
+.codeutsava__contact-container {
+  color: white;
+  margin: 6rem 0;
+  font-family: "Poppins";
+}
+
+.codeutsava__contact-section {
+  display: flex;
+  margin-top: 6rem;
+  font-size: 2rem;
+  color: white;
+  font-family: var(--font-family);
+  padding: 4rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  gap: 2rem;
+  background-color: rgb(30, 31, 33);
+}
+.codeutsava__contact-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 82px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.codeutsava__contact-submit-button {
+  font-family: var(--font-family);
+  font-size: 16px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: var(--primary-c);
+}
+
+.codeutsava__contact-form {
+  height: 560px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.map-container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.codeutsava__contact-submit-button img {
+  width: 12px;
+  margin-left: 4px;
+  transform: rotate(-90deg);
+  filter: invert(100%);
+}
+.codeutsava__contact-submit-button a {
+  font-size: 12px;
+  margin-left: 8px;
+}
+.codeutsava__contact-submit-button:hover img {
+  filter: invert(0%);
+}
+
+.codeutsava__contact-header {
+  width: 90%;
+  color: white;
+  font-size: 1.9rem;
+  border-bottom: 1px solid rgba(193, 186, 186, 0.232);
+}
+
+.codeutsava__contact-submit-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+
+.map {
+  border: none;
+  filter: invert(90%);
+  height: 560px;
+  width: 100%;
+  border: 1px solid rgba(121, 111, 111, 0.639);
+}
+
+.codeutsava__contact-form form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid greenyellow */
+}
+
+.form-group {
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 10px;
+  border: 1px solid rgb(161, 153, 153, 0.5);
+  border-radius: 4px;
+  background-color: rgb(33, 36, 37);
+  color: white;
+}
+
+button[type="submit"] {
+  background-color: #eedb00;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+@media (max-width: 1000px) {
+  .codeutsava__contact-section {
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+  }
+  .container-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .codeutsava__contact-form {
+    width: 90%;
+    height: 590px;
+  }
+  .codeutsava__contact-form form {
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map-container {
+    width: 90%;
+    height: 590px;
+  }
+}
+
+@media (max-width: 625px) {
+  .map-container {
+    width: 90%;
+  }
+  .codeutsava__contact-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+}

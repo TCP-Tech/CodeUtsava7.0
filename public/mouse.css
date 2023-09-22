@@ -31,11 +31,6 @@
   transform-origin: center bottom;
   overflow: hidden;
 }
-.gg {
-  height: 0 !important;
-  width: 0 !important;
-  display: none !important;
-}
 .ghost__tail {
   position: absolute;
   z-index: -1;

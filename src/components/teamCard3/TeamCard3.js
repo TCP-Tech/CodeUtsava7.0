@@ -2,11 +2,13 @@ import React from "react";
 import "./TeamCard3.css";
 import "../../../node_modules/font-awesome/css/font-awesome.min.css";
 import spider from "../../assets/images/spider.svg";
-import horrorpumpkin from "../../assets/images/horrorpumpkin.svg";
+import pumpkin from "../../assets/images/speakers/jack-o-lantern.svg";
 
 const TeamCard3 = ({ img, name, position, linkedin, email, domain }) => {
   return (
-    <div className="codeutsava__team-card3">
+    <div className={`codeutsava__team-card3 ${
+      name === "Animesh Agrawal " ? `overall` : `normal`
+    }`}>
       <div className="codeutsava__team-card3-ds-top"></div>
       <div className="codeutsava__team-card3-spider">
         <img src={spider} className="codeutsava__team-card3-spider-img" />
@@ -16,11 +18,11 @@ const TeamCard3 = ({ img, name, position, linkedin, email, domain }) => {
       </div>
       <div className="codeutsava__team-card3-content">
         <h2>{name}</h2>
-        <h2>{position}</h2>
+        <h2 className="position">{position}</h2>
       </div>
       <div className="codeutsava__team-card3-pumpkin">
         <img
-          src={horrorpumpkin}
+          src={pumpkin}
           className="codeutsava__team-card3-pumpkin-img"
         />
       </div>

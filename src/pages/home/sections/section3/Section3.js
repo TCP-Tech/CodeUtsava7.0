@@ -9,6 +9,8 @@ import Slider from "react-slick";
 import { sliderSettings } from "../../../../motionUtils";
 import { motion } from "framer-motion";
 
+import Events from "../../../../assets/data/eventsData"
+
 import { previousYear, baseUrl } from "../../../../constants";
 
 import axios from "axios";
@@ -44,7 +46,7 @@ const Section3 = () => {
       <div className="codeutsava__section3-title">Events</div>
       <div className="codeutsava__section3-events-container">
         <Slider {...sliderSettings} className="slider">
-          {state.data.map((event, index) => (
+          {Events.map((event, index) => (
             <EventCard
               key={index}
               img={event.img}
