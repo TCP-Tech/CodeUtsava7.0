@@ -88,7 +88,7 @@
 .codeutsava__team-card3-pumpkin-img {
   height: 60px;
   width: 60px;
-  transition: all 1s ease-in;
+  transition: all .2s ease-in;
 }
 .codeutsava__team-card3:hover .codeutsava__team-card3-pumpkin-img {
   height: 40px;
@@ -104,7 +104,7 @@
   bottom: -15%;
   width: 100%;
   background-color: var(--primary-c);
-  transition: all 1.5s ease-in;
+  transition: all .5s ease-in;
 }
 .codeutsava__team-card3-social a:hover{
   color: white;
