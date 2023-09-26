@@ -10,7 +10,7 @@ const TeamTcpYear = () => {
   console.log(location.state);
   return (
     <>
-      <div className="codeutsava__navbarTeam-container">
+      <div className="codeutsava__navbar-container">
         <NavbarTeam />
       </div>
       <div>

@@ -181,35 +181,45 @@ const Section1 = () => {
     <motion.div
       initial="hidden"
       whileInView="show"
-      variants={staggerChildren}
       viewport={{ once: true, amount: 0.25 }}
       className="codeutsava__section1"
       id="home"
     >
       <motion.canvas
         className="codeutsava__section1-bg-canvas"
-        variants={textVariant(1.2, 3)}
+        variants={textVariant(1.5, 3)}
         ref={canvasRef}
       />
-      <motion.div
-        variants={fadeIn("down", "tween", 0.5, 1)}
-        className="codeutsava__section1-body"
-      >
+      <div className="codeutsava__section1-body">
         <div className="codeutsava__section1-menu">
-          <img className="codeutsava__section1-heading" src={wel}></img>
-          <div className="codeutsava__section1-image">
+          <motion.img
+            variants={fadeIn("down", "tween", 0.5, 1)}
+            className="codeutsava__section1-heading"
+            src={wel}
+          ></motion.img>
+          <motion.div
+            variants={fadeIn("up", "tween", 1, 1)}
+            className="codeutsava__section1-image"
+          >
             <img src={codeutsavaTitle}></img>
-          </div>
-          <div className="codeutsava__section1-subheading">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("left", "tween", 1.5, 1)}
+            className="codeutsava__section1-subheading"
+          >
             Code. Innovate. Celebrate.
-          </div>
-          <div className="codeutsava__section1-para">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", "tween", 2, 1)}
+            className="codeutsava__section1-para"
+          >
             Central India's{" "}
             <span style={{ fontWeight: "600" }}>Largest Coding Event.</span>{" "}
             Stay Tuned!
-          </div>
+          </motion.div>
         </div>
-        <div
+        <motion.div
+          variants={fadeIn("up", "tween", 2.5, 1)}
           className="codeutsava__section1-button-container"
           style={{ display: "flex", placeContent: "center" }}
         >
@@ -237,10 +247,10 @@ const Section1 = () => {
               Steps To Register On Devfolio
             </a>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
       <motion.ul
-        variants={fadeIn("up", "tween", 1, 1)}
+        variants={fadeIn("up", "tween", 4, 1)}
         className="codeutsava__section1-side-links"
       >
         <li>
@@ -401,7 +411,7 @@ const Section1 = () => {
         </li>
       </motion.ul>
       <motion.div
-        variants={fadeIn("up", "tween", 1.2, 1)}
+        variants={fadeIn("up", "tween", 4, 1)}
         className="codeutsava__section1-scrollDown"
       >
         <a href="#aboutus">Scroll Down</a>
@@ -420,7 +430,3 @@ const Section1 = () => {
 };
 
 export default Section1;
-
-
-
-

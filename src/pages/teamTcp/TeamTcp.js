@@ -9,7 +9,7 @@ export default class TeamTcp extends Component {
   render() {
     return (
       <>
-        <div className="codeutsava__navbarTeam-container">
+        <div className="codeutsava__navbar-container">
           <NavbarTeam />
         </div>
         <div className="container mx-auto codeutsava__team-options-container">

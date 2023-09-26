@@ -9,9 +9,11 @@ import Slider from "react-slick";
 import { sliderSettings } from "../../../../motionUtils";
 import { motion } from "framer-motion";
 
-import Events from "../../../../assets/data/eventsData"
+import Events from "../../../../assets/data/eventsData";
 
 import { previousYear, baseUrl } from "../../../../constants";
+
+import frank from "../../../../assets/images/frakenstein.png";
 
 import axios from "axios";
 
@@ -43,7 +45,10 @@ const Section3 = () => {
       className="codeutsava__section3"
       id="events"
     >
-      <div className="codeutsava__section3-title">Events</div>
+      <div className="codeutsava__section3-title">
+        <img src={frank}></img>
+        Events
+      </div>
       <div className="codeutsava__section3-events-container">
         <Slider {...sliderSettings} className="slider">
           {Events.map((event, index) => (
