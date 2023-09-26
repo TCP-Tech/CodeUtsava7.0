@@ -5,6 +5,7 @@ import "./Team.css";
 import Footer from "../../components/footer/Footer"
 
 import TeamCard from "../teamCard/TeamCard";
+import TeamCard4 from "../teamCard4/TeamCard4";
 import TeamCard3 from "../teamCard3/TeamCard3";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -104,7 +105,7 @@ const Team = ({year}) => {
         <div className="codeutsava__team-title">Executives</div>
         <div className="codeutsava__team-members">
           {executives.map((member, index) => (
-            <TeamCard
+            <TeamCard4
               key={index}
               img={member.Photo}
               name={member.Name}
