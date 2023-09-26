@@ -7,7 +7,9 @@ import speakers from "../../../../assets/data/speakersData.js";
 import SpeakerCard from "../../../../components/speakerCard/SpeakerCard";
 import { motion } from "framer-motion";
 
-import { previousYear, baseUrl } from '../../../../constants'
+import { previousYear, baseUrl } from "../../../../constants";
+
+import pumpkin from '../../../../assets/images/pumpkin.png'
 
 import axios from "axios";
 
@@ -39,7 +41,10 @@ const Section4 = () => {
       id="speakers"
     >
       <div className="codeutsava__section4-body">
-        <div className="codeutsava__section4-title">Speakers</div>
+        <div className="codeutsava__section4-title">
+          Speakers
+          <img src={pumpkin}></img>
+        </div>
         <div className="codeutsava__section4-speakers">
           {speakers.map((speaker, index) => (
             <SpeakerCard

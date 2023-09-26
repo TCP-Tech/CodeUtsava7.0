@@ -20,6 +20,15 @@
   letter-spacing: 1px;
   margin-bottom: 4rem;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.codeutsava__section4-title img {
+  width: auto;
+  position: relative;
+  height: 90px;
 }
 
 .codeutsava__section4-speakers {
