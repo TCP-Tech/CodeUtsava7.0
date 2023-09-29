@@ -82,6 +82,7 @@
 .codeutsava__section4-speaker-menu h3 {
   font-size: 20px;
   line-height: 20px;
+  text-align: center;
   color: var(--secondary-c);
   padding-top: 0.5rem;
 }
