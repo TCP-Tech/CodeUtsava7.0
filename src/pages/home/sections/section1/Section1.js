@@ -3,7 +3,6 @@ import "./Section1.css";
 import codeutsavaTitle from "../../../../assets/images/codeutsavaTitle3d.svg";
 import discord from "../../../../assets/images/discord.svg";
 import wel from "../../../../assets/images/welcome.png";
-import intro_music from "../../../../assets/audio/intro-music.mp3";
 
 import { animate, motion, transform } from "framer-motion";
 import {
@@ -19,16 +18,16 @@ const Section1 = () => {
   const c1 = "#7f00a6";
   const c2 = "#b200ee";
 
-  // React.useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = "https://apply.devfolio.co/v2/sdk.js";
-  //   script.async = true;
-  //   script.defer = true;
-  //   document.body.appendChild(script);
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   };
-  // }, []);
+  React.useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   const canvasRef = useRef(null);
   useEffect(() => {
