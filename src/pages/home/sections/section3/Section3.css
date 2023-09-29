@@ -3,6 +3,8 @@
   padding-bottom: 4rem;
   color: white;
   font-family: "Poppins";
+  position: relative;
+  z-index: -1;
 }
 
 .codeutsava__section3-body {
@@ -18,9 +20,19 @@
   font-size: 48px;
   text-align: center;
   letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.codeutsava__section3-events-container{
+.codeutsava__section3-title img {
+  width: auto;
+  position: relative;
+  height: 60px;
+  margin-right: 1rem;
+}
+
+.codeutsava__section3-events-container {
   max-width: 98%;
 }
 
@@ -33,14 +45,14 @@
 
 .slick-prev:before,
 .slick-next:before {
-  display:none;
+  display: none;
 }
 
-.slick-list{
+.slick-list {
   overflow-y: hidden !important;
 }
 
-.codeutsava__section3-events-container .slider .slick-arrow .slick-prev button{
+.codeutsava__section3-events-container .slider .slick-arrow .slick-prev button {
   display: none;
 }
 .codeutsava__section3-events-container .slider .slick-list .slick-slide > div {
@@ -59,18 +71,21 @@
   }
 }
 
-
 @media screen and (max-width: 1000px) {
   .codeutsava__section3-body {
     margin: 0 1rem;
   }
-  .codeutsava__section3{
+  .codeutsava__section3 {
     padding-bottom: 0;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .codeutsava__section3-events-container .slider .slick-list .slick-slide > div {
+  .codeutsava__section3-events-container
+    .slider
+    .slick-list
+    .slick-slide
+    > div {
     padding: 0 0;
   }
   .codeutsava__section3-slider {

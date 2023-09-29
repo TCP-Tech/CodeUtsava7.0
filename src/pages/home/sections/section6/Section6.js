@@ -3,6 +3,7 @@ import React from "react";
 import "./Section6.css";
 
 import sponsers from "../../../../assets/data/sponsersData.js";
+import cauldron from "../../../../assets/images/cauldron.png";
 import { motion } from "framer-motion";
 
 const Section6 = () => {
@@ -15,7 +16,9 @@ const Section6 = () => {
       id="sponsers"
     >
       <div className="codeutsava__section6-body">
-        <div className="codeutsava__section6-title">Sponsors</div>
+        <div className="codeutsava__section6-title">
+        <img src={cauldron}></img>
+        Sponsors</div>
         <div className="codeutsava__section6-content">
           On behalf of team TCP, we would like to publicly thank the generous
           sponsors without whom this event could not be held so smoothly.
