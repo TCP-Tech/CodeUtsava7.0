@@ -13,8 +13,15 @@
   color: #ffffff;
   text-align: center;
   margin: 2rem 0;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.codeutsava__section7-title img{
+  width: auto;
+  position: relative;
+  height: 90px;
+}
 .codeutsava__section7-body {
   display: grid;
   margin: 5rem 0;
