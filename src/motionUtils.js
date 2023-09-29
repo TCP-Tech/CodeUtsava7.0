@@ -26,6 +26,7 @@ export const sliderSettings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   initialSlide: 0,
+  lazyload: true,
   touchMove: true,
   useCSS: true,
   autoplay: true,

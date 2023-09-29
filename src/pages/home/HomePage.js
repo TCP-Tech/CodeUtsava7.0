@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import "./HomePage.css";
 import "../../App.css";
 import InfiniteCarousel from "../../components/infiniteCarousel/InfiniteCarousel";
+import IntroAudio from "../../components/introAudio/IntroAudio";
 import Section1 from "./sections/section1/Section1";
 import Section2 from "./sections/section2/Section2";
 import Section3 from "./sections/section3/Section3";
@@ -19,7 +20,6 @@ import Section11 from "./sections/section11/Section11";
 import Section12 from "./sections/section12/Section12";
 import Section13 from "./sections/section13/Section13";
 import Section14 from "./sections/section14/Section14";
-
 import Section16 from "./sections/section16/Section16";
 
 
@@ -51,6 +51,7 @@ const HomePage = () => {
         <Section16 />
         <Section10 />
       </div>
+      <div className="intro_audio_new_design"><IntroAudio/></div>
       <div className="codeutsava__footer-container">
         <Footer />
       </div>
