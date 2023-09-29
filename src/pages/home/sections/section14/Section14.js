@@ -36,7 +36,7 @@ const Section14 = () => {
     series: [
       {
         name: "Total Number of Teams",
-        data: [120, 200, 260, 450, 570, 640, 800], // Updated Y-axis values for the left graph
+        data: [120, 200, 260, 450, 570, 640, 800],
       },
       {
         name: "Total Participations",
@@ -86,7 +86,7 @@ const Section14 = () => {
                   },
                 },
               }}
-              series={state.series.slice(0, 1)} // Use only the first series for the left graph
+              series={state.series.slice(0, 1)}
               type="area"
             />
           </div>
@@ -106,7 +106,7 @@ const Section14 = () => {
                   },
                 },
               }}
-              series={state.series.slice(1)} // Use only the second series for the right graph
+              series={state.series.slice(1)}
               type="bar"
             />
           </div>
