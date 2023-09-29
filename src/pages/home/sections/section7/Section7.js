@@ -6,6 +6,7 @@ import faqs from "../../../../assets/data/faqData";
 import { motion } from "framer-motion";
 import downArrow from "../../../../assets/images/downArrow.svg";
 import frank from "../../../../assets/images/frakenstein.png";
+import ghost from "../../../../assets/images/ghost.png";
 import AccordianQA from '../../../../components/faq/QuestionAccordian'
 
 import { useState } from "react";
@@ -29,7 +30,7 @@ const Section7 = () => {
       id="faq"
     >
       <div className="codeutsava__section7-title" id="faq">
-        FAQs
+        FAQs <img src={ghost} />
       </div>
       <div className="codeutsava__section7-body">
         <div className="codeutsava__section7-left">
