@@ -1,0 +1,35 @@
+  .button.codeutsava__introAudio-intro-audio-btn {
+    /* background-color: rgb(244, 117, 21); */
+    border-radius: 4px;
+    padding: 2px;
+    padding-top:4px ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+  }
+  button.codeutsava__introAudio-intro-audio-btn1{
+   background-color:  rgb(244, 117, 21);
+   background-color: transparent;
+   background-image: url("../../assets/images/Pumpkin2.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+    padding: 2px;
+    padding-top:4px ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 60px;
+    width:55px;
+    /* border-radius: 50%; */
+    
+  }
+  .codeutsava__introAudio-intro-audio-btn1{
+    height: 40px;
+    width:40px;
+  }
+  button.codeutsava__introAudio-intro-audio-btn1:hover{
+    opacity: 70%;
+  }
+
+ 

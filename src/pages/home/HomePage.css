@@ -11,4 +11,11 @@
   margin-top: 10rem;
   overflow-x: hidden;
 }
+.intro_audio_new_design{
+  position: fixed;
+  bottom:0.75rem;
+  z-index: 475;
+  left:2.2rem;
+}
+
 
