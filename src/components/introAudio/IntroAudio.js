@@ -38,26 +38,27 @@ const IntroAudio = () => {
   };
 
   return (
-    <div class="justbg">
+    <div class="codeutsava__introAudio-justbg">
+
         <audio
             ref={audioRef}
-            id="codeutsava__section1-intro-audio"
+            id="codeutsava__introAudio-intro-audio"
             autoPlay
             loop
           >
             <source src={intro_music} />
           </audio>
-          <div className="codeutsava__section1-intro-audio-div">
+          <div className="codeutsava__introAudio-intro-audio-div">
             <button
-              className="codeutsava__section1-intro-audio-btn1"
+              className="codeutsava__introAudio-intro-audio-btn1"
               onClick={toggle}
             >
               {!notPlaying ? (
                 <svg
                   version="1.0"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
+                  width="24"
+                  height="24"
                   viewBox="0 0 512.000000 512.000000"
                   preserveAspectRatio="xMidYMid meet"
                 >
@@ -93,8 +94,8 @@ const IntroAudio = () => {
                 <svg
                   version="1.0"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
+                  width="20"
+                  height="20"
                   viewBox="0 0 512.000000 512.000000"
                   preserveAspectRatio="xMidYMid meet"
                 >
@@ -123,7 +124,7 @@ const IntroAudio = () => {
                 </svg>
               )}
             </button>
-          </div>
+           </div>
     </div>
   )
 }
