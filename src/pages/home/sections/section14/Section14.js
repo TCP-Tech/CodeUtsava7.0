@@ -15,14 +15,14 @@ const Section14 = () => {
         id: "basic-bar",
       },
       xaxis: {
-        categories: ["2018", "2019", "2020", "2021", "2022", "2023"],
+        categories: ["2016", "2018", "2019", "2020", "2022", "2022-23", "2023-24"],
         title: {
           text: "Year",
         },
       },
       yaxis: {
         title: {
-          text: "No of Registrations",
+          text: "Total Number of Teams",
         },
       },
       dataLabels: {
@@ -36,13 +36,11 @@ const Section14 = () => {
     series: [
       {
         name: "Total Number of Teams",
-        data: [100, 500, 700, 1000, 1000, 1100],
+        data: [120, 200, 260, 450, 570, 640, 800], // Updated Y-axis values for the left graph
       },
-    ],
-    series: [
       {
         name: "Total Participations",
-        data: [500, 1000, 1000, 2500, 3000, 5000],
+        data: [500, 800, 1000, 1600, 1800, 2400, 3200],
       },
     ],
   });
@@ -76,7 +74,7 @@ const Section14 = () => {
                 ...optionsWithoutToolbar,
                 xaxis: {
                   ...optionsWithoutToolbar.xaxis,
-                  categories: ["2016", "2018", "2019", "2020", "2022", "2023"],
+                  categories: ["2016", "2018", "2019", "2020", "2022", "2022-23", "2023-24"],
                   title: {
                     text: "Year",
                   },
@@ -88,7 +86,7 @@ const Section14 = () => {
                   },
                 },
               }}
-              series={state.series}
+              series={state.series.slice(0, 1)} // Use only the first series for the left graph
               type="area"
             />
           </div>
@@ -97,20 +95,18 @@ const Section14 = () => {
               options={{
                 ...state.options,
                 xaxis: {
-                  ...state.options.xaxis,
-                  categories: ["2016", "2018", "2019", "2020", "2022", "2023"],
+                  categories: ["2016", "2018", "2019", "2020", "2022", "2022-23", "2023-24"],
                   title: {
                     text: "Year",
                   },
                 },
                 yaxis: {
-                  ...state.options.yaxis,
                   title: {
                     text: "Total Participations",
                   },
                 },
               }}
-              series={state.series}
+              series={state.series.slice(1)} // Use only the second series for the right graph
               type="bar"
             />
           </div>
