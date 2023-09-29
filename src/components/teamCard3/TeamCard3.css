@@ -57,8 +57,8 @@
   transform: scale(1.1);
 }
 
-.overall{
-  transform: translateY(-50px);
+.overall {
+  transform: translateY(-50px); /* Adjust the translateY value as needed */
 }
 
 .normal{
@@ -155,5 +155,33 @@
 
   100% {
     top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .normal{
+    transform: translateY(10px);
+    order: 2;
+  }
+  .codeutsava__team-card3 {
+    flex-direction: column; 
+  }
+
+  .codeutsava__team-card3.normal {
+    transform: translateY(10px); 
+  }
+
+  .codeutsava__team-card3.overall {
+    transform: none; 
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .normal{
+    order: 2;
+  }
+  .overall{
+    transform: translateY(10px);
+  }
+  .codeutsava__team-card3 {
+    flex-direction: row; /* Reset flex direction to row for tablets */
   }
 }

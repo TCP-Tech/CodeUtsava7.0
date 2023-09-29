@@ -75,3 +75,8 @@
     top: 12px;
   }
 }
+@media (width<=800px){
+  .ghost{
+    display: none;
+  }
+}

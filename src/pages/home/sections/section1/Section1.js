@@ -18,6 +18,7 @@ import register from "../../../../assets/images/register.pdf";
 const Section1 = () => {
   const c1 = "#7f00a6";
   const c2 = "#b200ee";
+
   // React.useEffect(() => {
   //   const script = document.createElement("script");
   //   script.src = "https://apply.devfolio.co/v2/sdk.js";
@@ -28,6 +29,7 @@ const Section1 = () => {
   //     document.body.removeChild(script);
   //   };
   // }, []);
+
   const canvasRef = useRef(null);
   useEffect(() => {
     // Draw canvas here...
@@ -193,10 +195,11 @@ const Section1 = () => {
         >
           <div
             className="apply-button"
-            data-hackathon-slug="codeutsava-3"
+            data-hackathon-slug="codeutsava-7"
             data-button-theme="dark-inverted"
             style={{ height: "44px", width: "312px" }}
           ></div>
+          <div className="codeutsava__section1-container2">
           <div className="codeutsava__section1-discord">
             <a
               className="codeutsava__section1-discord-link"
@@ -214,6 +217,7 @@ const Section1 = () => {
             >
               Steps To Register On Devfolio
             </a>
+          </div>
           </div>
         </motion.div>
       </div>
