@@ -50,16 +50,16 @@ const Section1 = () => {
     setscrollisPlaying(false);
     setnotPlaying(!notPlaying);
   };
-  // React.useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = "https://apply.devfolio.co/v2/sdk.js";
-  //   script.async = true;
-  //   script.defer = true;
-  //   document.body.appendChild(script);
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   };
-  // }, []);
+  React.useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   const canvasRef = useRef(null);
   useEffect(() => {
     // Draw canvas here...
@@ -225,7 +225,7 @@ const Section1 = () => {
         >
           <div
             className="apply-button"
-            data-hackathon-slug="codeutsava-3"
+            data-hackathon-slug="codeutsava-7"
             data-button-theme="dark-inverted"
             style={{ height: "44px", width: "312px" }}
           ></div>

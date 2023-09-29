@@ -244,8 +244,7 @@ button.codeutsava__section1-intro-audio-btn {
     padding-bottom: 8rem;
   }
   .codeutsava__section1-image img{
-    margin-bottom: 1.5rem;
-    height: 120px;
+    height: 130px;
   }
   .codeutsava__section1-body {
     max-width: 300px;
@@ -253,11 +252,11 @@ button.codeutsava__section1-intro-audio-btn {
   
   .codeutsava__section1-heading {
     margin: 1rem 0;
-    height: 30px;
+    height: 40px;
   }
 
   .codeutsava__section1-subheading {
-    font-size: 24px;
+    font-size: 28px;
     letter-spacing: 0;
     line-height: 20px;
     margin-bottom: 2rem;
