@@ -229,6 +229,7 @@ const Section1 = () => {
             data-button-theme="dark-inverted"
             style={{ height: "44px", width: "312px" }}
           ></div>
+          <div className="codeutsava__section1-container2">
           <div className="codeutsava__section1-discord">
             <a
               className="codeutsava__section1-discord-link"
@@ -246,6 +247,7 @@ const Section1 = () => {
             >
               Steps To Register On Devfolio
             </a>
+          </div>
           </div>
         </motion.div>
       </div>
