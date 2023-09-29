@@ -1,0 +1,36 @@
+.codeutsava__section1-intro-audio-div{
+    margin-top: 10px;
+}
+    
+    
+
+  .button.codeutsava__section1-intro-audio-btn {
+    /* background-color: rgb(244, 117, 21); */
+    border-radius: 4px;
+    padding: 2px;
+    padding-top:4px ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* background-image: url(../../assets/images/web.png); */
+
+  }
+  button.codeutsava__section1-intro-audio-btn1{
+   background-color:  rgb(244, 117, 21);
+    /* border-radius: 4px; */
+    padding: 2px;
+    padding-top:4px ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    
+  }
+
+   button.codeutsava__section1-intro-audio-btn:hover{
+    background-color: var(--primary-c);
+
+  
+  }
