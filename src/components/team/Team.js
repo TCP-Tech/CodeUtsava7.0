@@ -117,7 +117,7 @@ const Team = ({year}) => {
         </div>
       </div>
       <div className="codeutsava__footer-container">
-          <Footer />
+          <Footer id={"speakers"} />
       </div>
     </motion.div>
   );
