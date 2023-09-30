@@ -114,3 +114,13 @@
   overflow: hidden;
   transform-origin: center;
 }
+@media screen and (max-width: 415px) {
+  .codeutsava__section15 {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+  .codeutsava__section15-title {
+    font-size:40px;
+  }
+
+}

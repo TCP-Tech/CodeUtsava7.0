@@ -81,7 +81,9 @@
 
 @media screen and (max-width: 650px){
     .codeutsava__section9-title1{
-        font-size: 36px;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 40px;
         line-height: normal;
     }
 
