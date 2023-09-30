@@ -7,7 +7,7 @@ import tcpName from "../../assets/images/tcpName.png";
 import codeutsava from "../../assets/images/codeutsava.png";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({id}) => {
   return (
     <div className="codeutsava__footer" id="contactus">
       <div className="codeutsava__footer-container1">
@@ -139,7 +139,7 @@ const Footer = () => {
           Architected with ❤️ by <Link to="/team">TCP Team</Link>
         </div>
         <div className="codeutsava__footer-back-to-top">
-          <a href="#home">
+          <a href={`${id=="speakers"?'#speakers':'#home'}`}>
             Back to Top
             <svg
               fill="var(--secondary-c)"
