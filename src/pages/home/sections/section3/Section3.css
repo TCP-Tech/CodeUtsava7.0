@@ -94,3 +94,9 @@
     font-size: 40px;
   }
 }
+@media screen and (min-width: 484px) and (max-width: 768px) {
+  .slider{
+   margin-left: 10px;
+  }
+}
+
