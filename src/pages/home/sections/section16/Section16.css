@@ -182,4 +182,8 @@ textarea {
     flex-direction: column;
     padding: 2rem 1rem;
   }
+  .codeutsava__contact-title{
+    font-size: 40px;
+    line-height: 64px;
+  }
 }
