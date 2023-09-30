@@ -22,6 +22,17 @@
   align-items: center;
   flex-direction: column;
 }
+@media only screen and (min-width: 767px){
+  .codeutsava__section1-body {
+    width: auto;
+  }
+  .codeutsava__section1-image img{
+    width: 100%;
+  }
+  .codeutsava__section1-menu{
+    width: 100%;
+  }
+}
 .codeutsava__section1-menu {
   display: flex;
   flex-direction: column;
@@ -99,7 +110,7 @@
   display: flex;
   flex-direction: row;
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 650px){
 .codeutsava__section1-discord{
   margin-right: 18px;
 }
