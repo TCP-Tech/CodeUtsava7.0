@@ -6,7 +6,6 @@
     border: none;
     outline: none;
     cursor: pointer;
-
   }
   button.codeutsava__introAudio-intro-audio-btn1{
    background-color:  rgb(244, 117, 21);
@@ -32,4 +31,9 @@
     opacity: 70%;
   }
 
+ @media (max-width: 800px){
+    .codeutsava__introAudio-intro-audio-btn1{
+      display: none;
+    }
+  }
  
