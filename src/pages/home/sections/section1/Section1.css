@@ -22,6 +22,17 @@
   align-items: center;
   flex-direction: column;
 }
+@media only screen and (min-width: 767px){
+  .codeutsava__section1-body {
+    width: auto;
+  }
+  .codeutsava__section1-image img{
+    width: 100%;
+  }
+  .codeutsava__section1-menu{
+    width: 100%;
+  }
+}
 .codeutsava__section1-menu {
   display: flex;
   flex-direction: column;
@@ -95,7 +106,15 @@
   width: 24px;
   margin-right: 8px;
 }
-
+.codeutsava__section1-container2{
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 650px){
+.codeutsava__section1-discord{
+  margin-right: 18px;
+}
+}
 .codeutsava__section1-discord {
   display: flex;
   justify-content: left;
@@ -133,7 +152,7 @@
 .codeutsava__section1-side-links {
   position: absolute;
   left: 48px;
-  bottom: 4rem;
+  bottom: 5rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -164,18 +183,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 12px;
-}
-.codeutsava__section1-intro-audio-div{
-  margin-top: 10px;
-}
-button.codeutsava__section1-intro-audio-btn {
-  background-color: rgb(244, 117, 21);
-  border-radius: 4px;
-  padding: 2px;
-  padding-top:4px ;
-  border: none;
-  outline: none;
-  cursor: pointer
 }
 .codeutsava__section1-side-links li button:hover {
   list-style: none;
@@ -244,8 +251,7 @@ button.codeutsava__section1-intro-audio-btn {
     padding-bottom: 8rem;
   }
   .codeutsava__section1-image img{
-    margin-bottom: 1.5rem;
-    height: 120px;
+    height: 130px;
   }
   .codeutsava__section1-body {
     max-width: 300px;
@@ -253,11 +259,11 @@ button.codeutsava__section1-intro-audio-btn {
   
   .codeutsava__section1-heading {
     margin: 1rem 0;
-    height: 30px;
+    height: 40px;
   }
 
   .codeutsava__section1-subheading {
-    font-size: 24px;
+    font-size: 28px;
     letter-spacing: 0;
     line-height: 20px;
     margin-bottom: 2rem;

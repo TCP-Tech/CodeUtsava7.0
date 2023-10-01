@@ -52,7 +52,8 @@
 
 .codeutsava__section6-sponser-title {
   font-style: normal;
-  font-size: 32px;
+  font-size: 28px;
+  font-weight: 550;
   line-height: 44px;
   text-align: center;
 }
@@ -152,7 +153,8 @@
     max-width: 400px;
   }
   .codeutsava__section6-title {
-    font-size: 36px;
+    font-size: 40px;
+    padding-bottom: 10px;
   }
 }
 

@@ -2,6 +2,7 @@ import React from "react";
 
 import Prizes from "../../../../assets/data/PrizesData";
 import PrizeBox from "../../../../components/prizeBox/PrizeBox.js";
+import pumpkin from '../../../../assets/images/pumpkin.png';
 import { motion } from "framer-motion";
 
 import "./Section9.css";
@@ -15,7 +16,8 @@ const Section9 = () => {
       className="codeutsava__section9"
     >
       <div className="codeutsava__section9-title">
-        <div className="codeutsava__section9-title1">Prizes</div>
+        <div className="codeutsava__section9-title1">
+          <img src={pumpkin} />Prizes</div>
         <div className="codeutsava__section9-title2">
           Win exciting prizes worth upto 15 lakhs
         </div>

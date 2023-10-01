@@ -6,9 +6,7 @@ import pumpkin from "../../assets/images/speakers/jack-o-lantern.svg";
 
 const TeamCard3 = ({ img, name, position, linkedin, email, domain }) => {
   return (
-    <div className={`codeutsava__team-card3 ${
-      name === "Animesh Agrawal " ? `overall` : `normal`
-    }`}>
+    <div className="codeutsava__team-card3">
       <div className="codeutsava__team-card3-ds-top"></div>
       <div className="codeutsava__team-card3-spider">
         <img src={spider} className="codeutsava__team-card3-spider-img" />

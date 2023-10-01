@@ -1,16 +1,16 @@
-import speaker1 from '../images/speakers/speaker1.jpeg'
+import speaker1 from '../images/speakers/speaker1.jpg'
 import speaker2 from '../images/speakers/speaker2.jpg'
 import speaker3 from '../images/speakers/speaker3.jpeg'
 
 const speakers = [
   {
-    name: "Rohit Agarwal",
-    position: "Senior Software Engineer",
-    description: "SSE at Optum. B.Tech in Information Technology - NIT Raipur 2019 Batch. Runner-Up Hero Campus Challenge Season 4",
+    name: "Tushar Tayal",
+    position: "Director Of Engineering (Swiggy)",
+    description: "Director of Engineering at Swiggy. Contributed his expertise to Samsung, Ola, and Amadeus. Built products and teams from scratch, driving data-centric improvements.",
     img: speaker1,
     facebook: "",
     twitter: "",
-    linkedin: "https://www.linkedin.com/in/rohit-agarwal-711b82111/",
+    linkedin: "https://www.linkedin.com/in/ttayal/?originalSubdomain=in",
     github: "",
     youtube: "",
   },

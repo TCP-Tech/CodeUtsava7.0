@@ -1,6 +1,7 @@
 import React from "react";
 import "./Section16.css";
 import downArrow from "../../../../assets/images/downArrow.svg";
+import cauldron from "../../../../assets/images/cauldron.png";
 import { motion } from "framer-motion";
 
 const Section16 = () => {
@@ -11,7 +12,8 @@ const Section16 = () => {
       viewport={{ once: false }}
       className="codeutsava__contact-container"
     >
-      <div className="codeutsava__contact-title">Have Some Questions?</div>
+      <div className="codeutsava__contact-title">Have Some Questions?
+      <img src={cauldron} /></div>
       <div className="codeutsava__contact-section">
         <div className="codeutsava__contact-form">
           <div className="codeutsava__contact-header">Contact Us</div>

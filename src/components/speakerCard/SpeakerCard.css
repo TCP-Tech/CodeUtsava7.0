@@ -1,17 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
-
 .codeutsava__section4-speaker-card {
   background: #fef9ff;
   box-shadow: var(--secondary-c) 0px 0px 12px;
   border-radius: 16px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 1.5rem;
-  padding-bottom: 0.5rem;
+  padding: 1.5rem 1rem;
   max-width: 370px;
+  min-height: 100%;
 }
+
 .codeutsava__section4-decor-web {
   width: 98px;
   height: 22px;
@@ -82,6 +81,7 @@
 .codeutsava__section4-speaker-menu h3 {
   font-size: 20px;
   line-height: 20px;
+  text-align: center;
   color: var(--secondary-c);
   padding-top: 0.5rem;
 }
@@ -92,6 +92,7 @@
   line-height: 18px;
   text-align: center;
   padding: 1rem 0;
+  min-height: 110px;
 }
 
 .codeutsava__section4-speaker-divider {

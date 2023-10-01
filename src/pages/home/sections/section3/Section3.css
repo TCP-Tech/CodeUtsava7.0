@@ -4,7 +4,6 @@
   color: white;
   font-family: "Poppins";
   position: relative;
-  z-index: -1;
 }
 
 .codeutsava__section3-body {
@@ -92,6 +91,12 @@
     padding-top: 1rem;
   }
   .codeutsava__section3-title {
-    font-size: 36px;
+    font-size: 40px;
   }
 }
+@media screen and (min-width: 484px) and (max-width: 768px) {
+  .slider{
+   margin-left: 10px;
+  }
+}
+

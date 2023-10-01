@@ -125,7 +125,7 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-            <div className="codeutsava__navbar-hamburger-logo">
+            <div className="codeutsava__navbar-hamburger-logo"  style={{transform: 'translateX(-4px)'}}>
               <img src={codeutsava} />
             </div>
             <div className="codeutsava__navbar-hamburger-logo">
