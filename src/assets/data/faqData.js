@@ -30,7 +30,7 @@ const faqs = [
       "You can make teams of 3-6 members.",
   },
   {
-    question: "Why should I participate in CodeUtsava 6.0?",
+    question: "Why should I participate in CodeUtsava 7.0?",
     answer:
       "You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool schwag.😉",
   },
