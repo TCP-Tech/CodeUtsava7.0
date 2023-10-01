@@ -1,10 +1,46 @@
 import React from "react";
+import { useState } from "react";
 import "./Section16.css";
 import downArrow from "../../../../assets/images/downArrow.svg";
 import cauldron from "../../../../assets/images/cauldron.png";
 import { motion } from "framer-motion";
 
 const Section16 = () => {
+  const [formData, setFormData] = useState({});
+  const [sentT, setSentT] = useState("Send");
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  var emailData = {
+    service_id: "service_y25o3tu",
+    template_id: "TCP-Tech_Response",
+    user_id: "kE8yPfFnAkGs6aRJk",
+    template_params: {
+      person_name: formData.name,
+      mobile_no: formData.contact,
+      email_id: formData.email,
+      message: formData.message,
+    },
+  };
+  console.log(emailData);
+  const handleButtonClick = (e) => {
+    e.preventDefault();
+    fetch("https://api.emailjs.com/api/v1.0/email/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(emailData),
+    }).then(
+      (response) => {
+        console.log(response);
+      },
+      (err) => {
+        console.log(err);
+      }
+    );
+  };
+  console.log(formData);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -12,40 +48,59 @@ const Section16 = () => {
       viewport={{ once: false }}
       className="codeutsava__contact-container"
     >
-      <div className="codeutsava__contact-title">Have Some Questions?
-      <img src={cauldron} /></div>
+      <div className="codeutsava__contact-title">
+        Have Some Questions?
+        <img src={cauldron} />
+      </div>
       <div className="codeutsava__contact-section">
         <div className="codeutsava__contact-form">
           <div className="codeutsava__contact-header">Contact Us</div>
-          <form>
+          <form onSubmit={handleButtonClick}>
             <div className="form-group">
               <label htmlFor="name">Name</label>
-              <input required type="text" id="name" name="name" />
+              <input
+                required
+                type="text"
+                id="name"
+                name="name"
+                onChange={handleChange}
+              />
             </div>
             <div className="form-group">
               <label htmlFor="codeutsava__contact-number">Contact Number</label>
               <input
                 required
                 type="text"
+                onChange={handleChange}
                 id="codeutsava__contact-number"
-                name="codeutsava__contact"
+                name="contact"
               />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>
-              <input required type="email" id="email" name="email" />
+              <input
+                required
+                type="email"
+                id="email"
+                name="email"
+                onChange={handleChange}
+              />
             </div>
             <div className="form-group">
               <label htmlFor="message">Message</label>
               <textarea
                 id="message"
                 name="message"
+                onChange={handleChange}
                 rows="4"
                 cols="4"
               ></textarea>
             </div>
           </form>
-          <button className="codeutsava__contact-submit-button">
+          <button
+            onClick={handleButtonClick}
+            className="codeutsava__contact-submit-button"
+          >
             <a>SUBMIT</a>
             <img src={downArrow} />
           </button>
