@@ -75,7 +75,7 @@
     top: 12px;
   }
 }
-@media (width<=1200px){
+@media screen and (max-width: 1200px) {
   .ghost{
     display: none;
   }

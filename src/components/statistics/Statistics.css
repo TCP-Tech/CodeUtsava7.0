@@ -130,12 +130,12 @@
     padding: 12px;
   }
   .codeutsava__section-statistics-format-card-description {
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     margin: 4px;
   }
-  .codeutsava__section-statistics {
-    padding-bottom: 0;
+  .codeutsava__section-statistics-format-card-description span {
+    font-size: 24px;
   }
 }
 
@@ -165,8 +165,8 @@
     align-items: center;
   }
   .codeutsava__section-statistics-format-card {
-    width: 100%;
-    margin: 25px;
+    width: 80%;
+    margin: 1rem;
   }
   .apexcharts-xaxis-label,
   .apexcharts-yaxis-label {
