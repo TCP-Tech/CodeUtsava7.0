@@ -12,6 +12,7 @@ import AccordianQA from '../../components/faq/QuestionAccordian'
 import Footer from "../../components/footer/Footer";
 import NavbarTeam from "../../components/navbarTeam/NavbarTeam";
 import IntroAudio from "../../components/introAudio/IntroAudio";
+import { Link } from "react-router-dom";
 
 import { useState } from "react";
 
@@ -60,9 +61,9 @@ const FAQs = () => {
           <img src={frank} className="codeutsava__section7-left-img"></img>
           <div className="codeutsava__section7-left-bottom-container">
             <div className="codeutsava__section7-left-bottom-content">
-              <p>
+            <p>
                 Not able to find your question?
-                <br /> <br /> Dont worry , fill out the contact us at the end of
+                <br /> <br /> Dont worry , fill out the <Link to="/contactus"><span className="codeutsava__section7-left-bottom-content-contact-us-route"> Contact Us </span></Link>at the end of
                 this page. <br />
                 <br /> We're excited to chat with you, so expect a response
                 within 24 hours.

@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "What could be the size of the team?",
     answer:
-      "You can make teams of 3-6 members.",
+      "You can make teams of 2-4 members.",
   },
   {
     question: "Why should I participate in CodeUtsava 7.0?",
