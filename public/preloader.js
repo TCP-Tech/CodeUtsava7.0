@@ -9,10 +9,11 @@
     
     canvas.width = Math.max(window.innerWidth,window.innerHeight);
     canvas.height = Math.max(window.innerWidth,window.innerHeight);
-
+    var fact = 2;
+    if(window.innerWidth <= window.innerHeight) fact = 4;
     console.log(window.innerWidth,window.innerHeight);
     
-    var particleCount = 750;
+    var particleCount = 1000;
     var mouse = {
     x: window.innerWidth / 2,
     y: window.innerHeight / 2 
@@ -77,7 +78,7 @@
     for (var i = 0; i < particleCount; i++) {
     
       var randomColorIndex = Math.floor(Math.random() * 6);
-      var randomRadius = Math.random() * 2;
+      var randomRadius = Math.random() * 2.01;
     
       // Ensure particles are spawned past screen width and height so
       // there will be no missing stars when rotating canvas
@@ -118,7 +119,7 @@
     }
     
     c.fillRect(0, 0, canvas.width, canvas.height);
-    c.translate(canvas.width / 2, canvas.height / 3);
+    c.translate(canvas.width / fact, canvas.height / 4);
     c.rotate(timer);
     
     for (var i = 0; i < lightParticles.length; i++) {
@@ -135,7 +136,11 @@
     window.addEventListener("mousedown", function() {
     isMouseDown = true;	
     });
-    
+
+    setInterval(() => {
+      isMouseDown = !isMouseDown; 
+    }, 2000);
+
     
     window.addEventListener("mouseup", function() {
     isMouseDown = false;	
