@@ -12,7 +12,7 @@ import AccordianQA from '../../components/faq/QuestionAccordian'
 import Footer from "../../components/footer/Footer";
 import NavbarTeam from "../../components/navbarTeam/NavbarTeam";
 import IntroAudio from "../../components/introAudio/IntroAudio";
-
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const FAQs = () => {
@@ -62,7 +62,7 @@ const FAQs = () => {
             <div className="codeutsava__section7-left-bottom-content">
               <p>
                 Not able to find your question?
-                <br /> <br /> Dont worry , fill out the contact us at the end of
+                <br /> <br /> Dont worry , fill out the <Link to="/contactus"><a href="">contact us</a></Link>  contact us at the end of
                 this page. <br />
                 <br /> We're excited to chat with you, so expect a response
                 within 24 hours.
