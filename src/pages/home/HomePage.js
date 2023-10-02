@@ -34,7 +34,7 @@ const HomePage = () => {
       <div className="container mx-auto main-container">
         <Section2 />
         <Section14 />
-        <Section15 />
+        {/* <Section15 /> */}
         <Section3 />
         <Section4 />
         {/* <Section5 />
