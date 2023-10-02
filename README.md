@@ -19,7 +19,7 @@
   <h3 align="center">CodeUtsava 7.0</h3>
 
   <p align="center">
-    The official repository for the website of CodeUtsava 7.0
+    The Official Repository for the website of CodeUtsava 7.0
     <br />
     <br />
     <a href="https://codeutsava7.netlify.app/">View Live</a>

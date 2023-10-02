@@ -14,17 +14,6 @@ const Section14 = () => {
       chart: {
         id: "basic-bar",
       },
-      xaxis: {
-        categories: ["2016", "2018", "2019", "2020", "2022", "2022-23", "2023-24"],
-        title: {
-          text: "Year",
-        },
-      },
-      yaxis: {
-        title: {
-          text: "Total Number of Teams",
-        },
-      },
       dataLabels: {
         // enabled: false,
       },
@@ -45,10 +34,20 @@ const Section14 = () => {
     ],
   });
 
+  const getFontSize = () => {
+    const fontSize = window.innerWidth <= 767 ? "8px" : "14px";
+    return fontSize;
+  };
+
   const optionsWithoutToolbar = {
     ...state.options,
     toolbar: {
       show: false,
+    },
+    dataLabels: {
+      style: {
+        fontSize: getFontSize(),
+      },
     },
   };
 
@@ -93,14 +92,16 @@ const Section14 = () => {
           <div className="codeutsava__section14-right">
             <Chart
               options={{
-                ...state.options,
+                ...optionsWithoutToolbar,
                 xaxis: {
+                  ...optionsWithoutToolbar.xaxis,
                   categories: ["2016", "2018", "2019", "2020", "2022", "2022-23", "2023-24"],
                   title: {
                     text: "Year",
                   },
                 },
                 yaxis: {
+                  ...optionsWithoutToolbar.yaxis,
                   title: {
                     text: "Total Participations",
                   },
