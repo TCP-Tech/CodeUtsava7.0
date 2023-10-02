@@ -40,15 +40,15 @@
   align-items: center;
 }
 .codeutsava__section1-heading {
-  margin: 1rem 0;
-  height: 65px;
+  margin: 4px 0;
+  height: 70px;
 }
 
 .codeutsava__section1-subheading {
   font-family: var(--font-family1);
   font-weight: 500;
-  font-size: 36px;
-  line-height: 82px;
+  font-size: 40px;
+  line-height: 70px;
   letter-spacing: 4px;
   color: var(--secondary-c);
   text-transform: uppercase;
@@ -72,6 +72,8 @@
 
 .codeutsava__section1-image img{
   height: 300px;
+  padding: 4px;
+  width: auto;
 }
 
 .codeutsava__section1-button-container {

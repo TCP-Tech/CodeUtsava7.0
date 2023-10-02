@@ -52,7 +52,7 @@
 
 .codeutsava__section6-sponser-title {
   font-style: normal;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 550;
   line-height: 44px;
   text-align: center;
@@ -124,9 +124,6 @@
     flex-direction: column;
     max-width: 800px;
   }
-  .codeutsava__section6-sponser-list img {
-    width: 100%;
-  }
   .platinum {
     border: 2px solid #e5e4e2;
   }
@@ -139,18 +136,12 @@
     border: 2px solid #c0c0c0;
   }
 
-  .bronze {
-    border: 2px solid #c67b30;
-  }
 }
 
 @media screen and (max-width: 650px) {
   .codeutsava__section6-content {
     font-size: 16px;
     line-height: 30px;
-  }
-  .codeutsava__section6-sponser-list {
-    max-width: 400px;
   }
   .codeutsava__section6-title {
     font-size: 40px;

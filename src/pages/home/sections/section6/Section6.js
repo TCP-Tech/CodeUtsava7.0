@@ -5,6 +5,7 @@ import "./Section6.css";
 import sponsers from "../../../../assets/data/sponsersData.js";
 import cauldron from "../../../../assets/images/cauldron.png";
 import { motion } from "framer-motion";
+import InfiniteCarousel from "../../../../components/infiniteCarousel/InfiniteCarousel";
 
 const Section6 = () => {
   return (
@@ -17,8 +18,9 @@ const Section6 = () => {
     >
       <div className="codeutsava__section6-body">
         <div className="codeutsava__section6-title">
-        <img src={cauldron}></img>
-        Sponsors</div>
+          <img src={cauldron}></img>
+          Sponsors
+        </div>
         <div className="codeutsava__section6-content">
           On behalf of team TCP, we would like to publicly thank the generous
           sponsors without whom this event could not be held so smoothly.
@@ -28,30 +30,15 @@ const Section6 = () => {
             Platinum Sponsors
           </div>
           <div className="codeutsava__section6-sponser-list platinum">
-            {sponsers.platinum.map((sponser, index) => (
-              <div key={index} className="codeutsava__section6-sponser-image">
-                <img src={sponser.img} />
-              </div>
-            ))}
+            <InfiniteCarousel sponsers={sponsers.platinum} />
           </div>
           <div className="codeutsava__section6-sponser-title">
             Gold Sponsors
           </div>
           <div className="codeutsava__section6-sponser-list gold">
-            {sponsers.gold.map((sponser, index) => (
-              <div key={index} className="codeutsava__section6-sponser-image">
-                <img src={sponser.img} />
-              </div>
-            ))}
+            <InfiniteCarousel sponsers={sponsers.gold} />
           </div>
-          <div className="codeutsava__section6-sponser-title">Sponsors</div>
-          <div className="codeutsava__section6-sponser-list bronze">
-            {sponsers.silver.map((sponser, index) => (
-              <div key={index} className="codeutsava__section6-sponser-image">
-                <img src={sponser.img} />
-              </div>
-            ))}
-          </div>
+
           {/* <div className="codeutsava__section6-sponser-title">
             Bronze Sponsors
           </div>

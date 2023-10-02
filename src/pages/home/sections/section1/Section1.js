@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useRef, useState } from "react";
 import "./Section1.css";
-import codeutsavaTitle from "../../../../assets/images/codeutsavaTitle3d.svg";
+import codeutsavaTitle from "../../../../assets/images/codeutsavaTitle3d.png";
 import discord from "../../../../assets/images/discord.svg";
 import wel from "../../../../assets/images/welcome.png";
 
@@ -15,8 +15,8 @@ import "../../../../../node_modules/font-awesome/css/font-awesome.min.css";
 import register from "../../../../assets/images/register.pdf";
 
 const Section1 = () => {
-  const c1 = "#7f00a6";
-  const c2 = "#b200ee";
+  // const c1 = "#7f00a6";
+  // const c2 = "#b200ee";
 
   React.useEffect(() => {
     const script = document.createElement("script");
@@ -29,122 +29,122 @@ const Section1 = () => {
     };
   }, []);
 
-  const canvasRef = useRef(null);
-  useEffect(() => {
-    // Draw canvas here...
-    const canvas = canvasRef.current;
-    const c = canvas.getContext("2d");
+  // const canvasRef = useRef(null);
+  // useEffect(() => {
+  //   // Draw canvas here...
+  //   const canvas = canvasRef.current;
+  //   const c = canvas.getContext("2d");
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+  //   canvas.width = window.innerWidth;
+  //   canvas.height = window.innerHeight;
 
-    var particleCount = 750;
-    var mouse = {
-      x: window.innerWidth / 2,
-      y: window.innerHeight / 2,
-    };
+  //   var particleCount = 750;
+  //   var mouse = {
+  //     x: window.innerWidth / 2,
+  //     y: window.innerHeight / 2,
+  //   };
 
-    canvas.addEventListener("mousemove", function (event) {
-      mouse.x = event.clientX - canvas.width / 2;
-      mouse.y = event.clientY - canvas.height / 2;
-    });
+  //   canvas.addEventListener("mousemove", function (event) {
+  //     mouse.x = event.clientX - canvas.width / 2;
+  //     mouse.y = event.clientY - canvas.height / 2;
+  //   });
 
-    function LightParticle(x, y, radius, color) {
-      this.x = x;
-      this.y = y;
-      this.radius = radius;
-      this.color = color;
+  //   function LightParticle(x, y, radius, color) {
+  //     this.x = x;
+  //     this.y = y;
+  //     this.radius = radius;
+  //     this.color = color;
 
-      this.update = function () {
-        this.draw();
-      };
+  //     this.update = function () {
+  //       this.draw();
+  //     };
 
-      this.draw = function () {
-        c.save();
-        c.beginPath();
-        c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        c.shadowColor = this.color;
-        c.shadowBlur = 15;
-        c.shadowOffsetX = 0;
-        c.shadowOffsetY = 0;
-        c.fillStyle = this.color;
-        c.fill();
-        c.closePath();
-        c.restore();
-      };
-    }
+  //     this.draw = function () {
+  //       c.save();
+  //       c.beginPath();
+  //       c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+  //       c.shadowColor = this.color;
+  //       c.shadowBlur = 15;
+  //       c.shadowOffsetX = 0;
+  //       c.shadowOffsetY = 0;
+  //       c.fillStyle = this.color;
+  //       c.fill();
+  //       c.closePath();
+  //       c.restore();
+  //     };
+  //   }
 
-    var lightParticles = [];
+  //   var lightParticles = [];
 
-    var timer = 0;
-    var opacity = 1;
-    var speed = 0.0005;
-    var colors = [c1, c2, "#fbfbdd", "#333333", "#F2E8C9"];
+  //   var timer = 0;
+  //   var opacity = 1;
+  //   var speed = 0.0005;
+  //   var colors = [c1, c2, "#fbfbdd", "#333333", "#F2E8C9"];
 
-    var initializeParticles;
+  //   var initializeParticles;
 
-    (initializeParticles = function () {
-      for (var i = 0; i < particleCount; i++) {
-        var randomColorIndex = Math.floor(Math.random() * 6);
-        var randomRadius = Math.random() * 2;
+  //   (initializeParticles = function () {
+  //     for (var i = 0; i < particleCount; i++) {
+  //       var randomColorIndex = Math.floor(Math.random() * 6);
+  //       var randomRadius = Math.random() * 2;
 
-        // Ensure particles are spawned past screen width and height so
-        // there will be no missing stars when rotating canvas
-        var x = Math.random() * (canvas.width + 200) - (canvas.width + 200) / 2;
-        var y = Math.random() * (canvas.width + 200) - (canvas.width + 200) / 2;
-        lightParticles.push(
-          new LightParticle(x, y, randomRadius, colors[randomColorIndex])
-        );
-      }
-    })();
+  //       // Ensure particles are spawned past screen width and height so
+  //       // there will be no missing stars when rotating canvas
+  //       var x = Math.random() * (canvas.width + 200) - (canvas.width + 200) / 2;
+  //       var y = Math.random() * (canvas.width + 200) - (canvas.width + 200) / 2;
+  //       lightParticles.push(
+  //         new LightParticle(x, y, randomRadius, colors[randomColorIndex])
+  //       );
+  //     }
+  //   })();
 
-    function animate() {
-      window.requestAnimationFrame(animate);
+  //   function animate() {
+  //     window.requestAnimationFrame(animate);
 
-      c.save();
-      if (isMouseDown === true) {
-        // Ease into the new opacity
-        var desiredOpacity = 0.01;
-        opacity += (desiredOpacity - opacity) * 0.03;
-        c.fillStyle = "rgba(0, 0, 0," + opacity + ")";
+  //     c.save();
+  //     if (isMouseDown === true) {
+  //       // Ease into the new opacity
+  //       var desiredOpacity = 0.01;
+  //       opacity += (desiredOpacity - opacity) * 0.03;
+  //       c.fillStyle = "rgba(0, 0, 0," + opacity + ")";
 
-        // Ease into the new speed
-        var desiredSpeed = 0.012;
-        speed += (desiredSpeed - speed) * 0.01;
-        timer += speed;
-      } else {
-        // Ease back to the original opacity
-        var originalOpacity = 1;
-        opacity += (originalOpacity - opacity) * 0.01;
-        c.fillStyle = "rgba(0, 0, 0, " + opacity + ")";
+  //       // Ease into the new speed
+  //       var desiredSpeed = 0.012;
+  //       speed += (desiredSpeed - speed) * 0.01;
+  //       timer += speed;
+  //     } else {
+  //       // Ease back to the original opacity
+  //       var originalOpacity = 1;
+  //       opacity += (originalOpacity - opacity) * 0.01;
+  //       c.fillStyle = "rgba(0, 0, 0, " + opacity + ")";
 
-        // Ease back to the original speed
-        var originalSpeed = 0.001;
-        speed += (originalSpeed - speed) * 0.01;
-        timer += speed;
-      }
+  //       // Ease back to the original speed
+  //       var originalSpeed = 0.001;
+  //       speed += (originalSpeed - speed) * 0.01;
+  //       timer += speed;
+  //     }
 
-      c.fillRect(0, 0, canvas.width, canvas.height);
-      c.translate(canvas.width / 2, canvas.height / 2);
-      c.rotate(timer);
+  //     c.fillRect(0, 0, canvas.width, canvas.height);
+  //     c.translate(canvas.width / 2, canvas.height / 2);
+  //     c.rotate(timer);
 
-      for (var i = 0; i < lightParticles.length; i++) {
-        lightParticles[i].update();
-      }
+  //     for (var i = 0; i < lightParticles.length; i++) {
+  //       lightParticles[i].update();
+  //     }
 
-      c.restore();
-    }
-    animate();
-    var isMouseDown = false;
+  //     c.restore();
+  //   }
+  //   animate();
+  //   var isMouseDown = false;
 
-    window.addEventListener("mousedown", function () {
-      isMouseDown = true;
-    });
+  //   window.addEventListener("mousedown", function () {
+  //     isMouseDown = true;
+  //   });
 
-    window.addEventListener("mouseup", function () {
-      isMouseDown = false;
-    });
-  }, []);
+  //   window.addEventListener("mouseup", function () {
+  //     isMouseDown = false;
+  //   });
+  // }, []);
 
   return (
     <motion.div
@@ -154,40 +154,31 @@ const Section1 = () => {
       className="codeutsava__section1"
       id="home"
     >
-      <motion.canvas
+      {/* <motion.canvas
         className="codeutsava__section1-bg-canvas"
         variants={textVariant(1.5, 3)}
         ref={canvasRef}
-      />
-      <div className="codeutsava__section1-body">
+      /> */}
+      <motion.div
+        variants={fadeIn("down", "tween", 0.5, 1)}
+        className="codeutsava__section1-body"
+      >
         <div className="codeutsava__section1-menu">
-          <motion.img
-            variants={fadeIn("down", "tween", 0.5, 1)}
-            className="codeutsava__section1-heading"
-            src={wel}
-          ></motion.img>
-          <motion.div
-            variants={fadeIn("up", "tween", 1, 1)}
-            className="codeutsava__section1-image"
-          >
+          <img className="codeutsava__section1-heading" src={wel}></img>
+          <div className="codeutsava__section1-image">
             <img src={codeutsavaTitle}></img>
-          </motion.div>
-          <motion.div
-            variants={fadeIn("left", "tween", 1.5, 1)}
-            className="codeutsava__section1-subheading"
-          >
+          </div>
+          <div className="codeutsava__section1-subheading">
             Code. Innovate. Celebrate.
-          </motion.div>
-          <motion.div
-            variants={fadeIn("right", "tween", 2, 1)}
-            className="codeutsava__section1-para"
-          >
+          </div>
+          <div className="codeutsava__section1-para">
             Central India's{" "}
             <span style={{ fontWeight: "600" }}>Largest Coding Event.</span>{" "}
-            Stay Tuned!
-          </motion.div>
+            Join Us on 1st - 2nd November.
+          </div>
         </div>
-        <motion.div
+
+        <div
           variants={fadeIn("up", "tween", 2.5, 1)}
           className="codeutsava__section1-button-container"
           style={{ display: "flex", placeContent: "center" }}
@@ -199,29 +190,29 @@ const Section1 = () => {
             style={{ height: "44px", width: "312px" }}
           ></div>
           <div className="codeutsava__section1-container2">
-          <div className="codeutsava__section1-discord">
-            <a
-              className="codeutsava__section1-discord-link"
-              href="https://discord.gg/mq8PprVHUv"
-              target="_blank"
-            >
-              <img src={discord} />
-            </a>
+            <div className="codeutsava__section1-discord">
+              <a
+                className="codeutsava__section1-discord-link"
+                href="https://discord.gg/mq8PprVHUv"
+                target="_blank"
+              >
+                <img src={discord} />
+              </a>
+            </div>
+            <div className="codeutsava__section1-register">
+              <a
+                className="codeutsava__section1-register-link"
+                href={register}
+                download="Resgistration Instructions"
+              >
+                Steps To Register On Devfolio
+              </a>
+            </div>
           </div>
-          <div className="codeutsava__section1-register">
-            <a
-              className="codeutsava__section1-register-link"
-              href={register}
-              download="Resgistration Instructions"
-            >
-              Steps To Register On Devfolio
-            </a>
-          </div>
-          </div>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
       <motion.ul
-        variants={fadeIn("up", "tween", 4, 1)}
+        variants={fadeIn("up", "tween", 1, 1)}
         className="codeutsava__section1-side-links"
       >
         <li>
@@ -293,10 +284,9 @@ const Section1 = () => {
           </a>
         </li>
         {/* ############## Audio section of list ####################################*/}
-       
       </motion.ul>
       <motion.div
-        variants={fadeIn("up", "tween", 4, 1)}
+        variants={fadeIn("up", "tween", 1.2, 1)}
         className="codeutsava__section1-scrollDown"
       >
         <a href="#aboutus">Scroll Down</a>

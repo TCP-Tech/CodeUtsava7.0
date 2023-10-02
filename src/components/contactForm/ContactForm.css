@@ -1,9 +1,3 @@
-.codeutsava__contact-container {
-  color: white;
-  margin: 6rem 0;
-  font-family: "Poppins";
-}
-
 .codeutsava__contact-section {
   display: flex;
   margin-top: 6rem;
@@ -17,35 +11,19 @@
   gap: 2rem;
   background-color: rgb(30, 31, 33);
 }
-.codeutsava__contact-title {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 82px;
-  text-align: center;
-  letter-spacing: 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.codeutsava__contact-title img{
-  width: auto;
-  position: relative;
-  height: 90px;
-}
 
 .codeutsava__contact-submit-button {
   font-family: var(--font-family);
   font-size: 16px;
-  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 16px 20px;
   border-radius: 4px;
   border: none;
   color: white;
+  margin-top: 1rem;
   cursor: pointer;
   background-color: var(--primary-c);
 }
@@ -84,7 +62,7 @@
 .codeutsava__contact-header {
   width: 90%;
   color: white;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   border-bottom: 1px solid rgba(193, 186, 186, 0.232);
 }
 
@@ -105,7 +83,6 @@
   width: 90%;
   display: flex;
   flex-direction: column;
-  /* border: 2px solid greenyellow */
 }
 
 .form-group {
@@ -115,14 +92,16 @@
 }
 
 .form-group label {
-  font-size: 1rem;
-  margin-bottom: 4px;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
 input[type="text"],
 input[type="email"],
+input[type="contact"],
 textarea {
   width: 100%;
+  font-family: var(--font-family3);
   padding: 1rem;
   margin-bottom: 10px;
   border: 1px solid rgb(161, 153, 153, 0.5);
@@ -131,22 +110,12 @@ textarea {
   color: white;
 }
 
-button[type="submit"] {
-  background-color: #eedb00;
-  color: #000000;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 textarea {
   resize: none;
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 756px) {
   .codeutsava__contact-section {
-    display: flex;
     margin: auto;
     margin-top: 3rem;
   }
@@ -173,7 +142,7 @@ textarea {
   }
 }
 
-@media (max-width: 625px) {
+@media screen and (max-width: 430px) {
   .map-container {
     width: 90%;
   }
@@ -182,8 +151,17 @@ textarea {
     flex-direction: column;
     padding: 2rem 1rem;
   }
-  .codeutsava__contact-title{
-    font-size: 40px;
-    line-height: 64px;
+  .codeutsava__contact-form {
+    width: 90%;
+    height: 530px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .map-container {
+    width: 90%;
+    height: 530px;
+  }
+  .codeutsava__contact-submit-button {
+    margin-bottom: 2rem;
   }
 }

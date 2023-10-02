@@ -23,7 +23,52 @@ const platinum = [
   },
   {
     img: sponser13,
-  }
+  },
+  {
+    img: sponser1,
+  },
+  {
+    img: sponser2,
+  },
+  {
+    img: sponser13,
+  },
+  {
+    img: sponser1,
+  },
+  {
+    img: sponser2,
+  },
+  {
+    img: sponser13,
+  },
+  {
+    img: sponser1,
+  },
+  {
+    img: sponser2,
+  },
+  {
+    img: sponser13,
+  },
+  {
+    img: sponser1,
+  },
+  {
+    img: sponser2,
+  },
+  {
+    img: sponser13,
+  },
+  {
+    img: sponser1,
+  },
+  {
+    img: sponser2,
+  },
+  {
+    img: sponser13,
+  },
 ];
 
 const gold = [
@@ -41,31 +86,37 @@ const gold = [
   },
   {
     img: sponser15,
-  }
-];
-
-const silver = [
-  {
-    img: sponser6,
   },
   {
-    img: sponser7,
+    img: sponser4,
   },
   {
-    img: sponser8,
+    img: sponser3,
   },
   {
-    img: sponser9,
+    img: sponser5,
   },
   {
-    img: sponser12,
+    img: sponser14,
   },
   {
-    img: sponser11,
+    img: sponser15,
   },
   {
-    img: sponser10,
-  }, 
+    img: sponser4,
+  },
+  {
+    img: sponser3,
+  },
+  {
+    img: sponser5,
+  },
+  {
+    img: sponser14,
+  },
+  {
+    img: sponser15,
+  },
 ];
 
 // const bronze = [
@@ -80,6 +131,6 @@ const silver = [
 //     }, // repeated to show wrapping
 // ];
 
-const sponsers = { platinum, gold, silver };
+const sponsers = { platinum, gold };
 
 export default sponsers;

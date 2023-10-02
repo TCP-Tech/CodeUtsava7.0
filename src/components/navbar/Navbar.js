@@ -6,8 +6,10 @@ import tcp from "../../assets/images/tcp.png";
 import downArrow from "../../assets/images/downArrow.svg";
 import feedBack from "../../assets/images/feedback.svg";
 import brochure from "../../assets/images/CodeUtsava_Brochure_7.0.pdf";
+import guidelines from "../../assets/images/CodeUtsava_Guidelines_7.0.pdf";
 import { motion } from "framer-motion";
 import { headerVariants } from "../../motionUtils";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,15 +30,11 @@ const Navbar = () => {
       <header className="codeutsava__navbar">
         <div className="codeutsava__navbar-body">
           <div className="codeutsava__navbar-logo codeutsava__navbar-brochure">
-            <img src={codeutsava}/>
+            <img src={codeutsava} />
             <button className="codeutsava__navbar-brochure-button feedback-button">
               <img src={feedBack} alt="Feedback" />
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfHv8OJ7jkp9thPyPx1HrWJNPoGZ2z7FaFtIqpz7lO3dIqqgg/viewform?usp=sf_link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                FEEDBACK
+              <a href={guidelines} download="Guidelines">
+                GUIDELINES
               </a>
             </button>
           </div>
@@ -75,16 +73,20 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="codeutsava__navbar-navitem">
-                <a href="#faq">
-                  <h3 className="codeutsava__navbar-menu-heading">FAQ</h3>
-                </a>
+                <Link to="/faqs">
+                  <a href="#faq">
+                    <h3 className="codeutsava__navbar-menu-heading">FAQ</h3>
+                  </a>
+                </Link>
               </li>
               <li className="codeutsava__navbar-navitem">
-                <a href="#contactus">
-                  <h3 className="codeutsava__navbar-menu-heading">
-                    Contact Us
-                  </h3>
-                </a>
+                <Link to="/contactus">
+                  <a href="">
+                    <h3 className="codeutsava__navbar-menu-heading">
+                      Contact Us
+                    </h3>
+                  </a>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -125,7 +127,10 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-            <div className="codeutsava__navbar-hamburger-logo"  style={{transform: 'translateX(-4px)'}}>
+            <div
+              className="codeutsava__navbar-hamburger-logo"
+              style={{ transform: "translateX(-4px)" }}
+            >
               <img src={codeutsava} />
             </div>
             <div className="codeutsava__navbar-hamburger-logo">
@@ -181,16 +186,22 @@ const Navbar = () => {
             </a>
           </li>
           <li className="codeutsava__navbar-hamburger-navitem">
-            <a href="#faq" onClick={toggleMenu}>
-              <h3 className="codeutsava__navbar-hamburger-menu-heading">FAQ</h3>
-            </a>
+            <Link to="/faqs">
+              <a href="#faq" onClick={toggleMenu}>
+                <h3 className="codeutsava__navbar-hamburger-menu-heading">
+                  FAQ
+                </h3>
+              </a>
+            </Link>
           </li>
           <li className="codeutsava__navbar-hamburger-navitem">
-            <a href="#contactus" onClick={toggleMenu}>
-              <h3 className="codeutsava__navbar-hamburger-menu-heading">
-                Contact Us
-              </h3>
-            </a>
+            <Link to="/contactus">
+              <a href="#contactus" onClick={toggleMenu}>
+                <h3 className="codeutsava__navbar-hamburger-menu-heading">
+                  Contact Us
+                </h3>
+              </a>
+            </Link>
           </li>
           <div className="codeutsava__navbar-hamburger-brochure_feedback-button">
             <button className="codeutsava__navbar-hamburger-brochure-button codeutsava__navbar-brochure-button">
@@ -201,12 +212,8 @@ const Navbar = () => {
             </button>
             <button className="codeutsava__navbar-brochure-button feedback-button codeutsava__navbar-hamburger-brochure-button">
               <img src={feedBack} alt="Feedback" />
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfHv8OJ7jkp9thPyPx1HrWJNPoGZ2z7FaFtIqpz7lO3dIqqgg/viewform?usp=sf_link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Feedback
+              <a href={guidelines} download="Guidelines">
+                GUIDELINES
               </a>
             </button>
           </div>

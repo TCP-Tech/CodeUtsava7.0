@@ -14,17 +14,6 @@ const Section14 = () => {
       chart: {
         id: "basic-bar",
       },
-      xaxis: {
-        categories: ["2016", "2018", "2019", "2020", "2022", "2022-23", "2023-24"],
-        title: {
-          text: "Year",
-        },
-      },
-      yaxis: {
-        title: {
-          text: "Total Number of Teams",
-        },
-      },
       dataLabels: {
         // enabled: false,
       },
@@ -105,12 +94,14 @@ const Section14 = () => {
               options={{
                 ...optionsWithoutToolbar,
                 xaxis: {
+                  ...optionsWithoutToolbar.xaxis,
                   categories: ["2016", "2018", "2019", "2020", "2022", "2022-23", "2023-24"],
                   title: {
                     text: "Year",
                   },
                 },
                 yaxis: {
+                  ...optionsWithoutToolbar.yaxis,
                   title: {
                     text: "Total Participations",
                   },
@@ -121,62 +112,6 @@ const Section14 = () => {
             />
           </div>
         </div>
-        <ScrollTrigger
-          style={{ width: "100%" }}
-          onEnter={() => setCounterOn(true)}
-          onExit={() => setCounterOn(false)}
-        >
-          <div className="codeutsava__section14-menu2">
-            <h1 className="codeutsava__section14-title">
-              <img src={cauldron}></img>Last Year Participation
-            </h1>
-            <div>
-              <div className="codeutsava__section14-format-card">
-                <p className="codeutsava__section14-format-card-description">
-                  <span style={{ color: "var(--secondary-c)" }}>
-                    {counterOn && (
-                      <CountUp
-                        start={500}
-                        end={1000}
-                        duration={1.5}
-                        delay={0}
-                      />
-                    )}
-                    +
-                  </span>{" "}
-                  TEAMS
-                </p>
-              </div>
-              <div className="codeutsava__section14-format-card">
-                <p className="codeutsava__section14-format-card-description">
-                  <span style={{ color: "var(--secondary-c)" }}>
-                    {counterOn && (
-                      <CountUp start={50} end={100} duration={1.5} delay={0} />
-                    )}
-                    +
-                  </span>{" "}
-                  COLLEGES
-                </p>
-              </div>
-              <div className="codeutsava__section14-format-card">
-                <p className="codeutsava__section14-format-card-description">
-                  <span style={{ color: "var(--secondary-c)" }}>
-                    {counterOn && (
-                      <CountUp
-                        start={1000}
-                        end={2000}
-                        duration={1.5}
-                        delay={0}
-                      />
-                    )}
-                    +
-                  </span>{" "}
-                  DEVELOPERS
-                </p>
-              </div>
-            </div>
-          </div>
-        </ScrollTrigger>
       </div>
     </motion.div>
   );

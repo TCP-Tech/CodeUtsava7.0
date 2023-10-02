@@ -20,7 +20,6 @@ const IntroAudio = () => {
       <audio
         ref={audioRef}
         id="codeutsava__introAudio-intro-audio"
-        autoPlay
         loop
       >
         <source src={intro_music} />
