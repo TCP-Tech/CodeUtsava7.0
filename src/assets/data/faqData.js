@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "How will the teams be judged?",
     answer:
-      "The teams will be judged based on Viability, Technical Complexity, Presentation Skills and most importantly, Creativity.",
+      "The teams will be judged based on Viability, Technical Complexity, Presentation Skills, Guidelines and most importantly, Creativity.",
   },
   {
     question: "What is the Code of Conduct?",
