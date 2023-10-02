@@ -37,16 +37,16 @@ const Navbar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                FEEDBACK
+                GUIDELINES
               </a>
             </button>
           </div>
           <nav className="codeutsava__navbar-menu">
             <ul className="codeutsava__navbar-navlist">
               <li className="codeutsava__navbar-navitem">
-                  <a href="#home">
-                    <h3 className="codeutsava__navbar-menu-heading">Home</h3>
-                  </a>
+                <a href="#home">
+                  <h3 className="codeutsava__navbar-menu-heading">Home</h3>
+                </a>
               </li>
               <li className="codeutsava__navbar-navitem">
                 <a href="#aboutus">
@@ -54,35 +54,33 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="codeutsava__navbar-navitem">
-                  <a href="#events">
-                    <h3 className="codeutsava__navbar-menu-heading">Events</h3>
-                  </a>
+                <a href="#events">
+                  <h3 className="codeutsava__navbar-menu-heading">Events</h3>
+                </a>
               </li>
               <li className="codeutsava__navbar-navitem">
-                  <a href="#speakers">
-                    <h3 className="codeutsava__navbar-menu-heading">
-                      Speakers
-                    </h3>
-                  </a>
+                <a href="#speakers">
+                  <h3 className="codeutsava__navbar-menu-heading">Speakers</h3>
+                </a>
               </li>
               <li className="codeutsava__navbar-navitem">
-                  <a href="#format">
-                    <h3 className="codeutsava__navbar-menu-heading">
-                      Our Format
-                    </h3>
-                  </a>
+                <a href="#format">
+                  <h3 className="codeutsava__navbar-menu-heading">
+                    Our Format
+                  </h3>
+                </a>
               </li>
               <li className="codeutsava__navbar-navitem">
-                  <a href="#sponsers">
-                    <h3 className="codeutsava__navbar-menu-heading">
-                      Sponsors
-                    </h3>
-                  </a>
+                <a href="#sponsers">
+                  <h3 className="codeutsava__navbar-menu-heading">Sponsors</h3>
+                </a>
               </li>
               <li className="codeutsava__navbar-navitem">
+                <Link to="/faqs">
                   <a href="#faq">
                     <h3 className="codeutsava__navbar-menu-heading">FAQ</h3>
                   </a>
+                </Link>
               </li>
               <li className="codeutsava__navbar-navitem">
                 <Link to="/contactus">
@@ -191,9 +189,13 @@ const Navbar = () => {
             </a>
           </li>
           <li className="codeutsava__navbar-hamburger-navitem">
-            <a href="#faq" onClick={toggleMenu}>
-              <h3 className="codeutsava__navbar-hamburger-menu-heading">FAQ</h3>
-            </a>
+            <Link to="/faqs">
+              <a href="#faq" onClick={toggleMenu}>
+                <h3 className="codeutsava__navbar-hamburger-menu-heading">
+                  FAQ
+                </h3>
+              </a>
+            </Link>
           </li>
           <li className="codeutsava__navbar-hamburger-navitem">
             <Link to="/contactus">
@@ -218,7 +220,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Feedback
+                GUIDELINES
               </a>
             </button>
           </div>

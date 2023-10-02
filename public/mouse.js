@@ -33,8 +33,8 @@ class GhostFollow {
     this.mouth = document.querySelector(".ghost__mouth");
     this.eyes = document.querySelector(".ghost__eyes");
     this.pos = {
-      x: 0,
-      y: 0,
+      x: window.innerWidth/2,
+      y: window.innerHeight/2,
     };
   }
 

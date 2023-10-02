@@ -1,17 +1,21 @@
 import React from "react";
 
-import "./Section7.css";
+import "./FAQs.css";
 
-import faqs from "../../../../assets/data/faqData";
+import faqs from "../../assets/data/faqData";
 import { motion } from "framer-motion";
-import downArrow from "../../../../assets/images/downArrow.svg";
-import frank from "../../../../assets/images/frakenstein.png";
-import ghost from "../../../../assets/images/ghost.png";
-import AccordianQA from '../../../../components/faq/QuestionAccordian'
+import downArrow from "../../assets/images/downArrow.svg";
+import frank from "../../assets/images/frakenstein.png";
+import ghost from "../../assets/images/ghost.png";
+import AccordianQA from '../../components/faq/QuestionAccordian'
+
+import Footer from "../../components/footer/Footer";
+import NavbarTeam from "../../components/navbarTeam/NavbarTeam";
+import IntroAudio from "../../components/introAudio/IntroAudio";
 
 import { useState } from "react";
 
-const Section7 = () => {
+const FAQs = () => {
 
   const [answerId, setAnswerId] = useState(-1);
   const [answer, setAnswer] = useState();
@@ -22,7 +26,12 @@ const Section7 = () => {
   }
 
   return (
-    <motion.div
+    <div>
+      <div className="codeutsava__navbar-container">
+        <NavbarTeam />
+      </div>
+      <div className="container mx-auto main-container">
+      <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1, transition: { duration: 1 } }}
       viewport={{ once: false }}
@@ -82,7 +91,14 @@ const Section7 = () => {
       </div>
         <AccordianQA className="codeutsava__section7-body-mobile"/>
     </motion.div>
+      </div>
+      <div className="intro_audio_new_design"><IntroAudio/></div>
+      <div className="codeutsava__footer-container">
+        <Footer />
+      </div>
+    </div>
+    
   );
 };
 
-export default Section7;
+export default FAQs;

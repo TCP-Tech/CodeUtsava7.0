@@ -10,7 +10,6 @@ import Section3 from "./sections/section3/Section3";
 import Section4 from "./sections/section4/Section4";
 import Section5 from "./sections/section5/Section5";
 import Section6 from "./sections/section6/Section6";
-import Section7 from "./sections/section7/Section7";
 import Section9 from "./sections/section9/Section9";
 import Section8 from "./sections/section8/Section8";
 import Section10 from "./sections/section10/Section10";
@@ -20,6 +19,8 @@ import Section11 from "./sections/section11/Section11";
 import Section12 from "./sections/section12/Section12";
 import Section13 from "./sections/section13/Section13";
 import Section14 from "./sections/section14/Section14";
+import sponsers from "../../assets/data/sponsersData";
+import Statistics from "../../components/statistics/Statistics";
 
 const HomePage = () => {
   return (
@@ -30,20 +31,19 @@ const HomePage = () => {
       <div className="container mx-auto">
         <Section1 />
       </div>
-      <InfiniteCarousel />
+      <Statistics />
       <div className="container mx-auto main-container">
         <Section2 />
         <Section14 />
         {/* <Section15 /> */}
         <Section3 />
         <Section4 />
-        {/* <Section5 />
-        <Section11 />
+        <Section5 />
+        {/* <Section11 />
           <Section12 />
           <Section13 />
           <Section8 /> */}
         <Section6 />
-        <Section7 />
         <Section9 />
         <Section10 />
       </div>

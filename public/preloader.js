@@ -7,8 +7,8 @@
     var canvas = document.querySelector('canvas');
     var c = canvas.getContext('2d');
     
-    canvas.width = Math.max(window.innerWidth,window.innerHeight);
-    canvas.height = Math.max(window.innerWidth,window.innerHeight);
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
     var fact = 2;
     if(window.innerWidth <= window.innerHeight) fact = 4;
     console.log(window.innerWidth,window.innerHeight);
@@ -119,7 +119,7 @@
     }
     
     c.fillRect(0, 0, canvas.width, canvas.height);
-    c.translate(canvas.width / fact, canvas.height / 4);
+    c.translate(canvas.width/2, canvas.height/2);
     c.rotate(timer);
     
     for (var i = 0; i < lightParticles.length; i++) {
@@ -139,7 +139,7 @@
 
     setInterval(() => {
       isMouseDown = !isMouseDown; 
-    }, 2000);
+    }, 1000);
 
     
     window.addEventListener("mouseup", function() {

@@ -37,7 +37,7 @@ const NavbarTeam = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                FEEDBACK
+                GUIDELINES
               </a>
             </button>
           </div>
@@ -123,7 +123,7 @@ const NavbarTeam = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Feedback
+                GUIDELINES
               </a>
             </button>
           </div>

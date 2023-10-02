@@ -2,12 +2,12 @@
   background-color: rgba(32, 32, 32, 1);
   width: 100%;
   overflow: hidden;
-  padding-bottom: 2.5rem;
 }
 
 .codeutsava__sponsers-carousel {
   display: inline-block;
   overflow: hidden;
+  padding: 2rem;
   white-space: nowrap;
   width: 800%;
   animation: scrollInfinite 40s linear infinite;
@@ -34,7 +34,7 @@
 }
 
 .codeutsava__sponsers-carousel-item-block{
-    margin: 0px 20vw;
+    margin: 0px;
     display: inline-block;
 }
 
@@ -43,6 +43,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 30));
+    transform: translateX(calc(-250px * 10));
   }
 }
