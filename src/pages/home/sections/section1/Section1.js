@@ -159,35 +159,26 @@ const Section1 = () => {
         variants={textVariant(1.5, 3)}
         ref={canvasRef}
       /> */}
-      <div className="codeutsava__section1-body">
+      <motion.div
+        variants={fadeIn("down", "tween", 0.5, 1)}
+        className="codeutsava__section1-body"
+      >
         <div className="codeutsava__section1-menu">
-          <motion.img
-            variants={fadeIn("down", "tween", 0.5, 1)}
-            className="codeutsava__section1-heading"
-            src={wel}
-          ></motion.img>
-          <motion.div
-            variants={fadeIn("up", "tween", 1, 1)}
-            className="codeutsava__section1-image"
-          >
+          <img className="codeutsava__section1-heading" src={wel}></img>
+          <div className="codeutsava__section1-image">
             <img src={codeutsavaTitle}></img>
-          </motion.div>
-          <motion.div
-            variants={fadeIn("left", "tween", 1.5, 1)}
-            className="codeutsava__section1-subheading"
-          >
+          </div>
+          <div className="codeutsava__section1-subheading">
             Code. Innovate. Celebrate.
-          </motion.div>
-          <motion.div
-            variants={fadeIn("right", "tween", 2, 1)}
-            className="codeutsava__section1-para"
-          >
+          </div>
+          <div className="codeutsava__section1-para">
             Central India's{" "}
             <span style={{ fontWeight: "600" }}>Largest Coding Event.</span>{" "}
             Join Us on 1st - 2nd November.
-          </motion.div>
+          </div>
         </div>
-        <motion.div
+
+        <div
           variants={fadeIn("up", "tween", 2.5, 1)}
           className="codeutsava__section1-button-container"
           style={{ display: "flex", placeContent: "center" }}
@@ -199,27 +190,27 @@ const Section1 = () => {
             style={{ height: "44px", width: "312px" }}
           ></div>
           <div className="codeutsava__section1-container2">
-          <div className="codeutsava__section1-discord">
-            <a
-              className="codeutsava__section1-discord-link"
-              href="https://discord.gg/mq8PprVHUv"
-              target="_blank"
-            >
-              <img src={discord} />
-            </a>
+            <div className="codeutsava__section1-discord">
+              <a
+                className="codeutsava__section1-discord-link"
+                href="https://discord.gg/mq8PprVHUv"
+                target="_blank"
+              >
+                <img src={discord} />
+              </a>
+            </div>
+            <div className="codeutsava__section1-register">
+              <a
+                className="codeutsava__section1-register-link"
+                href={register}
+                download="Resgistration Instructions"
+              >
+                Steps To Register On Devfolio
+              </a>
+            </div>
           </div>
-          <div className="codeutsava__section1-register">
-            <a
-              className="codeutsava__section1-register-link"
-              href={register}
-              download="Resgistration Instructions"
-            >
-              Steps To Register On Devfolio
-            </a>
-          </div>
-          </div>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
       <motion.ul
         variants={fadeIn("up", "tween", 4, 1)}
         className="codeutsava__section1-side-links"
@@ -293,7 +284,6 @@ const Section1 = () => {
           </a>
         </li>
         {/* ############## Audio section of list ####################################*/}
-       
       </motion.ul>
       <motion.div
         variants={fadeIn("up", "tween", 4, 1)}
