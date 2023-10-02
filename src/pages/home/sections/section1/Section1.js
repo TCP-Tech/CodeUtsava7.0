@@ -212,7 +212,7 @@ const Section1 = () => {
         </div>
       </motion.div>
       <motion.ul
-        variants={fadeIn("up", "tween", 4, 1)}
+        variants={fadeIn("up", "tween", 1, 1)}
         className="codeutsava__section1-side-links"
       >
         <li>
@@ -286,7 +286,7 @@ const Section1 = () => {
         {/* ############## Audio section of list ####################################*/}
       </motion.ul>
       <motion.div
-        variants={fadeIn("up", "tween", 4, 1)}
+        variants={fadeIn("up", "tween", 1.2, 1)}
         className="codeutsava__section1-scrollDown"
       >
         <a href="#aboutus">Scroll Down</a>
