@@ -14,17 +14,6 @@ const Section14 = () => {
       chart: {
         id: "basic-bar",
       },
-      xaxis: {
-        categories: ["2016", "2018", "2019", "2020", "2022", "2022-23", "2023-24"],
-        title: {
-          text: "Year",
-        },
-      },
-      yaxis: {
-        title: {
-          text: "Total Number of Teams",
-        },
-      },
       dataLabels: {
         // enabled: false,
       },
@@ -105,12 +94,14 @@ const Section14 = () => {
               options={{
                 ...optionsWithoutToolbar,
                 xaxis: {
+                  ...optionsWithoutToolbar.xaxis,
                   categories: ["2016", "2018", "2019", "2020", "2022", "2022-23", "2023-24"],
                   title: {
                     text: "Year",
                   },
                 },
                 yaxis: {
+                  ...optionsWithoutToolbar.yaxis,
                   title: {
                     text: "Total Participations",
                   },
