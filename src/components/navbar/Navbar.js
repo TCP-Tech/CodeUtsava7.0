@@ -51,11 +51,9 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="codeutsava__navbar-navitem">
-                  <a href="#aboutus">
-                    <h3 className="codeutsava__navbar-menu-heading">
-                      About Us
-                    </h3>
-                  </a>
+                <a href="#aboutus">
+                  <h3 className="codeutsava__navbar-menu-heading">About Us</h3>
+                </a>
               </li>
               <li className="codeutsava__navbar-navitem">
                 <Link to="">
@@ -210,11 +208,13 @@ const Navbar = () => {
             </a>
           </li>
           <li className="codeutsava__navbar-hamburger-navitem">
-            <a href="#contactus" onClick={toggleMenu}>
-              <h3 className="codeutsava__navbar-hamburger-menu-heading">
-                Contact Us
-              </h3>
-            </a>
+            <Link to="/contactus">
+              <a href="#contactus" onClick={toggleMenu}>
+                <h3 className="codeutsava__navbar-hamburger-menu-heading">
+                  Contact Us
+                </h3>
+              </a>
+            </Link>
           </li>
           <div className="codeutsava__navbar-hamburger-brochure_feedback-button">
             <button className="codeutsava__navbar-hamburger-brochure-button codeutsava__navbar-brochure-button">
