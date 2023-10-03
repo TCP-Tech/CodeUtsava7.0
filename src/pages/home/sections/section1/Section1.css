@@ -73,8 +73,9 @@
 .codeutsava__section1-image img{
   height: 300px;
   padding: 4px;
-  width: auto;
+  
 }
+
 
 .codeutsava__section1-button-container {
   display: flex;

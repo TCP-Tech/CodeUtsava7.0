@@ -66,6 +66,22 @@ const Statistics = () => {
                   DEVELOPERS
                 </p>
               </div>
+              <div className="codeutsava__section-statistics-format-card">
+                <p className="codeutsava__section-statistics-format-card-description">
+                  <span style={{ color: "var(--secondary-c)" }}>
+                    {counterOn && (
+                      <CountUp
+                        start={100}
+                        end={1000}
+                        duration={1.5}
+                        delay={0}
+                      />
+                    )}
+                    +
+                  </span>{" "}
+                  VISITORS
+                </p>
+              </div>
             </div>
           </div>
         </ScrollTrigger>
