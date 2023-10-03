@@ -66,7 +66,7 @@
   padding: 2rem;
   border-radius: 0.75rem;
   gap: 3rem;
-  width: 100%;
+  width: 100vw;
   background-color: rgb(32, 32, 32);
 }
 
