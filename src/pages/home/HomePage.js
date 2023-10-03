@@ -21,6 +21,7 @@ import Section13 from "./sections/section13/Section13";
 import Section14 from "./sections/section14/Section14";
 import sponsers from "../../assets/data/sponsersData";
 import Statistics from "../../components/statistics/Statistics";
+import ScrollToTopnew from "../../components/scrollToTop/ScrollToTop";
 
 const HomePage = () => {
   return (
@@ -48,6 +49,7 @@ const HomePage = () => {
         <Section10 />
       </div>
       <div className="intro_audio_new_design"><IntroAudio/></div>
+      <ScrollToTopnew/>
       <div className="codeutsava__footer-container">
         <Footer />
       </div>

@@ -1,0 +1,59 @@
+.progress-bar {
+
+  cursor: pointer;
+  position: fixed;
+  bottom: 0.75rem;
+  right: 2rem;
+  z-index: 100;
+  background-color: rgb(37, 37, 37);
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  text-align: center;
+  border-radius: 50%;
+  transition: display .5s ease-in-out;
+  --percentage-done: 100%;
+
+
+}
+
+
+@media screen and (min-width: 325px) {
+  .progress-bar {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .progress-bar {
+    transform: scale(1);
+  }
+}
+
+.scrolldis {
+  display: none;
+}
+
+.progress-status {
+  position: relative;
+  left: 5%;
+  top: 12%;
+
+}
+
+.progress-status img {
+  height: 2rem;
+  width: 2rem;
+  transform: rotate(68deg);
+}
+
+.progress-value {
+  content: "";
+  /* background: conic-gradient(#f6901e 10%, transparent 0 100%); */
+  position: absolute;
+  z-index: -1;
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 50%;
+
+}

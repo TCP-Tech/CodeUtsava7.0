@@ -6,7 +6,7 @@ const events = [
     title: "Speaker Session",
     date: "8th October",
     img: event1,
-    link: "",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSes9na9VNj7XOFOUYNh_8sQFDA-gmEA0wK2fAPiUT635yvy_A/viewform",
   },
   {
     title: "Coming Soon!",
