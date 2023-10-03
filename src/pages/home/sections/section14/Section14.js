@@ -40,7 +40,7 @@ const Section14 = () => {
   };
 
   const getChartHeight = () => {
-    const smallScreenHeight = 250;
+    const smallScreenHeight = 300;
     const largeScreenHeight = 400;
   
     if (window.innerWidth <= 450) {
