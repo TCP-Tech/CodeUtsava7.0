@@ -5,7 +5,8 @@
 .bg-image{
   background-image: url("./assets/images/bg.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: fill;
+  background-attachment: fixed;
 }
 
 #overlay {

@@ -25,12 +25,10 @@ import ScrollToTopnew from "../../components/scrollToTop/ScrollToTop";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="bg-image">
       <div id="overlay"></div>
-      <div className="codeutsava__navbar-container">
-        <Navbar />
-      </div>
-      <div className="container bg-image mx-auto">
+      <Navbar />
+      <div className="container mx-auto">
         <Section1 />
       </div>
       <Statistics />
