@@ -17,7 +17,7 @@
 .codeutsava__section9-title img{
     width: auto;
     position: relative;
-    height: 90px;
+    height: 110px;
 }
 .codeutsava__section9-description{
 
@@ -53,26 +53,30 @@
 
 }
 
-.codeutsava__section9-box{
+.codeutsava__section9-box {
     width: 40%;
     font-size: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #222222;
+    background-image: url('../../../../assets/images/section9.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
     justify-content: center;
-    padding: 4rem;
+    padding: 8rem 6rem;
     border-radius: 40px;
     margin: 2rem 0;
+    color: black; 
 }
 
-.codeutsava__section9-boxtitle{
+.codeutsava__section9-boxtitle {
     font-size: 30px;
+    color: black;
     font-style: normal;
     margin: 1rem 0;
-    padding-bottom: 3%;
+    text-align: center;
 }
-
 @media screen and (max-width: 1000px){
     .codeutsava__section9-box{
         width: 80%;

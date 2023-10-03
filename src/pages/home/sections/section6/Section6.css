@@ -30,7 +30,7 @@
 .codeutsava__section6-title img {
   width: auto;
   position: relative;
-  height: 90px;
+  height: 110px;
 }
 
 .codeutsava__section6-content {
@@ -64,9 +64,9 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  border-radius: 0.75rem;
+  border-radius: 0rem;
   gap: 3rem;
-  width: 100%;
+  width: 100vw;
   background-color: rgb(32, 32, 32);
 }
 
@@ -86,7 +86,8 @@
 
 .platinum:hover {
   transition: all 0.8s ease;
-  border: 2px solid #e5e4e2;
+  border-top: 2px solid #e5e4e2;
+  border-bottom: 2px solid #e5e4e2;
 }
 
 .gold {
@@ -96,7 +97,8 @@
 
 .gold:hover {
   transition: all 0.8s ease;
-  border: 2px solid #ffd700;
+  border-top: 2px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
 }
 
 .silver {
@@ -125,11 +127,13 @@
     max-width: 800px;
   }
   .platinum {
-    border: 2px solid #e5e4e2;
+    border-top: 2px solid #e5e4e2;
+    border-bottom: 2px solid #e5e4e2;
   }
 
   .gold {
-    border: 2px solid #ffd700;
+    border-top: 2px solid #ffd700;
+    border-bottom: 2px solid #ffd700;
   }
 
   .silver {

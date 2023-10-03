@@ -20,14 +20,14 @@ import Section12 from "./sections/section12/Section12";
 import Section13 from "./sections/section13/Section13";
 import Section14 from "./sections/section14/Section14";
 import sponsers from "../../assets/data/sponsersData";
-import Statistics from "../../components/statistics/Statistics";
+import Statistics from "../../components/statisticalData/Statistics";
+import ScrollToTopnew from "../../components/scrollToTop/ScrollToTop";
 
 const HomePage = () => {
   return (
-    <div>
-      <div className="codeutsava__navbar-container">
-        <Navbar />
-      </div>
+    <div className="bg-image">
+      <div id="overlay"></div>
+      <Navbar />
       <div className="container mx-auto">
         <Section1 />
       </div>
@@ -38,7 +38,7 @@ const HomePage = () => {
         {/* <Section15 /> */}
         <Section3 />
         <Section4 />
-        <Section5 />
+        {/* <Section5 /> */}
         {/* <Section11 />
           <Section12 />
           <Section13 />
@@ -47,7 +47,10 @@ const HomePage = () => {
         <Section9 />
         <Section10 />
       </div>
-      <div className="intro_audio_new_design"><IntroAudio/></div>
+      <div className="intro_audio_new_design">
+        <IntroAudio />
+      </div>
+      <ScrollToTopnew />
       <div className="codeutsava__footer-container">
         <Footer />
       </div>

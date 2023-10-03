@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .codeutsava__section1-bg-canvas{
@@ -73,8 +74,9 @@
 .codeutsava__section1-image img{
   height: 300px;
   padding: 4px;
-  width: auto;
+  
 }
+
 
 .codeutsava__section1-button-container {
   display: flex;

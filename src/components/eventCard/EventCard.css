@@ -1,3 +1,14 @@
+.codeutsava_section3-card-container{
+  display: inline-block;
+  padding:30px 60px;
+  aspect-ratio: 1;
+  background: rgb(255, 123, 0);
+  transition: .35s;
+  --mask: radial-gradient(30px at 30px 50%,#0000 97%,#000) -30px/ 100% 55.50px;
+  -webkit-mask: var(--mask);
+        mask: var(--mask);
+}
+
 .codeutsava__section3-card {
   position: relative;
   background-image: url("../../assets/images/bg-eventCard.png");
@@ -127,4 +138,4 @@
     padding: 8px 20px;
     font-size: 14px;
   }
-}
+

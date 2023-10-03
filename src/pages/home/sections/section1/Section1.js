@@ -173,7 +173,7 @@ const Section1 = () => {
           </div>
           <div className="codeutsava__section1-para">
             Central India's{" "}
-            <span style={{ fontWeight: "600" }}>Largest Coding Event.</span>{" "}
+            <span style={{ fontWeight: "600" }}>Largst Coding Event.</span>{" "}
             Join Us on 1st - 2nd November.
           </div>
         </div>
