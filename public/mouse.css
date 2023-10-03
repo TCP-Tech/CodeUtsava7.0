@@ -2,15 +2,15 @@
   position: fixed;
   z-index: 1;
   transform-origin: center;
-  width: 90px;
+  width: 80px;
   margin: 20px 0 0 -45px;
 }
 .ghost__eyes,
 .ghost__mouth {
   position: absolute;
   z-index: 1;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   top: 34px;
   left: 50%;
   transform: translate(-50%);
@@ -50,7 +50,7 @@
   border-radius: 40px 40px 5px 5px;
 }
 .ghost__rip {
-  width: 15px;
+  width: 12px;
   height: 28px;
   background: #fff;
   position: absolute;

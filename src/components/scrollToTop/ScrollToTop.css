@@ -1,22 +1,21 @@
 .progress-bar {
-
   cursor: pointer;
   position: fixed;
-  bottom: 0.75rem;
+  bottom: 1.5rem;
   right: 2rem;
   z-index: 100;
   background-color: rgb(37, 37, 37);
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   place-items: center;
   text-align: center;
   border-radius: 50%;
-  transition: display .5s ease-in-out;
+  transition: display 0.5s ease-in-out;
   --percentage-done: 100%;
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 @media screen and (min-width: 325px) {
   .progress-bar {
@@ -36,24 +35,22 @@
 
 .progress-status {
   position: relative;
-  left: 5%;
-  top: 12%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .progress-status img {
-  height: 2rem;
-  width: 2rem;
-  transform: rotate(68deg);
+  height: 2.2rem;
+  width: auto;
 }
 
 .progress-value {
   content: "";
-  /* background: conic-gradient(#f6901e 10%, transparent 0 100%); */
+  /* background: conic-gradient(##FF8001 10%, transparent 0 100%); */
   position: absolute;
   z-index: -1;
-  height: 2.8rem;
-  width: 2.8rem;
+  height: 3.5rem;
+  width: 3.5rem;
   border-radius: 50%;
-
 }
