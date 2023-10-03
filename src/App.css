@@ -71,6 +71,7 @@ a {
   }
   .bg-image{
     background-size: cover;
+    background-position-x: -200px;
   }
 }
 

@@ -22,15 +22,15 @@ export const sliderSettings = {
   infinite: true,
   prevArrow: false,
   nextArrow: false,
-  speed: 1000,
+  speed: 100,
   slidesToShow: 3,
   slidesToScroll: 1,
-  initialSlide: 0,
+  initialSlide: 1,
   lazyload: true,
   touchMove: true,
   useCSS: true,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 1000,
   responsive: [
     {
       breakpoint: 1024,
