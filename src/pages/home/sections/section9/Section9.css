@@ -59,9 +59,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url('../../../../assets/images/section9_background.jpg');
+    background-image: url('../../../../assets/images/section9.png');
     background-size: cover;
     background-position: top;
+    background-repeat: no-repeat;
     justify-content: center;
     padding: 8rem 6rem;
     border-radius: 40px;
