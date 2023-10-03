@@ -3,8 +3,17 @@ import "./ContactForm.css";
 import { useState, useRef } from "react";
 
 const ContactForm = () => {
-  const form = useRef();
+  const nameInputRef = useRef(null);
+  const phoneInputRef = useRef(null); 
+  const emailInputRef = useRef(null); 
+  const messageInputRef = useRef(null); 
+  const form = useRef(null);
   const [sentT, setSentT] = useState("Submit");
+  const focusInput = (inputRef) => {
+    if (inputRef && inputRef.current) {
+      inputRef.current.focus();
+    }
+  };
   const handleButtonClick = (e) => {
     e.preventDefault();
     var emailData = {
@@ -29,13 +38,32 @@ const ContactForm = () => {
       (err) => {}
     );
     setSentT("Whoosh! Done");
-    console.log(form.current);
+    console.log(form.current.name);
   };
+
+  const handleClick = (e) => {
+      const clickedElement = e.target;
+  
+      if (clickedElement.tagName === "INPUT" || clickedElement.tagName === "TEXTAREA") {
+        // If the clicked element is an <input> element, focus on it.
+        let inputRef = null;
+        if(clickedElement === nameInputRef.current){
+          inputRef = nameInputRef;
+        }else if(clickedElement === phoneInputRef.current){
+          inputRef = phoneInputRef;
+        }else if(clickedElement===emailInputRef.current){
+          inputRef = emailInputRef;
+        }else if(clickedElement===messageInputRef.current){
+          inputRef = messageInputRef;
+        }
+        focusInput(inputRef);
+      }
+  }
   return (
     <div className="codeutsava__contact-section">
       <div className="codeutsava__contact-form">
         <div className="codeutsava__contact-header">Contact Us</div>
-        <form ref={form} onSubmit={handleButtonClick}>
+        <form ref={form} onSubmit={handleButtonClick} onClick={handleClick}>
           <div className="form-group">
             <label>Name</label>
             <input
@@ -43,6 +71,8 @@ const ContactForm = () => {
               required
               name="name"
               placeholder="Enter Your Name"
+              ref={nameInputRef}
+              onClick={focusInput(nameInputRef)}
             />
           </div>
           <div className="form-group">
@@ -52,6 +82,7 @@ const ContactForm = () => {
               type="text"
               placeholder="Enter Your Phone Number"
               name="contact"
+              ref={phoneInputRef}
             />
           </div>
           <div className="form-group">
@@ -61,6 +92,7 @@ const ContactForm = () => {
               type="email"
               name="email"
               placeholder="Enter Your Email"
+              ref={emailInputRef}
             />
           </div>
           <div className="form-group">
@@ -70,6 +102,7 @@ const ContactForm = () => {
               placeholder="Enter Your Message Here"
               rows="4"
               cols="4"
+              ref={messageInputRef}
             ></textarea>
           </div>
           <input
