@@ -53,29 +53,26 @@
 
 }
 
-.codeutsava__section9-box {
+.codeutsava__section9-box{
     width: 40%;
     font-size: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url('../../../../assets/images/section9_background.jpg');
-    background-size: cover;
-    background-position: top;
+    background-color: #222222;
     justify-content: center;
-    padding: 8rem 6rem;
+    padding: 4rem;
     border-radius: 40px;
     margin: 2rem 0;
-    color: black; 
 }
 
-.codeutsava__section9-boxtitle {
+.codeutsava__section9-boxtitle{
     font-size: 30px;
-    color: black;
     font-style: normal;
     margin: 1rem 0;
-    text-align: center;
+    padding-bottom: 3%;
 }
+
 @media screen and (max-width: 1000px){
     .codeutsava__section9-box{
         width: 80%;
