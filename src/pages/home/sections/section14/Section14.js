@@ -39,6 +39,17 @@ const Section14 = () => {
     return fontSize;
   };
 
+  const getChartHeight = () => {
+    const smallScreenHeight = 300;
+    const largeScreenHeight = 400;
+  
+    if (window.innerWidth <= 450) {
+      return smallScreenHeight;
+    } else {
+      return largeScreenHeight;
+    }
+  };
+
   const optionsWithoutToolbar = {
     ...state.options,
     toolbar: {
@@ -87,6 +98,7 @@ const Section14 = () => {
               }}
               series={state.series.slice(0, 1)}
               type="area"
+              height={getChartHeight()}
             />
           </div>
           <div className="codeutsava__section14-right">
@@ -109,6 +121,7 @@ const Section14 = () => {
               }}
               series={state.series.slice(1)}
               type="bar"
+              height={getChartHeight()}
             />
           </div>
         </div>
