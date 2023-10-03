@@ -48,12 +48,6 @@
   transition: all 0.2s ease-in-out;
   border-radius: 4px;
   border: 2px solid orange;
-  box-shadow: rgba(255, 149, 0, 0.518) 0 0 12px;
-}
-
-.codeutsava__section3-content {
-  position: relative;
-  top: 10px;
 }
 
 .codeutsava__section3-content {
