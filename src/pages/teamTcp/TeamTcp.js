@@ -7,14 +7,14 @@ import { currentYear } from "../../constants";
 
 const TeamTcp = () => {
   return (
-    <>
+    <div className="bg-image">
       <div className="codeutsava__navbar-container">
         <NavbarTeam />
       </div>
       <div>
         <Team year={currentYear}/>
       </div>
-    </>
+    </div>
   );
 };
 
