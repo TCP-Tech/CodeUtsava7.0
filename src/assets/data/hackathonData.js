@@ -1,34 +1,40 @@
 const hackathonData = [
   {
     id: '#1',
-    title: "Opening Ceremony",
-    date: "11th Feb, 9:00 AM",
+    title: "Registration Opens!",
+    date: "5th Oct, 11:00 AM",
     description:
-      "Commencement of Codeutsava 6.0 ,the flagship event of The Turing Club of Programmers",
+      "Registrations begin for CodeUtsava 7.0 ,the flagship event of The Turing Club of Programmers",
   },
   {
     id: '#2',
-    title: "The Hackathon Begins",
-    date: "11th Feb, 10:00AM",
-    description: "Commencement of Hackathon",
+    title: "Shortlisting Begins!",
+    date: "15th Oct, 11:00 AM",
+    description: "Team Shortlisting begins in batches.",
   },
   {
     id: '#3',
-    title: "The Judgment Round 1",
-    date: "11th Feb, 8:00 PM",
-    description: "Dinner after Judgment Round 1",
+    title: "Registration Closes!",
+    date: "25th Oct, 11:59 PM",
+    description: "Registrations for CodeUtsava 7.0 officially closed.",
   },
   {
     id: '#4',
-    title: "The Hackathon Ends",
-    date: "12th Feb, 2:00 PM",
-    description: "Judgment Round 2 at 1:30 PM followed by Lunch",
+    title: "Final Teams Announced!",
+    date: "26th Oct, 11:00 AM",
+    description: "Final Shortlisted Teams for CodeUtsava 7.0 are released.",
   },
   {
     id: '#5',
-    title: "Closing Ceremony",
-    date: "12th Feb, 4:00 PM",
-    description: "Declaration of Winners and Final Results",
+    title: "Problem Statements Released",
+    date: "27th Oct, 11:00 AM",
+    description: "Problems Statements for CodeUtsava 7.0 are released.",
+  },
+  {
+    id: '#6',
+    title: "Hackathon Begins",
+    date: "1st Nov, 8:00 AM",
+    description: "Commencement of Codeutsava 7.0!",
   },
 ];
 

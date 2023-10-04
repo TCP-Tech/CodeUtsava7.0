@@ -33,14 +33,14 @@ const HomePage = () => {
         <Section2 />
         <Section14 />
         {/* <Section15 /> */}
+        <Section5 />
         <Section3 />
         <Section4 />
-        {/* <Section5 /> */}
         {/* <Section11 />
           <Section12 />
           <Section13 />
           <Section8 /> */}
-        {/* <Section6 /> */}
+        <Section6 />
         {/* <Section9 /> */}
         <Section10 />
       </div>
