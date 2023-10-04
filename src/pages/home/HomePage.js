@@ -43,7 +43,7 @@ const HomePage = () => {
           <Section13 />
           <Section8 /> */}
         <Section6 />
-        <Section9 />
+        {/* <Section9 /> */}
         <Section10 />
       </div>
       <div className="intro_audio_new_design">

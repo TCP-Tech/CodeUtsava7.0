@@ -32,42 +32,6 @@ const platinum = [
   {
     img: sponser13,
   },
-  {
-    img: sponser1,
-  },
-  {
-    img: sponser2,
-  },
-  {
-    img: sponser13,
-  },
-  {
-    img: sponser1,
-  },
-  {
-    img: sponser2,
-  },
-  {
-    img: sponser13,
-  },
-  {
-    img: sponser1,
-  },
-  {
-    img: sponser2,
-  },
-  {
-    img: sponser13,
-  },
-  {
-    img: sponser1,
-  },
-  {
-    img: sponser2,
-  },
-  {
-    img: sponser13,
-  },
 ];
 
 const gold = [
@@ -79,42 +43,6 @@ const gold = [
   },
   {
     img: sponser5,
-  },
-  {
-    img: sponser14,
-  },
-  {
-    img: sponser13,
-  },
-  {
-    img: sponser4,
-  },
-  {
-    img: sponser3,
-  },
-  {
-    img: sponser5,
-  },
-  {
-    img: sponser14,
-  },
-  {
-    img: sponser13,
-  },
-  {
-    img: sponser4,
-  },
-  {
-    img: sponser3,
-  },
-  {
-    img: sponser5,
-  },
-  {
-    img: sponser14,
-  },
-  {
-    img: sponser13,
   },
 ];
 
