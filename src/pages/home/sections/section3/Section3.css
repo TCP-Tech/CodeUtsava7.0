@@ -33,6 +33,9 @@
 
 .codeutsava__section3-events-container {
   max-width: 98%;
+  padding: 8rem 0;
+  margin: 4rem auto;
+  flex-direction: column;
 }
 
 .codeutsava__section3-events-container .slider .slick-list {
