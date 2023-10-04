@@ -14,6 +14,7 @@ import frank from "../../../../assets/images/frakenstein.png";
 
 import axios from "axios";
 
+import downArrow from "../../../../assets/images/downArrow.svg";
 
 const Section3 = () => {
   const url = baseUrl + "events/" + previousYear;
@@ -123,8 +124,8 @@ const Section3 = () => {
 
   const leftArrowStyle = {
     position: "absolute",
-    top: "40%",
-    opacity: "0.5",
+    top: "45%",
+    opacity: "0.8",
     cursor: "pointer",
     zIndex: 1,
     left: "32px",
@@ -132,8 +133,8 @@ const Section3 = () => {
 
   const rightArrowStyles = {
     position: "absolute",
-    top: "40%",
-    opacity: "0.5",
+    top: "45%",
+    opacity: "0.8",
     cursor: "pointer",
     zIndex: 1,
     right: "32px",
@@ -169,20 +170,12 @@ const Section3 = () => {
               ))}
             </div>
           </div>
-          {/* <div style={leftArrowStyle} onClick={() => goToPrevious()}>
-            <AiOutlineLeft
-              className="hover:bg-black"
-              size={"60px"}
-              color={"grey"}
-            />
+          <div style={leftArrowStyle} onClick={() => goToPrevious()}>
+            <img src={downArrow} style={{height: '30px', transform: 'rotate(90deg)', transform: 'translateX(-30px) rotate(90deg)', filter: 'invert(80%)'}}/>
           </div>
           <div style={rightArrowStyles} onClick={() => goToNext()}>
-            <AiOutlineRight
-              className="hover:bg-black"
-              size={"60px"}
-              color={"grey"}
-            />
-          </div> */}
+          <img src={downArrow} style={{height: '30px', transform: 'rotate(90deg)', transform: 'translateX(30px) rotate(-90deg)', filter: 'invert(80%)'}}/>
+          </div>
         </div>
       </div>
     </div>

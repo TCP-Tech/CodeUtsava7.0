@@ -6,13 +6,13 @@
 
 .codeutsava__section3-card {
   position: relative;
-  padding: 2rem;
+  padding: 1.5rem;
   background-image: url("../../assets/images/bg-eventCard.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  margin: 1.5rem 2.5rem;
+  margin: 1.5rem 3rem;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: black;
@@ -121,13 +121,8 @@
   .codeutsava__section3-card {
     margin: 0;
   }
-  .codeutsava__section3-cardTitle{
-    font-weight: 700;
-    font-size:200 ;
-  }
-   
   .codeutsava__section3-cardTitle {
-    font-size: large;
+    font-weight: 700;
     margin-top: 0.5rem;
   }
 

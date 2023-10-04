@@ -1,6 +1,6 @@
 import event1 from "../images/event1.png";
 import event2 from "../images/event2.jpeg";
-import e from '../images/dummye.jpeg';
+import e from '../images/dummye.png';
 
 const events = [
   {
