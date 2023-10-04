@@ -12,7 +12,7 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 1.5rem 2rem;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: black;
@@ -46,6 +46,7 @@
   margin: auto;
   width: 100%;
   height: auto;
+  max-height: 300px;
   transition: all 0.2s ease-in-out;
   border-radius: 4px;
   border: 2px solid orange;
