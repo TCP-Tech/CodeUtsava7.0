@@ -30,7 +30,7 @@ export const sliderSettings = {
   touchMove: true,
   useCSS: true,
   autoplay: true,
-  autoplaySpeed: 1000,
+  autoplaySpeed: 3000,
   responsive: [
     {
       breakpoint: 1024,

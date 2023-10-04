@@ -27,7 +27,7 @@ const FAQs = () => {
   }
 
   return (
-    <div>
+    <div className="bg-image">
       <div className="codeutsava__navbar-container">
         <NavbarTeam />
       </div>

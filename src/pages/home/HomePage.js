@@ -26,7 +26,6 @@ import ScrollToTopnew from "../../components/scrollToTop/ScrollToTop";
 const HomePage = () => {
   return (
     <div className="bg-image">
-      <div id="overlay"></div>
       <Navbar />
       <div className="container mx-auto">
         <Section1 />

@@ -5,7 +5,7 @@
 .bg-image{
   background-image: url("./assets/images/bg.png");
   background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
   background-attachment: fixed;
 }
 
