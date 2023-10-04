@@ -145,7 +145,7 @@ const Section3 = () => {
     }
     timeRef.current = setTimeout(() => {
       goToNext();
-    }, 50000);
+    }, 4000);
   });
 
   return (

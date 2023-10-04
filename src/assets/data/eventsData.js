@@ -1,4 +1,5 @@
 import event1 from "../images/event1.png";
+import event2 from "../images/event2.jpeg";
 import e from '../images/dummye.jpeg';
 
 const events = [
@@ -9,9 +10,9 @@ const events = [
     link: "https://docs.google.com/forms/d/e/1FAIpQLSes9na9VNj7XOFOUYNh_8sQFDA-gmEA0wK2fAPiUT635yvy_A/viewform",
   },
   {
-    title: "Coming Soon!",
-    date: "Coming Soon!",
-    img: e,
+    title: "Graph Programming Camp",
+    date: "3th - 6th October",
+    img: event2,
     link: "",
   },
   {

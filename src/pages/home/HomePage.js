@@ -40,7 +40,7 @@ const HomePage = () => {
           <Section12 />
           <Section13 />
           <Section8 /> */}
-        <Section6 />
+        {/* <Section6 /> */}
         {/* <Section9 /> */}
         <Section10 />
       </div>
