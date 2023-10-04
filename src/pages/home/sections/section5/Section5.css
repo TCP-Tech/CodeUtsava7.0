@@ -33,7 +33,7 @@
 .codeutsava__section5-format-container {
   grid-template-rows: repeat(6, minmax(0px, 1fr));
   grid-template-columns: repeat(14, minmax(0px, 1fr));
-  gap: 4px;
+  /* gap: 4px; */
   background-image: url("../../../../assets/images/hackathonBg.svg");
   background-repeat: no-repeat;
   background-position: 24% 35%;
@@ -44,7 +44,7 @@
 }
 
 .codeutsava__section5-format-card {
-  padding: 32px 48px;
+  padding: 32px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,26 +63,27 @@
 
 .codeutsava__section5-format-card-title-container {
   background-color: rgba(255, 244, 150, 0.2);
-  width: 100%;
+  /* width: 100%; */
   border-radius: 44px 14px 14px 44px;
   position: relative;
   text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 9px 0px;
+  padding: 5px 3px;
+  gap: .4em;
 }
 
 .codeutsava__section5-format-card-title-number {
   background-color: var(--secondary-c);
   border-radius: 50%;
-  position: absolute;
+  /* position: absolute; */
   left: 0px;
   top: 1px;
   height: 40px;
   width: 40px;
-  margin-right: 4px;
-  margin-right: auto;
+  /* margin-right: 4px;
+  margin-right: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +92,7 @@
 
 .codeutsava__section5-format-card-title {
   font-weight: 400;
-  margin-left: 1.5rem;
+  /* margin-left: 1.5rem; */
 }
 
 .codeutsava__section5-format-card-description {
