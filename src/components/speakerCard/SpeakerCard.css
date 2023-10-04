@@ -1,7 +1,7 @@
 .codeutsava__section4-speaker-card {
   background: #fef9ff;
   box-shadow: var(--secondary-c) 0px 0px 12px;
-  border-radius: 16px;
+  border-radius: 8px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -58,7 +58,7 @@
 .codeutsava__section4-speaker-img {
   max-width: 100%;
   height: auto;
-  border-radius: 20%;
+  border-radius: 10%;
 }
 
 .codeutsava__section4-speaker-menu {

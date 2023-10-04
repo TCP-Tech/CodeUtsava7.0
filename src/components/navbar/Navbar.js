@@ -20,11 +20,7 @@ const Navbar = () => {
   }
 
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="show"
-      variants={headerVariants}
-      viewport={{ once: false, amount: 0.25 }}
+    <div
       className="codeutsava__navbar-container"
     >
       <header className="codeutsava__navbar">
@@ -133,7 +129,8 @@ const Navbar = () => {
             >
               <img src={codeutsava} />
             </div>
-            <div className="codeutsava__navbar-hamburger-logo">
+            <div className="codeutsava__navbar-hamburger-logo"
+            style={{ transform: "translateX(-4px)" }}>
               <img src={tcp} />
             </div>
           </nav>
@@ -219,7 +216,7 @@ const Navbar = () => {
           </div>
         </ul>
       </header>
-    </motion.div>
+    </div>
   );
 };
 

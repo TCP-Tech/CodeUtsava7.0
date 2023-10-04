@@ -1,22 +1,11 @@
 import React from "react";
-
 import "./Section2.css";
-
 import WordGlobe from "../../../../components/wordGlobe/WordGlobe";
-
 import ghost from "../../../../assets/images/ghost.png";
-
-import { motion } from "framer-motion";
 
 const Section2 = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 1 } }}
-      viewport={{ once: false }}
-      className="codeutsava__section2"
-      id="aboutus"
-    >
+    <div className="codeutsava__section2" id="aboutus">
       <div className="codeutsava__section2-body">
         <div className="codeutsava__section2-title">
           About Us
@@ -39,7 +28,7 @@ const Section2 = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

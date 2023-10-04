@@ -82,8 +82,8 @@
     
       // Ensure particles are spawned past screen width and height so
       // there will be no missing stars when rotating canvas
-      var x = (Math.random() * (canvas.width + 200)) - (canvas.width + 200) / 2;
-      var y = (Math.random() * (canvas.width + 200)) - (canvas.width + 200) / 2;
+      var x = (Math.random() * (canvas.width + 450)) - (canvas.width + 450) / 2;
+      var y = (Math.random() * (canvas.width + 450)) - (canvas.width + 450) / 2;
       lightParticles.push(new LightParticle(x, y, randomRadius, colors[randomColorIndex]));
     }
     })();
@@ -139,7 +139,7 @@
 
     setInterval(() => {
       isMouseDown = !isMouseDown; 
-    }, 1000);
+    }, 2000);
 
     
     window.addEventListener("mouseup", function() {

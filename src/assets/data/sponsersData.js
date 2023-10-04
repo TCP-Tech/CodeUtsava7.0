@@ -12,45 +12,8 @@ import sponser11 from "../images/sponsers/sponser11.png";
 import sponser12 from "../images/sponsers/sponser12.png";
 import sponser13 from "../images/sponsers/sponser13.png";
 import sponser14 from "../images/sponsers/sponser14.png";
-import sponser15 from "../images/sponsers/sponser15.png";
 
 const platinum = [
-  {
-    img: sponser1,
-  },
-  {
-    img: sponser2,
-  },
-  {
-    img: sponser13,
-  },
-  {
-    img: sponser1,
-  },
-  {
-    img: sponser2,
-  },
-  {
-    img: sponser13,
-  },
-  {
-    img: sponser1,
-  },
-  {
-    img: sponser2,
-  },
-  {
-    img: sponser13,
-  },
-  {
-    img: sponser1,
-  },
-  {
-    img: sponser2,
-  },
-  {
-    img: sponser13,
-  },
   {
     img: sponser1,
   },
@@ -80,42 +43,6 @@ const gold = [
   },
   {
     img: sponser5,
-  },
-  {
-    img: sponser14,
-  },
-  {
-    img: sponser15,
-  },
-  {
-    img: sponser4,
-  },
-  {
-    img: sponser3,
-  },
-  {
-    img: sponser5,
-  },
-  {
-    img: sponser14,
-  },
-  {
-    img: sponser15,
-  },
-  {
-    img: sponser4,
-  },
-  {
-    img: sponser3,
-  },
-  {
-    img: sponser5,
-  },
-  {
-    img: sponser14,
-  },
-  {
-    img: sponser15,
   },
 ];
 

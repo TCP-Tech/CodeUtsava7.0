@@ -3,7 +3,6 @@ import React from "react";
 import "./FAQs.css";
 
 import faqs from "../../assets/data/faqData";
-import { motion } from "framer-motion";
 import downArrow from "../../assets/images/downArrow.svg";
 import frank from "../../assets/images/frakenstein.png";
 import ghost from "../../assets/images/ghost.png";
@@ -27,15 +26,12 @@ const FAQs = () => {
   }
 
   return (
-    <div>
+    <div className="bg-image">
       <div className="codeutsava__navbar-container">
         <NavbarTeam />
       </div>
       <div className="container mx-auto main-container">
-      <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 1 } }}
-      viewport={{ once: false }}
+      <div
       className="codeutsava__section7"
       id="faq"
     >
@@ -91,7 +87,7 @@ const FAQs = () => {
         </div>
       </div>
         <AccordianQA className="codeutsava__section7-body-mobile"/>
-    </motion.div>
+    </div>
       </div>
       <div className="intro_audio_new_design"><IntroAudio/></div>
       <div className="codeutsava__footer-container">

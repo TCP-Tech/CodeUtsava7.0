@@ -1,16 +1,10 @@
 import React from "react";
-
 import "./Section10.css";
-import { motion } from "framer-motion";
-
 import { Link } from "react-router-dom";
 
 const section10 = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 1 } }}
-      viewport={{ once: false }}
+    <div
       className="codeutsava__section10"
       id="my-team"
     >
@@ -22,7 +16,7 @@ const section10 = () => {
           Meet our Team
         </Link>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

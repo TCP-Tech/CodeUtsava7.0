@@ -3,14 +3,17 @@
   width: 100%;
   position: sticky;
   top: 0px;
+  background-color: rgba(255, 255, 255, 0.001);
+  backdrop-filter: blur(8px);
 }
 
 .codeutsava__footer-container{
   width: 100%;
-  background-color: rgba(32,32,32,1);
+  background-color: rgba(0,0,0,0.6);
   margin-top: 10rem;
   overflow-x: hidden;
 }
+
 .intro_audio_new_design{
   position: fixed;
   bottom:0.75rem;
