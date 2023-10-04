@@ -86,10 +86,12 @@ const NavbarTeam = () => {
                 />
               </svg>
             </div>
-            <div className="codeutsava__navbarTeam-hamburger-logo">
+            <div className="codeutsava__navbarTeam-hamburger-logo"
+            style={{ transform: "translateX(-4px)" }}>
               <img src={codeutsava} />
             </div>
-            <div className="codeutsava__navbarTeam-hamburger-logo">
+            <div className="codeutsava__navbarTeam-hamburger-logo"
+            style={{ transform: "translateX(-4px)" }}>
               <img src={tcp} />
             </div>
           </nav>

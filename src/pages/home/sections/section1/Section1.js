@@ -32,8 +32,7 @@ const Section1 = () => {
     };
   }, []);
   return (
-    <LazyMotion features={domAnimation}>
-      <motion.div
+      <div
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
@@ -45,7 +44,7 @@ const Section1 = () => {
         variants={textVariant(1.5, 3)}
         ref={canvasRef}
       /> */}
-        <motion.div
+        <div
           variants={fadeIn("down", "tween", 0.5, 1)}
           className="codeutsava__section1-body"
         >
@@ -96,8 +95,8 @@ const Section1 = () => {
               </div>
             </div>
           </div>
-        </motion.div>
-        <motion.ul
+        </div>
+        <ul
           variants={fadeIn("up", "tween", 1, 1)}
           className="codeutsava__section1-side-links"
         >
@@ -176,8 +175,8 @@ const Section1 = () => {
             </a>
           </li>
           {/* ############## Audio section of list ####################################*/}
-        </motion.ul>
-        <motion.div
+        </ul>
+        <div
           variants={fadeIn("up", "tween", 1.2, 1)}
           className="codeutsava__section1-scrollDown"
         >
@@ -191,9 +190,8 @@ const Section1 = () => {
           >
             <path d="M224 402.7V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V402.7L86.6 329.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7z" />
           </svg>
-        </motion.div>
-      </motion.div>
-    </LazyMotion>
+        </div>
+      </div>
   );
 };
 
