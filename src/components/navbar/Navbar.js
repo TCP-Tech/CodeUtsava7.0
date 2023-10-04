@@ -20,10 +20,7 @@ const Navbar = () => {
   }
 
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="show"
-      variants={headerVariants}
+    <div
       className="codeutsava__navbar-container"
     >
       <header className="codeutsava__navbar">
@@ -219,7 +216,7 @@ const Navbar = () => {
           </div>
         </ul>
       </header>
-    </motion.div>
+    </div>
   );
 };
 
