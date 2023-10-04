@@ -132,7 +132,7 @@ const Footer = ({ id }) => {
             href="/#sponsers"
             className="codeutsava__footer-container2-right-links"
           >
-            <p className="codeutsava__footer-container2-right-text">Sponsers</p>
+            <p className="codeutsava__footer-container2-right-text">Sponsors</p>
           </a>
           <Link to="/faqs">
             <a href="" className="codeutsava__footer-container2-right-links">
