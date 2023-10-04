@@ -1,111 +1,120 @@
-.codeutsava__section9{
-    padding-top: 2rem;
-    padding-bottom: 2rem; 
-    color: white;
-    font-family: 'Poppins'; 
+.codeutsava__section9 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  font-family: "Poppins";
 }
 
-.codeutsava__section9-boxtitle,.codeutsava__section9-box,.codeutsava__section9-title {
-    color: white;
-    font-family: 'Poppins', sans-serif;
+.codeutsava__section9-boxtitle,
+.codeutsava__section9-box,
+.codeutsava__section9-title {
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 .codeutsava__section9-title1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.codeutsava__section9-title img{
-    width: auto;
-    position: relative;
-    height: 110px;
+.codeutsava__section9-title img {
+  width: auto;
+  position: relative;
+  height: 110px;
 }
-.codeutsava__section9-description{
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+.codeutsava__section9-description {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.codeutsava__section9-body{
-   display: flex;
-   flex-direction: row;
+.codeutsava__section9-body {
+  display: flex;
+  flex-direction: row;
 }
 
-.codeutsava__section9-title1{
-    font-style: medium;
-    font-weight: 470;
-    font-size: 48px;
-    line-height: 82px;
-    text-align: center;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
+.codeutsava__section9-title1 {
+  font-style: medium;
+  font-weight: 470;
+  font-size: 48px;
+  line-height: 82px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
 }
 
-.codeutsava__section9-title2{
-    font-style: medium;
-    font-weight: 370;
-    font-size: 40px;
-    line-height: 82px;
-    text-align: center;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
+.codeutsava__section9-title2 {
+  font-style: medium;
+  font-weight: 370;
+  font-size: 40px;
+  line-height: 82px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
 
+.codeutsava__section9-boxInfo {
+  font-size: 12px;
+  padding: 0 0.8rem;
 }
 
 .codeutsava__section9-box {
-    width: 40%;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-image: url('../../../../assets/images/section9.png');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    justify-content: center;
-    padding: 8rem 6rem;
-    border-radius: 40px;
-    margin: 2rem 0;
-    color: black; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  padding: 6rem;
+  color: black;
+}
+
+.coffin0 {
+  background-image: url("../../../../assets/images/bg-eventCard.png");
+}
+.coffin1 {
+  background-image: url("../../../../assets/images/coffin1.png");
+}
+.coffin2 {
+  background-image: url("../../../../assets/images/coffin2.png");
 }
 
 .codeutsava__section9-boxtitle {
-    font-size: 30px;
-    color: black;
-    font-style: normal;
-    margin: 1rem 0;
-    text-align: center;
-}
-@media screen and (max-width: 1000px){
-    .codeutsava__section9-box{
-        width: 80%;
-    }
+  font-size: 20px;
+  color: black;
+  font-weight: 900;
+  margin: 1rem 0;
+  text-align: center;
 }
 
-@media screen and (max-width: 650px){
-    .codeutsava__section9-title1{
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        font-size: 40px;
-        line-height: normal;
-    }
+@media screen and (max-width: 1000px) {
+  .codeutsava__section9-box {
+    width: 80%;
+  }
+}
 
-    .codeutsava__section9-title2{
-        line-height: normal;
-        font-size: 16px;
-    }
+@media screen and (max-width: 650px) {
+  .codeutsava__section9-title1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 40px;
+    line-height: normal;
+  }
 
-    .codeutsava__section9-box{
-        width: 100%;
-        padding: 3.5rem;
-    }
+  .codeutsava__section9-title2 {
+    line-height: normal;
+    font-size: 16px;
+  }
 
-    .codeutsava__section9-boxtitle{
-        font-size: 24px;
-    }
+  .codeutsava__section9-box {
+    width: 100%;
+    padding: 3.5rem;
+  }
 
-    .codeutsava__section9-boxInfo{
-        font-size: 16px;
-    }
+  .codeutsava__section9-boxtitle {
+    font-size: 24px;
+  }
+
+  .codeutsava__section9-boxInfo {
+    font-size: 16px;
+  }
 }

@@ -9,7 +9,7 @@ import IntroAudio from "../../components/introAudio/IntroAudio";
 
 const ContactUs = () => {
   return (
-    <div>
+    <div className="bg-image">
       <div className="codeutsava__navbar-container">
         <NavbarTeam />
       </div>

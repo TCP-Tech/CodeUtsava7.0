@@ -22,6 +22,7 @@
 
 .hehe{
   overflow: hidden;
+  
 }
 
 .intro-container1 img {
@@ -45,8 +46,10 @@
 
 #canvas{
   position: absolute;
+  background-image: url('../src/assets/images/bg2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -2;
-  
 }
 
 #root {

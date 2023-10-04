@@ -7,9 +7,9 @@
 .codeutsava__sponsers-carousel {
   display: inline-block;
   overflow: hidden;
-  padding: 2rem;
   white-space: nowrap;
   width: 800%;
+  padding: 2rem 0;
   animation: scrollInfinite 40s linear infinite;
 }
 
@@ -19,7 +19,7 @@
 
 .codeutsava__sponsers-carousel-item {
   display: inline-block;
-  margin: 2rem 3rem;
+  margin: 0rem 3rem;
   height: 75px;
   width: auto;
   object-fit: contain;
@@ -30,7 +30,7 @@
   display: inline-block;
   vertical-align: middle;
   width: 200px;
-  object-fit: cover;
+  text-align: center;
 }
 
 .codeutsava__sponsers-carousel-item-block{
@@ -43,6 +43,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 10));
+    transform: translateX(calc(-250px * 25));
   }
 }

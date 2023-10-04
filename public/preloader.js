@@ -139,7 +139,7 @@
 
     setInterval(() => {
       isMouseDown = !isMouseDown; 
-    }, 1000);
+    }, 2000);
 
     
     window.addEventListener("mouseup", function() {
