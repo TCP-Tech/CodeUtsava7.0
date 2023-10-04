@@ -52,8 +52,8 @@
 }
 
 .codeutsava__section9-boxInfo {
-  padding: 0 2rem;
-  font-size: 10px;
+  font-size: 12px;
+  padding: 0 0.8rem;
 }
 
 .codeutsava__section9-box {
@@ -64,8 +64,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   justify-content: center;
-  padding: 7.5rem;
-  border-radius: 40px;
+  padding: 6rem;
   color: black;
 }
 
