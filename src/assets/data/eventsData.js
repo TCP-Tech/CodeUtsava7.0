@@ -20,6 +20,12 @@ const events = [
     img: e,
     link: "",
   },
+  {
+    title: "Coming Soon!",
+    date: "Coming Soon!",
+    img: e,
+    link: "",
+  },
 ];
 
 export default events;
