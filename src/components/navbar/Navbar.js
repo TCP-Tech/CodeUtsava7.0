@@ -24,7 +24,6 @@ const Navbar = () => {
       initial="hidden"
       whileInView="show"
       variants={headerVariants}
-      viewport={{ once: false, amount: 0.25 }}
       className="codeutsava__navbar-container"
     >
       <header className="codeutsava__navbar">

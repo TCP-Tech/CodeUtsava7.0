@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Chart from "react-apexcharts";
 import "./Section14.css";
-import { motion } from "framer-motion";
-import CountUp from "react-countup";
-import ScrollTrigger from "react-scroll-trigger";
-
 import pumpkin from "../../../../assets/images/pumpkin.png";
-import cauldron from "../../../../assets/images/cauldron.png";
 
 const Section14 = () => {
   const [state, setState] = useState({
@@ -62,13 +57,8 @@ const Section14 = () => {
     },
   };
 
-  const [counterOn, setCounterOn] = useState(false);
-
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 1 } }}
-      viewport={{ once: false }}
+    <div
       className="codeutsava__section14"
       id="analytics"
     >
@@ -126,7 +116,7 @@ const Section14 = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

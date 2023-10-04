@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import "./Section4.css";
 import speakers from "../../../../assets/data/speakersData.js";
 import SpeakerCard from "../../../../components/speakerCard/SpeakerCard";
-import { motion } from "framer-motion";
 
 import { previousYear, baseUrl } from "../../../../constants";
 
@@ -33,10 +32,7 @@ const Section4 = () => {
 
   console.log(state.data);
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 1 } }}
-      viewport={{ once: false }}
+    <div
       className="codeutsava__section4"
       id="speakers"
     >
@@ -62,7 +58,7 @@ const Section4 = () => {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
