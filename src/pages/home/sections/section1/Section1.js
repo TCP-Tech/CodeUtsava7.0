@@ -31,7 +31,7 @@ const Section1 = () => {
           </div>
           <div className="codeutsava__section1-para">
             Central India's{" "}
-            <span style={{ fontWeight: "600" }}>Largst Coding Event.</span> Coming Soon!
+            <span style={{ fontWeight: "600" }}>Largest Coding Event.</span> Coming Soon!
           </div>
         </div>
 
