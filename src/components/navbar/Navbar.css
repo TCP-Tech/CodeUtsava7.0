@@ -9,7 +9,6 @@
 }
 
 .codeutsava__navbar-hamburger {
-  background-color: black;
   backdrop-filter: blur(10px);
   position: relative;
   z-index: 1;
@@ -30,8 +29,12 @@
 }
 
 .codeutsava__navbar-hamburger-body {
-  width: 91.6667%;
+  width: 100%;
   max-width: 80rem;
+  border-style: solid;
+  border-width: 0.4px 0px;
+  border-image: initial;
+  border-color: rgba(155, 155, 155, 0.4);
   margin: 0px auto;
   padding: 0;
 }
