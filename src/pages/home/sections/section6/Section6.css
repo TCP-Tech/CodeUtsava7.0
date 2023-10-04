@@ -67,16 +67,20 @@
   border-radius: 0rem;
   gap: 3rem;
   width: 100vw;
-  background-color: rgb(32, 32, 32);
+  background-color: #8400ac48;  
+  backdrop-filter: blur(10px);
 }
 
 .codeutsava__section6-sponser-image{
   width: 300px;
+  box-shadow: #ca8700;
+
 }
 
 .codeutsava__section6-sponser-image img{
   width: 100%;
   height: auto;
+  
 }
 
 .platinum {

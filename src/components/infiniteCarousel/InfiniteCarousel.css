@@ -1,5 +1,5 @@
 .codeutsava__sponsers-carousel-container {
-  background-color: rgba(32, 32, 32, 1);
+  /* background-color: var(--secondary-c); */
   width: 100%;
   overflow: hidden;
 }
