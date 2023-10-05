@@ -20,11 +20,7 @@ const NavbarTeam = () => {
   }
 
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="show"
-      variants={headerVariants}
-      viewport={{ once: false, amount: 0.25 }}
+    <div
       className="codeutsava__navbarTeam-container"
     >
       <header className="codeutsava__navbarTeam">
@@ -124,7 +120,7 @@ const NavbarTeam = () => {
           </div>
         </ul>
       </header>
-    </motion.div>
+    </div>
   );
 };
 
