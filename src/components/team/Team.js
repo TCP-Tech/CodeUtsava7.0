@@ -1,32 +1,22 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./Team.css";
-
 import Footer from "../../components/footer/Footer"
-
 import TeamCard from "../teamCard/TeamCard";
 import TeamCard4 from "../teamCard4/TeamCard4";
 import TeamCard3 from "../teamCard3/TeamCard3";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import downArrow from "../../assets/images/downArrow.svg";
-
 import axios from "axios";
-
 import { baseUrl } from "../../constants";
-
 import tcp from "../../assets/images/tcp.png";
 
-
 const Team = ({year}) => {
-
   const url = baseUrl + "team/" + year;
-
   const [state, setState] = useState({
     data: [],
     loading: true,
   });
-
   useEffect(() => {
     const fetchData = async () => {
       const data = await axios.get(url);
@@ -37,17 +27,12 @@ const Team = ({year}) => {
     };
     fetchData();
   }, []);
-  
   const overAllCoordinaters = state.data.filter((member) => member.Designation == "Overall Coordinator")
   const headCoordinaters = state.data.filter((member) => member.Designation == "Head Coordinator" || member.Designation == "Domain Lead")
   const managers = state.data.filter((member) => member.Designation == "Manager")
   const executives = state.data.filter((member) => member.Designation == "Executive")
-
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 1 } }}
-      viewport={{ once: false }}
+    <div
       className="codeutsava__team"
       id="speakers"
     >
@@ -119,7 +104,7 @@ const Team = ({year}) => {
       <div className="codeutsava__footer-container">
           <Footer id={"speakers"} />
       </div>
-    </motion.div>
+    </div>
   );
 };
 
