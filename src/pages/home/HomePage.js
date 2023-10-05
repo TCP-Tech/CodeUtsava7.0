@@ -32,25 +32,25 @@ const HomePage = () => {
       </div>
       <Statistics />
       <div className="container mx-auto main-container">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div style={{color: 'white', fontSize: '32px'}}>Loading...</div>}>
           <Section2 />
         </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div style={{color: 'white', fontSize: '32px'}}>Loading...</div>}>
           <Section14 />
         </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div style={{color: 'white', fontSize: '32px'}}>Loading...</div>}>
           <Section5 />
         </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div style={{color: 'white', fontSize: '32px'}}>Loading...</div>}>
           <Section3 />
         </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div style={{color: 'white', fontSize: '32px'}}>Loading...</div>}>
           <Section4 />
         </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div style={{color: 'white', fontSize: '32px'}}>Loading...</div>}>
           <Section6 />
         </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div style={{color: 'white', fontSize: '32px'}}>Loading...</div>}>
           <Section10 />
         </Suspense>
         {/* <Section15 /> */}

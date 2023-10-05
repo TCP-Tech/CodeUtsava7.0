@@ -4,7 +4,7 @@ import "../../App.css";
 import NavbarTeam from "../../components/navbarTeam/NavbarTeam";
 import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
-import img404 from "../../assets/images/404.gif";
+import img404 from "../../assets/images/github.svg";
 
 const Error404 = () => {
   return (
