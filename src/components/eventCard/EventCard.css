@@ -6,12 +6,13 @@
 
 .codeutsava__section3-card {
   position: relative;
-  padding: 2rem;
+  padding: 1.5rem;
   background-image: url("../../assets/images/bg-eventCard.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
+  margin: 1.5rem 3rem;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: black;
@@ -44,6 +45,8 @@
   position: relative;
   margin: auto;
   width: 100%;
+  height: auto;
+  max-height: 300px;
   transition: all 0.2s ease-in-out;
   border-radius: 4px;
   border: 2px solid orange;
@@ -58,8 +61,8 @@
 }
 
 .codeutsava__section3-cardTitle {
-  font-weight: 700;
-  font-size: x-large;
+  font-weight: 900;
+  font-size: 16px;
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -75,6 +78,7 @@
 
 .codeutsava__section3-date {
   margin: 0.5rem 0;
+  font-size: 14px;
   font-weight: 400;
   color: var(--secondary-c);
 }
@@ -115,16 +119,10 @@
 
 @media screen and (max-width: 486px) {
   .codeutsava__section3-card {
-    margin: 10px;
-    margin-bottom: 20px; 
+    margin: 0;
   }
-  .codeutsava__section3-cardTitle{
-    font-weight: 700;
-    font-size:200 ;
-  }
-   
   .codeutsava__section3-cardTitle {
-    font-size: large;
+    font-weight: 700;
     margin-top: 0.5rem;
   }
 

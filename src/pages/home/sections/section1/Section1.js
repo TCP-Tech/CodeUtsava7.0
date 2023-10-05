@@ -4,20 +4,10 @@ import codeutsavaTitle from "../../../../assets/images/codeutsavaTitle3d.png";
 import discord from "../../../../assets/images/discord.svg";
 import wel from "../../../../assets/images/welcome.png";
 
-import { animate, motion, transform } from "framer-motion";
-import {
-  staggerChildren,
-  fadeIn,
-  zoomIn,
-  textVariant,
-} from "../../../../motionUtils";
 import "../../../../../node_modules/font-awesome/css/font-awesome.min.css";
 import register from "../../../../assets/images/register.pdf";
 
 const Section1 = () => {
-  // const c1 = "#7f00a6";
-  // const c2 = "#b200ee";
-
   React.useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
@@ -28,141 +18,9 @@ const Section1 = () => {
       document.body.removeChild(script);
     };
   }, []);
-
-  // const canvasRef = useRef(null);
-  // useEffect(() => {
-  //   // Draw canvas here...
-  //   const canvas = canvasRef.current;
-  //   const c = canvas.getContext("2d");
-
-  //   canvas.width = window.innerWidth;
-  //   canvas.height = window.innerHeight;
-
-  //   var particleCount = 750;
-  //   var mouse = {
-  //     x: window.innerWidth / 2,
-  //     y: window.innerHeight / 2,
-  //   };
-
-  //   canvas.addEventListener("mousemove", function (event) {
-  //     mouse.x = event.clientX - canvas.width / 2;
-  //     mouse.y = event.clientY - canvas.height / 2;
-  //   });
-
-  //   function LightParticle(x, y, radius, color) {
-  //     this.x = x;
-  //     this.y = y;
-  //     this.radius = radius;
-  //     this.color = color;
-
-  //     this.update = function () {
-  //       this.draw();
-  //     };
-
-  //     this.draw = function () {
-  //       c.save();
-  //       c.beginPath();
-  //       c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-  //       c.shadowColor = this.color;
-  //       c.shadowBlur = 15;
-  //       c.shadowOffsetX = 0;
-  //       c.shadowOffsetY = 0;
-  //       c.fillStyle = this.color;
-  //       c.fill();
-  //       c.closePath();
-  //       c.restore();
-  //     };
-  //   }
-
-  //   var lightParticles = [];
-
-  //   var timer = 0;
-  //   var opacity = 1;
-  //   var speed = 0.0005;
-  //   var colors = [c1, c2, "#fbfbdd", "#333333", "#F2E8C9"];
-
-  //   var initializeParticles;
-
-  //   (initializeParticles = function () {
-  //     for (var i = 0; i < particleCount; i++) {
-  //       var randomColorIndex = Math.floor(Math.random() * 6);
-  //       var randomRadius = Math.random() * 2;
-
-  //       // Ensure particles are spawned past screen width and height so
-  //       // there will be no missing stars when rotating canvas
-  //       var x = Math.random() * (canvas.width + 200) - (canvas.width + 200) / 2;
-  //       var y = Math.random() * (canvas.width + 200) - (canvas.width + 200) / 2;
-  //       lightParticles.push(
-  //         new LightParticle(x, y, randomRadius, colors[randomColorIndex])
-  //       );
-  //     }
-  //   })();
-
-  //   function animate() {
-  //     window.requestAnimationFrame(animate);
-
-  //     c.save();
-  //     if (isMouseDown === true) {
-  //       // Ease into the new opacity
-  //       var desiredOpacity = 0.01;
-  //       opacity += (desiredOpacity - opacity) * 0.03;
-  //       c.fillStyle = "rgba(0, 0, 0," + opacity + ")";
-
-  //       // Ease into the new speed
-  //       var desiredSpeed = 0.012;
-  //       speed += (desiredSpeed - speed) * 0.01;
-  //       timer += speed;
-  //     } else {
-  //       // Ease back to the original opacity
-  //       var originalOpacity = 1;
-  //       opacity += (originalOpacity - opacity) * 0.01;
-  //       c.fillStyle = "rgba(0, 0, 0, " + opacity + ")";
-
-  //       // Ease back to the original speed
-  //       var originalSpeed = 0.001;
-  //       speed += (originalSpeed - speed) * 0.01;
-  //       timer += speed;
-  //     }
-
-  //     c.fillRect(0, 0, canvas.width, canvas.height);
-  //     c.translate(canvas.width / 2, canvas.height / 2);
-  //     c.rotate(timer);
-
-  //     for (var i = 0; i < lightParticles.length; i++) {
-  //       lightParticles[i].update();
-  //     }
-
-  //     c.restore();
-  //   }
-  //   animate();
-  //   var isMouseDown = false;
-
-  //   window.addEventListener("mousedown", function () {
-  //     isMouseDown = true;
-  //   });
-
-  //   window.addEventListener("mouseup", function () {
-  //     isMouseDown = false;
-  //   });
-  // }, []);
-
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className="codeutsava__section1"
-      id="home"
-    >
-      {/* <motion.canvas
-        className="codeutsava__section1-bg-canvas"
-        variants={textVariant(1.5, 3)}
-        ref={canvasRef}
-      /> */}
-      <motion.div
-        variants={fadeIn("down", "tween", 0.5, 1)}
-        className="codeutsava__section1-body"
-      >
+    <div className="codeutsava__section1" id="home">
+      <div className="codeutsava__section1-body">
         <div className="codeutsava__section1-menu">
           <img className="codeutsava__section1-heading" src={wel}></img>
           <div className="codeutsava__section1-image">
@@ -173,13 +31,11 @@ const Section1 = () => {
           </div>
           <div className="codeutsava__section1-para">
             Central India's{" "}
-            <span style={{ fontWeight: "600" }}>Largst Coding Event.</span>{" "}
-            Join Us on 1st - 2nd November.
+            <span style={{ fontWeight: "600" }}>Largest Coding Event.</span> Join Us On 1st - 2nd November.
           </div>
         </div>
 
         <div
-          variants={fadeIn("up", "tween", 2.5, 1)}
           className="codeutsava__section1-button-container"
           style={{ display: "flex", placeContent: "center" }}
         >
@@ -210,11 +66,8 @@ const Section1 = () => {
             </div>
           </div>
         </div>
-      </motion.div>
-      <motion.ul
-        variants={fadeIn("up", "tween", 1, 1)}
-        className="codeutsava__section1-side-links"
-      >
+      </div>
+      <ul className="codeutsava__section1-side-links">
         <li>
           <a target="_blank" href="https://www.facebook.com/codeutsava/">
             <svg
@@ -284,11 +137,8 @@ const Section1 = () => {
           </a>
         </li>
         {/* ############## Audio section of list ####################################*/}
-      </motion.ul>
-      <motion.div
-        variants={fadeIn("up", "tween", 1.2, 1)}
-        className="codeutsava__section1-scrollDown"
-      >
+      </ul>
+      <div className="codeutsava__section1-scrollDown">
         <a href="#aboutus">Scroll Down</a>
         <svg
           fill="var(--secondary-c)"
@@ -299,8 +149,8 @@ const Section1 = () => {
         >
           <path d="M224 402.7V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V402.7L86.6 329.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7z" />
         </svg>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 

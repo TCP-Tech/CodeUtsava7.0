@@ -20,11 +20,7 @@ const NavbarTeam = () => {
   }
 
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="show"
-      variants={headerVariants}
-      viewport={{ once: false, amount: 0.25 }}
+    <div
       className="codeutsava__navbarTeam-container"
     >
       <header className="codeutsava__navbarTeam">
@@ -86,10 +82,12 @@ const NavbarTeam = () => {
                 />
               </svg>
             </div>
-            <div className="codeutsava__navbarTeam-hamburger-logo">
+            <div className="codeutsava__navbarTeam-hamburger-logo"
+            style={{ transform: "translateX(-8px)" }}>
               <img src={codeutsava} />
             </div>
-            <div className="codeutsava__navbarTeam-hamburger-logo">
+            <div className="codeutsava__navbarTeam-hamburger-logo"
+            style={{ transform: "translateX(-8px)" }}>
               <img src={tcp} />
             </div>
           </nav>
@@ -122,7 +120,7 @@ const NavbarTeam = () => {
           </div>
         </ul>
       </header>
-    </motion.div>
+    </div>
   );
 };
 

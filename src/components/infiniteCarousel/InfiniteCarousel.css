@@ -8,7 +8,6 @@
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  width: 800%;
   padding: 2rem 0;
   animation: scrollInfinite 40s linear infinite;
 }

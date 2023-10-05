@@ -56,9 +56,18 @@ const Section5 = () => {
                 <p className="codeutsava__section5-format-card-date">{hackathonData[4].date}</p>
                 <div className="codeutsava__section5-format-card-title-container">
                     <div className="codeutsava__section5-format-card-title-number">{hackathonData[4].id}</div>
-                    <p className="codeutsava__section5-format-card-title">{hackathonData[4].title}</p>
+                    <div className="codeutsava__section5-format-card-title">{hackathonData[4].title}</div>
                 </div>
                 <p className="codeutsava__section5-format-card-description">{hackathonData[4].description}</p>
+            </div>
+
+            <div className="codeutsava__section5-format-card format-card6">
+                <p className="codeutsava__section5-format-card-date">{hackathonData[5].date}</p>
+                <div className="codeutsava__section5-format-card-title-container">
+                    <div className="codeutsava__section5-format-card-title-number">{hackathonData[5].id}</div>
+                    <p className="codeutsava__section5-format-card-title">{hackathonData[5].title}</p>
+                </div>
+                <p className="codeutsava__section5-format-card-description">{hackathonData[5].description}</p>
             </div>
 
         </div>

@@ -4,7 +4,6 @@ import "../../App.css";
 import NavbarTeam from "../../components/navbarTeam/NavbarTeam";
 import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import img404 from "../../assets/images/404.gif";
 
 const Error404 = () => {
@@ -14,12 +13,7 @@ const Error404 = () => {
         <NavbarTeam />
       </div>
       <div className="container mx-auto codeutsava__error-container">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { duration: 1 } }}
-          viewport={{ once: false }}
-          className="codeutsava__team-options"
-        >
+        <div className="codeutsava__team-options">
           <div className="codeutsava__team-options-body">
             <div className="codeutsava__team-options-header-container">
               <div className="codeutsava__team-options-main-title">
@@ -42,7 +36,7 @@ const Error404 = () => {
               </Link>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
       <div className="codeutsava__footer-container" style={{ marginTop: 0 }}>
         <Footer />

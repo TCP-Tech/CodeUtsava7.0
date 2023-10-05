@@ -108,32 +108,34 @@ const Footer = ({ id }) => {
           </div>
         </div>
         <div className="codeutsava__footer-container2-right">
-          <a href="#home" className="codeutsava__footer-container2-right-links">
-            <p className="codeutsava__footer-container2-right-text">Home</p>
-          </a>
+          <Link to="/">
+            <a
+              href="/#home"
+              className="codeutsava__footer-container2-right-links"
+            >
+              <p className="codeutsava__footer-container2-right-text">Home</p>
+            </a>
+          </Link>
           <a
-            href="#aboutus"
+            href="/#aboutus"
             className="codeutsava__footer-container2-right-links"
           >
             <p className="codeutsava__footer-container2-right-text">About Us</p>
           </a>
           <a
-            href="#events"
+            href="/#events"
             className="codeutsava__footer-container2-right-links"
           >
             <p className="codeutsava__footer-container2-right-text">Events</p>
           </a>
           <a
-            href="#sponsers"
+            href="/#sponsers"
             className="codeutsava__footer-container2-right-links"
           >
-            <p className="codeutsava__footer-container2-right-text">Sponsers</p>
+            <p className="codeutsava__footer-container2-right-text">Sponsors</p>
           </a>
           <Link to="/faqs">
-            <a
-              href=""
-              className="codeutsava__footer-container2-right-links"
-            >
+            <a href="" className="codeutsava__footer-container2-right-links">
               <p className="codeutsava__footer-container2-right-text">FAQ</p>
             </a>
           </Link>
