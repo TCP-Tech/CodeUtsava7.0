@@ -25,8 +25,8 @@ const Navbar = () => {
     >
       <header className="codeutsava__navbar">
         <div className="codeutsava__navbar-body">
-          <div className="codeutsava__navbar-logo codeutsava__navbar-brochure">
-            <img src={codeutsava} />
+          <div className="codeutsava__navbar-brochure">
+            <a href="/"><img className="codeutsava__navbar-brochure-image " src={codeutsava} /></a>
             <button className="codeutsava__navbar-brochure-button feedback-button">
               <img src={feedBack} alt="Feedback" />
               <a href={guidelines} download="Guidelines">
@@ -127,7 +127,7 @@ const Navbar = () => {
               className="codeutsava__navbar-hamburger-logo"
               style={{ transform: "translateX(-8px)" }}
             >
-              <img src={codeutsava} />
+              <a href="/"><img src={codeutsava} /></a>
             </div>
             <div className="codeutsava__navbar-hamburger-logo"
             style={{ transform: "translateX(-8px)" }}>
