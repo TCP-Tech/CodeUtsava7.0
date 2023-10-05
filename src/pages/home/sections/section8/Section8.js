@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 import "./Section8.css";
 
-import problems from "../../../../assets/data/problemsData.js";
+// import problems from "../../../../assets/data/problemsData.js";
 import ProblemCard from "../../../../components/problemCard/ProblemCard";
 import { motion } from "framer-motion";
 
@@ -65,7 +65,7 @@ const Section8 = () => {
       className="codeutsava__section8"
       id="problems"
     >
-      <div className="codeutsava__section8-body">
+      {/* <div className="codeutsava__section8-body">
         <div className="codeutsava__section8-title">Problem Statements</div>
         <div className="codeutsava__section8-problems">
           <div className="codeutsava__section8-problems-container1">
@@ -104,7 +104,7 @@ const Section8 = () => {
         >
           {isVisible === false ? "Load More" : "Show Less"}
         </button>
-      </div>
+      </div> */}
     </motion.div>
   );
 };

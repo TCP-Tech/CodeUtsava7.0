@@ -1,6 +1,6 @@
 import event1 from "../images/event1.png";
 import event2 from "../images/event2.jpeg";
-import e from '../images/dummye.png';
+import event3 from '../images/event3.png';
 
 const events = [
   {
@@ -16,16 +16,10 @@ const events = [
     link: "",
   },
   {
-    title: "Coming Soon!",
-    date: "Coming Soon!",
-    img: e,
-    link: "",
-  },
-  {
-    title: "Coming Soon!",
-    date: "Coming Soon!",
-    img: e,
-    link: "",
+    title: "Registration Starts!",
+    date: "5th October",
+    img: event3,
+    link: "https://codeutsava-7.devfolio.co",
   },
 ];
 

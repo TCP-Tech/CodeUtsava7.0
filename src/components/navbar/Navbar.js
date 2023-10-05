@@ -125,12 +125,12 @@ const Navbar = () => {
             </div>
             <div
               className="codeutsava__navbar-hamburger-logo"
-              style={{ transform: "translateX(-4px)" }}
+              style={{ transform: "translateX(-8px)" }}
             >
               <img src={codeutsava} />
             </div>
             <div className="codeutsava__navbar-hamburger-logo"
-            style={{ transform: "translateX(-4px)" }}>
+            style={{ transform: "translateX(-8px)" }}>
               <img src={tcp} />
             </div>
           </nav>

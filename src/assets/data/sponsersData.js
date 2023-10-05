@@ -1,7 +1,6 @@
 import sponser1 from "../images/sponsers/sponser1.png";
 import sponser2 from "../images/sponsers/sponser2.png";
 import sponser3 from "../images/sponsers/sponser3.png";
-import sponser4 from "../images/sponsers/sponser4.png";
 import sponser5 from "../images/sponsers/sponser5.png";
 import sponser13 from "../images/sponsers/sponser13.png";
 
@@ -27,9 +26,6 @@ const platinum = [
 ];
 
 const gold = [
-  {
-    img: sponser4,
-  },
   {
     img: sponser3,
   },
