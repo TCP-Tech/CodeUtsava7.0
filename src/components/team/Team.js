@@ -43,9 +43,11 @@ const Team = ({year}) => {
             &lt;Team TCP {year}&gt;
           </div>
         </div>
-          <Link className="codeutsava__team-options-button" to="/" style={{marginTop: '2rem'}}>
+          <Link to="/">
+            <div className="codeutsava__team-options-button" style={{marginTop: '2rem'}}>
             <img src={downArrow} />
-            Back To Main Page
+            <span>Back To Main Page</span> 
+            </div>
           </Link>
         <div className="codeutsava__team-title">Overall Coordinators</div>
         <div className="codeutsava__team-members">
