@@ -3,19 +3,20 @@ import { Suspense, lazy } from "react";
 import "./App.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import ScrollToTop from "./ScrollToTop";
+
 const HomePage = lazy(() => import("./pages/home/HomePage"))
 const TeamTCP = lazy(() => import("./pages/teamTcp/TeamTcp"))
 const Error404 = lazy(() => import("./pages/Error404/Error404"))
 const ContactUs = lazy(() => import("./pages/contactUs/ContactUs"))
 const FAQs = lazy(() => import("./pages/faqs/FAQs"))
 
-// import ScrollToTop from "./ScrollToTop";
-
 export default class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        {/* <ScrollToTop /> */}
+        <ScrollToTop />
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="*" element={<Error404 />} />

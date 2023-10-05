@@ -1,25 +1,27 @@
 import React, { Component } from "react";
 import Navbar from "../../components/navbar/Navbar";
+import { Suspense, lazy } from "react";
 import "./HomePage.css";
 import "../../App.css";
 import IntroAudio from "../../components/introAudio/IntroAudio";
 import Section1 from "./sections/section1/Section1";
-import Section2 from "./sections/section2/Section2";
-import Section3 from "./sections/section3/Section3";
-import Section4 from "./sections/section4/Section4";
-import Section5 from "./sections/section5/Section5";
-import Section6 from "./sections/section6/Section6";
-import Section9 from "./sections/section9/Section9";
-import Section8 from "./sections/section8/Section8";
-import Section10 from "./sections/section10/Section10";
+// import Section3 from "./sections/section3/Section3";
+// import Section4 from "./sections/section4/Section4";
+// import Section5 from "./sections/section5/Section5";
+// import Section6 from "./sections/section6/Section6";
+// import Section10 from "./sections/section10/Section10";
 import Footer from "../../components/footer/Footer";
-import Section15 from "./sections/section15/Section15";
-import Section11 from "./sections/section11/Section11";
-import Section12 from "./sections/section12/Section12";
-import Section13 from "./sections/section13/Section13";
-import Section14 from "./sections/section14/Section14";
+// import Section14 from "./sections/section14/Section14";
 import Statistics from "../../components/statisticalData/Statistics";
-import ScrollToTopnew from "../../components/scrollToTop/ScrollToTop";
+// import ScrollToTopnew from "../../components/scrollToTop/ScrollToTop";
+
+const Section2 = lazy(() => import("./sections/section2/Section2"));
+const Section14 = lazy(() => import("./sections/section14/Section14"));
+const Section5 = lazy(() => import("./sections/section5/Section5"));
+const Section3 = lazy(() => import("./sections/section3/Section3"));
+const Section4 = lazy(() => import("./sections/section4/Section4"));
+const Section6 = lazy(() => import("./sections/section6/Section6"));
+const Section10 = lazy(() => import("./sections/section10/Section10"));
 
 const HomePage = () => {
   return (
@@ -30,24 +32,38 @@ const HomePage = () => {
       </div>
       <Statistics />
       <div className="container mx-auto main-container">
-        <Section2 />
-        <Section14 />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Section2 />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Section14 />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Section5 />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Section3 />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Section4 />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Section6 />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Section10 />
+        </Suspense>
         {/* <Section15 /> */}
-        <Section5 />
-        <Section3 />
-        <Section4 />
         {/* <Section11 />
           <Section12 />
           <Section13 />
           <Section8 /> */}
-        <Section6 />
         {/* <Section9 /> */}
-        <Section10 />
       </div>
       <div className="intro_audio_new_design">
         <IntroAudio />
       </div>
-      <ScrollToTopnew />
+      {/* <ScrollToTopnew /> */}
       <div className="codeutsava__footer-container">
         <Footer />
       </div>
