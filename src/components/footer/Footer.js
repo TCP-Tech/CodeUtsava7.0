@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Footer.css";
 
-import NIT from "../../assets/images/NIT.svg";
+import NIT from "../../assets/images/NIT.webp";
 import tcpName from "../../assets/images/tcpName.png";
 import codeutsava from "../../assets/images/codeutsava.png";
 import { Link } from "react-router-dom";
