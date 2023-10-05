@@ -33,27 +33,13 @@ const HomePage = () => {
       </div>
       <Statistics />
       <div className="container mx-auto main-container">
-        
           <Section2 />
-        
-        
           {/* <Section14 /> */}
-        
-        
           <Section5 />
-        
-        
           <Section3 />
-        
-        
           <Section4 />
-        
-        
           <Section6 />
-        
-        
           <Section10 />
-        
         {/* <Section15 /> */}
         {/* <Section11 />
           <Section12 />
