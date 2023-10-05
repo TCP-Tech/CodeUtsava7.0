@@ -11,6 +11,8 @@ const TeamTCP = lazy(() => import("./pages/teamTcp/TeamTcp"))
 const Error404 = lazy(() => import("./pages/Error404/Error404"))
 const ContactUs = lazy(() => import("./pages/contactUs/ContactUs"))
 const FAQs = lazy(() => import("./pages/faqs/FAQs"))
+const Events = lazy(() => import("./pages/events/Events"))
+const Speakers = lazy(() => import("./pages/speakers/Speakers"))
 
 export default class App extends Component {
   render() {
@@ -24,6 +26,8 @@ export default class App extends Component {
             <Route path="/team" element={<TeamTCP />} />
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/faqs" element={<FAQs />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/speakers" element={<Speakers />} />
           </Routes>
         </Suspense>
       </BrowserRouter>

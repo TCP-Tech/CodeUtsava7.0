@@ -6,8 +6,6 @@ import "../../App.css";
 import IntroAudio from "../../components/introAudio/IntroAudio";
 import Section1 from "./sections/section1/Section1";
 import Section2 from "./sections/section2/Section2";
-import Section3 from "./sections/section3/Section3";
-import Section4 from "./sections/section4/Section4";
 import Section5 from "./sections/section5/Section5";
 import Section6 from "./sections/section6/Section6";
 import Section10 from "./sections/section10/Section10";
@@ -36,8 +34,6 @@ const HomePage = () => {
           <Section2 />
           {/* <Section14 /> */}
           <Section5 />
-          <Section3 />
-          <Section4 />
           <Section6 />
           <Section10 />
         {/* <Section15 /> */}

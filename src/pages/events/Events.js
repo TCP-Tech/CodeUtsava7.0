@@ -1,22 +1,17 @@
 import React from "react";
-
 import { useState, useEffect, useRef } from "react";
-
-import "./Section3.css";
-
-import EventCard from "../../../../components/eventCard/EventCard";
-
-import Events from "../../../../assets/data/eventsData";
-
-import { previousYear, baseUrl } from "../../../../constants";
-
-import frank from "../../../../assets/images/frakenstein.png";
-
+import "./Events.css";
+import EventCard from "../../components/eventCard/EventCard";
+import EventData from "../../assets/data/eventsData";
+import { previousYear, baseUrl } from "../../constants";
+import frank from "../../assets/images/frakenstein.png";
+import Footer from "../../components/footer/Footer";
+import NavbarTeam from "../../components/navbarTeam/NavbarTeam";
+import IntroAudio from "../../components/introAudio/IntroAudio";
 import axios from "axios";
+import downArrow from "../../assets/images/downArrow.svg";
 
-import downArrow from "../../../../assets/images/downArrow.svg";
-
-const Section3 = () => {
+const Events = () => {
   const url = baseUrl + "events/" + previousYear;
   const [state, setState] = useState({
     data: [],
@@ -150,36 +145,65 @@ const Section3 = () => {
   });
 
   return (
-    <div className="codeutsava__section3" id="events">
-      <div className="codeutsava__section3-title">
-        <img src={frank}></img>
-        Events
+    <div className="bg-image">
+      <div className="codeutsava__navbar-container">
+        <NavbarTeam />
       </div>
-      <div className="codeutsava__section3-events-container">
-        <div style={carousalStyle} className="slider">
-          <div style={slidesOverflow}>
-            <div style={getSlidesStyle()}>
-              {Events.map((event, index) => (
-                <EventCard
-                  key={index}
-                  img={event.img}
-                  title={event.title}
-                  date={event.date}
-                  link={event.link}
+      <div className="container mx-auto main-container">
+        <div className="codeutsava__section3" id="events">
+          <div className="codeutsava__section3-title">
+            <img src={frank}></img>
+            Events
+          </div>
+          <div className="codeutsava__section3-events-container">
+            <div style={carousalStyle} className="slider">
+              <div style={slidesOverflow}>
+                <div style={getSlidesStyle()}>
+                  {EventData.map((event, index) => (
+                    <EventCard
+                      key={index}
+                      img={event.img}
+                      title={event.title}
+                      date={event.date}
+                      link={event.link}
+                    />
+                  ))}
+                </div>
+              </div>
+              <div style={leftArrowStyle} onClick={() => goToPrevious()}>
+                <img
+                  src={downArrow}
+                  style={{
+                    height: "30px",
+                    transform: "rotate(90deg)",
+                    transform: "translateX(-30px) rotate(90deg)",
+                    filter: "invert(80%)",
+                  }}
                 />
-              ))}
+              </div>
+              <div style={rightArrowStyles} onClick={() => goToNext()}>
+                <img
+                  src={downArrow}
+                  style={{
+                    height: "30px",
+                    transform: "rotate(90deg)",
+                    transform: "translateX(30px) rotate(-90deg)",
+                    filter: "invert(80%)",
+                  }}
+                />
+              </div>
             </div>
           </div>
-          <div style={leftArrowStyle} onClick={() => goToPrevious()}>
-            <img src={downArrow} style={{height: '30px', transform: 'rotate(90deg)', transform: 'translateX(-30px) rotate(90deg)', filter: 'invert(80%)'}}/>
-          </div>
-          <div style={rightArrowStyles} onClick={() => goToNext()}>
-          <img src={downArrow} style={{height: '30px', transform: 'rotate(90deg)', transform: 'translateX(30px) rotate(-90deg)', filter: 'invert(80%)'}}/>
-          </div>
         </div>
+      </div>
+      <div className="intro_audio_new_design">
+        <IntroAudio />
+      </div>
+      <div className="codeutsava__footer-container">
+        <Footer />
       </div>
     </div>
   );
 };
 
-export default Section3;
+export default Events;

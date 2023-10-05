@@ -116,27 +116,38 @@ const Footer = ({ id }) => {
               <p className="codeutsava__footer-container2-right-text">Home</p>
             </a>
           </Link>
-          <a
-            href="/#aboutus"
-            className="codeutsava__footer-container2-right-links"
-          >
-            <p className="codeutsava__footer-container2-right-text">About Us</p>
-          </a>
-          <a
-            href="/#events"
-            className="codeutsava__footer-container2-right-links"
-          >
-            <p className="codeutsava__footer-container2-right-text">Events</p>
-          </a>
-          <a
-            href="/#sponsers"
-            className="codeutsava__footer-container2-right-links"
-          >
-            <p className="codeutsava__footer-container2-right-text">Sponsors</p>
-          </a>
+          <Link to="/events">
+            <a
+              href="/#events"
+              className="codeutsava__footer-container2-right-links"
+            >
+              <p className="codeutsava__footer-container2-right-text">Events</p>
+            </a>
+          </Link>
+
+          <Link to="/speakers">
+            <a
+              href="/#sponsers"
+              className="codeutsava__footer-container2-right-links"
+            >
+              <p className="codeutsava__footer-container2-right-text">
+                Speakers
+              </p>
+            </a>
+          </Link>
           <Link to="/faqs">
             <a href="" className="codeutsava__footer-container2-right-links">
               <p className="codeutsava__footer-container2-right-text">FAQ</p>
+            </a>
+          </Link>
+          <Link to="/contactus">
+            <a
+              href="/#contactus"
+              className="codeutsava__footer-container2-right-links"
+            >
+              <p className="codeutsava__footer-container2-right-text">
+                Contact Us
+              </p>
             </a>
           </Link>
         </div>
