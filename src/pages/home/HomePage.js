@@ -32,7 +32,7 @@ const HomePage = () => {
       <Statistics />
       <div className="container mx-auto main-container">
           <Section2 />
-          {/* <Section14 /> */}
+          <Section14 />
           <Section5 />
           <Section6 />
           <Section10 />
