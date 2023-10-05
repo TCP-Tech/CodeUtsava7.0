@@ -25,8 +25,8 @@ const Navbar = () => {
     >
       <header className="codeutsava__navbar">
         <div className="codeutsava__navbar-body">
-          <div className="codeutsava__navbar-logo codeutsava__navbar-brochure">
-            <img src={codeutsava} />
+          <div className="codeutsava__navbar-brochure">
+            <img className="codeutsava__navbar-brochure-image " src={codeutsava} />
             <button className="codeutsava__navbar-brochure-button feedback-button">
               <img src={feedBack} alt="Feedback" />
               <a href={guidelines} download="Guidelines">
