@@ -1,6 +1,6 @@
-import event1 from "../images/event1.png";
-import event2 from "../images/event2.jpeg";
-import event3 from '../images/event3.png';
+import event1 from "../images/event1.webp";
+import event2 from "../images/event2.webp";
+import event3 from '../images/event3.webp';
 
 const events = [
   {
