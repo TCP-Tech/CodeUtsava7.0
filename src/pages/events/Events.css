@@ -33,12 +33,18 @@
 
 .codeutsava__section3-events-container {
   gap: 4rem;
+  /* overflow-x: scroll;
+  min-width: 70vw; */
   display: flex;
-  flex-wrap: wrap;
+  /* justify-content: flex-start; */
   justify-content: center;
   margin: 4rem auto;
   flex-direction: row;
 }
+
+/* .codeutsava__section3-events-container::-webkit-scrollbar{
+  display: none;
+} */
 
 .codeutsava__section3-events-container .slider .slick-list {
   margin: 0 1rem;
