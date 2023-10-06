@@ -36,7 +36,7 @@ const HomePage = () => {
           <Section14 />
           <Section5 />
           <Section6 />
-          <Section9 />
+          {/* <Section9 /> */}
           <Section10 />
         {/* <Section15 /> */}
         {/* <Section11 />
