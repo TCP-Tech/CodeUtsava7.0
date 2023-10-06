@@ -56,10 +56,6 @@ a {
   .section__margin {
     margin: 2rem 2rem;
   }
-  .bg-image{
-    background-size: cover;
-    background-position-x: -200px;
-  }
 }
 
 .slide-bottom {
