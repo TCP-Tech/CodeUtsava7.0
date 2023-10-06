@@ -118,7 +118,7 @@ const Footer = ({ id }) => {
           </Link>
           <Link to="/events">
             <a
-              href="/#events"
+              href="/events"
               className="codeutsava__footer-container2-right-links"
             >
               <p className="codeutsava__footer-container2-right-text">Events</p>
@@ -127,7 +127,7 @@ const Footer = ({ id }) => {
 
           <Link to="/speakers">
             <a
-              href="/#sponsers"
+              href="/speakers"
               className="codeutsava__footer-container2-right-links"
             >
               <p className="codeutsava__footer-container2-right-text">
@@ -136,13 +136,13 @@ const Footer = ({ id }) => {
             </a>
           </Link>
           <Link to="/faqs">
-            <a href="" className="codeutsava__footer-container2-right-links">
+            <a href="/faqs" className="codeutsava__footer-container2-right-links">
               <p className="codeutsava__footer-container2-right-text">FAQ</p>
             </a>
           </Link>
           <Link to="/contactus">
             <a
-              href="/#contactus"
+              href="/contactus"
               className="codeutsava__footer-container2-right-links"
             >
               <p className="codeutsava__footer-container2-right-text">
@@ -157,7 +157,7 @@ const Footer = ({ id }) => {
           Architected with ❤️ by <Link to="/team">TCP Team</Link>
         </div>
         <div className="codeutsava__footer-back-to-top">
-          <a href={`${id == "speakers" ? "#speakers" : "#home"}`}>
+          <a href="#home">
             Back to Top
             <svg
               fill="var(--secondary-c)"

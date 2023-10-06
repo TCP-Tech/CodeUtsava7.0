@@ -12,6 +12,7 @@ import Section10 from "./sections/section10/Section10";
 import Section14 from "./sections/section14/Section14";
 import Statistics from "../../components/statisticalData/Statistics";
 import Footer from "../../components/footer/Footer";
+import Section9 from "./sections/section9/Section9";
 // import ScrollToTopnew from "../../components/scrollToTop/ScrollToTop";
 
 // const Section2 = lazy(() => import("./sections/section2/Section2"));
@@ -35,13 +36,14 @@ const HomePage = () => {
           <Section14 />
           <Section5 />
           <Section6 />
+          {/* <Section9 /> */}
           <Section10 />
         {/* <Section15 /> */}
         {/* <Section11 />
           <Section12 />
           <Section13 />
           <Section8 /> */}
-        {/* <Section9 /> */}
+      
       </div>
       <div className="intro_audio_new_design">
         <IntroAudio />

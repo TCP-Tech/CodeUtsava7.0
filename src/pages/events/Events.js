@@ -145,7 +145,7 @@ const Events = () => {
   });
 
   return (
-    <div className="bg-image">
+    <div className="bg-image"  id="home">
       <div className="codeutsava__navbar-container">
         <NavbarTeam />
       </div>
