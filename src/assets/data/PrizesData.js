@@ -1,6 +1,6 @@
 const Prizes = [
   {
-    title: "🥇 Winner Team 🥇",
+    title: "🥇 Winner's 🥇",
     cashPrize: [
       "The winning team will be awarded Rs. 2.7 Lakhs, with Rs. 35,000 in cash.",
     ],
@@ -15,7 +15,7 @@ const Prizes = [
     ],
   },
   {
-    title: "🥈 Runner - Up Team 🥈",
+    title: "🥈 Runner - Up's 🥈",
     cashPrize: [
       "The runner-up team will be awarded Rs. 2.5 Lakhs, with Rs. 25,000 in cash.",
     ],
@@ -30,7 +30,7 @@ const Prizes = [
     ],
   },
   {
-    title: "🥉 Second Runner - Up Team 🥉",
+    title: "🥉 Second Runner - Up's 🥉",
     cashPrize: [
       "The second runner-up team will be awarded Rs. 2.3 Lakhs, with Rs. 15,000 in cash.",
     ],
