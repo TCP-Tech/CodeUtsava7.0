@@ -32,9 +32,12 @@
 }
 
 .codeutsava__section3-events-container {
-  max-width: 98%;
+  gap: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 4rem auto;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .codeutsava__section3-events-container .slider .slick-list {

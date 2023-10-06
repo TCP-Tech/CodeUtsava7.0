@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Navbar from "../../components/navbar/Navbar";
-import { Suspense, lazy } from "react";
 import "./HomePage.css";
 import "../../App.css";
 import IntroAudio from "../../components/introAudio/IntroAudio";
@@ -14,14 +13,6 @@ import Statistics from "../../components/statisticalData/Statistics";
 import Footer from "../../components/footer/Footer";
 import Section9 from "./sections/section9/Section9";
 // import ScrollToTopnew from "../../components/scrollToTop/ScrollToTop";
-
-// const Section2 = lazy(() => import("./sections/section2/Section2"));
-// const Section14 = lazy(() => import("./sections/section14/Section14"));
-// const Section5 = lazy(() => import("./sections/section5/Section5"));
-// const Section3 = lazy(() => import("./sections/section3/Section3"));
-// const Section4 = lazy(() => import("./sections/section4/Section4"));
-// const Section6 = lazy(() => import("./sections/section6/Section6"));
-// const Section10 = lazy(() => import("./sections/section10/Section10"));
 
 const HomePage = () => {
   return (
@@ -43,7 +34,6 @@ const HomePage = () => {
           <Section12 />
           <Section13 />
           <Section8 /> */}
-      
       </div>
       <div className="intro_audio_new_design">
         <IntroAudio />

@@ -2,7 +2,6 @@ import React from "react";
 import "./EventCard.css";
 const EventCard = ({ img, title, date, link }) => {
   return (
-    <div class="codeutsava_section3-card-container">
       <div className="codeutsava__section3-card">
         <img className="codeutsava__section3-image" src={img} alt=""/>  
         <div className="codeutsava__section3-content">
@@ -12,7 +11,6 @@ const EventCard = ({ img, title, date, link }) => {
           <a className="codeutsava__section3-link" href={link} target="_blank" rel="noreferrer">Register Now</a>
         </div>
       </div>
-    </div>
   );
 };
 
