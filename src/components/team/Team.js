@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import downArrow from "../../assets/images/downArrow.svg";
 import axios from "axios";
 import { baseUrl } from "../../constants";
-import tcp from "../../assets/images/tcp.png";
+import tcp from "../../assets/images/tcp.webp";
 
 const Team = ({year}) => {
   const url = baseUrl + "team/" + year;
