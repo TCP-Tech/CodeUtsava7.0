@@ -32,7 +32,6 @@
 .codeutsava__section5-format-container {
   grid-template-rows: repeat(8, minmax(0px, 1fr));
   grid-template-columns: repeat(16, minmax(0px, 1fr));
-  gap: 4px;
   background-image: url("../../../../assets/images/hackathonBg.svg");
   background-repeat: no-repeat;
   background-position: 24% 35%;
@@ -43,7 +42,7 @@
 }
 
 .codeutsava__section5-format-card {
-  padding: 32px 48px;
+  padding: 32px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
