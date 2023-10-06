@@ -5,7 +5,6 @@ import "./Section11.css";
 
 import shortlistedTeams from "../../../../assets/data/shortlistedTeamsData";
 import ShortlistedTeamCard from "../../../../components/shortlistedTeamCard/ShortlistedTeamCard";
-import { motion } from "framer-motion";
 
 const Section11 = () => {
   const useFade = (initial) => {
@@ -32,10 +31,7 @@ const Section11 = () => {
   const [isVisible, setVisible, fadeProps] = useFade(false);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 1 } }}
-      viewport={{ once: false }}
+    <div
       className="codeutsava__section11"
       id="problems"
     >
@@ -81,7 +77,7 @@ const Section11 = () => {
           )}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

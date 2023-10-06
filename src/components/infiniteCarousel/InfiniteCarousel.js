@@ -29,38 +29,6 @@ const InfiniteCarousel = ({ sponsers }) => {
             </div>
           );
         })}
-        <div className="codeutsava__sponsers-carousel-item-block"></div>
-        {sponsers.map((sponser) => {
-          return (
-            <div className="codeutsava__sponsers-carousel-item">
-              <img src={sponser.img} />
-            </div>
-          );
-        })}
-        <div className="codeutsava__sponsers-carousel-item-block"></div>
-        {sponsers.map((sponser) => {
-          return (
-            <div className="codeutsava__sponsers-carousel-item">
-              <img src={sponser.img} />
-            </div>
-          );
-        })}
-        <div className="codeutsava__sponsers-carousel-item-block"></div>
-        {sponsers.map((sponser) => {
-          return (
-            <div className="codeutsava__sponsers-carousel-item">
-              <img src={sponser.img} />
-            </div>
-          );
-        })}
-        <div className="codeutsava__sponsers-carousel-item-block"></div>
-        {sponsers.map((sponser) => {
-          return (
-            <div className="codeutsava__sponsers-carousel-item">
-              <img src={sponser.img} />
-            </div>
-          );
-        })}
       </div>
     </div>
   );

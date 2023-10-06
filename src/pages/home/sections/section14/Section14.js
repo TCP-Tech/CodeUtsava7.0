@@ -1,61 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Chart from "react-apexcharts";
 import "./Section14.css";
 import pumpkin from "../../../../assets/images/pumpkin.png";
+import graph1 from "../../../../assets/images/graph1.webp";
+import graph2 from "../../../../assets/images/graph2.webp";
 
 const Section14 = () => {
-  const [state, setState] = useState({
-    options: {
-      chart: {
-        id: "basic-bar",
-      },
-      dataLabels: {
-        // enabled: false,
-      },
-      tooltip: {
-        enabled: false,
-      },
-      colors: ["var(--secondary-c)"],
-    },
-    series: [
-      {
-        name: "Total Number of Teams",
-        data: [120, 200, 260, 450, 570, 640, 800],
-      },
-      {
-        name: "Total Participations",
-        data: [500, 800, 1000, 1600, 1800, 2400, 3200],
-      },
-    ],
-  });
-
-  const getFontSize = () => {
-    const fontSize = window.innerWidth <= 767 ? "8px" : "14px";
-    return fontSize;
-  };
-
-  const getChartHeight = () => {
-    const smallScreenHeight = 300;
-    const largeScreenHeight = 400;
-  
-    if (window.innerWidth <= 450) {
-      return smallScreenHeight;
-    } else {
-      return largeScreenHeight;
-    }
-  };
-
-  const optionsWithoutToolbar = {
-    ...state.options,
-    toolbar: {
-      show: false,
-    },
-    dataLabels: {
-      style: {
-        fontSize: getFontSize(),
-      },
-    },
-  };
 
   return (
     <div
@@ -69,50 +18,10 @@ const Section14 = () => {
         </div>
         <div className="codeutsava__section14-menu1">
           <div className="codeutsava__section14-left">
-            <Chart
-              options={{
-                ...optionsWithoutToolbar,
-                xaxis: {
-                  ...optionsWithoutToolbar.xaxis,
-                  categories: ["2016", "2018", "2019", "2020", "2022", "2022-23", "2023-24"],
-                  title: {
-                    text: "Year",
-                  },
-                },
-                yaxis: {
-                  ...optionsWithoutToolbar.yaxis,
-                  title: {
-                    text: "Total Number of Teams",
-                  },
-                },
-              }}
-              series={state.series.slice(0, 1)}
-              type="area"
-              height={getChartHeight()}
-            />
+            <img src={graph2} alt="graph1" width="100%" />
           </div>
           <div className="codeutsava__section14-right">
-            <Chart
-              options={{
-                ...optionsWithoutToolbar,
-                xaxis: {
-                  ...optionsWithoutToolbar.xaxis,
-                  categories: ["2016", "2018", "2019", "2020", "2022", "2022-23", "2023-24"],
-                  title: {
-                    text: "Year",
-                  },
-                },
-                yaxis: {
-                  ...optionsWithoutToolbar.yaxis,
-                  title: {
-                    text: "Total Participations",
-                  },
-                },
-              }}
-              series={state.series.slice(1)}
-              type="bar"
-              height={getChartHeight()}
-            />
+          <img src={graph1} alt="graph1" width="100%"/>
           </div>
         </div>
       </div>

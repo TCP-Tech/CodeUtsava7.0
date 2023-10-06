@@ -1,14 +1,11 @@
-import { useState } from "react";
 import { useRef } from "react";
 
-const AccordionItem = ({ faq , onToggle, isActive}) => {
-
+const AccordionItem = ({ faq, onToggle, isActive }) => {
   const contentEl = useRef();
-
   return (
     <li className={`section7-accordion_item ${isActive ? "active" : ""}`}>
       <button className="section7-button" onClick={onToggle}>
-        <div className="section7-question"> {faq.question} </div> 
+        <div className="section7-question"> {faq.question} </div>
         <span className="section7-control">{isActive ? "-" : "+"} </span>
       </button>
       <div

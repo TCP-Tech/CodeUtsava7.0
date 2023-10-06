@@ -1,18 +1,12 @@
 import React from "react";
-
 import "./Section6.css";
-
 import sponsers from "../../../../assets/data/sponsersData.js";
 import cauldron from "../../../../assets/images/cauldron.png";
-import { motion } from "framer-motion";
 import InfiniteCarousel from "../../../../components/infiniteCarousel/InfiniteCarousel";
 
 const Section6 = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 1 } }}
-      viewport={{ once: false }}
+    <div
       className="codeutsava__section6"
       id="sponsers"
     >
@@ -51,7 +45,7 @@ const Section6 = () => {
           </div> */}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

@@ -1,6 +1,5 @@
 .codeutsava__section5 {
   padding-top: 2rem;
-  padding-bottom: 2rem;
   font-family: "Poppins";
 }
 
@@ -31,9 +30,8 @@
 }
 
 .codeutsava__section5-format-container {
-  grid-template-rows: repeat(6, minmax(0px, 1fr));
-  grid-template-columns: repeat(14, minmax(0px, 1fr));
-  gap: 4px;
+  grid-template-rows: repeat(8, minmax(0px, 1fr));
+  grid-template-columns: repeat(16, minmax(0px, 1fr));
   background-image: url("../../../../assets/images/hackathonBg.svg");
   background-repeat: no-repeat;
   background-position: 24% 35%;
@@ -44,12 +42,13 @@
 }
 
 .codeutsava__section5-format-card {
-  padding: 32px 48px;
+  padding: 32px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  margin: 4px;
   border-radius: 12px;
   background-color: rgb(32, 32, 32);
   box-shadow: var(--secondary-c) 0px 0px 12px;
@@ -78,7 +77,6 @@
   border-radius: 50%;
   position: absolute;
   left: 0px;
-  top: 1px;
   height: 40px;
   width: 40px;
   margin-right: 4px;
@@ -92,31 +90,37 @@
 .codeutsava__section5-format-card-title {
   font-weight: 400;
   margin-left: 1.5rem;
+  font-size: 12px;
 }
 
 .codeutsava__section5-format-card-description {
   font-weight: 400;
   padding-bottom: 4px;
+  font-size: 12px;
 }
 
 .format-card1 {
-  grid-area: 2 / 1 / 4 / 5;
+  grid-area: 2 / 1 / 4 / 6;
 }
 
 .format-card2 {
-  grid-area: 1 / 6 / 3 / 11;
+  grid-area: 1 / 7 / 3 / 11;
 }
 
 .format-card3 {
-  grid-area: 3 / 11 / 5 / 15;
+  grid-area: 2 / 12 / 4 / 18;
 }
 
 .format-card4 {
-  grid-area: 5 / 9 / 7 / 13;
+  grid-area: 5 / 12 / 7 / 18;
 }
 
 .format-card5 {
-  grid-area: 5 / 3 / 7 / 7;
+  grid-area: 6 / 7 / 8 / 11;
+}
+
+.format-card6 {
+  grid-area: 5 / 1 / 7 / 6;
 }
 
 @media screen and (max-width: 900px) {
@@ -148,6 +152,9 @@
   }
   .format-card5 {
     grid-area: span 1/1/auto/4 !important;
+  }
+  .format-card6 {
+    grid-area: span 1/2/auto/5 !important;
   }
   .codeutsava__section5-title {
     font-size: 36px;

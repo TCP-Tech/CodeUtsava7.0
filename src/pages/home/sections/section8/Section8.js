@@ -1,26 +1,17 @@
 import React from "react";
 import { useState, useEffect } from "react";
-
 import "./Section8.css";
-
-import problems from "../../../../assets/data/problemsData.js";
+// import problems from "../../../../assets/data/problemsData.js";
 import ProblemCard from "../../../../components/problemCard/ProblemCard";
-import { motion } from "framer-motion";
-
-
-import { previousYear, baseUrl } from '../../../../constants'
-
+import { previousYear, baseUrl } from "../../../../constants";
 import axios from "axios";
-
 const initialProblem = 2;
-
 const Section8 = () => {
   const url = baseUrl + "problemstatements/" + previousYear;
   const [state, setState] = useState({
     data: [],
     loading: true,
   });
-
   useEffect(() => {
     const fetchData = async () => {
       const data = await axios.get(url);
@@ -31,9 +22,7 @@ const Section8 = () => {
     };
     fetchData();
   }, []);
-
   console.log(state.data);
-
   const useFade = (initial) => {
     const [show, setShow] = useState(initial);
     const [isVisible, setVisible] = useState(show);
@@ -43,7 +32,6 @@ const Section8 = () => {
     const onAnimationEnd = () => {
       if (!show) setVisible(false);
     };
-
     const style = {
       animation: `${
         show ? "fadeIn 1.5s ease-in-out" : "fadeOut 0.5s ease-in-out"
@@ -56,16 +44,9 @@ const Section8 = () => {
     return [isVisible, setShow, fadeProps];
   };
   const [isVisible, setVisible, fadeProps] = useFade(false);
-
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 1 } }}
-      viewport={{ once: false }}
-      className="codeutsava__section8"
-      id="problems"
-    >
-      <div className="codeutsava__section8-body">
+    <div className="codeutsava__section8" id="problems">
+      {/* <div className="codeutsava__section8-body">
         <div className="codeutsava__section8-title">Problem Statements</div>
         <div className="codeutsava__section8-problems">
           <div className="codeutsava__section8-problems-container1">
@@ -104,8 +85,8 @@ const Section8 = () => {
         >
           {isVisible === false ? "Load More" : "Show Less"}
         </button>
-      </div>
-    </motion.div>
+      </div> */}
+    </div>
   );
 };
 

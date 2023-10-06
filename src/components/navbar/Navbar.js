@@ -2,13 +2,11 @@ import React from "react";
 import { useRef, useState } from "react";
 import "./Navbar.css";
 import codeutsava from "../../assets/images/codeutsava.png";
-import tcp from "../../assets/images/tcp.png";
+import tcp from "../../assets/images/tcp.webp";
 import downArrow from "../../assets/images/downArrow.svg";
 import feedBack from "../../assets/images/feedback.svg";
 import brochure from "../../assets/images/CodeUtsava_Brochure_7.0.pdf";
 import guidelines from "../../assets/images/CodeUtsava_Guidelines_7.0.pdf";
-import { motion } from "framer-motion";
-import { headerVariants } from "../../motionUtils";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -20,13 +18,16 @@ const Navbar = () => {
   }
 
   return (
-    <div
-      className="codeutsava__navbar-container"
-    >
+    <div className="codeutsava__navbar-container">
       <header className="codeutsava__navbar">
         <div className="codeutsava__navbar-body">
-          <div className="codeutsava__navbar-logo codeutsava__navbar-brochure">
-            <img src={codeutsava} />
+          <div className="codeutsava__navbar-brochure">
+            <a href="/">
+              <img
+                className="codeutsava__navbar-brochure-image "
+                src={codeutsava}
+              />
+            </a>
             <button className="codeutsava__navbar-brochure-button feedback-button">
               <img src={feedBack} alt="Feedback" />
               <a href={guidelines} download="Guidelines">
@@ -47,14 +48,20 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="codeutsava__navbar-navitem">
-                <a href="#events">
-                  <h3 className="codeutsava__navbar-menu-heading">Events</h3>
-                </a>
+                <Link to="/events">
+                  <a href="#events">
+                    <h3 className="codeutsava__navbar-menu-heading">Events</h3>
+                  </a>
+                </Link>
               </li>
               <li className="codeutsava__navbar-navitem">
-                <a href="#speakers">
-                  <h3 className="codeutsava__navbar-menu-heading">Speakers</h3>
-                </a>
+                <Link to="/speakers">
+                  <a href="#speakers">
+                    <h3 className="codeutsava__navbar-menu-heading">
+                      Speakers
+                    </h3>
+                  </a>
+                </Link>
               </li>
               <li className="codeutsava__navbar-navitem">
                 <a href="#format">
@@ -125,12 +132,16 @@ const Navbar = () => {
             </div>
             <div
               className="codeutsava__navbar-hamburger-logo"
-              style={{ transform: "translateX(-4px)" }}
+              style={{ transform: "translateX(-8px)" }}
             >
-              <img src={codeutsava} />
+              <a href="/">
+                <img src={codeutsava} />
+              </a>
             </div>
-            <div className="codeutsava__navbar-hamburger-logo"
-            style={{ transform: "translateX(-4px)" }}>
+            <div
+              className="codeutsava__navbar-hamburger-logo"
+              style={{ transform: "translateX(-8px)" }}
+            >
               <img src={tcp} />
             </div>
           </nav>
@@ -155,18 +166,22 @@ const Navbar = () => {
             </a>
           </li>
           <li className="codeutsava__navbar-hamburger-navitem">
-            <a href="#events" onClick={toggleMenu}>
-              <h3 className="codeutsava__navbar-hamburger-menu-heading">
-                Events
-              </h3>
-            </a>
+            <Link to="/events">
+              <a href="#events" onClick={toggleMenu}>
+                <h3 className="codeutsava__navbar-hamburger-menu-heading">
+                  Events
+                </h3>
+              </a>
+            </Link>
           </li>
           <li className="codeutsava__navbar-hamburger-navitem">
-            <a href="#speakers" onClick={toggleMenu}>
-              <h3 className="codeutsava__navbar-hamburger-menu-heading">
-                Speakers
-              </h3>
-            </a>
+            <Link to="/speakers">
+              <a href="#speakers" onClick={toggleMenu}>
+                <h3 className="codeutsava__navbar-hamburger-menu-heading">
+                  Speakers
+                </h3>
+              </a>
+            </Link>
           </li>
           <li className="codeutsava__navbar-hamburger-navitem">
             <a href="#format" onClick={toggleMenu}>

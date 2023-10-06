@@ -2,13 +2,11 @@ import React from "react";
 import { useRef, useState } from "react";
 import "./NavbarTeam.css";
 import codeutsava from "../../assets/images/codeutsava.png";
-import tcp from "../../assets/images/tcp.png";
+import tcp from "../../assets/images/tcp.webp";
 import downArrow from "../../assets/images/downArrow.svg";
 import feedBack from "../../assets/images/feedback.svg";
 import brochure from "../../assets/images/CodeUtsava_Brochure_7.0.pdf";
 import guidelines from "../../assets/images/CodeUtsava_Guidelines_7.0.pdf";
-import { motion } from "framer-motion";
-import { headerVariants } from "../../motionUtils";
 import { Link } from "react-router-dom";
 
 const NavbarTeam = () => {
@@ -20,11 +18,7 @@ const NavbarTeam = () => {
   }
 
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="show"
-      variants={headerVariants}
-      viewport={{ once: false, amount: 0.25 }}
+    <div
       className="codeutsava__navbarTeam-container"
     >
       <header className="codeutsava__navbarTeam">
@@ -87,11 +81,11 @@ const NavbarTeam = () => {
               </svg>
             </div>
             <div className="codeutsava__navbarTeam-hamburger-logo"
-            style={{ transform: "translateX(-4px)" }}>
+            style={{ transform: "translateX(-8px)" }}>
               <img src={codeutsava} />
             </div>
             <div className="codeutsava__navbarTeam-hamburger-logo"
-            style={{ transform: "translateX(-4px)" }}>
+            style={{ transform: "translateX(-8px)" }}>
               <img src={tcp} />
             </div>
           </nav>
@@ -124,7 +118,7 @@ const NavbarTeam = () => {
           </div>
         </ul>
       </header>
-    </motion.div>
+    </div>
   );
 };
 

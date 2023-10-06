@@ -29,6 +29,11 @@
   height: 100px;
 }
 
+.preloader-img{
+  width: 100%;
+  height: auto;
+}
+
 .intro-container1 {
   position: absolute;
   top: 50%;

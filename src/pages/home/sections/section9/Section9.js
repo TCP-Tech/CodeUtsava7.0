@@ -1,18 +1,12 @@
 import React from "react";
-
 import Prizes from "../../../../assets/data/PrizesData";
 import PrizeBox from "../../../../components/prizeBox/PrizeBox.js";
 import pumpkin from '../../../../assets/images/pumpkin.png';
-import { motion } from "framer-motion";
-
 import "./Section9.css";
 
 const Section9 = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 1 } }}
-      viewport={{ once: false }}
+    <div
       className="codeutsava__section9"
     >
       <div className="codeutsava__section9-title">
@@ -34,7 +28,7 @@ const Section9 = () => {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
