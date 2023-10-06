@@ -3,7 +3,8 @@
   padding-top: 2rem;
   color: white;
   font-family: "Poppins";
-  background-color: rgba(0, 0, 0, 0.243);
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  background-color: #b079c11d;  
   backdrop-filter: blur(10px);
 }
 

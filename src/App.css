@@ -4,8 +4,8 @@
 
 .bg-image{
   background-image: url("./assets/images/bg.png");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
@@ -55,6 +55,10 @@ a {
   }
   .section__margin {
     margin: 2rem 2rem;
+  }
+  .bg-image{
+    background-image: none;
+    background: linear-gradient(112.5deg, rgba(54, 5, 77, 0.212) 11.4%, rgba(145, 64, 174, 0.071) 60.2%);;
   }
 }
 
