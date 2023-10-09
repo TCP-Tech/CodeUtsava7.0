@@ -24,10 +24,10 @@ const HomePage = () => {
       <Statistics />
       <div className="container mx-auto main-container">
           <Section2 />
-          <Section14 />
+          {/* <Section9 /> */}
           <Section5 />
           <Section6 />
-          {/* <Section9 /> */}
+          <Section14 />
           <Section10 />
         {/* <Section15 /> */}
         {/* <Section11 />

@@ -1,5 +1,4 @@
 .codeutsava__sponsers-carousel-container {
-  width: 100%;
   overflow: hidden;
 }
 
@@ -8,11 +7,7 @@
   overflow: hidden;
   white-space: nowrap;
   padding: 2rem 0;
-  animation: scrollInfinite 40s linear infinite;
-}
-
-.codeutsava__sponsers-carousel:hover {
-  animation-play-state: paused;
+  animation: scrollInfinite 30s infinite;
 }
 
 .codeutsava__sponsers-carousel-item {
@@ -38,9 +33,9 @@
 
 @keyframes scrollInfinite {
   0% {
-    transform: translateX(0);
+    transform: translate(2vw, 0px);
   }
   100% {
-    transform: translateX(calc(-250px * 25));
+    transform: translate(-150%, 0px);
   }
 }
