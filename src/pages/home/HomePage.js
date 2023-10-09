@@ -28,7 +28,7 @@ const HomePage = () => {
           <Guidelines/>
           <Section5 />
           <Section6 />
-          {/* <Section9 /> */}
+          <Section9 />
           <Section14 />
           <Section10 />
         {/* <Section15 /> */}
