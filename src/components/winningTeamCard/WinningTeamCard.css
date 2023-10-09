@@ -109,9 +109,10 @@
   border: 2px solid black;
 }
 .codeutsava__section11-problemModal-body {
+  overflow: hidden;
   position: fixed;
   width: 60%;
-  height: 75%;
+  height: 70vh;
   top: 15%;
   left: 20%;
   display: flex;
@@ -156,10 +157,10 @@
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 200px) {
   .codeutsava__section11-problemModal-body {
     height: 65%;
-    width: 80%;
+    width: 90%;
     padding: 10px;
     left: 10%;
   }
@@ -186,8 +187,7 @@
 }
 
 .codeutsava__section11-problemModal-body table {
-  width: 90%;
-  margin-top: 20px;
+  width: 100%;
   border-collapse: collapse;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -219,5 +219,11 @@
 @media screen and (max-width: 900px) {
   .codeutsava__section11-problemModal-body table {
     width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .codeutsava__section11-problemModal-body table {
+    height: 50vh; 
   }
 }
