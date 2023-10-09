@@ -6,11 +6,7 @@ const Prizes = [
     ],
     prizeInfo: [
       "Digital Ocean Credits: Rs. 50,000",
-      "JetBrains Free Educational License",
-      "Taskade Unlimited Workspace Upgrade: Rs. 1,00,000",
       "1-month FREE Echo-3D Premium Plan: Rs. 50,000",
-      "UNO interview plan by Interview Buddy: Rs. 7,000",
-      "Discount on PrepBytes Placement Courses: Rs. 30,000",
       "T-Shirt Swag for all team members",
     ],
   },
@@ -21,11 +17,7 @@ const Prizes = [
     ],
     prizeInfo: [
       "Digital Ocean Credits: Rs. 40,000",
-      "JetBrains Free Educational License",
-      "Taskade Unlimited Workspace Upgrade: Rs. 1,00,000",
       "1-month FREE Echo-3D Premium Plan: Rs. 50,000",
-      "UNO interview plan by Interview Buddy: Rs. 7,000",
-      "Discount on PrepBytes Placement Courses: Rs. 30,000",
       "T-Shirt Swag for all team members",
     ],
   },
@@ -36,11 +28,7 @@ const Prizes = [
     ],
     prizeInfo: [
       "Digital Ocean Credits: Rs. 33,000",
-      "JetBrains Free Educational License",
-      "Taskade Unlimited Workspace Upgrade: Rs. 1,00,000",
       "1-month FREE Echo-3D Premium Plan: Rs. 50,000",
-      "UNO interview plan by Interview Buddy: Rs. 7,000",
-      "Discount on PrepBytes Placement Courses: Rs. 30,000",
       "T-Shirt Swag for all team members",
     ],
   },
@@ -52,11 +40,7 @@ const Prizes = [
       ],
       prizeInfo : [
           'Digital Ocean credits worth Rs. 8,000.',
-          'JetBrains Free Educational License for all.',
-          'Taskade Unlimited Workspace Upgrade worth Rs. 1,00,000. (Lifetime Access)',
           '1-month FREE access to Premium Plan features of the Echo-3D platform worth Rs. 50,000.',
-          'UNO interview plan with unlimited practice from Interview Buddy worth Rs. 7000.',
-          'Discount on PrepBytes Placement Courses worth Rs. 30,000.',
       ]
   },
   {
