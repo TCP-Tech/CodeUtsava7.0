@@ -12,6 +12,7 @@ import Section14 from "./sections/section14/Section14";
 import Statistics from "../../components/statisticalData/Statistics";
 import Footer from "../../components/footer/Footer";
 import Section9 from "./sections/section9/Section9";
+import Guidelines from "../../components/Guidlines/Guidelines";
 // import ScrollToTopnew from "../../components/scrollToTop/ScrollToTop";
 
 const HomePage = () => {
@@ -24,6 +25,7 @@ const HomePage = () => {
       <Statistics />
       <div className="container mx-auto main-container">
           <Section2 />
+          <Guidelines/>
           <Section5 />
           <Section6 />
           {/* <Section9 /> */}
