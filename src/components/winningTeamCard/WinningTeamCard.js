@@ -79,9 +79,9 @@ const WinningTeamCard = ({
               onClick={() => setModal(false)}
             />
             <h1>Team Name: {name}</h1>
-            <p style={{ fontWeight: "600" }}>College: {college}</p>
-            <p style={{ fontWeight: "600" }}>Team Leader: {leader}</p>
-            <p style={{ fontWeight: "600" }}>Team Members</p>
+            <h5 style={{ fontWeight: "600" }}>College: {college}</h5>
+            <h5 style={{ fontWeight: "600" }}>Team Leader: {leader}</h5>
+            <h5 style={{ fontWeight: "600" }}>Team Members</h5>
             <p>{leader}</p>
             <p>{member1}</p>
             <p>{member2}</p>
