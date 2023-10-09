@@ -112,10 +112,10 @@
 .codeutsava__section11-problemModal-body {
   overflow: hidden;
   position: fixed;
-  width: 60%;
-  height: 85%;
-  top: 10%;
-  left: 20%;
+  width: 80%;
+  height: 80%;
+  top: 15%;
+  left: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -215,21 +215,23 @@
 }
 
 @media screen and (max-width: 900px) {
-  .codeutsava__section11-problemModal-body {
-    width: 24%;
-    height: 20%;
-    top: 75%;
-    left: 4%;
+  .codeutsava__section11-problemModal-body td,
+  .codeutsava__section11-problemModal-body th {
+    font-size: 16px !important;
+  }
+  .codeutsava__section11-problemModal-body{
+    padding: 1rem;
   }
 }
 @media screen and (max-width: 400px) {
-  .codeutsava__section11-problemModal-body {
-    width: 23%;
-    height: 22%;
-    top: 75%;
-    left: 1%;
+  .codeutsava__section11-problemModal-body td,
+  .codeutsava__section11-problemModal-body th, h1, h5 {
+    font-size: 12px !important;
   }
-  .codeutsava__section11-problemsModal-body td{
-    font-size: 10px;
+  .codeutsava__section11-problemModal-body td, th{
+    padding: 10px !important;
+  }
+  .codeutsava__section11-problemModal-body{
+    padding: 1rem;
   }
 }
