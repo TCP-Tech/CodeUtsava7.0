@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import "./WinningTeamCard.css";
-import cross from "../../assets/images/cross.png";
+import cross from "../../assets/images/cross.svg";
 
 const WinningTeamCard = ({
   position,
@@ -80,15 +80,36 @@ const WinningTeamCard = ({
             />
             <h1>Team Name: {name}</h1>
             <h5 style={{ fontWeight: "600" }}>College: {college}</h5>
-            <h5 style={{ fontWeight: "600" }}>Team Leader: {leader}</h5>
-            <h5 style={{ fontWeight: "600" }}>Team Members</h5>
-            <p>{leader}</p>
-            <p>{member1}</p>
-            <p>{member2}</p>
-            <p>{member3}</p>
-            <p>{member4}</p>
-            <p>{member5}</p>
-            <p>{member6}</p>
+            <table>
+              <tr>
+                <td>Team Members</td>
+                <td>Name</td>
+              </tr>
+              <tr>
+                <td>Leader</td>
+                <td>{leader}</td>
+              </tr>
+              <tr>
+                <td>Member 1</td>
+                <td>{member1}</td>
+              </tr>
+              <tr>
+                <td>Member 2</td>
+                <td>{member2}</td>
+              </tr>
+              <tr>
+                <td>Member 3</td>
+                <td>{member3}</td>
+              </tr>
+              <tr>
+                <td>Member 4</td>
+                <td>{member4}</td>
+              </tr>
+              <tr>
+                <td>Member 5</td>
+                <td>{member5}</td>
+              </tr>
+            </table>
           </motion.div>
         )}
       </AnimatePresence>
