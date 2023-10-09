@@ -20,6 +20,14 @@
   text-align: center;
   letter-spacing: 1px;
   margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.codeutsava__section11-title img{
+  height: 110px;
+  width: auto;
 }
 
 .codeutsava__section11-problems {

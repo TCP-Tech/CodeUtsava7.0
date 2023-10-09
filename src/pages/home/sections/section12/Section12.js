@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import "./Section12.css";
 import winningTeamData from "../../../../assets/data/winningTeamData";
 import WinningTeamCard from "../../../../components/winningTeamCard/WinningTeamCard";
+import cauldron from '../../../../assets/images/cauldron.png'
 const Section11 = () => {
   const useFade = (initial) => {
     const [show, setShow] = useState(initial);
@@ -33,7 +34,7 @@ const Section11 = () => {
       id="problems"
     >
       <div className="codeutsava__section11-body">
-        <div className="codeutsava__section11-title">Winners</div>
+        <div className="codeutsava__section11-title"><img src={cauldron}></img>Previous Year Winners</div>
         <div className="codeutsava__section11-problems">
           <div className="codeutsava__section11-problems-container1-winning">
             {winningTeamData.map((shortlistedTeam, index) => (

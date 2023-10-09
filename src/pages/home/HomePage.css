@@ -9,7 +9,7 @@
 
 .codeutsava__footer-container{
   width: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   overflow-x: hidden;
 }
 
@@ -18,6 +18,12 @@
   bottom:0.75rem;
   z-index: 475;
   left:2.2rem;
+}
+
+@media screen and (max-width: 768px){
+  .codeutsava__footer-container{
+    background-color: rgba(32,32,32,0.6);
+  }
 }
 
 

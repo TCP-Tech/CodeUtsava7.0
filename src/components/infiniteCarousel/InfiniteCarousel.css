@@ -1,6 +1,4 @@
 .codeutsava__sponsers-carousel-container {
-  background-color: rgba(32, 32, 32, 1);
-  width: 100%;
   overflow: hidden;
 }
 
@@ -9,20 +7,14 @@
   overflow: hidden;
   white-space: nowrap;
   padding: 2rem 0;
-  animation: scrollInfinite 40s linear infinite;
-}
-
-.codeutsava__sponsers-carousel:hover {
-  animation-play-state: paused;
+  animation: scrollInfinite 15s infinite linear;
 }
 
 .codeutsava__sponsers-carousel-item {
   display: inline-block;
-  margin: 0rem 3rem;
-  height: 75px;
+  margin: 1rem 3rem;
   width: auto;
   object-fit: contain;
-
 }
 
 .codeutsava__sponsers-carousel-item img {
@@ -32,16 +24,16 @@
   text-align: center;
 }
 
-.codeutsava__sponsers-carousel-item-block{
-    margin: 0px;
-    display: inline-block;
+.codeutsava__sponsers-carousel-item-block {
+  margin: 0px;
+  display: inline-block;
 }
 
 @keyframes scrollInfinite {
   0% {
-    transform: translateX(0);
+    transform: translate(50vw, 0);
   }
   100% {
-    transform: translateX(calc(-250px * 25));
+    transform: translate(-100%, 0);
   }
 }

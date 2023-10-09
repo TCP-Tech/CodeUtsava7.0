@@ -32,6 +32,12 @@ const Section6 = () => {
           <div className="codeutsava__section6-sponser-list gold">
             <InfiniteCarousel sponsers={sponsers.gold} />
           </div>
+          <div className="codeutsava__section6-sponser-title">
+            Partners
+          </div>
+          <div className="codeutsava__section6-sponser-list">
+            <InfiniteCarousel sponsers={sponsers.partners} />
+          </div>
 
           {/* <div className="codeutsava__section6-sponser-title">
             Bronze Sponsors

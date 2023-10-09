@@ -1,0 +1,286 @@
+.codeutsava__guidelines-card {
+  padding: 0 1.5rem;
+  /* background-image: url("../../assets/images/guidelines_bg.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--secondary-c);
+  box-shadow: #b200ee 0 0 8px;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 4px;
+  background-color: #48586180;
+}
+
+@media screen and (max-width: 850px) {
+  .codeutsava__guidelines-decor-web {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -30px;
+    left: 210px;
+    z-index: 2;
+  }
+}
+
+.codeutsava__guidelines-decor-web img {
+  height: auto;
+  width: 110px;
+  color: white;
+  cursor: pointer;
+}
+
+.codeutsava__guidelines-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-items: start;
+  align-items: center;
+}
+
+.codeutsava__guidelines-cardTitle {
+  font-weight: 900;
+  font-size: 22px;
+  margin-top: 2rem;
+}
+
+.codeutsava__guidelines-detail {
+  margin: 0rem 0;
+  font-size: 15px;
+  /* font-weight: 400; */
+  color: white;
+  padding: 1.5rem 4rem;
+}
+
+.codeutsava__guidelines-detail2 {
+  margin: 0.5rem 0;
+  font-size: 15px;
+  /* font-weight: 400; */
+  color: white;
+  padding-bottom: 1.5rem;
+}
+.codeutsava__guidelines-detail2 b {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.codeutsava__guidelines-detail p {
+  margin-bottom: 18px;
+}
+.codeutsava__guidelines-detail p span {
+  font-weight: 900;
+}
+
+.codeutsava__guidelines-link {
+  background-color: var(--secondary-c);
+  border: 1px solid var(--secondary-c);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  margin-bottom: 2rem;
+}
+
+.codeutsava__guidelines-link:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 486px) {
+  .codeutsava__guidelines-card {
+    margin: 0;
+  }
+  .codeutsava__guidelines-cardTitle {
+    font-weight: 700;
+    margin-top: 0.5rem;
+    padding: 20px 0;
+  }
+
+  .codeutsava__guidelines-detail {
+    font-size: 13px;
+    padding: 0;
+  }
+  .codeutsava__guidelines-detail2 {
+    font-size: 13px;
+    padding: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .codeutsava__guidelines-link {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 484px) and (max-width: 768px) {
+  .codeutsava__guidelines-card {
+    margin: 5px;
+  }
+
+  .codeutsava__guidelines-cardTitle {
+    display: flex;
+    /* align-items: center; */
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .codeutsava__guidelines-detail {
+    font-size: 14px;
+  }
+
+  .codeutsava__guidelines-link {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
+
+.codeutsava__guidelines {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: white;
+  font-family: "Poppins";
+  position: relative;
+  margin: 0 5rem;
+}
+
+.codeutsava__guidelines-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.codeutsava__guidelines-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.codeutsava__guidelines-title img {
+  width: auto;
+  position: relative;
+  height: 80px;
+  margin-right: 1rem;
+}
+
+.codeutsava__guidelines-events-container {
+  gap: 4rem;
+  margin: 4rem auto;
+  flex-direction: row;
+  position: relative;
+}
+
+.codeutsava__guidelines-events-container img {
+  position: absolute;
+  width: 100px;
+  top: -20px;
+  right: -20px;
+}
+
+@media (width<900px) {
+  .codeutsava__guidelines-events-container img {
+    display: none;
+  }
+}
+
+/* .codeutsava__guidelines-events-container::-webkit-scrollbar{
+    display: none;
+  } */
+
+.codeutsava__guidelines-events-container .slider .slick-list {
+  margin: 0 1rem;
+  box-sizing: initial;
+  padding: 80px 0px;
+  overflow-y: visible;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.slick-list {
+  overflow-y: hidden !important;
+}
+
+.codeutsava__guidelines-events-container
+  .slider
+  .slick-arrow
+  .slick-prev
+  button {
+  display: none;
+}
+.codeutsava__guidelines-events-container
+  .slider
+  .slick-list
+  .slick-slide
+  > div {
+  padding: 0 35px;
+}
+
+@media (min-width: 1024px) {
+  .codeutsava__guidelines-events-container
+    .slider
+    .slick-list
+    .slick-slide.slick-active.slick-current
+    + .slick-slide {
+    transition: all 1000ms ease-out;
+    scale: 1.1;
+    transform: translateY(50px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .codeutsava__guidelines-body {
+    margin: 0 1rem;
+  }
+  .codeutsava__guidelines {
+    padding-bottom: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .codeutsava__guidelines-events-container
+    .slider
+    .slick-list
+    .slick-slide
+    > div {
+    padding: 0 0;
+  }
+  .codeutsava__guidelines-slider {
+    padding-top: 1rem;
+  }
+  .codeutsava__guidelines-title {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 484px) and (max-width: 768px) {
+  .slider {
+    margin-left: 10px;
+  }
+}
+
+.codeutsava__guidelines-title img {
+  width: auto;
+  position: relative;
+  height: 110px;
+  margin: 0;
+}

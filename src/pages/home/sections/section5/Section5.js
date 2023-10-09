@@ -1,6 +1,7 @@
 import React from "react";
 import "./Section5.css";
 import hackathonData from "../../../../assets/data/hackathonData";
+import ghost from '../../../../assets/images/ghost.png'
 
 const Section5 = () => {
   return (
@@ -9,7 +10,9 @@ const Section5 = () => {
       id="format"
     >
       <div className="codeutsava__section5-body">
-        <div className="codeutsava__section5-title">Our Format</div>
+        <div className="codeutsava__section5-title">Our Format
+        <img src={ghost}></img>
+        </div>
         <div className="codeutsava__section5-content">
           Check out the schedule for the hackathon.
         </div>

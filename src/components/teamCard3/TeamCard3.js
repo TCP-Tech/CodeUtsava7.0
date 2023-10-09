@@ -26,7 +26,7 @@ const TeamCard3 = ({ img, name, position, linkedin, email, domain }) => {
       </div>
       <div className="codeutsava__team-card3-social">
         <a
-          href={email}
+          href={`mailto:${email}`}
           target="_blank"
           className="fa fa-envelope"
           aria-hidden="true"

@@ -21,8 +21,7 @@
 }
 
 .hehe{
-  overflow: hidden;
-  
+  overflow-x: hidden !important;
 }
 
 .intro-container1 img {

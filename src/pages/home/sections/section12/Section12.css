@@ -1,7 +1,6 @@
 .codeutsava__section11 {
-  padding-top: 4rem;
-  padding-bottom: 2rem;
   color: white;
+  margin: 6rem 0;
   font-family: "Poppins";
 }
 
@@ -20,6 +19,9 @@
   text-align: center;
   letter-spacing: 1px;
   margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .codeutsava__section11-problems {
@@ -46,6 +48,11 @@
   letter-spacing: 1.5px;
   color: #d7d7d7;
   transition: all 0.2s ease-in-out;
+}
+
+.codeutsava__section11-title img{
+  height: 110px;
+  width: auto;
 }
 
 .codeutsava__section11-button:hover {

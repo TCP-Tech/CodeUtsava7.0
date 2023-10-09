@@ -2,12 +2,12 @@
   width: 100%;
 }
 
-/* .bg-image{
-  background-image: url("./assets/images/bg.webp");
-  background-repeat: no-repeat;
+.bg-image{
+  background-image: url("./assets/images/bg.png");
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-} */
+}
 
 /* .main-container {
   background-image: url("./assets/images/14.png");
@@ -57,8 +57,8 @@ a {
     margin: 2rem 2rem;
   }
   .bg-image{
-    background-size: cover;
-    background-position-x: -200px;
+    background-image: none;
+    background: linear-gradient(112.5deg, rgba(54, 5, 77, 0.212) 11.4%, rgba(145, 64, 174, 0.071) 60.2%);;
   }
 }
 
