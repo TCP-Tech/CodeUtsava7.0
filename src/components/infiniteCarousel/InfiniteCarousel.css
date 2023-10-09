@@ -7,7 +7,7 @@
   overflow: hidden;
   white-space: nowrap;
   padding: 2rem 0;
-  animation: scrollInfinite 30s infinite;
+  animation: scrollInfinite 10s infinite linear;
 }
 
 .codeutsava__sponsers-carousel-item {
@@ -33,9 +33,9 @@
 
 @keyframes scrollInfinite {
   0% {
-    transform: translate(2vw, 0px);
+    transform: translate(0%, 0);
   }
   100% {
-    transform: translate(-150%, 0px);
+    transform: translate(-100%, 0);
   }
 }
