@@ -5,6 +5,7 @@
 }
 
 .codeutsava__section6-body {
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,8 +155,8 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+/* @media screen and (max-width: 350px) {
   .codeutsava__section6-sponser-list {
     max-width: 200px;
   }
-}
+} */
