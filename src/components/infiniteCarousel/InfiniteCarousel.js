@@ -13,7 +13,7 @@ const InfiniteCarousel = ({ sponsers }) => {
             </div>
           );
         })}
-        <div style={{margin: '0px 20vw', display: 'inline-block'}}></div>
+        <div style={{margin: '0px 15vw', display: 'inline-block'}}></div>
         {sponsers.map((sponser) => {
           return (
             <div className="codeutsava__sponsers-carousel-item">

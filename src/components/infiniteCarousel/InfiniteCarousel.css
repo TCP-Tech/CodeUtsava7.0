@@ -7,7 +7,7 @@
   overflow: hidden;
   white-space: nowrap;
   padding: 2rem 0;
-  animation: scrollInfinite 10s infinite linear;
+  animation: scrollInfinite 15s infinite linear;
 }
 
 .codeutsava__sponsers-carousel-item {
@@ -16,7 +16,6 @@
   height: 75px;
   width: auto;
   object-fit: contain;
-
 }
 
 .codeutsava__sponsers-carousel-item img {
@@ -26,14 +25,14 @@
   text-align: center;
 }
 
-.codeutsava__sponsers-carousel-item-block{
-    margin: 0px;
-    display: inline-block;
+.codeutsava__sponsers-carousel-item-block {
+  margin: 0px;
+  display: inline-block;
 }
 
 @keyframes scrollInfinite {
   0% {
-    transform: translate(0%, 0);
+    transform: translate(50vw, 0);
   }
   100% {
     transform: translate(-100%, 0);

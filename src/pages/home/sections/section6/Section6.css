@@ -2,7 +2,6 @@
   padding-bottom: 4rem;
   font-family: "Poppins";
   color: white;
-  overflow: hidden;
 }
 
 .codeutsava__section6-body {
@@ -63,7 +62,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 0;
   border-radius: 0rem;
   gap: 3rem;
   width: 100vw;
