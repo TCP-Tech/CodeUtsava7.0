@@ -32,7 +32,7 @@ const HomePage = () => {
           <Section5 />
           <Section6 />
 
-          <Section9 />
+          {/* <Section9 /> */}
 
 
           <Section14 />
