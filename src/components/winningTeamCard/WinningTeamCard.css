@@ -52,6 +52,10 @@
   color: rgb(220, 220, 220);
 }
 
+.codeutsava__section11-card{
+  cursor: pointer;
+}
+
 .codeutsava__section11-card-name {
   transition: all 0.2s ease-in-out;
   width: 100%;

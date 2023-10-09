@@ -2,13 +2,11 @@ import React from "react";
 import { useRef, useState } from "react";
 import "./NavbarTeam.css";
 import codeutsava from "../../assets/images/codeutsava.png";
-import tcp from "../../assets/images/tcp.png";
+import tcp from "../../assets/images/tcp.webp";
 import downArrow from "../../assets/images/downArrow.svg";
 import feedBack from "../../assets/images/feedback.svg";
 import brochure from "../../assets/images/CodeUtsava_Brochure_7.0.pdf";
 import guidelines from "../../assets/images/CodeUtsava_Guidelines_7.0.pdf";
-import { motion } from "framer-motion";
-import { headerVariants } from "../../motionUtils";
 import { Link } from "react-router-dom";
 
 const NavbarTeam = () => {

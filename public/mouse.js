@@ -1,6 +1,3 @@
-/*--------------------
-Get Mouse
---------------------*/
 let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2, dir: "" };
 let clicked = false;
 const getMouse = (e) => {
@@ -21,10 +18,6 @@ window.addEventListener("mousedown", (e) => {
 window.addEventListener("mouseup", () => {
   clicked = false;
 });
-
-/*--------------------
-Ghost Follow
---------------------*/
 class GhostFollow {
   constructor(options) {
     Object.assign(this, options);
@@ -37,7 +30,6 @@ class GhostFollow {
       y: window.innerHeight/2,
     };
   }
-
   follow() {
     this.distX = mouse.x - this.pos.x;
     this.distY = mouse.y - this.pos.y;
@@ -59,12 +51,10 @@ class GhostFollow {
       ),
       2
     );
-
     if (clicked) {
       this.scaleEyeY = 0.4;
       this.scaleMouth = -this.scaleMouth;
     }
-
     this.el.style.transform =
       "translate(" +
       this.pos.x +
@@ -87,22 +77,10 @@ class GhostFollow {
       ")";
   }
 }
-
-/*--------------------
-Map
---------------------*/
 function map(num, in_min, in_max, out_min, out_max) {
   return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
 }
-
-/*--------------------
-Init
---------------------*/
 const cursor = new GhostFollow();
-
-/*--------------------
-Render
---------------------*/
 const render = () => {
   requestAnimationFrame(render);
   cursor.follow();

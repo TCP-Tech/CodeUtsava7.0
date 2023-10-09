@@ -1,12 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
-
 import "./Section12.css";
-
 import winningTeamData from "../../../../assets/data/winningTeamData";
 import WinningTeamCard from "../../../../components/winningTeamCard/WinningTeamCard";
-import { motion } from "framer-motion";
-
+import cauldron from '../../../../assets/images/cauldron.png'
 const Section11 = () => {
   const useFade = (initial) => {
     const [show, setShow] = useState(initial);
@@ -32,15 +29,12 @@ const Section11 = () => {
   const [isVisible, setVisible, fadeProps] = useFade(false);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 1 } }}
-      viewport={{ once: false }}
+    <div
       className="codeutsava__section11"
       id="problems"
     >
       <div className="codeutsava__section11-body">
-        <div className="codeutsava__section11-title">Winners</div>
+        <div className="codeutsava__section11-title"><img src={cauldron}></img>Previous Year Winners</div>
         <div className="codeutsava__section11-problems">
           <div className="codeutsava__section11-problems-container1-winning">
             {winningTeamData.map((shortlistedTeam, index) => (
@@ -82,7 +76,7 @@ const Section11 = () => {
           )}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

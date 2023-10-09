@@ -22,13 +22,16 @@
   height: 110px;
 }
 .codeutsava__section9-description {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .codeutsava__section9-body {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .codeutsava__section9-title1 {
@@ -53,46 +56,61 @@
 
 .codeutsava__section9-boxInfo {
   font-size: 12px;
-  padding: 0 0.8rem;
+  padding: 0 1rem;
 }
 
 .codeutsava__section9-box {
   display: flex;
+  min-width: 200px;
+  min-height: auto;
   align-items: center;
   flex-direction: column;
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  background-repeat: no-repeat;
   justify-content: center;
-  padding: 6rem;
-  color: black;
-}
-
-.coffin0 {
-  background-image: url("../../../../assets/images/bg-eventCard.png");
-}
-.coffin1 {
-  background-image: url("../../../../assets/images/coffin1.png");
-}
-.coffin2 {
-  background-image: url("../../../../assets/images/coffin2.png");
+  background-image: url("../../../../assets/images//graveyard.png");
+  color: white;
 }
 
 .codeutsava__section9-boxtitle {
   font-size: 20px;
-  color: black;
+  color: gold;
   font-weight: 900;
   margin: 1rem 0;
   text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
+
+@media (width<=1350px) {
+  .codeutsava__section9-description {
+    flex-wrap: wrap;
+  }
+}
+@media (width<=1000px) {
+  .grave {
+    width: 510px;
+  }
+}
+@media (width<=810px) {
+  .codeutsava__section9-boxtitle {
+    font-size: 15px;
+  }
+  .codeutsava__section9-box {
+    width: 100%;
+    padding: 10rem;
+  }
+  .grave {
+    width: 600px;
+  }
+}
+/* @media screen and (max-width: 1000px) {
   .codeutsava__section9-box {
     width: 80%;
   }
-}
+} */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 630px) {
   .codeutsava__section9-title1 {
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -106,15 +124,32 @@
   }
 
   .codeutsava__section9-box {
+    background-size: 550px 550px;
+  }
+  .codeutsava__section9-boxInfo {
+    font-size: 10px;
+    padding: 0 0.8rem;
+  }
+  .codeutsava__section9-box {
     width: 100%;
-    padding: 3.5rem;
+    padding: 6rem;
+  }
+}
+@media (width<=470px) {
+  .codeutsava__section9-box {
+    width: 100%;
+    padding: 4.4rem;
+    margin-top: 50px;
   }
 
   .codeutsava__section9-boxtitle {
+    font-size: 13px;
+  }
+}
+/* .codeutsava__section9-boxtitle {
     font-size: 24px;
   }
 
   .codeutsava__section9-boxInfo {
     font-size: 16px;
-  }
-}
+  } */

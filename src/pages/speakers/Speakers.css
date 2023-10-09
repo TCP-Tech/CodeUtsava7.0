@@ -1,0 +1,52 @@
+.codeutsava__section4 {
+  margin-bottom: 10rem;
+  margin-top: 4rem;
+  font-family: "Poppins";
+}
+
+.codeutsava__section4-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.codeutsava__section4-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 82px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.codeutsava__section4-title img {
+  width: auto;
+  position: relative;
+  height: 110px;
+}
+
+.codeutsava__section4-speakers {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  width: 100%;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 650px) {
+  .codeutsava__section4-speakers {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .codeutsava__section4-title {
+    font-size: 40px;
+  }
+}

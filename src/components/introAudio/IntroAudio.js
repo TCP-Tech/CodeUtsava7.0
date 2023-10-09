@@ -1,11 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import intro_music from "../../assets/audio/intro-music.mp3";
 import "./IntroAudio.css";
 
 const IntroAudio = () => {
   const [notPlaying, setnotPlaying] = useState(true);
   const audioRef = React.createRef();
-
   const toggle = () => {
     if (notPlaying) {
       audioRef.current.play();
@@ -14,7 +13,6 @@ const IntroAudio = () => {
     }
     setnotPlaying(!notPlaying);
   };
-
   return (
     <div class="codeutsava__introAudio-justbg">
       <audio

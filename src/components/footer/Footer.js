@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Footer.css";
 
-import NIT from "../../assets/images/NIT.svg";
+import NIT from "../../assets/images/NIT.webp";
 import tcpName from "../../assets/images/tcpName.png";
 import codeutsava from "../../assets/images/codeutsava.png";
 import { Link } from "react-router-dom";
@@ -116,27 +116,38 @@ const Footer = ({ id }) => {
               <p className="codeutsava__footer-container2-right-text">Home</p>
             </a>
           </Link>
-          <a
-            href="/#aboutus"
-            className="codeutsava__footer-container2-right-links"
-          >
-            <p className="codeutsava__footer-container2-right-text">About Us</p>
-          </a>
-          <a
-            href="/#events"
-            className="codeutsava__footer-container2-right-links"
-          >
-            <p className="codeutsava__footer-container2-right-text">Events</p>
-          </a>
-          <a
-            href="/#sponsers"
-            className="codeutsava__footer-container2-right-links"
-          >
-            <p className="codeutsava__footer-container2-right-text">Sponsors</p>
-          </a>
+          <Link to="/events">
+            <a
+              href="/events"
+              className="codeutsava__footer-container2-right-links"
+            >
+              <p className="codeutsava__footer-container2-right-text">Events</p>
+            </a>
+          </Link>
+
+          <Link to="/speakers">
+            <a
+              href="/speakers"
+              className="codeutsava__footer-container2-right-links"
+            >
+              <p className="codeutsava__footer-container2-right-text">
+                Speakers
+              </p>
+            </a>
+          </Link>
           <Link to="/faqs">
-            <a href="" className="codeutsava__footer-container2-right-links">
+            <a href="/faqs" className="codeutsava__footer-container2-right-links">
               <p className="codeutsava__footer-container2-right-text">FAQ</p>
+            </a>
+          </Link>
+          <Link to="/contactus">
+            <a
+              href="/contactus"
+              className="codeutsava__footer-container2-right-links"
+            >
+              <p className="codeutsava__footer-container2-right-text">
+                Contact Us
+              </p>
             </a>
           </Link>
         </div>
@@ -146,7 +157,7 @@ const Footer = ({ id }) => {
           Architected with ❤️ by <Link to="/team">TCP Team</Link>
         </div>
         <div className="codeutsava__footer-back-to-top">
-          <a href={`${id == "speakers" ? "#speakers" : "#home"}`}>
+          <a href="#home">
             Back to Top
             <svg
               fill="var(--secondary-c)"

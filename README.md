@@ -13,7 +13,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/TCP-Tech/CodeUtsava7.0">
-    <img src="/src/assets/images/codeutsavaTitle3d.svg" alt="Logo" width="400">
+    <img src="/src/assets/images/codeutsavaTitle3d.webp" alt="Logo" width="400">
   </a>
 
   <h3 align="center">CodeUtsava 7.0</h3>

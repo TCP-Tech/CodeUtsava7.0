@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useRef, useState } from "react";
 import "./Section1.css";
-import codeutsavaTitle from "../../../../assets/images/codeutsavaTitle3d.png";
+import codeutsavaTitle from "../../../../assets/images/codeutsavaTitle3d.webp";
 import discord from "../../../../assets/images/discord.svg";
 import wel from "../../../../assets/images/welcome.png";
 

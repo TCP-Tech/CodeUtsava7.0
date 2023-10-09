@@ -1,24 +1,18 @@
-.codeutsava_section3-card-container{
-  display: inline-block;
-  aspect-ratio: 1;
-  transition: .35s;
-}
-
 .codeutsava__section3-card {
-  position: relative;
   padding: 1.5rem;
-  background-image: url("../../assets/images/bg-eventCard.png");
+  background-image: url("../../assets/images/bg-eventCard.webp");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  margin: 1.5rem 3rem;
+  margin: 1.5rem 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: black;
   box-shadow: orange 0 0 8px;
   align-items: center;
   justify-content: flex-end;
+  /* min-width: 350px; */
   border-radius: 4px;
   background-color: white;
 }
@@ -62,7 +56,7 @@
 
 .codeutsava__section3-cardTitle {
   font-weight: 900;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -78,7 +72,7 @@
 
 .codeutsava__section3-date {
   margin: 0.5rem 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--secondary-c);
 }

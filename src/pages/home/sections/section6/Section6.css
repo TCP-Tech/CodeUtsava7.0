@@ -1,5 +1,4 @@
 .codeutsava__section6 {
-  padding-top: 4rem;
   padding-bottom: 4rem;
   font-family: "Poppins";
   color: white;
@@ -67,20 +66,18 @@
   border-radius: 0rem;
   gap: 3rem;
   width: 100vw;
-  background-color: #8400ac48;  
+  /* background-color: rgb(32, 32, 32); */
+  background-color: #b079c11d;  
   backdrop-filter: blur(10px);
 }
 
 .codeutsava__section6-sponser-image{
   width: 300px;
-  box-shadow: #ca8700;
-
 }
 
 .codeutsava__section6-sponser-image img{
   width: 100%;
   height: auto;
-  
 }
 
 .platinum {
