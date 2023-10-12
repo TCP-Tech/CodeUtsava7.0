@@ -17,6 +17,243 @@
   background-color: white;
 }
 
+.hotel-view {
+  border-radius: 30px;
+  width: 100%;
+  height: 90vh;
+  background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  overflow: hidden;
+  padding: 5em 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hotel-view .arrows {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  left: -1%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  justify-content: space-between;
+}
+
+.hotel-view .gallery {
+  border-right: 1px solid #fff;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery .gallery-viewer {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.gallery-viewer img {
+  margin: 2em;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.arrows .arrow-1 {
+  width: 80px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrows .arrow-2 {
+  width: 80px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrows img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hotel-view .dets {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.5em;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.dets .dets-section {
+  width: 100%;
+}
+
+.dets .dets-top {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dets .dets-bottom {
+  height: 45%;
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.dets-top .restaurant-ki-list {
+  width: 110%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.restaurant-ki-list .rest-names {
+  width: 100%;
+  height: 25vh;
+}
+
+.restaurant-ki-list h1 {
+  font-family: "Playfair Display";
+  font-size: 4vmax;
+  /* word-wrap: nowrap; */
+  color: #ffffff;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dets .res-desc {
+  width: 110%;
+  height: 40%;
+}
+
+.res-desc h5 {
+  font-family: "Gilroy";
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.dets-bottom .details {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dets-bottom .book-now {
+  position: relative;
+  z-index: 5;
+  width: 10vw;
+  border-radius: 20px;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.details .head-blocks {
+  height: 100%;
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  padding: 0 0 0 0.5em;
+}
+
+.details .rating {
+  width: 25%;
+}
+
+.details .price {
+  width: 35%;
+}
+
+.details .dimension {
+  width: 40%;
+}
+
+.details .dimension {
+  border-right: none;
+}
+
+.head-blocks > h1 {
+  font-family: "Gilroy";
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.vals h1 {
+  font-family: "Sawarabi Mincho";
+  font-weight: normal;
+  font-size: 30px;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+.vals sub {
+  font-size: 17px;
+}
+
+.book-now h3 {
+  font-family: "Gilroy";
+  font-weight: 400;
+  color: burlywood;
+  text-align: center;
+}
+
+.rating-list {
+  overflow: hidden;
+  width: 100%;
+  height: 40%;
+}
+
+.price-list {
+  overflow: hidden;
+  width: 100%;
+  height: 45%;
+}
+
+.dimensions-list {
+  overflow: hidden;
+  width: 100%;
+  height: 45%;
+}
+
 @media screen and (max-width: 850px) {
   .codeutsava__section3-decor-web {
     width: 50px;
@@ -106,7 +343,7 @@
   }
 } */
 @media screen and (max-width: 1200px) {
-  .codeutsava__section3-image{
+  .codeutsava__section3-image {
     padding: 1rem;
   }
 }
@@ -130,15 +367,16 @@
     margin-bottom: 1rem;
   }
 }
+
 @media screen and (min-width: 484px) and (max-width: 768px) {
   .codeutsava__section3-card {
-    margin:5px;
+    margin: 5px;
   }
 
   .codeutsava__section3-cardTitle {
     display: flex;
-  /* align-items: center; */
-  text-align: center;
+    /* align-items: center; */
+    text-align: center;
     font-size: 10px;
   }
 
@@ -150,4 +388,239 @@
     padding: 8px 20px;
     font-size: 14px;
   }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .hotel-view {
+    padding: 1em;
+    border-radius: 30px;
+    width: 100%;
+    height: 85vh;
+    background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .hotel-view .arrows {
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    top: 44%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    justify-content: space-between;
+  }
+
+  .hotel-view .gallery {
+    border: none;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .gallery .gallery-viewer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth;
+  }
+
+  .gallery-viewer img {
+    margin: 3em;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  }
+
+  .arrows .arrow-1 {
+    width: 80px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .arrows .arrow-2 {
+    width: 80px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .arrows img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hotel-view .dets {
+    width: 100%;
+    /* background-color: red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dets .dets-section {
+    width: 100%;
+    /* background-color: red; */
+  }
+
+  .dets .dets-top {
+    /* background-color: red; */
+    width: 88vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dets .dets-bottom {
+    height: 50%;
+    width: 88vw;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .dets-top .restaurant-ki-list {
+    overflow: hidden;
+  }
+
+  .restaurant-ki-list .rest-names {
+    width: 100%;
+    height: 25vh;
+  }
+
+  .restaurant-ki-list h1 {
+    font-family: "Playfair Display";
+    font-size: 4.6vmax;
+    color: #ffffff;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: center;
+    /* background-color: red; */
+  }
+
+  .dets .res-desc {
+    width: 85%;
+    height: 60%;
+    /* background-color: red; */
+  }
+
+  .res-desc h5 {
+    font-family: "Gilroy";
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .dets-bottom .details {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dets-bottom .book-now {
+    width: 15vmax;
+    border-radius: 25px;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+
+  .details .head-blocks {
+    /* background-color: red; */
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 1em;
+    gap: 0.5em;
+  }
+
+  .details .dimension {
+    border-right: none;
+    /* background-color: red; */
+  }
+
+  .head-blocks > h1 {
+    font-family: "Gilroy";
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  .vals {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vals h1 {
+    font-family: "Sawarabi Mincho";
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    color: #ffffff;
+  }
+
+  .vals sub {
+    font-size: 17px;
+  }
+
+  .rating-list {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .price-list {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .dimensions-list {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }  
 }

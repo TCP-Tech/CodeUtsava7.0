@@ -43,7 +43,7 @@ const Events = () => {
             Events
           </div>
           <div className="codeutsava__section3-events-container">
-            {EventData.map((event, index) => (
+            {/* {EventData.map((event, index) => (  
               <EventCard
                 key={index}
                 img={event.img}
@@ -51,7 +51,10 @@ const Events = () => {
                 date={event.date}
                 link={event.link}
               />
-            ))}
+            // ))} */}
+            <div className="page-3">
+              <EventCard />
+            </div>
           </div>
         </div>
       </div>
