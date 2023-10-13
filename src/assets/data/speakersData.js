@@ -13,29 +13,6 @@ const speakers = [
     github: "",
     youtube: "",
   },
-  {
-    name: "To Be Announced!",
-    position: "Coming Soon!",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat ante erat, ut aliquet erat vestibulum vel. Sed ligula mi, rhoncus et fermentum quis, fermentum et nulla.",
-    img: dummys,
-    facebook: "",
-    twitter: "",
-    linkedin: "",
-    github: "",
-    youtube: "",
-  },
-  {
-    name: "To Be Announced!",
-    position: "Coming Soon!",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat ante erat, ut aliquet erat vestibulum vel. Sed ligula mi, rhoncus et fermentum quis, fermentum et nulla.",
-    img: dummys,
-    facebook: "",
-    twitter: "",
-    linkedin: "",
-    github: "",
-    youtube: "",
-  },
-  
 ];
 
 export default speakers;
