@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./SpeakerCard.css";
-import jackolantern from "../../assets/images/speakers/jack-o-lantern.svg";
+import jackolantern from "../../assets/images/pumpkin.svg";
 import bat from "../../assets/images/speakers/bat.svg";
 
 const SpeakerCard = ({
