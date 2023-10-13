@@ -27,7 +27,7 @@
 }
 
 .gallery {
-  width: 30%;
+  width: 28%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -41,14 +41,14 @@
 }
 
 .gallery-viewer {
-  width: 400px;
-  height: 400px;
+  width: 360px;
+  height: 360px;
 }
 
 .gallery-viewer img {
   height: 100%;
   width: auto;
-  object-fit: cover;
+  object-fit: contain;
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 
@@ -84,18 +84,12 @@
   align-items: center;
 }
 
-.gallery img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-}
-
 .dets .dets-section {
   width: 100%;
 }
 
 .dets .dets-top {
-  height: 40%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -104,7 +98,7 @@
 }
 
 .dets .dets-bottom {
-  height: 45%;
+  height: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -122,7 +116,7 @@
 }
 
 .restaurant-ki-list h1 {
-  font-size: 4vmax;
+  font-size: 3.5rem;
   /* word-wrap: nowrap; */
   color: #ffffff;
   font-weight: 600;
@@ -141,7 +135,6 @@
 
 .dets-bottom .details {
   width: 100%;
-  height: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -171,7 +164,7 @@
 
 .vals h1 {
   font-weight: normal;
-  font-size: 30px;
+  font-size: 20px;
   white-space: nowrap;
   color: #ffffff;
 }
@@ -201,7 +194,6 @@
 .dimensions-list {
   overflow: hidden;
   width: 100%;
-  height: 45%;
 }
 
 .codeutsava__events-register-link {

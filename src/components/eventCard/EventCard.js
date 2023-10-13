@@ -37,7 +37,7 @@ export const EventCard = () => {
             <h1>{EventsData[index].title}</h1>
           </div>
           <div className="res-desc">
-            <h5>{EventsData[index].link}</h5>
+            <h5>DESCRIPTION <br/> {EventsData[index].desc}</h5>
           </div>
         </div>
         <div className="dets-bottom dets-section">
@@ -48,10 +48,22 @@ export const EventCard = () => {
                 <h1>{EventsData[index].date}</h1>
               </div>
             </div>
+            <div className="head-blocks dimension">
+              <h1>TIME</h1>
+              <div className="dimensions-list vals">
+                <h1>{EventsData[index].time}</h1>
+              </div>
+            </div>
+            <div className="head-blocks dimension">
+              <h1>VENUE</h1>
+              <div className="dimensions-list vals">
+                <h1>{EventsData[index].venue}</h1>
+              </div>
+            </div>
           </div>
           <a
             className="codeutsava__events-register-link"
-            href="#"
+            href={EventsData[index].link}
             target="_blank"
             rel="noreferrer"
           >
