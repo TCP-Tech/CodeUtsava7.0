@@ -225,10 +225,10 @@
 }
 @media screen and (max-width: 450px) {
   .codeutsava__section11-problemModal-body td,
-  .codeutsava__section11-problemModal-body th, h1, h5 {
+  .codeutsava__section11-problemModal-body th, .codeutsava__section11-problemModal-body h1, .codeutsava__section11-problemModal-body h5 {
     font-size: 12px !important;
   }
-  .codeutsava__section11-problemModal-body td, th{
+  .codeutsava__section11-problemModal-body td, .codeutsava__section11-problemModal-body th{
     padding: 10px !important;
   }
   .codeutsava__section11-problemModal-body{

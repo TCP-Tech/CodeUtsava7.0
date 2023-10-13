@@ -5,7 +5,7 @@ import dummye from '../images/dummye.png';
 const events = [
   {
     title: "Speaker Session 1",
-    date: "8th Oct",
+    date: "8ᵗʰ Oct",
     time: "10:30 AM",
     venue: "E-Hall",
     img: event1,
@@ -14,7 +14,7 @@ const events = [
   },
   {
     title: "Graph Bootcamp",
-    date: "3th - 6th Oct",
+    date: "3ᵗʰ - 6ᵗʰ Oct",
     time: "6:30 PM",
     venue: "F-40 Classroom",
     img: event2,
@@ -23,7 +23,7 @@ const events = [
   },
   {
     title: "Coding Contest - 1",
-    date: "25th Oct",
+    date: "25ᵗʰ Oct",
     time: "Loading",
     venue: "Loading",
     img: dummye,
@@ -32,7 +32,7 @@ const events = [
   },
   {
     title: "Coding Contest - 2",
-    date: "26th Oct",
+    date: "26ᵗʰ Oct",
     time: "Loading",
     venue: "Loading",
     img: dummye,
@@ -41,7 +41,7 @@ const events = [
   },
   {
     title: "Coding Contest - 3",
-    date: "27th Oct",
+    date: "27ᵗʰ Oct",
     time: "Loading",
     venue: "Loading",
     img: dummye,
@@ -50,7 +50,7 @@ const events = [
   },
   {
     title: "Unkahi",
-    date: "27th Oct",
+    date: "27ᵗʰ Oct",
     time: "Loading",
     venue: "Loading",
     img: dummye,
@@ -59,7 +59,7 @@ const events = [
   },
   {
     title: "E - Gaming (Valorant)",
-    date: "28th Oct",
+    date: "28ᵗʰ Oct",
     time: "Loading",
     venue: "Loading",
     img: dummye,
@@ -68,7 +68,7 @@ const events = [
   },
   {
     title: "E - Gaming (BGMI)",
-    date: "29th Oct",
+    date: "29ᵗʰ Oct",
     time: "Loading",
     venue: "Loading",
     img: dummye,
@@ -77,7 +77,7 @@ const events = [
   },
   {
     title: "Virtual Escape Room",
-    date: "31th Oct",
+    date: "31ˢᵗ Oct",
     time: "Loading",
     venue: "Loading",
     img: dummye,
