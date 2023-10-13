@@ -9,6 +9,7 @@ import Section5 from "./sections/section5/Section5";
 import Section6 from "./sections/section6/Section6";
 import Section10 from "./sections/section10/Section10";
 import Section12 from "./sections/section12/Section12";
+import Section13 from "./sections/section13/Section13";
 import Section14 from "./sections/section14/Section14";
 import Statistics from "../../components/statisticalData/Statistics";
 import Footer from "../../components/footer/Footer";
@@ -28,6 +29,7 @@ const HomePage = () => {
           <Section2 />
           {/* <Section9 /> */}
           <Section12 />
+          <Section13 />
           <Guidelines/>
           <Section5 />
           <Section6 />

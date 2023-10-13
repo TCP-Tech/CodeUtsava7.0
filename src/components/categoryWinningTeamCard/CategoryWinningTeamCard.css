@@ -52,9 +52,19 @@
   color: rgb(220, 220, 220);
 }
 
+.codeutsava__section11-card {
+  cursor: pointer;
+}
+
+.codeutsava__section11-card-name:hover{
+  background-color: var(--secondary-c);
+  color: white;
+}
+
 .codeutsava__section11-card-name {
   transition: all 0.2s ease-in-out;
   width: 100%;
+  text-align: center;
   object-fit: cover;
   background-color: white;
   color: black;
@@ -74,24 +84,53 @@
 
 .codeutsava__section11-problemModal-body p {
   text-align: center;
-  margin: 4px 0;
+  margin: 4px 0px;
+  padding: 8px 12px;
+  border: 2px solid black;
+  color: white;
+  width: 30%;
+  font-weight: 600;
+  background-color: var(--secondary-c);
+  /* opacity: 0.7; */
 }
 
+.codeutsava__section11-problemModal-body h5 {
+  text-align: center;
+  padding: 4px 1rem;
+  border: 2px solid black;
+  color: white;
+  font-size: 16px;
+  margin: 8px 0;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: var(--secondary-c);
+  /* opacity: 0.7; */
+}
+.codeutsava__section11-problemModal-body h1 {
+  background-color: var(--secondary-c);
+  padding: 4px 1rem;
+  border-radius: 8px;
+  color: white;
+  margin: 8px 0;
+  border: 2px solid black;
+}
 .codeutsava__section11-problemModal-body {
+  overflow: hidden;
   position: fixed;
-  width: 60%;
-  height: 60%;
-  top: 20%;
-  left: 20%;
+  width: 80%;
+  height: 80%;
+  top: 15%;
+  left: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 999;
-  background: white;
-  color: black;
   border-radius: 20px;
-  box-shadow: 10px 10px 71px 23px rgba(87, 87, 87, 1);
+  box-shadow: 10px 10px 300px 15px rgb(87, 87, 87);
+  background-image: url(../../assets/images/spookybg.png);
+  background-size: cover;
+  background-color: black;
 }
 
 .problemModal-close {
@@ -105,7 +144,7 @@
 
 @media screen and (max-width: 900px) {
   .codeutsava__section11-problems-container1-winning {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .codeutsava__section11-problemModal-body h1 {
@@ -116,6 +155,7 @@
   .codeutsava__section11-problemModal-body p {
     text-align: center;
     margin: 4px 0;
+    width: 60%;
   }
 
   .codeutsava__section11-problems-container2 {
@@ -123,9 +163,12 @@
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 200px) {
   .codeutsava__section11-problemModal-body {
     height: 65%;
+    width: 90%;
+    padding: 10px;
+    left: 10%;
   }
   .codeutsava__section11-problems-container1-winning {
     grid-template-columns: repeat(1, 1fr);
@@ -141,9 +184,59 @@
     text-align: center;
     font-size: 12px;
     margin: 4px 0;
+    width: 60%;
   }
 
   .codeutsava__section11-problems-container2 {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.codeutsava__section11-problemModal-body table {
+  width: 80%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.codeutsava__section11-problemModal-body th,
+.codeutsava__section11-problemModal-body td {
+  padding: 15px;
+  text-align: center;
+  color: white;
+  border: 1px solid #000;
+}
+
+.codeutsava__section11-problemModal-body th {
+  background-color: rgba(74, 74, 74, 0.8); 
+}
+
+.codeutsava__section11-problemModal-body tr:nth-child(even) {
+  background-color: rgba(46, 46, 46, 0.8); 
+}
+
+.codeutsava__section11-problemModal-body tr:nth-child(odd) {
+  background-color: rgba(29, 29, 29, 0.8); 
+}
+
+@media screen and (max-width: 900px) {
+  .codeutsava__section11-problemModal-body td,
+  .codeutsava__section11-problemModal-body th {
+    font-size: 16px !important;
+  }
+  .codeutsava__section11-problemModal-body{
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .codeutsava__section11-problemModal-body td,
+  .codeutsava__section11-problemModal-body th, .codeutsava__section11-problemModal-body h1, .codeutsava__section11-problemModal-body h5 {
+    font-size: 12px !important;
+  }
+  .codeutsava__section11-problemModal-body td, .codeutsava__section11-problemModal-body th{
+    padding: 10px !important;
+  }
+  .codeutsava__section11-problemModal-body{
+    padding: 1rem;
   }
 }
