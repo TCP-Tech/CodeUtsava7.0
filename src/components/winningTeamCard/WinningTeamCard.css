@@ -56,6 +56,11 @@
   cursor: pointer;
 }
 
+.codeutsava__section11-card-name:hover{
+  background-color: var(--secondary-c);
+  color: white;
+}
+
 .codeutsava__section11-card-name {
   transition: all 0.2s ease-in-out;
   width: 100%;
