@@ -10,7 +10,7 @@ const events = [
     link: "https://docs.google.com/forms/d/e/1FAIpQLSes9na9VNj7XOFOUYNh_8sQFDA-gmEA0wK2fAPiUT635yvy_A/viewform",
   },
   {
-    title: "Graph Programming Camp",
+    title: "Graph Bootcamp",
     date: "3th - 6th October",
     img: event2,
     link: "",

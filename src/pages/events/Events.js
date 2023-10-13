@@ -52,9 +52,7 @@ const Events = () => {
                 link={event.link}
               />
             // ))} */}
-            <div className="page-3">
               <EventCard />
-            </div>
           </div>
         </div>
       </div>

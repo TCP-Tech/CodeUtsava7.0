@@ -44,15 +44,6 @@
   /* background-color: red; */
 }
 
-.page-3 {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
 /* .codeutsava__section3-events-container::-webkit-scrollbar{
   display: none;
 } */
@@ -62,22 +53,6 @@
   box-sizing: initial;
   padding: 80px 0px;
   overflow-y: visible;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  display: none;
-}
-
-.slick-list {
-  overflow-y: hidden !important;
-}
-
-.codeutsava__section3-events-container .slider .slick-arrow .slick-prev button {
-  display: none;
-}
-.codeutsava__section3-events-container .slider .slick-list .slick-slide > div {
-  padding: 0 35px;
 }
 
 @media (min-width: 1024px) {
