@@ -223,7 +223,7 @@
     padding: 1rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .codeutsava__section11-problemModal-body td,
   .codeutsava__section11-problemModal-body th, h1, h5 {
     font-size: 12px !important;

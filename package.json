@@ -17,6 +17,7 @@
     "react-router-dom": "^6.6.0",
     "react-scripts": "5.0.1",
     "react-scroll-trigger": "^0.6.14",
+    "sheryjs": "^1.0.0-beta.0.0.4",
     "TagCloud": "^2.3.2",
     "web-vitals": "^2.1.4"
   },
