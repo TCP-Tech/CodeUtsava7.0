@@ -27,30 +27,29 @@ export const EventCard = () => {
       </div>
       <div className="gallery">
         <div className="gallery-viewer">
-          <img ref={eventImage} src={EventsData[index].img} alt="" />
+          <img src={EventsData[index].img} alt="" />
         </div>
       </div>
       <div className="line-gallery"></div>
       <div className="dets">
         <div className="dets-top dets-section">
           <div className="restaurant-ki-list">
-            <h1 ref={eventName}>{EventsData[index].title}</h1>
+            <h1>{EventsData[index].title}</h1>
           </div>
           <div className="res-desc">
-            <h5 ref={rating}>{EventsData[index].link}</h5>
+            <h5>{EventsData[index].link}</h5>
           </div>
         </div>
         <div className="dets-bottom dets-section">
           <div className="details">
             <div className="head-blocks dimension">
-              <h1 ref={price}>DATE</h1>
+              <h1>DATE</h1>
               <div className="dimensions-list vals">
-                <h1 ref={dims}>{EventsData[index].date}</h1>
+                <h1>{EventsData[index].date}</h1>
               </div>
             </div>
           </div>
           <a
-          ref={desc}
             className="codeutsava__events-register-link"
             href="#"
             target="_blank"

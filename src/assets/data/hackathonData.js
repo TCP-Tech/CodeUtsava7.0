@@ -63,12 +63,24 @@ const hackathonData = [
   },
   {
     id: '#11',
+    title: "E - Gaming (Valorant)",
+    date: "28th October",
+    description: "Valorant Gaming Competition.",
+  },
+  {
+    id: '#12',
+    title: "E - Gaming (BGMI)",
+    date: "29th October",
+    description: "BGMI Gaming Competition.",
+  },
+  {
+    id: '#13',
     title: "Virtual Escape Room",
     date: "31th October",
     description: "Immersive puzzle game in the form of a virtual escape room.",
   },
   {
-    id: '#12',
+    id: '#14',
     title: "Hackathon Begins",
     date: "1st Nov, 8:00 AM",
     description: "Commencement of Codeutsava 7.0!",
