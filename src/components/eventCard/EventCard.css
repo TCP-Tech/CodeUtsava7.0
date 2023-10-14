@@ -129,6 +129,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 3rem;
 }
 
 .details .head-blocks {
@@ -141,7 +142,7 @@
 }
 
 .details .dimension {
-  width: 40%;
+  width: 100%;
 }
 .details .dimension {
   border-right: none;
@@ -184,7 +185,7 @@
 
 .dimensions-list {
   overflow: hidden;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .codeutsava__events-register-link {
@@ -475,6 +476,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1rem;
   }
 
   .dets-bottom .book-now {
@@ -494,7 +496,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 0 1em;
+    /* padding: 0 0 0 1em; */
     gap: 0.5em;
   }
 
@@ -505,7 +507,7 @@
   .head-blocks > h1 {
     color: #ffffff;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .vals {
@@ -515,7 +517,7 @@
   }
   .vals h1 {
     font-weight: normal;
-    font-size: 30px;
+    font-size: 16px;
     text-align: center;
     white-space: nowrap;
     color: #ffffff;
@@ -539,7 +541,7 @@
 
   .dimensions-list {
     overflow: hidden;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
   }
 }
