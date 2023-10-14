@@ -19,7 +19,7 @@ const Timeline = () => {
               key={element.key}
               date={element.date}
               dateClassName="date"
-              icon={<Ghost />}
+              icon={<Ghost/>}
               iconStyle={{backgroundColor: 'var(--secondary-c)'}}
             >
               <h3 className="vertical-timeline-element-title">

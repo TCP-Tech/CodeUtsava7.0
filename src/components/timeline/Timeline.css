@@ -34,3 +34,19 @@
     margin-top: 1.5em;
   }
 }
+
+.vertical-timeline-element-icon svg{
+  height: 70px !important;
+  width: 70px !important;
+  top: 5px !important;
+  left: 7px !important;
+}
+
+@media(width<1117px){
+  .vertical-timeline-element-icon svg{
+    height: 74px !important;
+  width: 74px !important;
+    top: -7px !important;
+    left: -4px !important;
+  }
+}
