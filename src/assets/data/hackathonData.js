@@ -57,7 +57,7 @@ const hackathonData = [
   },
   {
     id: '#10',
-    title: "Unkahi / Horror Story Telling",
+    title: "Open Mic / Horror Story Telling",
     date: "27ᵗʰ October",
     description: "Stories and anecdotes competition at Amul Parlour, NIT Raipur.",
   },

@@ -49,7 +49,7 @@ const events = [
     link: "",
   },
   {
-    title: "Unkahi",
+    title: "Open Mic",
     date: "27ᵗʰ Oct",
     time: "Loading",
     venue: "Loading",
