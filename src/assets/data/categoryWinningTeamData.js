@@ -1,6 +1,6 @@
 const winningTeamData = [
   {
-    problem: "PS1",
+    problem: "🥇 PS1 🥇",
     name: "Gravity Falls",
     college: "Thapar Institute For Engineering and Technology",
     leader: "Smriddhi Sahni",
@@ -9,7 +9,7 @@ const winningTeamData = [
     member3: "Arjan Singh Sandhu",
   },
   {
-    problem: "PS2",
+    problem: "🥇 PS2 🥇",
     name: "CHATGDP",
     college: "International Institute of Information Technology, Naya Raipur",
     leader: "Ravil Patel",
@@ -20,7 +20,7 @@ const winningTeamData = [
     member5: "Rigved Desai",
   },
   {
-    problem: "PS3",
+    problem: "🥇 PS3 🥇",
     name: "The Phantom Troupe",
     college: "National Institute of Technology Raipur",
     leader: "Premchand Maddikuntla",
@@ -29,7 +29,7 @@ const winningTeamData = [
     member3: "Alim Khan",
   },
   {
-    problem: "PS4",
+    problem: "🥇 PS4 🥇",
     name: "Forty Two",
     college: "National Institute Of Technology, Raipur",
     leader: "Pramil Kesarwani",
@@ -40,7 +40,7 @@ const winningTeamData = [
     member5: "Ritesh Bhartiya",
   },
   {
-    problem: "PS5",
+    problem: "🥇 PS5 🥇",
     name: "Lorem Ipsum",
     college: "Government Engineering College, Raipur",
     leader: "Yash Joglekar ",
