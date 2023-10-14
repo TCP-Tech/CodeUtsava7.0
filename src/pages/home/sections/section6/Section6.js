@@ -35,7 +35,7 @@ const Section6 = () => {
           <div className="codeutsava__section6-sponser-title">
             Partners
           </div>
-          <div className="codeutsava__section6-sponser-list">
+          <div className="codeutsava__section6-sponser-list bronze">
             <InfiniteCarousel sponsers={sponsers.partners} />
           </div>
 
