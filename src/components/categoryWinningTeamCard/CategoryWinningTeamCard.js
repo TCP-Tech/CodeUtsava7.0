@@ -58,7 +58,7 @@ const CategoryWinningTeamCard = ({
             getTeam(name, leader, member1, member2, member3, member4, member5)
           }
         >
-          {problem} {name}
+          <h2>{problem} </h2> <p>{name}</p>
         </div>
       </div>
 

@@ -40,6 +40,7 @@ const winningTeamData = [
     member5: "Ritesh Bhartiya",
   },
   {
+    problem: "PS5",
     name: "Lorem Ipsum",
     college: "Government Engineering College, Raipur",
     leader: "Yash Joglekar ",

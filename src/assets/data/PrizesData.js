@@ -22,7 +22,7 @@ const Prizes = [
     ],
   },
   {
-    title: "🥉 Second Runner - Up's 🥉",
+    title: "🥉 2ⁿᵈ Runner - Up's 🥉",
     cashPrize: [
       "The second runner-up team will be awarded Rs. 2.3 Lakhs, with Rs. 15,000 in cash.",
     ],
