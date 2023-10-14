@@ -57,21 +57,21 @@ const hackathonData = [
   },
   {
     id: '#10',
-    title: "Open Mic / Horror Story Telling",
-    date: "27ᵗʰ October",
-    description: "Stories and anecdotes competition at Amul Parlour, NIT Raipur.",
-  },
-  {
-    id: '#11',
     title: "E - Gaming (Valorant)",
     date: "28ᵗʰ October",
     description: "Valorant Gaming Competition.",
   },
   {
-    id: '#12',
+    id: '#11',
     title: "E - Gaming (BGMI)",
     date: "29ᵗʰ October",
     description: "BGMI Gaming Competition.",
+  },
+  {
+    id: '#12',
+    title: "Open Mic / Horror Story Telling",
+    date: "29ᵗʰ October",
+    description: "Stories and anecdotes competition at Amul Parlour, NIT Raipur.",
   },
   {
     id: '#13',

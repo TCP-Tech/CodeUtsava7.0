@@ -49,15 +49,6 @@ const events = [
     link: "",
   },
   {
-    title: "Open Mic",
-    date: "27ᵗʰ Oct",
-    time: "Loading",
-    venue: "Loading",
-    img: dummye,
-    desc: "",
-    link: "",
-  },
-  {
     title: "E - Gaming (Valorant)",
     date: "28ᵗʰ Oct",
     time: "Loading",
@@ -68,6 +59,15 @@ const events = [
   },
   {
     title: "E - Gaming (BGMI)",
+    date: "29ᵗʰ Oct",
+    time: "Loading",
+    venue: "Loading",
+    img: dummye,
+    desc: "",
+    link: "",
+  },
+  {
+    title: "Open Mic",
     date: "29ᵗʰ Oct",
     time: "Loading",
     venue: "Loading",
