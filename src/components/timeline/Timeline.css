@@ -33,10 +33,10 @@
 }
 
 .vertical-timeline-element-icon svg{
-  height: 70px !important;
-  width: 70px !important;
-  top: 8px !important;
-  left: 7px !important;
+  height: 66px !important;
+  width: 66px !important;
+  top: 10px !important;
+  left: 8px !important;
 }
 
 @media(width<1117px){
