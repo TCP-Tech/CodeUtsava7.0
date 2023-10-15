@@ -2,6 +2,7 @@ import React from "react";
 import pumpkin from "../../assets/images/pumpkin.png";
 import web from "../../assets/images/spider-web.svg";
 import "./Guidelines.css";
+import judgement from "../../assets/images/CodeUtsava_Judgement_7.0.pdf"
 const Guidelines = () => {
   return (
     <div className="container mx-auto main-container">
@@ -45,9 +46,8 @@ const Guidelines = () => {
               </div>
               <a
                 className="codeutsava__guidelines-link"
-                href="#"
-                target="_blank"
-                rel="noreferrer"
+                href={judgement}
+                download="Judgement Criteria"
               >
                 Judgement Criteria
               </a>
