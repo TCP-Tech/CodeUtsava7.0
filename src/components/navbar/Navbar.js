@@ -54,7 +54,7 @@ const Navbar = () => {
                   </a>
                 </Link>
               </li>
-              <li className="codeutsava__navbar-navitem">
+                {/* <li className="codeutsava__navbar-navitem">
                 <Link to="/speakers">
                   <a href="#speakers">
                     <h3 className="codeutsava__navbar-menu-heading">
@@ -62,7 +62,7 @@ const Navbar = () => {
                     </h3>
                   </a>
                 </Link>
-              </li>
+              </li> */}
               <li className="codeutsava__navbar-navitem">
                 <a href="#format">
                   <h3 className="codeutsava__navbar-menu-heading">

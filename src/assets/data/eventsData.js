@@ -1,26 +1,90 @@
 import event1 from "../images/event1.webp";
 import event2 from "../images/event2.webp";
-import event3 from '../images/event3.webp';
+import dummye from '../images/dummye.png';
 
 const events = [
   {
-    title: "Speaker Session",
-    date: "8th October",
+    title: "Speaker Session 1",
+    date: "8ᵗʰ Oct",
+    time: "10:30 AM",
+    venue: "E-Hall, NIT Raipur",
     img: event1,
+    desc: "",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSes9na9VNj7XOFOUYNh_8sQFDA-gmEA0wK2fAPiUT635yvy_A/viewform",
   },
   {
-    title: "Graph Programming Camp",
-    date: "3th - 6th October",
+    title: "Graph Bootcamp",
+    date: "3ᵗʰ - 6ᵗʰ Oct",
+    time: "6:30 PM",
+    venue: "F-40 Classroom",
     img: event2,
+    desc: "",
     link: "",
   },
   {
-    title: "Registration Starts!",
-    date: "5th October",
-    img: event3,
-    link: "https://codeutsava-7.devfolio.co",
+    title: "Coding Contest - 1",
+    date: "25ᵗʰ Oct",
+    time: "6:00 PM",
+    venue: "Online",
+    img: dummye,
+    desc: "",
+    link: "",
   },
+  {
+    title: "Coding Contest - 2",
+    date: "26ᵗʰ Oct",
+    time: "6:00 PM",
+    venue: "Online",
+    img: dummye,
+    desc: "",
+    link: "",
+  },
+  {
+    title: "Coding Contest - 3",
+    date: "27ᵗʰ Oct",
+    time: "6:00 PM",
+    venue: "Online",
+    img: dummye,
+    desc: "",
+    link: "",
+  },
+  {
+    title: "E - Gaming (Valorant)",
+    date: "28ᵗʰ Oct",
+    time: "10:00 PM",
+    venue: "Online",
+    img: dummye,
+    desc: "",
+    link: "",
+  },
+  {
+    title: "E - Gaming (BGMI)",
+    date: "29ᵗʰ Oct",
+    time: "10:00 PM",
+    venue: "Online",
+    img: dummye,
+    desc: "",
+    link: "",
+  },
+  {
+    title: "Open Mic",
+    date: "29ᵗʰ Oct",
+    time: "5:30 PM",
+    venue: "Amul Parlour",
+    img: dummye,
+    desc: "",
+    link: "",
+  },
+  {
+    title: "Virtual Escape Room",
+    date: "31ˢᵗ Oct",
+    time: "6:00 PM",
+    venue: "CCC, NIT Raipur",
+    img: dummye,
+    desc: "",
+    link: "",
+  },
+
 ];
 
 export default events;

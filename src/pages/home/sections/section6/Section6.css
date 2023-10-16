@@ -47,6 +47,7 @@
   align-items: center;
   margin: 4rem 0;
   gap: 4rem;
+  overflow: hidden;
 }
 
 .codeutsava__section6-sponser-title {

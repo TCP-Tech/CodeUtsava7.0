@@ -56,15 +56,22 @@
   cursor: pointer;
 }
 
+.codeutsava__section11-card-name:hover{
+  background-color: var(--secondary-c);
+  color: white;
+}
+
 .codeutsava__section11-card-name {
   transition: all 0.2s ease-in-out;
   width: 100%;
+  text-align: center;
   object-fit: cover;
   background-color: white;
   color: black;
-  height: 100px;
+  height: 120px;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   border-radius: 16px;
   font-weight: 600;
@@ -90,30 +97,31 @@
 
 .codeutsava__section11-problemModal-body h5 {
   text-align: center;
-  padding: 0px 8px;
+  padding: 4px 1rem;
   border: 2px solid black;
   color: white;
   font-size: 16px;
   margin: 8px 0;
-  border-radius: 4px;
   font-weight: 500;
+  border-radius: 8px;
   background-color: var(--secondary-c);
   /* opacity: 0.7; */
 }
 .codeutsava__section11-problemModal-body h1 {
   background-color: var(--secondary-c);
-  padding: 0 8px;
-  border-radius: 4px;
+  padding: 4px 1rem;
+  border-radius: 8px;
   color: white;
   margin: 8px 0;
   border: 2px solid black;
 }
 .codeutsava__section11-problemModal-body {
+  overflow: hidden;
   position: fixed;
-  width: 60%;
-  height: 75%;
+  width: 80%;
+  height: 80%;
   top: 15%;
-  left: 20%;
+  left: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,7 +145,7 @@
 
 @media screen and (max-width: 900px) {
   .codeutsava__section11-problems-container1-winning {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .codeutsava__section11-problemModal-body h1 {
@@ -156,10 +164,10 @@
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 200px) {
   .codeutsava__section11-problemModal-body {
     height: 65%;
-    width: 80%;
+    width: 90%;
     padding: 10px;
     left: 10%;
   }
@@ -182,5 +190,54 @@
 
   .codeutsava__section11-problems-container2 {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.codeutsava__section11-problemModal-body table {
+  width: 80%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.codeutsava__section11-problemModal-body th,
+.codeutsava__section11-problemModal-body td {
+  padding: 15px;
+  text-align: center;
+  color: white;
+  border: 1px solid #000;
+}
+
+.codeutsava__section11-problemModal-body th {
+  background-color: rgba(74, 74, 74, 0.8); 
+}
+
+.codeutsava__section11-problemModal-body tr:nth-child(even) {
+  background-color: rgba(46, 46, 46, 0.8); 
+}
+
+.codeutsava__section11-problemModal-body tr:nth-child(odd) {
+  background-color: rgba(29, 29, 29, 0.8); 
+}
+
+@media screen and (max-width: 900px) {
+  .codeutsava__section11-problemModal-body td,
+  .codeutsava__section11-problemModal-body th {
+    font-size: 16px !important;
+  }
+  .codeutsava__section11-problemModal-body{
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .codeutsava__section11-problemModal-body td,
+  .codeutsava__section11-problemModal-body th, .codeutsava__section11-problemModal-body h1, .codeutsava__section11-problemModal-body h5 {
+    font-size: 12px !important;
+  }
+  .codeutsava__section11-problemModal-body td, .codeutsava__section11-problemModal-body th{
+    padding: 10px !important;
+  }
+  .codeutsava__section11-problemModal-body{
+    padding: 1rem;
   }
 }

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import "./CategoryWinningTeamCard.css";
-import cross from "../../assets/images/cross.png";
+import cross from "../../assets/images/cross.svg";
 
 const CategoryWinningTeamCard = ({
   problem,
@@ -58,7 +58,7 @@ const CategoryWinningTeamCard = ({
             getTeam(name, leader, member1, member2, member3, member4, member5)
           }
         >
-          {problem} {name}
+          <h2>{problem} </h2> <p>{name}</p>
         </div>
       </div>
 
@@ -79,16 +79,41 @@ const CategoryWinningTeamCard = ({
               onClick={() => setModal(false)}
             />
             <h1>Team Name: {name}</h1>
-            <p style={{ fontWeight: "600" }}>College: {college}</p>
-            <p style={{ fontWeight: "600" }}>Team Leader: {leader}</p>
-            <p style={{ fontWeight: "600" }}>Team Members</p>
-            <p>{leader}</p>
-            <p>{member1}</p>
-            <p>{member2}</p>
-            <p>{member3}</p>
-            <p>{member4}</p>
-            <p>{member5}</p>
-            <p>{member6}</p>
+            <h5 style={{ fontWeight: "600" }}>College: {college}</h5>
+            <table>
+              <tr>
+                <td>Team Members</td>
+                <td>Name</td>
+              </tr>
+              <tr>
+                <td>Leader</td>
+                <td>{leader}</td>
+              </tr>
+              <tr>
+                <td>Member 1</td>
+                <td>{member1}</td>
+              </tr>
+              <tr>
+                <td>Member 2</td>
+                <td>{member2}</td>
+              </tr>
+              <tr>
+                <td>Member 3</td>
+                <td>{member3}</td>
+              </tr>
+              {member4 && (
+                <tr>
+                  <td>Member 4</td>
+                  <td>{member4}</td>
+                </tr>
+              )}
+              {member5 && (
+                <tr>
+                  <td>Member 5</td>
+                  <td>{member5}</td>
+                </tr>
+              )}
+            </table>
           </motion.div>
         )}
       </AnimatePresence>

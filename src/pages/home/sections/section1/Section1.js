@@ -5,7 +5,7 @@ import discord from "../../../../assets/images/discord.svg";
 import wel from "../../../../assets/images/welcome.png";
 
 import "../../../../../node_modules/font-awesome/css/font-awesome.min.css";
-import register from "../../../../assets/images/register.pdf";
+import register from "../../../../assets/images/CodeUtsava_Steps_To_Register_7.0.pdf";
 
 const Section1 = () => {
   React.useEffect(() => {
@@ -31,7 +31,7 @@ const Section1 = () => {
           </div>
           <div className="codeutsava__section1-para">
             Central India's{" "}
-            <span style={{ fontWeight: "600" }}>Largest Coding Event.</span> Join Us On 1st - 2nd November.
+            <span style={{ fontWeight: "600" }}>Largest Coding Event.</span> Join Us On 1ˢᵗ - 2ⁿᵈ November.
           </div>
         </div>
 

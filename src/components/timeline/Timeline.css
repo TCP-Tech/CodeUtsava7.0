@@ -1,0 +1,52 @@
+.vertical-timeline-element-content {
+  background-color: #b079c11d !important;  
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+  color: white !important;
+}
+.vertical-timeline-element-icon{
+  box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05) !important;
+}
+
+#description {
+  margin: 1.5em 0 2em 0;
+}
+
+.date{
+  font-size: 20px !important;
+  color: white !important;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+}
+
+.vertical-timeline-element-icon svg{
+  height: 66px !important;
+  width: 66px !important;
+  top: 10px !important;
+  left: 8px !important;
+}
+
+@media(width<1117px){
+  .vertical-timeline-element-icon svg{
+    height: 74px !important;
+  width: 74px !important;
+    top: -7px !important;
+    left: -4px !important;
+  }
+}

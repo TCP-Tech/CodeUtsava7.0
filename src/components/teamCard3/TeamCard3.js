@@ -2,7 +2,7 @@ import React from "react";
 import "./TeamCard3.css";
 import "../../../node_modules/font-awesome/css/font-awesome.min.css";
 import spider from "../../assets/images/spider.svg";
-import pumpkin from "../../assets/images/speakers/jack-o-lantern.svg";
+import pumpkin from "../../assets/images/pumpkin.svg";
 
 const TeamCard3 = ({ img, name, position, linkedin, email, domain }) => {
   return (

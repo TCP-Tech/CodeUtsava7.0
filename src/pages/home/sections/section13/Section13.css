@@ -22,11 +22,16 @@
   margin-bottom: 4rem;
 }
 
+.codeutsava__section11-title img{
+  height: 110px;
+  width: auto;
+}
+
 .codeutsava__section11-problems {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
 
 }

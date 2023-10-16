@@ -1,12 +1,11 @@
 .codeutsava__section5 {
   padding-top: 2rem;
+  padding-bottom: 2rem;
   font-family: "Poppins";
 }
 
 .codeutsava__section5-body {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   color: white;
 }

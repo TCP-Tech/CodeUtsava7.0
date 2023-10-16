@@ -6,6 +6,8 @@ import "./Section13.css";
 import categoryWinningTeams from "../../../../assets/data/categoryWinningTeamData";
 import CategoryWinningTeamCard from "../../../../components/categoryWinningTeamCard/CategoryWinningTeamCard";
 import { motion } from "framer-motion";
+import ghost from '../../../../assets/images/ghost.png'
+
 
 const Section11 = () => {
   const useFade = (initial) => {
@@ -40,9 +42,9 @@ const Section11 = () => {
       id="problems"
     >
       <div className="codeutsava__section11-body">
-        <div className="codeutsava__section11-title">Category Wise Winners</div>
+        <div className="codeutsava__section11-title">Category Wise Winners<img src={ghost}></img></div>
         <div className="codeutsava__section11-problems">
-          <div className="codeutsava__section11-problems-container1">
+          <div className="codeutsava__section11-problems-container1-winning">
             {categoryWinningTeams.map((shortlistedTeam, index) => (
               <CategoryWinningTeamCard
                 key={index}

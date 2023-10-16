@@ -58,7 +58,7 @@ const WinningTeamCard = ({
             getTeam(name, leader, member1, member2, member3, member4, member5)
           }
         >
-          {position} {name}
+          <h2>{position} </h2> <p>{name}</p>
         </div>
       </div>
 

@@ -1,20 +1,213 @@
 .codeutsava__section3-card {
-  padding: 1.5rem;
-  background-image: url("../../assets/images/bg-eventCard.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
-  flex-direction: column;
-  margin: 1.5rem 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  justify-content: center;
   color: black;
-  box-shadow: orange 0 0 8px;
   align-items: center;
-  justify-content: flex-end;
-  /* min-width: 350px; */
+  gap: 2rem;
   border-radius: 4px;
-  background-color: white;
+  width: 100%;
+  padding: 5em 0;
+  position: relative;
+  background-color: #b079c11d;
+  backdrop-filter: blur(10px);
+}
+
+.arrows {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  justify-content: space-between;
+}
+
+.gallery {
+  width: 28%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line-gallery {
+  width: 1px;
+  border-right: 1px solid white;
+  height: 110%;
+}
+
+.gallery-viewer {
+  width: 360px;
+  height: 360px;
+}
+
+.gallery-viewer img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.arrows .arrow-1 {
+  width: 80px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrows .arrow-2 {
+  width: 80px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrows img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.dets {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dets .dets-section {
+  width: 100%;
+}
+
+.dets .dets-top {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dets .dets-bottom {
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.restaurant-ki-list .rest-names {
+  width: 100%;
+  height: 25vh;
+}
+
+.restaurant-ki-list h1 {
+  font-size: 3.5rem;
+  /* word-wrap: nowrap; */
+  color: #ffffff;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.res-desc h5 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.dets-bottom .details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.details .head-blocks {
+  height: 100%;
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+}
+
+.details .dimension {
+  width: 100%;
+}
+.details .dimension {
+  border-right: none;
+}
+
+.head-blocks > h1 {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.vals h1 {
+  font-weight: normal;
+  font-size: 20px;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+.vals sub {
+  font-size: 17px;
+}
+
+.book-now h3 {
+  font-weight: 400;
+  color: burlywood;
+  text-align: center;
+}
+
+.rating-list {
+  overflow: hidden;
+  width: 100%;
+  height: 40%;
+}
+
+.price-list {
+  overflow: hidden;
+  width: 100%;
+  height: 45%;
+}
+
+.dimensions-list {
+  overflow: hidden;
+  /* width: 100%; */
+}
+
+.codeutsava__events-register-link {
+  background-color: var(--secondary-c);
+  border: 1px solid var(--secondary-c);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+}
+
+.codeutsava__events-register-link:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
 }
 
 @media screen and (max-width: 850px) {
@@ -25,6 +218,9 @@
     top: -30px;
     left: 210px;
     z-index: 2;
+  }
+  .codeutsava__section3-card {
+    flex-direction: column;
   }
 }
 
@@ -106,7 +302,7 @@
   }
 } */
 @media screen and (max-width: 1200px) {
-  .codeutsava__section3-image{
+  .codeutsava__section3-image {
     padding: 1rem;
   }
 }
@@ -130,15 +326,16 @@
     margin-bottom: 1rem;
   }
 }
+
 @media screen and (min-width: 484px) and (max-width: 768px) {
   .codeutsava__section3-card {
-    margin:5px;
+    margin: 5px;
   }
 
   .codeutsava__section3-cardTitle {
     display: flex;
-  /* align-items: center; */
-  text-align: center;
+    /* align-items: center; */
+    text-align: center;
     font-size: 10px;
   }
 
@@ -149,5 +346,202 @@
   .codeutsava__section3-link {
     padding: 8px 20px;
     font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .arrows {
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    top: 44%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    justify-content: space-between;
+  }
+
+  .gallery {
+    border: none;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .gallery .gallery-viewer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+  }
+
+  .gallery-viewer img {
+    margin: 2em;
+    height: 100%;
+    object-fit: cover;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  }
+
+  .arrows .arrow-1 {
+    width: 60px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .arrows .arrow-2 {
+    width: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .arrows img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .dets {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dets .dets-section {
+    width: 100%;
+  }
+
+  .dets .dets-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dets .dets-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .dets-top .restaurant-ki-list {
+    overflow: hidden;
+  }
+
+  .restaurant-ki-list .rest-names {
+    width: 100%;
+    height: 25vh;
+  }
+
+  .restaurant-ki-list h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .res-desc h5 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .dets-bottom .details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .dets-bottom .book-now {
+    width: 15vmax;
+    border-radius: 25px;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+
+  .details .head-blocks {
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 0 0 1em; */
+    gap: 0.5em;
+  }
+
+  .details .dimension {
+    border-right: none;
+  }
+
+  .head-blocks > h1 {
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 16px;
+  }
+
+  .vals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vals h1 {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+    color: #ffffff;
+  }
+
+  .vals sub {
+    font-size: 17px;
+  }
+
+  .rating-list {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .price-list {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .dimensions-list {
+    overflow: hidden;
+    /* width: 100%; */
+    height: 100%;
   }
 }

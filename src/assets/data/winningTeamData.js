@@ -1,8 +1,8 @@
 const winningTeamData = [
   {
-    position: "1st",
+    position: "🥇 Winners 🥇",
     name: "Technicutives",
-    college: "National Institute of Technology Raipur",
+    college: "National Institute of Technology, Raipur",
     leader: "Aditya Prasad",
     member1: "Prerna Singh",
     member2: "Harsh Dewangan",
@@ -11,9 +11,9 @@ const winningTeamData = [
     member5: "Mohit Doraiburu",
   },
   {
-    position: "2nd",
+    position: "🥈 Runner - Up 🥈",
     name: "Synchronized Minds",
-    college: "Indian Institute of Information Technology Bhopal",
+    college: "Indian Institute of Information Technology, Bhopal",
     leader: "Manjeet Pathak",
     member1: "Pranjal Dubey",
     member2: "Dhruv Bansal",
@@ -22,9 +22,9 @@ const winningTeamData = [
     member5: "Himanshu Tiwari",
   },
   {
-    position: "3rd",
+    position: "🥉 2ⁿᵈ Runner - Up 🥉",
     name: "The Scripters",
-    college: "NIT Raipur",
+    college: "National Institute of Technology, Raipur",
     leader: "Satwik Agrawal",
     member1: "Shubham Bawner",
     member2: "ShriKrushna Bhagwat",

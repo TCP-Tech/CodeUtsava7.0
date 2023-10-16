@@ -2,6 +2,7 @@ import React from "react";
 import "./Section5.css";
 import hackathonData from "../../../../assets/data/hackathonData";
 import ghost from '../../../../assets/images/ghost.png'
+import Timeline from "../../../../components/timeline/Timeline";
 
 const Section5 = () => {
   return (
@@ -14,9 +15,9 @@ const Section5 = () => {
         <img src={ghost}></img>
         </div>
         <div className="codeutsava__section5-content">
-          Check out the schedule for the hackathon.
+          Check out the schedule for the event.
         </div>
-        <div className="codeutsava__section5-format-container">
+        {/* <div className="codeutsava__section5-format-container">
           <div className="codeutsava__section5-format-card format-card1">
             <p className="codeutsava__section5-format-card-date">
               {hackathonData[0].date}
@@ -114,7 +115,8 @@ const Section5 = () => {
               {hackathonData[5].description}
             </p>
           </div>
-        </div>
+        </div> */}
+        <Timeline/>
       </div>
     </div>
   );
