@@ -7,6 +7,7 @@ import Section1 from "./sections/section1/Section1";
 import Section2 from "./sections/section2/Section2";
 import Section5 from "./sections/section5/Section5";
 import Section6 from "./sections/section6/Section6";
+import Section8 from "./sections/section8/Section8";
 import Section10 from "./sections/section10/Section10";
 import Section12 from "./sections/section12/Section12";
 import Section13 from "./sections/section13/Section13";
@@ -30,6 +31,7 @@ const HomePage = () => {
           {/* <Section9 /> */}
           <Section12 />
           <Section13 />
+          <Section8 /> 
           <Guidelines/>
           <Section5 />
           <Section6 />
@@ -42,8 +44,7 @@ const HomePage = () => {
         {/* <Section15 /> */}
         {/* <Section11 />
           <Section12 />
-          <Section13 />
-          <Section8 /> */}
+          <Section13 />*/}
       </div>
       <div className="intro_audio_new_design">
         <IntroAudio />

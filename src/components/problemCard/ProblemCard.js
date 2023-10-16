@@ -4,7 +4,8 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 import './ProblemCard.css'
-import cross from '../../assets/images/cross.png'
+import cross from '../../assets/images/cross.svg'
+import '../winningTeamCard/WinningTeamCard.css'
 
 const ProblemCard = ({img,title,domain,statement}) => {
 
@@ -38,18 +39,29 @@ const ProblemCard = ({img,title,domain,statement}) => {
       <AnimatePresence>
         {
           modal && 
-          <motion.div 
-            initial={{ scaleX:0, scaleY:0.01 }}
-            animate={{ scaleX: [0, 1, 1], scaleY: [0.005, 0.005, 1],}}
-            transition={{ duration: 0.8, ease: [0.165, 0.84, 0.44, 1],}}
-            exit={{scaleX: [1, 1, 0], scaleY: [1, 0.005, 0.005] }}
-            className="codeutsava__section8-problemModal-body">
-              <img className="problemModal-close" src={cross} onClick={() => setModal(false)}/>
-              <h1>{title}</h1>
-              <p>{statement}</p>
-              <div className="codeutsava__section8-problemModal-body-img">
-                <img src={img}/>
-              </div>
+          <motion.div
+            initial={{ scaleX: 0, scaleY: 0.01 }}
+            animate={{ scaleX: [0, 1, 1], scaleY: [0.005, 0.005, 1] }}
+            transition={{ duration: 0.8, ease: [0.165, 0.84, 0.44, 1] }}
+            exit={{ scaleX: [1, 1, 0], scaleY: [1, 0.005, 0.005] }}
+            className="codeutsava__section11-problemModal-body"
+          >
+            <img
+              className="problemModal-close"
+              src={cross}
+              onClick={() => setModal(false)}
+            />
+            <h1>{title}</h1>
+            <h5 style={{ fontWeight: "600" }}>Domain: {domain}</h5>
+            <table>
+              <tr>
+                <td>Problem Statement</td>
+              </tr>
+              <tr>
+                <td>{statement}</td>
+              </tr>
+            </table>
+
           </motion.div>
         }
       </AnimatePresence>
