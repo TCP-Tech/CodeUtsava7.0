@@ -11,7 +11,7 @@ const Section5 = () => {
       id="format"
     >
       <div className="codeutsava__section5-body">
-        <div className="codeutsava__section5-title">Our Format
+        <div className="codeutsava__section5-title">Timeline
         <img src={ghost}></img>
         </div>
         <div className="codeutsava__section5-content">
