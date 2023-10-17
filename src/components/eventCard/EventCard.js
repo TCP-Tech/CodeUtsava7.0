@@ -37,7 +37,7 @@ export const EventCard = () => {
             <h1>{EventsData[index].title}</h1>
           </div>
           <div className="res-desc">
-            <h5>DESCRIPTION <br/> {EventsData[index].desc}</h5>
+            <h5> <p>DESCRIPTION</p> {EventsData[index].desc}</h5>
           </div>
         </div>
         <div className="dets-bottom dets-section">
