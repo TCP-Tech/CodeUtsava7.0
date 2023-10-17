@@ -32,7 +32,7 @@ const FAQs = () => {
           <div className="codeutsava__section7-body">
             <div className="codeutsava__section7-left">
               <h4 className="codeutsava__section7-left-heading">
-                Frankenstein To Your Resque Ask Me Anything From There
+                Frankenstein To Your Rescue Ask Me Anything From There
               </h4>
               <img
                 src={downArrow}
