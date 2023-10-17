@@ -8,7 +8,7 @@
   gap: 2rem;
   border-radius: 4px;
   width: 100%;
-  padding: 5em 0;
+  padding: 3rem 0;
   position: relative;
   background-color: #b079c11d;
   backdrop-filter: blur(10px);
@@ -89,7 +89,6 @@
 }
 
 .dets .dets-top {
-  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -98,7 +97,6 @@
 }
 
 .dets .dets-bottom {
-  height: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -129,7 +127,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3rem;
+  margin: 2rem 0rem;
 }
 
 .details .head-blocks {
@@ -435,6 +433,7 @@
 
   .dets .dets-top {
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -442,6 +441,7 @@
 
   .dets .dets-bottom {
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -477,6 +477,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1rem;
+    padding: 0rem 3rem;
   }
 
   .dets-bottom .book-now {

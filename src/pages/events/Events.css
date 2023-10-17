@@ -33,6 +33,7 @@
 
 .codeutsava__section3-events-container {
   gap: 4rem;
+  min-height: 500px;
   /* overflow-x: scroll;
   min-width: 70vw; */
   display: flex;
