@@ -20,19 +20,19 @@ const hackathonData = [
   },
   {
     id: '#4',
-    title: "Final Teams Announced!",
+    title: "Final Teams Announced.",
     date: "26ᵗʰ October, 11:00 AM",
     description: "Final Shortlisted Teams for CodeUtsava 7.0 are released.",
   },
   {
     id: '#5',
-    title: "Problem Statements Released",
+    title: "Problem Statements Released.",
     date: "27ᵗʰ October, 11:00 AM",
     description: "Problems Statements for CodeUtsava 7.0 are released.",
   },
   {
     id: '#6',
-    title: "Hackathon Begins",
+    title: "Hackathon Begins!",
     date: "1ˢᵗ Nov, 8:00 AM",
     description: "Commencement of Codeutsava 7.0!",
   },
