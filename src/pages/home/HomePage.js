@@ -16,7 +16,6 @@ import Statistics from "../../components/statisticalData/Statistics";
 import Footer from "../../components/footer/Footer";
 import Section9 from "./sections/section9/Section9";
 import Guidelines from "../../components/Guidelines/Guidelines";
-import Merchandise from "../../components/merchandiseCard/MerchandiseCard";
 // import ScrollToTopnew from "../../components/scrollToTop/ScrollToTop";
 
 const HomePage = () => {
@@ -29,7 +28,6 @@ const HomePage = () => {
       <Statistics />
       <div className="container mx-auto main-container">
           <Section2 />
-          <Merchandise />
           {/* <Section9 /> */}
           <Section12 />
           <Section13 />
