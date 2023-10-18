@@ -11,6 +11,7 @@ import ContactUs from "./pages/contactUs/ContactUs"
 import FAQs from "./pages/faqs/FAQs"
 import Events from "./pages/events/Events"
 import Speakers from "./pages/speakers/Speakers"
+import Merchandise from "./pages/merchandise/Merchandise";
 
 export default class App extends Component {
   render() {
@@ -25,6 +26,7 @@ export default class App extends Component {
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/events" element={<Events />} />
             <Route path="/speakers" element={<Speakers />} />
+            <Route path="/merchandise" element={<Merchandise />} />
           </Routes>
       </BrowserRouter>
     );
