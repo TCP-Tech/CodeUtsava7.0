@@ -6,7 +6,7 @@ import pic3 from "../../assets/images/merchandise/4.png";
 
 const MerchandiseCard = () => {
   const [selectedImg, setSelectedImg] = useState(0);
-  const images = [pic1, pic2, pic3];
+  const images = [pic2, pic3, pic1];
   return (
     <div className="codeutsava__merchandise-container">
       <div className="codeutsava__merchandise-left">
@@ -25,6 +25,12 @@ const MerchandiseCard = () => {
           <h3>Grab yours one Now!</h3>
         </div>
         <div>
+          <p>Price (Customised): ₹499 /-</p>
+          <p>Price (Non-Customised): ₹449 /-</p>
+          <p>Special Offer</p>
+          <p>Buy 3 Get ₹100 /- OFF</p>
+          <p>Buy 5 Get ₹250 /- OFF</p>
+          <p>Buy 10 Get ₹600 /- OFF</p>
           <p>Sizes Available: XS, S, M, L, XL</p>
           <p>Disclaimer: Delivery Available Only in Raipur.</p>
         </div>
