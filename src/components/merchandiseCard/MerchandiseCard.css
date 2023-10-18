@@ -18,9 +18,16 @@
 
 .codeutsava__merchandise-right {
   flex: 1;
+  gap: 4px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.codeutsava__merchandise-right-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .codeutsava__merchandise-img-container {
