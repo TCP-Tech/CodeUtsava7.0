@@ -20,24 +20,21 @@ const MerchandiseCard = () => {
         </div>
       </div>
       <div className="codeutsava__merchandise-right">
-        <div>
+        <div className="codeutsava__merchandise-right-heading">
           <h1>Official Merchanise - CU7.0</h1>
-          <h3>Grab yours one Now!</h3>
+          <h2>Grab yours one Now!</h2>
         </div>
         <div className="codeutsava__merchandise-right-content">
-        <div>
-          <h2>Price (Customised): ₹499 /-</h2>
-          <h2>Price (Non-Customised): ₹449 /-</h2>
-
-        </div>
-        <div>
-          <h2>Special Offer</h2>
-          <h4>Buy 3 Get ₹100 /- OFF</h4>
-          <h4>Buy 5 Get ₹250 /- OFF</h4>
-          <h4>Buy 10 Get ₹600 /- OFF</h4>
-
-        </div>
-        
+          <div className="codeutsava__merchandise-right-prices">
+            <h2>Price (Customised): ₹499 /-</h2>
+            <h2>Price (Non-Customised): ₹449 /-</h2>
+          </div>
+          <div className="codeutsava__merchandise-right-special-prices">
+            <h2>Special Offer</h2>
+            <h4>Buy 3 Get ₹100 /- OFF</h4>
+            <h4>Buy 5 Get ₹250 /- OFF</h4>
+            <h4>Buy 10 Get ₹600 /- OFF</h4>
+          </div>
           <h2>Sizes Available: XS, S, M, L, XL</h2>
           <p>Disclaimer: Delivery Available Only in Raipur.</p>
         </div>

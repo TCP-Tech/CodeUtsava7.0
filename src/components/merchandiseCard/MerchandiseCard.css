@@ -1,6 +1,6 @@
 .codeutsava__merchandise-container {
   display: flex;
-  gap: 50px;
+  gap: 4rem;
   font-family: var(--font-family3);
   color: white;
   background-color: #b079c11d;
@@ -77,5 +77,21 @@
 @media screen  and (max-width: 768px){
     .codeutsava__merchandise-container{
         flex-direction: column;
+        padding: 3rem 1.5rem;
+        gap: 1rem;
+    }
+    .codeutsava__merchandise-right-heading{
+      font-size: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .codeutsava__merchandise-right-prices{
+      font-size: 10px;
+    }
+    .codeutsava__merchandise-right-special-prices h2{
+      margin-bottom: 10px;
+    }
+    .codeutsava__merchandise-right-content{
+      margin: 1rem 0;
     }
 }
