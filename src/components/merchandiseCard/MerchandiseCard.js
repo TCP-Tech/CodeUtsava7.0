@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./MerchandiseCard.css";
-import pic1 from "../../assets/images/merchandise/2.png";
-import pic2 from "../../assets/images/merchandise/3.png";
-import pic3 from "../../assets/images/merchandise/4.png";
+import merch1 from "../../assets/images/merchandise/merch1.png";
+import merch2 from "../../assets/images/merchandise/merch2.png";
+import merch3 from "../../assets/images/merchandise/merch3.png";
 
 const MerchandiseCard = () => {
   const [selectedImg, setSelectedImg] = useState(0);
-  const images = [pic2, pic3, pic1];
+  const images = [merch2, merch3, merch1];
   return (
     <div className="codeutsava__merchandise-container">
       <div className="codeutsava__merchandise-left">
