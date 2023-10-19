@@ -64,6 +64,13 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="codeutsava__navbar-navitem">
+                <a href="#prizes">
+                  <h3 className="codeutsava__navbar-menu-heading">
+                    Prizes
+                  </h3>
+                </a>
+              </li>
+              <li className="codeutsava__navbar-navitem">
                 <a href="#format">
                   <h3 className="codeutsava__navbar-menu-heading">
                     Timeline
@@ -182,6 +189,13 @@ const Navbar = () => {
                 </h3>
               </a>
             </Link>
+          </li>
+          <li className="codeutsava__navbar-hamburger-navitem">
+            <a href="#prizes" onClick={toggleMenu}>
+              <h3 className="codeutsava__navbar-hamburger-menu-heading">
+                Prizes
+              </h3>
+            </a>
           </li>
           <li className="codeutsava__navbar-hamburger-navitem">
             <a href="#format" onClick={toggleMenu}>

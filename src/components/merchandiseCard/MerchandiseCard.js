@@ -26,17 +26,17 @@ const MerchandiseCard = () => {
         </div>
         <div className="codeutsava__merchandise-right-content">
           <div className="codeutsava__merchandise-right-prices">
-            <h2>Price (Customised): ₹499 /-</h2>
-            <h2>Price (Non-Customised): ₹449 /-</h2>
+            <p>Price (Customised): <b>₹499 /-</b></p>
+            <p>Price (Non-Customised): <b>₹449 /-</b></p>
           </div>
           <div className="codeutsava__merchandise-right-special-prices">
-            <h2>Special Offer</h2>
-            <h4>Buy 3 Get ₹100 /- OFF</h4>
-            <h4>Buy 5 Get ₹250 /- OFF</h4>
-            <h4>Buy 10 Get ₹600 /- OFF</h4>
+            <h2>Special Offer!</h2>
+            <p>Buy <b>3</b> Get <b>₹100 /- OFF</b></p>
+            <p>Buy <b>5</b> Get <b>₹250 /- OFF</b></p>
+            <p>Buy <b>10</b> Get <b>₹600 /- OFF</b></p>
           </div>
           <h2>Sizes Available: XS, S, M, L, XL</h2>
-          <p>Disclaimer: Delivery Available Only in Raipur.</p>
+          <p><b>Disclaimer:</b> Delivery Available Only in <b>Raipur.</b></p>
         </div>
         <a
           className="codeutsava__merchandise-link"

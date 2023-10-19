@@ -33,7 +33,7 @@ const Prizes = [
     ],
   },
   {
-      title : "Winning Team of each category (Five Categories)",
+      title : "🥇 Problem Domain Winner's 🥇",
       cashPrize : [
           'Team will be awarded prizes worth Rs. 2 Lakh.',
           'Cash Prize of Rs. 10,000.',
@@ -44,7 +44,7 @@ const Prizes = [
       ]
   },
   {
-      title : "Extras",
+      title : "👻 Extras! 👻",
       cashPrize : [
       ],
       prizeInfo : [
