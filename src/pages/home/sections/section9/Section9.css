@@ -55,11 +55,12 @@
   margin: 30px 10px 0 10px;
   display: flex;
   align-items: center;
+  display: block;
   justify-content: center;
 }
 
 .codeutsava__section9-boxInfo {
-  font-size: 14px;
+  font-size: 12px;
   padding: 0 1rem;
 }
 
@@ -70,15 +71,15 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  height: 500px;
-  width: 450px;
+  height: 450px;
+  width: 360px;
   margin: 2rem;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 6rem;
+  padding: 2rem 4rem;
 }
 
 .codeutsava__section9-box ul li{
@@ -86,7 +87,7 @@
 }
 
 .codeutsava__section9-boxtitle {
-  font-size: 18px;
+  font-size: 16px;
   color: gold;
   font-weight: 900;
   margin: 1rem 0;
