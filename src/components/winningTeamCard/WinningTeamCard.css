@@ -136,6 +136,7 @@
 
 .problemModal-close {
   width: 1.5rem;
+  height: 1.5rem;
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;

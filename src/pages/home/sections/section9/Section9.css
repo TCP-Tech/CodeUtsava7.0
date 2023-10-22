@@ -55,6 +55,7 @@
   margin: 30px 10px 0 10px;
   display: flex;
   align-items: center;
+  display: block;
   justify-content: center;
 }
 
@@ -70,23 +71,23 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  height: 500px;
-  width: 400px;
+  height: 450px;
+  width: 360px;
   margin: 2rem;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 5rem;
+  padding: 2rem 4rem;
 }
 
 .codeutsava__section9-box ul li{
-  margin: 5px 0;
+  margin: 2px 0;
 }
 
 .codeutsava__section9-boxtitle {
-  font-size: 15px;
+  font-size: 16px;
   color: gold;
   font-weight: 900;
   margin: 1rem 0;
@@ -106,7 +107,7 @@
 }
 @media (width<=810px) {
   .codeutsava__section9-boxtitle {
-    font-size: 15px;
+    font-size: 18px;
   }
   .codeutsava__section9-box {
     width: 100%;
@@ -141,15 +142,14 @@
     /* background-size: 550px 550px; */
     margin: 10px;
     height: 400px;
-    padding-left: 2rem;
-    padding-right: 2rem ;
+    padding: 0 3rem;
   }
   .codeutsava__section9-boxInfo {
-    font-size: 10px;
+    font-size: 11px;
     padding: 0px;
   }
   .codeutsava__section9-boxInfo ul li{
-    margin: 2px;
+    margin: 1px;
   }
   .codeutsava__section9-box {
     width: 100%;
@@ -159,12 +159,12 @@
 @media (width<=470px) {
   .codeutsava__section9-box {
     width: 100%;
-    padding: 4.2rem;
+    padding: 4.5rem;
     /* margin-top: 50px; */
   }
 
   .codeutsava__section9-boxtitle {
-    font-size: 13px;
+    font-size: 14px;
     padding: 0 1rem;
   }
 }

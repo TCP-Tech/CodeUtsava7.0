@@ -4,9 +4,11 @@ import sponser4 from "../images/sponsers/sponser4.webp";
 import sponser3 from "../images/sponsers/sponser3.webp";
 import sponser6 from "../images/sponsers/sponser6.webp";
 import sponser7 from "../images/sponsers/sponser7.webp";
+import sponser8 from "../images/sponsers/sponser8.webp";
 import sponser9 from "../images/sponsers/sponser9.webp";
 import sponser10 from "../images/sponsers/sponser10.webp";
 import sponser14 from "../images/sponsers/sponser14.webp";
+import sponser15 from "../images/sponsers/sponser15.webp";
 
 const platinum = [
   {
@@ -14,6 +16,9 @@ const platinum = [
   },
   {
     img: sponser6,
+  },
+  {
+    img: sponser15,
   },
   {
     img: sponser1,
@@ -41,6 +46,9 @@ const partners = [
   },
   {
     img: sponser10,
+  },
+  {
+    img: sponser8,
   },
 ]
 

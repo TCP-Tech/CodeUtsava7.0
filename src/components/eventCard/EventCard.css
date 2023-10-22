@@ -8,7 +8,7 @@
   gap: 2rem;
   border-radius: 4px;
   width: 100%;
-  padding: 5em 0;
+  padding: 3rem 0;
   position: relative;
   background-color: #b079c11d;
   backdrop-filter: blur(10px);
@@ -89,7 +89,6 @@
 }
 
 .dets .dets-top {
-  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -98,7 +97,6 @@
 }
 
 .dets .dets-bottom {
-  height: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -118,9 +116,22 @@
   white-space: nowrap;
 }
 
-.res-desc h5 {
+
+.res-desc h5 p{
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 400;
+  /* text-align: center; */
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.res-desc h5{
+  /* padding: 0; */
+  font-size: 15px;
+  color: #ffffffd6;
+  line-height: 1.8;
   font-weight: 400;
 }
 
@@ -129,7 +140,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3rem;
+  margin: 2rem 0rem;
 }
 
 .details .head-blocks {
@@ -435,6 +446,7 @@
 
   .dets .dets-top {
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -442,6 +454,7 @@
 
   .dets .dets-bottom {
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -463,11 +476,20 @@
     text-align: center;
   }
 
-  .res-desc h5 {
+  .res-desc h5 p{
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
     text-align: center;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+  }
+
+  .res-desc h5{
+    padding: 0 2rem;
+    font-size: 13px;
+    color: #ffffffd6;
+    line-height: 1.8;
   }
 
   .dets-bottom .details {
@@ -475,8 +497,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 1.8;
     justify-content: space-between;
     margin-bottom: 1rem;
+    padding: 0rem 2rem;
   }
 
   .dets-bottom .book-now {

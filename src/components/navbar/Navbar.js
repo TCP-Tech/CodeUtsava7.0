@@ -54,19 +54,26 @@ const Navbar = () => {
                   </a>
                 </Link>
               </li>
-                {/* <li className="codeutsava__navbar-navitem">
-                <Link to="/speakers">
-                  <a href="#speakers">
+                <li className="codeutsava__navbar-navitem">
+                <Link to="/merchandise">
+                  <a href="#merchandise">
                     <h3 className="codeutsava__navbar-menu-heading">
-                      Speakers
+                      Merchandise
                     </h3>
                   </a>
                 </Link>
-              </li> */}
+              </li>
+              <li className="codeutsava__navbar-navitem">
+                <a href="#prizes">
+                  <h3 className="codeutsava__navbar-menu-heading">
+                    Prizes
+                  </h3>
+                </a>
+              </li>
               <li className="codeutsava__navbar-navitem">
                 <a href="#format">
                   <h3 className="codeutsava__navbar-menu-heading">
-                    Our Format
+                    Timeline
                   </h3>
                 </a>
               </li>
@@ -175,18 +182,25 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="codeutsava__navbar-hamburger-navitem">
-            <Link to="/speakers">
-              <a href="#speakers" onClick={toggleMenu}>
+            <Link to="/merchandise">
+              <a href="#merchandise" onClick={toggleMenu}>
                 <h3 className="codeutsava__navbar-hamburger-menu-heading">
-                  Speakers
+                  Merchandise
                 </h3>
               </a>
             </Link>
           </li>
           <li className="codeutsava__navbar-hamburger-navitem">
+            <a href="#prizes" onClick={toggleMenu}>
+              <h3 className="codeutsava__navbar-hamburger-menu-heading">
+                Prizes
+              </h3>
+            </a>
+          </li>
+          <li className="codeutsava__navbar-hamburger-navitem">
             <a href="#format" onClick={toggleMenu}>
               <h3 className="codeutsava__navbar-hamburger-menu-heading">
-                Our Format
+                Timeline
               </h3>
             </a>
           </li>
