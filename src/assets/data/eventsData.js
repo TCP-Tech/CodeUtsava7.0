@@ -1,5 +1,6 @@
 import event1 from "../images/event1.webp";
 import event2 from "../images/event2.webp";
+import event3 from "../images/event3.webp";
 import dummye from '../images/dummye.png';
 
 const events = [
@@ -22,26 +23,8 @@ const events = [
     link: "",
   },
   {
-    title: "Coding Contest - 1",
-    date: "25ᵗʰ Oct",
-    time: "6:00 PM",
-    venue: "Online",
-    img: dummye,
-    desc: "A range of diverse types of coding contests will be organized for the students over the course of 3 days, where the participants will face a variety of challenges, ranging from writing code to debugging a webpage and more.",
-    link: "",
-  },
-  {
-    title: "Coding Contest - 2",
-    date: "26ᵗʰ Oct",
-    time: "6:00 PM",
-    venue: "Online",
-    img: dummye,
-    desc: "A range of diverse types of coding contests will be organized for the students over the course of 3 days, where the participants will face a variety of challenges, ranging from writing code to debugging a webpage and more.",
-    link: "",
-  },
-  {
-    title: "Coding Contest - 3",
-    date: "27ᵗʰ Oct",
+    title: "Coding Contest",
+    date: "25ᵗʰ, 26ᵗʰ, 27ᵗʰ Oct",
     time: "6:00 PM",
     venue: "Online",
     img: dummye,
@@ -71,8 +54,8 @@ const events = [
     date: "29ᵗʰ Oct",
     time: "5:30 PM",
     venue: "Amul Parlour",
-    img: dummye,
-    desc: "Open mic gathering where people can come forth and indulge us in their spooky tales.",
+    img: event3,
+    desc: "Open mic gathering where people can come forth and indulge us in their spooky tales. In collaboration with 'Abhinay - The Dramatics Club, NIT Raipur.'",
     link: "",
   },
   {
