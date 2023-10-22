@@ -1,6 +1,7 @@
 import event1 from "../images/event1.webp";
 import event2 from "../images/event2.webp";
 import event3 from "../images/event3.webp";
+import event4 from "../images/event4.webp";
 import dummye from '../images/dummye.png';
 
 const events = [
@@ -27,7 +28,7 @@ const events = [
     date: "25ᵗʰ, 26ᵗʰ, 27ᵗʰ Oct",
     time: "6:00 PM",
     venue: "Online",
-    img: dummye,
+    img: event4,
     desc: "A range of diverse types of coding contests will be organized for the students over the course of 3 days, where the participants will face a variety of challenges, ranging from writing code to debugging a webpage and more.",
     link: "",
   },
