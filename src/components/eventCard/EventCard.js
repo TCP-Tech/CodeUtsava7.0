@@ -47,7 +47,7 @@ export const EventCard = () => {
               <h5>
                 {" "}
                 <p>GUIDELINES</p>
-                {EventsData[index].guidelines.split('\n').map(text => <div>{text}</div>)}
+                {EventsData[index].guidelines}
               </h5>
             </div>
           )}
