@@ -8,7 +8,6 @@ import sponser8 from "../images/sponsers/sponser8.webp";
 import sponser9 from "../images/sponsers/sponser9.webp";
 import sponser10 from "../images/sponsers/sponser10.webp";
 import sponser14 from "../images/sponsers/sponser14.webp";
-import sponser15 from "../images/sponsers/sponser15.webp";
 
 const platinum = [
   {
@@ -16,9 +15,6 @@ const platinum = [
   },
   {
     img: sponser6,
-  },
-  {
-    img: sponser15,
   },
   {
     img: sponser1,
