@@ -31,7 +31,7 @@ const events = [
     time: "6:00 PM",
     venue: "Online",
     img: event4,
-    guidelines: 'The contest will be organized in three phases:\nPhase 1: DSA Challenge\nPhase 2: CS Fundamentals Challenge\nPhase 3: Aptitude Challenge\nRemember, participation in all three rounds is mandatory, as a leaderboard will determine the top 10 participants based on their cumulative scores. The top 5 participants will be rewarded with cash prizes worth Rs. 5k.📊🏆',
+    guidelines: (<p style={{fontWeight:'normal'}}> The contest will be organized in three phases:<br/><b>Phase 1:</b> DSA Challenge<br/><b>Phase 2:</b> CS Fundamentals Challenge<br/><b>Phase 3:</b> Aptitude Challenge<br/>Remember, <b>participation in all three rounds is mandatory</b>, as a leaderboard will determine the top 10 participants based on their cumulative scores. The top 5 participants will be rewarded with <b>cash prizes worth Rs. 5k</b>.📊🏆</p>),
     desc: "A range of diverse types of coding contests will be organized for the students over the course of 3 days, where the participants will face a variety of challenges, ranging from writing code to debugging a webpage and more.",
     link: "",
   },
