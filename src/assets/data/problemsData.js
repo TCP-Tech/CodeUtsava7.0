@@ -1,8 +1,8 @@
-import problem1 from '../images/p1.jpeg'
-import problem2 from '../images/p2.png'
-import problem3 from '../images/p3.png'
-import problem4 from '../images/p4.png'
-import problem5 from '../images/p5.png'
+import problem1 from '../images/p1.webp'
+import problem2 from '../images/p2.webp'
+import problem3 from '../images/p3.webp'
+import problem4 from '../images/p4.webp'
+import problem5 from '../images/p5.webp'
 
 const problems = [
   {
