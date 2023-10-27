@@ -1,13 +1,13 @@
 import problem1 from '../images/p1.webp'
-import problem2 from '../images/p2.webp'
+import problem4 from '../images/p2.webp'
 import problem3 from '../images/p3.webp'
-import problem4 from '../images/p4.webp'
+import problem2 from '../images/p4.webp'
 import problem5 from '../images/p5.webp'
 
 const problems = [
   {
     title: "Problem 1",
-    domain: "@Blockchain, @IoT Sensors, @Carbon Emissions, @Sustainable Technology",
+    domain: "@Artifical Intelligence , @Machine Learning , @Data Visualization",
     background: "The National Institutional Ranking Framework (NIRF) ranks colleges across India based on a multitude of factors, including infrastructure, faculty quality, student performance, and more. These rankings serve as a valuable reference for students, educators, policymakers, and institutions themselves, guiding decisions and improvements in the higher education sector.",
     statement: "This project aims to develop a platform leveraging IoT technology. This platform will enable efficient carbon emission data management by collecting real-time data from various sources via specialized sensors. To ensure the utmost security and trust in the data, this system will be powered by blockchain technology, which guarantees the integrity of the information. Furthermore, it will provide a user-friendly interface for authorized stakeholders, striving to create a transparent and accessible solution to combat carbon emissions, promoting sustainability and accountability.",
     impact:"This platform will enable efficient carbon emission data management by collecting real-time data from various sources via specialized sensors. By ensuring data security, integrity, and providing a user-friendly interface for authorized stakeholders, this initiative strives to create a transparent and accessible solution to combat carbon emissions, promoting sustainability and accountability. Additionally, the development of this platform lays the foundation for carbon trading and carbon credit tokenization, allowing organizations to engage in meaningful carbon offset initiatives and contributing to a greener future.",
