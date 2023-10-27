@@ -14,12 +14,13 @@
   display: inline-block;
   margin: 1rem 3rem;
   width: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .codeutsava__sponsers-carousel-item img {
   display: inline-block;
   vertical-align: middle;
+  max-height: 200px;
   width: 200px;
   text-align: center;
 }
