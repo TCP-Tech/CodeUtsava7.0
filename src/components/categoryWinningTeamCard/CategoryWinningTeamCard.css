@@ -118,8 +118,8 @@
   overflow: hidden;
   position: fixed;
   width: 80%;
-  height: 80%;
-  top: 15%;
+  height: 85%;
+  top: 10%;
   left: 10%;
   display: flex;
   flex-direction: column;

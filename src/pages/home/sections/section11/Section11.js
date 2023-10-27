@@ -6,6 +6,8 @@ import "./Section11.css";
 import shortlistedTeams from "../../../../assets/data/shortlistedTeamsData";
 import shortlistedTeamsOI from "../../../../assets/data/shortlistedTeamsDataOI";
 import ShortlistedTeamCard from "../../../../components/shortlistedTeamCard/ShortlistedTeamCard";
+import cauldron from "../../../../assets/images/cauldron.png";
+
 
 const Section11 = () => {
   const useFade = (initial) => {
@@ -34,7 +36,7 @@ const Section11 = () => {
   return (
     <div className="codeutsava__section11" id="problems">
       <div className="codeutsava__section11-body">
-        <div className="codeutsava__section11-title">Teams Shortlisted</div>
+        <div className="codeutsava__section11-title">Teams Shortlisted<img src={cauldron}></img></div>
         <div className="codeutsava__section11-problems">
           <div className="codeutsava__section11-problems-container1">
             {shortlistedTeams.map((shortlistedTeam, index) => (
@@ -56,7 +58,7 @@ const Section11 = () => {
         <div
           className="codeutsava__section11-title"
           style={{ marginTop: "8rem" }}
-        >
+        ><img src={cauldron}></img>
           Teams Shortlisted (Open Innovation)
         </div>
         <div className="codeutsava__section11-problems">
