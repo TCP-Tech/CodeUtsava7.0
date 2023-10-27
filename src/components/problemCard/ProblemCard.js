@@ -52,18 +52,18 @@ const ProblemCard = ({ img, title, domain, statement, background, impact }) => {
             <h5 style={{ fontWeight: "600" }}>Domain: {domain}</h5>
             <div style={{ overflowY: "scroll" , display: 'flex', justifyContent: "center"}}>
               <table>
-                <tr>
+                {background && <tr>
                   <td>Background</td>
                   <td>{background}</td>
-                </tr>
+                </tr>}
                 <tr>
                   <td>Problem Statement</td>
                   <td>{statement}</td>
                 </tr>
-                <tr>
+                {impact && <tr>
                   <td>Impact</td>
                   <td>{impact}</td>
-                </tr>
+                </tr>}
               </table>
             </div>
           </motion.div>

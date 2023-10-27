@@ -3,6 +3,7 @@ import problem4 from '../images/p2.webp'
 import problem3 from '../images/p3.webp'
 import problem2 from '../images/p4.webp'
 import problem5 from '../images/p5.webp'
+import problem6 from '../images/p6.webp'
 
 const problems = [
   {
@@ -44,6 +45,14 @@ const problems = [
     statement:"The agri-food supply chain faces substantial challenges in transportation and distribution. These challenges include complex operations involving multiple stakeholders, varying transportation modes, changing environmental conditions, and the need to optimize routes while minimizing costs. The absence of a specialized transportation management system tailored to this domain exacerbates these difficulties. Consequently, there is a critical need to design and develop an Advanced Transportation Management System (ATMS) specifically for the agri-food supply chain to address these unique challenges effectively.",
     impact:"The development of a specialized Advanced Transportation Management System (ATMS) prototype tailored to the agri-food supply chain holds transformative potential. It promises enhanced safety and regulatory compliance through asset tracking and maintenance, reducing the risk of accidents and ensuring consistent adherence to legal standards. Real-time monitoring and analytics empower stakeholders with valuable insights for informed decision-making, enhancing adaptability and responsiveness. Furthermore, the ATMS optimizes routes, reduces fuel consumption, and cuts operational costs, contributing to sustainability by lowering carbon emissions. Its scalability ensures transportation providers of all sizes can access innovative solutions, promoting widespread adoption and ultimately benefiting transportation, businesses, and society by streamlining the movement of agro-products to consumers.",
     img: problem5,
+  },
+  {
+    title:"Problem 6: Only for 1st Year NITRR",
+    domain:"@Open Innovation",
+    background: "",
+    statement:"Open innovation teams must choose their own real world problems to work on.",
+    impact:"",
+    img: problem6,
   }
 ];
 
