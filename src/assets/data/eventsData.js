@@ -2,7 +2,9 @@ import event1 from "../images/event1.webp";
 import event2 from "../images/event2.webp";
 import event3 from "../images/event3.webp";
 import event4 from "../images/event4.webp";
-import dummye from '../images/dummye.png';
+import event5 from "../images/event5.webp";
+import event6 from "../images/event6.webp";
+import event7 from "../images/event7.webp";
 
 const events = [
   {
@@ -40,7 +42,7 @@ const events = [
     date: "28ᵗʰ Oct",
     time: "10:00 PM",
     venue: "Online",
-    img: dummye,
+    img: event5,
     guidelines:"",
     desc: "To provide a platform for the students to demonstrate their additional talents, apart from programming, tournaments of multiple popular online games will be hosted where the students and compete and showcase their gaming skills.",
     link: "",
@@ -50,7 +52,7 @@ const events = [
     date: "29ᵗʰ Oct",
     time: "10:00 PM",
     venue: "Online",
-    img: dummye,
+    img: event7,
     guidelines:"",
     desc: "To provide a platform for the students to demonstrate their additional talents, apart from programming, tournaments of multiple popular online games will be hosted where the students and compete and showcase their gaming skills.",
     link: "",
@@ -70,7 +72,7 @@ const events = [
     date: "31ˢᵗ Oct",
     time: "6:00 PM",
     venue: "CCC, NIT Raipur",
-    img: dummye,
+    img: event6,
     guidelines:"",
     desc: "Our self designed virtual escape room, where participants must solve different puzzles in each level to escape and win.",
     link: "",
