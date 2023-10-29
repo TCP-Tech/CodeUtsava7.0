@@ -70,7 +70,7 @@ const events = [
   {
     title: "Virtual Escape Room",
     date: "31ˢᵗ Oct",
-    time: "6:00 PM",
+    time: "2:00 PM",
     venue: "CCC, NIT Raipur",
     img: event6,
     guidelines:"",
