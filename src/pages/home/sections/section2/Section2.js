@@ -4,6 +4,8 @@ import WordGlobe from "../../../../components/wordGlobe/WordGlobe";
 import ghost from "../../../../assets/images/ghost.png";
 
 const Section2 = () => {
+  const d = new Date().getTime();
+  console.log(d);
   return (
     <div className="codeutsava__section2" id="aboutus">
       <div className="codeutsava__section2-body">

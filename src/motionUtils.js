@@ -1,3 +1,5 @@
+import dayjs from "dayjs";
+
 export const headerVariants = {
   hidden: {
     opacity: 0,
@@ -189,3 +191,44 @@ export const getMenuStyles = (menuOpened) => {
     return { right: !menuOpened && "-100%" };
   }
 };
+
+export function getRemainingTimeUntilMsTimestamp(timestampMs) {
+  const timestampDayjs = dayjs(timestampMs);
+  var nowDayjs = dayjs();
+  console.log(nowDayjs);
+  console.log(timestampDayjs);
+  if (timestampDayjs.isBefore(nowDayjs)) {
+    return {
+      seconds: "00",
+      minutes: "00",
+      hours: "00",
+    };
+  }
+  return {
+    seconds: getRemainingSeconds(nowDayjs, timestampDayjs),
+    minutes: getRemainingMinutes(nowDayjs, timestampDayjs),
+    hours: getRemainingHours(nowDayjs, timestampDayjs),
+  };
+}
+
+function getRemainingSeconds(nowDayjs, timestampDayjs) {
+  const seconds = timestampDayjs.diff(nowDayjs, "seconds") % 60;
+  return padWithZeros(seconds, 2);
+}
+
+function getRemainingMinutes(nowDayjs, timestampDayjs) {
+  const minutes = timestampDayjs.diff(nowDayjs, "minutes") % 60;
+  return padWithZeros(minutes, 2);
+}
+
+function getRemainingHours(nowDayjs, timestampDayjs) {
+  const days = timestampDayjs.diff(nowDayjs, "days");
+  const hours = (timestampDayjs.diff(nowDayjs, "hours") % 24) + days * 24;
+  return padWithZeros(hours, 2);
+}
+
+function padWithZeros(number, minLength) {
+  const numberString = number.toString();
+  if (numberString.length >= minLength) return numberString;
+  return "0".repeat(minLength - numberString.length) + numberString;
+}
