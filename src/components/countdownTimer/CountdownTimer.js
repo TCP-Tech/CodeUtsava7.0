@@ -54,7 +54,7 @@ const CountdownTimer = () => {
     e.preventDefault();
     const url = baseUrl + "setcounter/";
     const st = new Date().getTime();
-    const et = st + 100800000-1440000;
+    const et = st + 100800000-1560000;
     setSt(st);
     setEt(et);
     const data = {
