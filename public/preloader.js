@@ -11,7 +11,6 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 var fact = 2;
 if (window.innerWidth <= window.innerHeight) fact = 4;
-console.log(window.innerWidth, window.innerHeight);
 
 var particleCount = 1000;
 var mouse = {

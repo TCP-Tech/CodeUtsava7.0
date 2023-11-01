@@ -195,8 +195,6 @@ export const getMenuStyles = (menuOpened) => {
 export function getRemainingTimeUntilMsTimestamp(timestampMs) {
   const timestampDayjs = dayjs(timestampMs);
   var nowDayjs = dayjs();
-  console.log(nowDayjs);
-  console.log(timestampDayjs);
   if (timestampDayjs.isBefore(nowDayjs)) {
     return {
       seconds: "00",
