@@ -139,7 +139,7 @@ const CountdownTimer = () => {
           onClick={(e) => handleSubmit(e)}
           className="codeutsava__start-countdown"
         >
-          Begin!
+          PAUSE!
         </button>
       )}
     </div>
