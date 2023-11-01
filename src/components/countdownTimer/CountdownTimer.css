@@ -1,5 +1,5 @@
 .codeutsava__countdown-timer {
-  font-family: var(--font-family2);
+  font-family: var(--font-family);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,6 @@
   padding: 16px 60px;
   text-transform: uppercase;
   background-color: transparent;
-  font-family: "Poppins";
   font-style: normal;
   font-size: 20px;
   color: #d7d7d7;
@@ -33,9 +32,25 @@
 .codeutsava__countdown-timer span {
   margin-left: 5px;
   margin-right: 5px;
-  font-size: 6rem;
+  font-size: 10rem;
 }
 
 .codeutsava__two-numbers {
   width: 2ch;
+}
+
+.timer-zero{
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    0%{
+        color: white;
+    }
+    50%{
+        color: red;
+    }
+    100%{
+        color: white;
+    }
 }

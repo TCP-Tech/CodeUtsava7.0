@@ -38,6 +38,8 @@ const CountdownTimer = () => {
     fetchData();
   }, [state]);
 
+  const timerClass = remainingTime.hours === "00" && remainingTime.minutes === "00" && remainingTime.seconds === "00" ? 'timer-zero' : '';
+
   // const fetchD = async () => {
   //   const data = await axios.get(url);
   //   setState({
@@ -107,7 +109,7 @@ const CountdownTimer = () => {
 
   console.log(remainingTime);
   return (
-    <div className="codeutsava__countdown-timer">
+    <div className={`codeutsava__countdown-timer ${timerClass}`}>
       <div>
         {remainingTime.seconds === "00" &&
         remainingTime.minutes === "00" &&
