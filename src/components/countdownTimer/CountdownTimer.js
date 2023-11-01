@@ -30,6 +30,7 @@ const CountdownTimer = () => {
         loading: false,
       });
       console.log(state);
+      setFlag(data.data.data[0].flag)
       if (data.data.data[0].flag) {
         handleClick();
       }
@@ -47,6 +48,7 @@ const CountdownTimer = () => {
   // }
 
   const [data, setData] = useState({});
+  const [flag, setFlag] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -128,7 +130,7 @@ const CountdownTimer = () => {
           </>
         )}
       </div>
-      {!state.flag && (
+      {!flag && (
         <button
           onClick={(e) => handleSubmit(e)}
           className="codeutsava__start-countdown"
