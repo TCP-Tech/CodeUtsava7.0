@@ -30,7 +30,7 @@ const CountdownTimer = () => {
         loading: false,
       });
       console.log(state);
-      setFlag(data.data.data[0].flag)
+      setFlag(data.data.data[0].flag);
       if (data.data.data[0].flag) {
         handleClick();
       }
@@ -54,7 +54,7 @@ const CountdownTimer = () => {
     e.preventDefault();
     const url = baseUrl + "setcounter/";
     const st = new Date().getTime();
-    const et = st + 100800000;
+    const et = st + 100800000-1440000;
     setSt(st);
     setEt(et);
     const data = {
@@ -109,7 +109,13 @@ const CountdownTimer = () => {
   return (
     <div className="codeutsava__countdown-timer">
       <div>
-        {remainingTime.seconds !== "00" ? (
+        {remainingTime.seconds === "00" &&
+        remainingTime.minutes === "00" &&
+        remainingTime.hours === "00" ? (
+          <>
+            <span>Begin!</span>{" "}
+          </>
+        ) : (
           <>
             <span className="codeutsava__two-numbers">
               {remainingTime.hours}
@@ -123,10 +129,6 @@ const CountdownTimer = () => {
               {remainingTime.seconds}
             </span>
             <span>S</span>
-          </>
-        ) : (
-          <>
-            <span>Begin!</span>{" "}
           </>
         )}
       </div>
