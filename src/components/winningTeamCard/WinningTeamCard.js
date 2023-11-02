@@ -85,10 +85,12 @@ const WinningTeamCard = ({
                 <td>Team Members</td>
                 <td>Name</td>
               </tr>
-              <tr>
-                <td>Leader</td>
-                <td>{leader}</td>
-              </tr>
+              {leader && (
+                <tr>
+                  <td>Leader</td>
+                  <td>{leader}</td>
+                </tr>
+              )}
               <tr>
                 <td>Member 1</td>
                 <td>{member1}</td>
@@ -97,18 +99,24 @@ const WinningTeamCard = ({
                 <td>Member 2</td>
                 <td>{member2}</td>
               </tr>
-              <tr>
-                <td>Member 3</td>
-                <td>{member3}</td>
-              </tr>
-              <tr>
-                <td>Member 4</td>
-                <td>{member4}</td>
-              </tr>
-              <tr>
-                <td>Member 5</td>
-                <td>{member5}</td>
-              </tr>
+              {member3 && (
+                <tr>
+                  <td>Member 3</td>
+                  <td>{member3}</td>
+                </tr>
+              )}
+              {member4 && (
+                <tr>
+                  <td>Member 4</td>
+                  <td>{member4}</td>
+                </tr>
+              )}
+              {member5 && (
+                <tr>
+                  <td>Member 5</td>
+                  <td>{member5}</td>
+                </tr>
+              )}
             </table>
           </motion.div>
         )}

@@ -85,10 +85,12 @@ const CategoryWinningTeamCard = ({
                 <td>Team Members</td>
                 <td>Name</td>
               </tr>
-              <tr>
-                <td>Leader</td>
-                <td>{leader}</td>
-              </tr>
+              {leader && (
+                <tr>
+                  <td>Leader</td>
+                  <td>{leader}</td>
+                </tr>
+              )}
               <tr>
                 <td>Member 1</td>
                 <td>{member1}</td>

@@ -35,6 +35,14 @@ const shortlistedTeams = [
     "member4": "Pratyaksh Singh",
     "college": "NIT Raipur"
   },
+  {
+    "name": "Kirmada",
+    "leader": "",
+    "member1": "Karan Manglani",
+    "member2": "Shaurya Bansal",
+    "member3": "Arun Rathaur",
+    "college": "NIT Raipur"
+  },
 ];
 
 export default shortlistedTeams;

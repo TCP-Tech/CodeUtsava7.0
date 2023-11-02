@@ -29,13 +29,13 @@ const HomePage = () => {
       <Statistics />
       <div className="container mx-auto main-container">
         <Section2 />
+        <Section12 />
+        <Section13 />
         <Section8 />
         <Section11 />
         <Section5 />
         <Guidelines />
         <Section9 />
-        <Section12 />
-        <Section13 />
         <Section6 />
         {/* <Section9 /> */}
         <Section14 />

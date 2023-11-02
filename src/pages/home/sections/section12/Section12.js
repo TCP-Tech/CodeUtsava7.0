@@ -34,7 +34,7 @@ const Section11 = () => {
       id="problems"
     >
       <div className="codeutsava__section11-body">
-        <div className="codeutsava__section11-title"><img src={cauldron}></img>Previous Year Winners</div>
+        <div className="codeutsava__section11-title"><img src={cauldron}></img>Winners</div>
         <div className="codeutsava__section11-problems">
           <div className="codeutsava__section11-problems-container1-winning">
             {winningTeamData.map((shortlistedTeam, index) => (
