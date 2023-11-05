@@ -36,7 +36,7 @@ const GameCard = () => {
         </div>
         <a
           className="codeutsava__game-link"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdnFe_Zm97Of15Hs2UH9V-mIoiQz8rSggj48y41ekjKkcSj7g/viewform"
+          href="https://virtual-escape-room-tcp.vercel.app/"
           target="__blank"
         >
           Click at your own Risk!
