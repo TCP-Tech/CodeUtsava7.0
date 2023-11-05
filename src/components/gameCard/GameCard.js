@@ -25,10 +25,10 @@ const GameCard = () => {
         </div>
         <div className="codeutsava__game-right-content">
           <div className="codeutsava__game-right-special-prices">
-            <h3>
+            <p>
               Our self designed <b>virtual escape room,</b> where participants
               must solve different puzzles in each level to escape and win.
-            </h3>
+            </p>
           </div>
           <p>
             <b>Disclaimer:</b> Not for the <b>Weak.</b>
