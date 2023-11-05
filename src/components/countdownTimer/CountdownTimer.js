@@ -115,7 +115,7 @@ const CountdownTimer = () => {
         remainingTime.minutes === "00" &&
         remainingTime.hours === "00" ? (
           <>
-            <span>Begin!</span>{" "}
+            <span>Over!</span>{" "}
           </>
         ) : (
           <>
