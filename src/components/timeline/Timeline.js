@@ -13,10 +13,10 @@ const Timeline = () => {
   return (
     <div>
       <VerticalTimeline animate={true} lineColor="white">
-        {hackathonData.map((element) => {
+        {hackathonData.map((element,index) => {
           return (
             <VerticalTimelineElement
-              key={element.key}
+              key={index}
               date={element.date}
               dateClassName="date"
               icon={<Ghost/>}

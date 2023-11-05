@@ -1,44 +1,41 @@
-import React from 'react'
-import { useState } from 'react'
+import React from "react";
+import { useState } from "react";
 
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence } from "framer-motion";
 
-import './ProblemCard.css'
-import cross from '../../assets/images/cross.svg'
-import '../winningTeamCard/WinningTeamCard.css'
+import "./ProblemCard.css";
+import cross from "../../assets/images/cross.svg";
+import "../winningTeamCard/WinningTeamCard.css";
 
-const ProblemCard = ({img,title,domain,statement}) => {
-
+const ProblemCard = ({ img, title, domain, statement, background, impact }) => {
   const [modal, setModal] = useState(false);
   const [problem, setProblem] = useState([]);
 
   const getProblem = (img, title, domain, statement) => {
-    let temp = [img, title, domain, statement]
-    setProblem(item => [1, ...temp])
-    return setModal(true)
-  }
+    let temp = [img, title, domain, statement];
+    setProblem((item) => [1, ...temp]);
+    return setModal(true);
+  };
 
-  document.body.style.overflow = !modal ? 'visible' : 'hidden';
+  document.body.style.overflow = !modal ? "visible" : "hidden";
 
   return (
     <div>
       <div className="codeutsava__section8-card">
-          <img className='codeutsava__section8-image' src={img} onClick={() => getProblem(img, title, domain, statement)}></img>
-          <div className="codeutsava__section8-cardtitle">
-              {title}
-          </div>
-          <div className="codeutsava__section8-line">
-          </div>
-          <div className="codeutsava__section8-carddetails">
-              {domain}
-          </div>
+        <img
+          className="codeutsava__section8-image"
+          src={img}
+          onClick={() => getProblem(img, title, domain, statement)}
+        ></img>
+        <div className="codeutsava__section8-cardtitle">{title}</div>
+        <div className="codeutsava__section8-line"></div>
+        <div className="codeutsava__section8-carddetails">{domain}</div>
       </div>
 
       {/* modal */}
 
       <AnimatePresence>
-        {
-          modal && 
+        {modal && (
           <motion.div
             initial={{ scaleX: 0, scaleY: 0.01 }}
             animate={{ scaleX: [0, 1, 1], scaleY: [0.005, 0.005, 1] }}
@@ -53,20 +50,27 @@ const ProblemCard = ({img,title,domain,statement}) => {
             />
             <h1>{title}</h1>
             <h5 style={{ fontWeight: "600" }}>Domain: {domain}</h5>
-            <table>
-              <tr>
-                <td>Problem Statement</td>
-              </tr>
-              <tr>
-                <td>{statement}</td>
-              </tr>
-            </table>
-
+            <div style={{ overflowY: "scroll" , display: 'flex', justifyContent: "center"}}>
+              <table>
+                {background && <tr>
+                  <td>Background</td>
+                  <td>{background}</td>
+                </tr>}
+                <tr>
+                  <td>Problem Statement</td>
+                  <td>{statement}</td>
+                </tr>
+                {impact && <tr>
+                  <td>Impact</td>
+                  <td>{impact}</td>
+                </tr>}
+              </table>
+            </div>
           </motion.div>
-        }
+        )}
       </AnimatePresence>
     </div>
-  )
-}
+  );
+};
 
-export default ProblemCard
+export default ProblemCard;

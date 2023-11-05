@@ -9,6 +9,7 @@ import Section5 from "./sections/section5/Section5";
 import Section6 from "./sections/section6/Section6";
 import Section8 from "./sections/section8/Section8";
 import Section10 from "./sections/section10/Section10";
+import Section11 from "./sections/section11/Section11";
 import Section12 from "./sections/section12/Section12";
 import Section13 from "./sections/section13/Section13";
 import Section14 from "./sections/section14/Section14";
@@ -27,19 +28,20 @@ const HomePage = () => {
       </div>
       <Statistics />
       <div className="container mx-auto main-container">
-          <Section5 />
-          <Guidelines/>
-          <Section9 />
-          <Section12 />
-          <Section13 />
-          <Section8 /> 
-          <Section6 />
-          {/* <Section9 /> */}
-          <Section14 />
-          <Section2 />
-          <Section10 />
+        <Section2 />
+        <Section12 />
+        <Section13 />
+        <Section8 />
+        <Section11 />
+        <Section5 />
+        <Guidelines />
+        <Section9 />
+        <Section6 />
+        {/* <Section9 /> */}
+        <Section14 />
+        <Section10 />
         {/* <Section15 /> */}
-        {/* <Section11 />
+        {/*
           <Section12 />
           <Section13 />*/}
       </div>

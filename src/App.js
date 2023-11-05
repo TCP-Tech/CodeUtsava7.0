@@ -12,6 +12,8 @@ import FAQs from "./pages/faqs/FAQs"
 import Events from "./pages/events/Events"
 import Speakers from "./pages/speakers/Speakers"
 import Merchandise from "./pages/merchandise/Merchandise";
+import CountDown from "./pages/countDown/CountDown";
+import Games from "./pages/games/Games";
 
 export default class App extends Component {
   render() {
@@ -27,6 +29,8 @@ export default class App extends Component {
             <Route path="/events" element={<Events />} />
             <Route path="/speakers" element={<Speakers />} />
             <Route path="/merchandise" element={<Merchandise />} />
+            <Route path="/games" element={<Games />} />
+            <Route path="/countdown" element={<CountDown />} />
           </Routes>
       </BrowserRouter>
     );

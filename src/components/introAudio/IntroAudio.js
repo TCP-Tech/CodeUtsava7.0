@@ -14,7 +14,7 @@ const IntroAudio = () => {
     setnotPlaying(!notPlaying);
   };
   return (
-    <div class="codeutsava__introAudio-justbg">
+    <div className="codeutsava__introAudio-justbg">
       <audio
         ref={audioRef}
         id="codeutsava__introAudio-intro-audio"

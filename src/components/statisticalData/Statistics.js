@@ -72,7 +72,7 @@ const Statistics = () => {
                     {counterOn && (
                       <CountUp
                         start={100}
-                        end={1000}
+                        end={3000}
                         duration={1.5}
                         delay={0}
                       />
