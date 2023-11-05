@@ -54,7 +54,7 @@ const Navbar = () => {
                   </a>
                 </Link>
               </li>
-                <li className="codeutsava__navbar-navitem">
+              <li className="codeutsava__navbar-navitem">
                 <Link to="/merchandise">
                   <a href="#merchandise">
                     <h3 className="codeutsava__navbar-menu-heading">
@@ -64,17 +64,20 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="codeutsava__navbar-navitem">
+                <Link to="/games">
+                  <a href="#games">
+                    <h3 className="codeutsava__navbar-menu-heading">Games</h3>
+                  </a>
+                </Link>
+              </li>
+              <li className="codeutsava__navbar-navitem">
                 <a href="#prizes">
-                  <h3 className="codeutsava__navbar-menu-heading">
-                    Prizes
-                  </h3>
+                  <h3 className="codeutsava__navbar-menu-heading">Prizes</h3>
                 </a>
               </li>
               <li className="codeutsava__navbar-navitem">
                 <a href="#format">
-                  <h3 className="codeutsava__navbar-menu-heading">
-                    Timeline
-                  </h3>
+                  <h3 className="codeutsava__navbar-menu-heading">Timeline</h3>
                 </a>
               </li>
               <li className="codeutsava__navbar-navitem">
@@ -186,6 +189,15 @@ const Navbar = () => {
               <a href="#merchandise" onClick={toggleMenu}>
                 <h3 className="codeutsava__navbar-hamburger-menu-heading">
                   Merchandise
+                </h3>
+              </a>
+            </Link>
+          </li>
+          <li className="codeutsava__navbar-hamburger-navitem">
+            <Link to="/games">
+              <a href="#games" onClick={toggleMenu}>
+                <h3 className="codeutsava__navbar-hamburger-menu-heading">
+                  Games
                 </h3>
               </a>
             </Link>
